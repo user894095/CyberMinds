@@ -1,0 +1,460 @@
+body {
+  overflow-x: hidden;
+}
+
+.Parent-container {
+  display: flex;
+  flex-direction: column;
+  height: 1200px;
+  width: 100%;
+  background-color: rgba(12, 21, 30, 0.992);
+}
+
+.first-box {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 8%;
+  margin-bottom: 2%;
+  padding-top: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+.circle {
+  height: 110%;
+  width: auto;
+  margin: 0px;
+  padding-top: 10px;
+  border-radius: 10px;
+  border-color: black;
+  vertical-align: middle;
+  margin-left: 2%;
+}
+
+.firstbox-buttons {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  border: none;
+  margin-top: 10px;
+  font-size: 70%;
+}
+
+.backtoHomeScreen {
+  margin-left: 10%;
+  margin-right: 3%;
+  vertical-align: middle;
+  background: linear-gradient(
+    51deg,
+    rgba(35, 255, 119, 0.903),
+    rgba(35, 255, 119, 0.762),
+    rgb(6, 255, 197),
+    rgba(41, 169, 229, 0.778),
+    rgba(41, 169, 229, 0.305)
+  );
+  width: auto;
+  height: 70%;
+  border: none;
+  border-radius: 22%/90%;
+  font-family: sans-serif;
+  color: white;
+}
+
+.chatHelp {
+  margin-right: 3%;
+  vertical-align: middle;
+  background: linear-gradient(
+    42deg,
+    rgba(35, 255, 119, 0.903),
+    rgba(35, 255, 119, 0.762),
+    rgb(6, 255, 197),
+    rgba(41, 169, 229, 0.778),
+    rgba(41, 169, 229, 0.305)
+  );
+  color: white;
+  width: auto;
+  height: 70%;
+  border: none;
+  border-radius: 22%/50%;
+  font-family: sans-serif;
+}
+
+.signOut {
+  vertical-align: middle;
+  margin-right: 3%;
+  background: linear-gradient(
+    42deg,
+    rgba(35, 255, 119, 0.903),
+    rgba(35, 255, 119, 0.762),
+    rgb(6, 255, 197),
+    rgba(41, 169, 229, 0.778),
+    rgba(41, 169, 229, 0.305)
+  );
+  color: white;
+  width: auto;
+  height: 70%;
+  border: none;
+  border-radius: 27%/40%;
+  font-family: sans-serif;
+}
+
+.signin {
+  vertical-align: middle;
+  margin-right: 3%;
+  background: linear-gradient(
+    42deg,
+    rgba(35, 255, 119, 0.903),
+    rgba(35, 255, 119, 0.762),
+    rgb(6, 255, 197),
+    rgba(41, 169, 229, 0.778),
+    rgba(41, 169, 229, 0.305)
+  );
+  color: white;
+  width: auto;
+  height: 70%;
+  border: none;
+  border-radius: 27%/40%;
+  font-family: sans-serif;
+  margin-left: 5%;
+}
+
+.customize {
+  font-size: 45px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  position: relative;
+  width: 10%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  transform: translateX(-50%);
+  margin-right: 15%;
+  margin-left: 12%;
+}
+
+.customizef {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  vertical-align: top;
+}
+.choosecolorBox {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  vertical-align: center;
+}
+
+.chooseColor {
+  font-size: larger;
+}
+
+.colorChoice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+}
+
+.color-wheel1 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(123, 2, 2) 0deg,
+    rgb(255, 232, 208) 90deg,
+    rgb(245, 203, 145) 120deg,
+    rgb(255, 190, 125) 130deg,
+    rgb(255, 165, 61) 150deg,
+    rgb(255, 103, 2) 180deg,
+    rgb(255, 77, 0) 230deg,
+    rgb(255, 153, 119) 250deg,
+    rgb(255, 250, 250) 260deg,
+    rgb(255, 8, 0) 290deg,
+    rgb(204, 51, 0) 320deg,
+    rgb(123, 2, 2) 380deg
+  );
+
+  cursor: pointer;
+}
+
+#color-wheel1 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(123, 2, 2) 0deg,
+    rgb(255, 232, 208) 90deg,
+    rgb(245, 203, 145) 120deg,
+    rgb(255, 190, 125) 130deg,
+    rgb(255, 165, 61) 150deg,
+    rgb(255, 136, 56) 180deg,
+    rgb(255, 77, 0) 230deg,
+    rgb(255, 153, 119) 250deg,
+    rgb(255, 250, 250) 260deg,
+    rgb(255, 8, 0) 290deg,
+    rgb(204, 51, 0) 320deg,
+    rgb(123, 2, 2) 380deg
+  );
+
+  cursor: pointer;
+}
+
+#color-wheel2 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(234, 255, 0) 20deg,
+    rgb(255, 238, 151) 40deg,
+    rgb(255, 216, 107) 60deg,
+    rgb(255, 195, 32) 80deg,
+    rgb(255, 136, 0) 150deg,
+    rgb(255, 170, 79) 160deg,
+    rgb(255, 237, 155) 170deg,
+    rgb(249, 255, 186) 175deg,
+    rgb(255, 216, 58) 200deg,
+    rgb(255, 221, 108) 210deg,
+    rgb(251, 255, 208) 240deg,
+    rgb(246, 255, 151) 270deg,
+    rgb(243, 255, 107) 320deg,
+    rgb(234, 255, 0) 340deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel3 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(42, 249, 23) 0deg,
+    rgb(200, 253, 154) 20deg,
+    rgba(85, 255, 0, 0.81) 110deg,
+    rgb(147, 248, 14) 130deg,
+    rgb(193, 241, 88) 150deg,
+    rgb(197, 247, 33) 180deg,
+    rgb(236, 255, 158) 230deg,
+    rgb(205, 255, 96) 250deg,
+    rgb(249, 230, 23) 330deg,
+    rgb(42, 249, 23) 360deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel4 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(4, 215, 22) 0deg,
+    rgb(168, 240, 188) 110deg,
+    rgb(1, 147, 42) 130deg,
+    rgba(94, 251, 136, 0.512) 150deg,
+    rgba(94, 215, 155, 0.615) 170deg,
+    rgb(245, 255, 250) 210deg,
+    rgb(204, 245, 167) 220deg,
+    #64ff0a 230deg,
+    rgb(205, 255, 188) 290deg,
+    rgb(4, 215, 22) 360deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel5 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(2, 77, 20) -10deg,
+    rgb(73, 255, 225) 120deg,
+    rgb(143, 253, 246) 130deg,
+    rgb(2, 123, 109) 150deg,
+    rgb(3, 231, 243) 230deg,
+    rgb(165, 237, 232) 250deg,
+    rgb(3, 185, 213) 270deg,
+    rgba(1, 246, 177, 0.645) 290deg,
+    rgb(121, 221, 127) 340deg,
+    rgba(0, 96, 57, 0.922) 360deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel6 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(52, 36, 120) 0deg,
+    rgb(0, 255, 242) 110deg,
+    rgb(181, 248, 238) 130deg,
+    rgb(4, 178, 247) 150deg,
+    rgb(1, 144, 205) 180deg,
+    rgb(156, 215, 255) 230deg,
+    rgb(11, 121, 255) 250deg,
+    rgb(0, 58, 204) 290deg,
+    rgb(2, 16, 123) 360deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel7 {
+  margin-left: 2%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgb(236, 215, 249) 0deg,
+    rgb(226, 144, 245) -3deg,
+    rgb(174, 1, 213) 20deg,
+    rgb(10, 5, 165) 110deg,
+    rgb(4, 8, 247) 130deg,
+    rgb(117, 62, 255) 150deg,
+    #c7a5fd 180deg,
+    rgb(168, 80, 246) 230deg,
+    rgb(143, 19, 251) 250deg,
+    rgb(94, 1, 175) 285deg,
+    rgb(79, 0, 128) 340deg,
+    rgb(192, 94, 254) 370deg
+  );
+  cursor: pointer;
+}
+
+#color-wheel8 {
+  margin-left: 2%;
+  margin-right: 3%;
+  width: 8%;
+  height: 90%;
+  border-radius: 50%;
+  background: conic-gradient(
+    rgba(246, 0, 226, 0.549) 2deg,
+    rgba(233, 124, 224, 0.844) 20deg,
+    rgba(244, 154, 217, 0.844) 35deg,
+    rgba(253, 200, 237, 0.844) 55deg,
+    rgb(196, 1, 79) 85deg,
+    rgb(255, 0, 85) 105deg,
+    rgb(255, 36, 109) 125deg,
+    rgb(255, 89, 125) 135deg,
+    rgb(255, 157, 178) 165deg,
+    rgb(255, 172, 211) 170deg,
+    rgb(229, 98, 249) 205deg,
+    rgb(208, 0, 255) 230deg,
+    rgb(251, 160, 234) 250deg,
+    rgb(236, 88, 224) 290deg,
+    rgb(246, 0, 226) 320deg,
+    rgb(164, 4, 140) 340deg,
+    rgba(246, 0, 226, 0.549) 350deg
+  );
+  cursor: pointer;
+}
+
+.chooseColor {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  font-size: 25px;
+  font-family: "DejaVu Sans", "DejaVu Sans Mac Name", "DejaVu Sans Unix Name",
+    "Times New Roman";
+  font-weight: 200 !important;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-stretch: expanded;
+  margin-top: 0px;
+}
+
+.options1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(11, 14, 30);
+}
+
+.options2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(11, 14, 30);
+}
+
+.options3 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(11, 14, 30);
+}
+
+.empty {
+  flex: 1;
+}
+.calendar {
+  flex: 1;
+  color: white;
+}
+
+.agenda {
+  flex: 1;
+  color: white;
+}
+
+.toDoList {
+  flex: 1;
+  color: white;
+}
+
+.reminders {
+  flex: 1;
+  color: white;
+}
+
+.goals {
+  flex: 1;
+  color: white;
+}
+
+.dayPlanning {
+  flex: 1;
+  color: white;
+}
+
+.list {
+  flex: 1;
+  color: white;
+}
+
+.tasks {
+  flex: 1;
+  color: white;
+}
+
+.notes {
+  flex: 1;
+  color: white;
+}
