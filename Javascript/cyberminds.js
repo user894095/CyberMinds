@@ -32,8 +32,8 @@ function changePageCustomize() {
   window.location.href = "./HTML/customize.html";
 }
 
-function changePageFeedback() {
-  window.location.href = "./HTML/feedback.html";
+function changePageourTeam() {
+  window.location.href = "./HTML/ourTeam.html";
 }
 
 function changePagesignIn() {
