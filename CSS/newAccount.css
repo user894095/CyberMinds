@@ -63,64 +63,6 @@ body {
   color: white;
 }
 
-.chatHelp {
-  margin-right: 3%;
-  vertical-align: middle;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  color: white;
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 22%/50%;
-  font-family: sans-serif;
-}
-
-.signOut {
-  vertical-align: middle;
-  margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  color: white;
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 27%/40%;
-  font-family: sans-serif;
-}
-
-.signinwithAnotherAccount {
-  vertical-align: middle;
-  margin-right: 2%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  color: white;
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 20%/100%;
-  font-family: sans-serif;
-  margin-left: 0%;
-}
-
 .getStarted {
   font-size: 50px;
   color: white;
