@@ -126,24 +126,7 @@ body {
   font-family: sans-serif;
 }
 
-.Dashboard {
-  vertical-align: middle;
-  margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  color: white;
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 27%/60%;
-  font-family: sans-serif;
-}
+
 
 .Support {
   vertical-align: middle;
@@ -356,7 +339,7 @@ body {
   line-height: 30px;
 }
 
-.newAccount {
+.content {
   margin: 0px;
   padding: 0px;
   margin-right: 0%;
