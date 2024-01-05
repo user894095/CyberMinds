@@ -105,22 +105,12 @@ body {
   font-family: sans-serif;
 }
 
-.Dashboard {
-  vertical-align: middle;
-  margin-right: 3%;
-  background: rgba(41, 169, 229, 0.778);
-  color: white;
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 27%/60%;
-  font-family: sans-serif;
-}
 
 .Support {
   vertical-align: middle;
   margin-right: 3%;
-  background: rgba(41, 169, 229, 0.778);
+   background: rgba(41, 169, 229, 0.778);
+
   color: white;
   width: auto;
   height: 70%;
@@ -132,7 +122,9 @@ body {
 .OurMission {
   vertical-align: middle;
   margin-right: 3%;
-  background: rgba(41, 169, 229, 0.778);
+
+   background: rgba(41, 169, 229, 0.778);
+
   color: white;
   width: auto;
   height: 70%;
@@ -291,7 +283,7 @@ body {
   line-height: 30px;
 }
 
-.newAccount {
+.contentPage {
   margin: 0px;
   padding: 0px;
   margin-right: 0%;
@@ -310,6 +302,7 @@ body {
   fill-opacity: 100%;
   opacity: 100%;
 }
+
 
 .third-box {
   width: 100%;

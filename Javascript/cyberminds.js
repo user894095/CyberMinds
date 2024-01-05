@@ -16,9 +16,6 @@ function changePagePrivacy() {
   window.location.href = "./HTML/privacy.html";
 }
 
-function changePageDashboard() {
-  window.location.href = "./HTML/dashboard.html";
-}
 
 function changePageSupport() {
   window.location.href = "./HTML/support.html";
@@ -36,16 +33,11 @@ function changePageourTeam() {
   window.location.href = "./HTML/ourTeam.html";
 }
 
-function changePagesignIn() {
-  window.location.href = "./HTML/signIn.html";
-}
 
-function changePagenewAccount() {
-  window.location.href = "./HTML/newAccount.html";
-}
 
-function changePagesignOut() {
-  window.location.href = "./HTML/signout.html";
+
+function changePageContent() {
+// add the link to the content here
 }
 
 const parentContainer = document.querySelector(".Parent-container");
