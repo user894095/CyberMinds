@@ -73,14 +73,7 @@ body {
   margin-left: 15%;
   margin-right: 3%;
   vertical-align: middle;
-  background: linear-gradient(
-    51deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   width: auto;
   height: 70%;
   border: none;
@@ -92,14 +85,7 @@ body {
 .moreInfo {
   margin-right: 3%;
   vertical-align: middle;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -110,14 +96,7 @@ body {
 .Privacy {
   vertical-align: middle;
   margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -131,14 +110,7 @@ body {
 .Support {
   vertical-align: middle;
   margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+   background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -150,14 +122,7 @@ body {
 .OurMission {
   vertical-align: middle;
   margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+   background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -169,14 +134,7 @@ body {
 .Customize {
   vertical-align: middle;
   margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -188,14 +146,7 @@ body {
 .ourTeam {
   vertical-align: middle;
   margin-right: 3%;
-  background: linear-gradient(
-    42deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   color: white;
   width: auto;
   height: 70%;
@@ -345,14 +296,7 @@ body {
   margin-right: 0%;
   text-align: left;
 
-  background: linear-gradient(
-    51deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
+  background: rgba(41, 169, 229, 0.778);
   color: rgb(255, 255, 255);
   width: 257px;
   height: 60px;
