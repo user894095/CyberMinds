@@ -10,11 +10,7 @@ function scrollDown() {
 
 function changePageMoreInfo() {
   window.location.href = "./HTML/moreinfo.html";
-}
 
-function changePagePrivacy() {
-  window.location.href = "./HTML/privacy.html";
-}
 
 
 function changePageSupport() {
