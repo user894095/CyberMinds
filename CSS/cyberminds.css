@@ -30,13 +30,3 @@ body {
   vertical-align: middle;
   margin-left: 2%;
 }
-.page{
-  vertical-align: top;
-  padding-top: 10px;
-  display: inline-block;
-  margin: 0px;
-  font-size: 40px;
-  font-variant: small-caps;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-}
