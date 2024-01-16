@@ -1,9 +1,23 @@
-.container{
+.flex-container{
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap
 }
-button{
-    width: 20%;
+.flex-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
+}
+
+button{
+    width: 40%;
+    margin-left: 10px;
+    
+}
+
+h1{
+    font-family:sans-serif;
+    font-style: initial;
 }
