@@ -55,7 +55,7 @@ body {
     rgba(41, 169, 229, 0.778),
     rgba(41, 169, 229, 0.305)
   );
-  width: auto;
+  width: 22%;
   height: 70%;
   border: none;
   border-radius: 22%/90%;
@@ -64,7 +64,7 @@ body {
 }
 
 .CoursesButton {
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 3%;
   vertical-align: middle;
   background: linear-gradient(
@@ -75,10 +75,10 @@ body {
     rgba(41, 169, 229, 0.778),
     rgba(41, 169, 229, 0.305)
   );
-  width: auto;
+  width: 12%;
   height: 70%;
   border: none;
-  border-radius: 22%/90%;
+  border-radius: 29%/65%;
   font-family: sans-serif;
   color: white;
 }
