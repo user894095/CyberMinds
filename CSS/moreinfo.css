@@ -88,12 +88,15 @@ p {
 ul {
   padding-left: 20px;
   color: white;
-  text-align: left;
+  text-align: center;
+  list-style: none;
 }
 
 li {
   margin-bottom: 5px;
   color: white;
+  scale: 110%;
+  font-style: italic;
 }
 
 a {
@@ -108,5 +111,5 @@ h2 {
   color: white;
   border-bottom: 2px solid #333;
   padding-bottom: 5px;
-  text-align: left;
+  text-align: center;
 }
