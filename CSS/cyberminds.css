@@ -33,13 +33,13 @@ header {
 }
 
 .header-content img {
-  max-height: 40px;
+  max-height: 55px;
   margin-right: 10px;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #000000;
   padding: 0.5em;
   align-items: center;
