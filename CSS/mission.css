@@ -3,62 +3,70 @@ body {
 }
 
 .Parent-container {
-  display: flex;
-  flex-direction: row;
-  height: 3000px;
-  width: 100%;
-  background-color: rgb(42, 44, 43);
+    display: flex;
+    flex-direction: column;
+    height: 6000px;
+    width: auto;
+    background-color: #1c4662; 
+}
+header {
+    background-color: #1c4662; 
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
 }
 
-.first-box {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 2.5%;
-  padding-bottom: 20px;
-  padding-top: 0px;
-  background-color: rgb(0, 0, 0);
+.header-content {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
 }
 
-.circle {
-  height: 110%;
-  width: auto;
-  margin: 0px;
-  padding-top: 10px;
-  border-radius: 10px;
-  border-color: black;
-  vertical-align: middle;
-  margin-left: 2%;
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-content img {
+    max-height: 50px; 
+    margin-right: 10px; 
 }
 
-.firstbox-buttons {
-  display: inline-block;
-  height: 50px;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  vertical-align: top;
-  border: none;
-  margin-top: 10px;
-  font-size: 70%;
+body {
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
 }
 
-.backtoHomeScreen {
-  margin-left: 10%;
-  margin-right: 3%;
-  vertical-align: middle;
-  background: linear-gradient(
-    51deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  width: auto;
-  height: 70%;
-  border: none;
-  border-radius: 22%/90%;
-  font-family: sans-serif;
-  color: white;
+#mission-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00e1ff; 
+    padding: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15pt;
+    color: #1c4662;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background-color: #00e1ff;
+    left: auto;
+
+}
+
+nav a:hover {
+    background-color: #0db4ca;
 }
