@@ -1,19 +1,32 @@
+
 .flex-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
+
+.box-for-text{
+    background-color:darkgrey;
+    height: 500px;
+    width: 100%;
+}
+
 .flex-buttons{
     display: flex;
     flex-direction: row;
-    align-items: center;
+}
+
+.box-for-upper-elements{
+    background-color:blue;
 
 }
 
 button{
     width: 40%;
     margin-left: 10px;
+
+    
     
 }
 
