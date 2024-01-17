@@ -1,3 +1,4 @@
+/* this page links to index */
 body {
   overflow-x: hidden;
 }
@@ -7,26 +8,92 @@ body {
   flex-direction: column;
   height: 6000px;
   width: auto;
-  background-color: rgb(34, 69, 91);
+  background-color: rgb(0, 0, 0);
 }
 
-.first-box {
-  margin: 0px;
-  padding: 0px;
-  width: auto;
-  height: 70px;
-  padding-bottom: 20px;
-  padding-top: 0px;
-  background-color: rgb(34, 69, 91);
+body {
+  font-family: "Georgia", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #ffffff;
 }
 
-.circle {
-  height: 110%;
-  width: auto;
-  margin: 0px;
-  padding-top: 10px;
-  border-radius: 10px;
-  border-color: black;
-  vertical-align: middle;
-  margin-left: 2%;
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 3em;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 17pt;
+  color: #000000;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #5f84fc;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 0.3em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 15px; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin-bottom: 0.8em;
+}
+
+nav a:hover {
+  background-color: #a6c5f7;
+}
+
+.section {
+  padding: 2em;
+  background-color: rgb(36, 73, 73);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cybersecurityimagebackground {
+  max-height: 45em; /* Reduce the height of the image */
+  max-width: 100%; /* Make the image responsive */
+  margin: 0.8em;
+  opacity: 40%;
+}
+
+.section-content {
+  text-align: center;
+  z-index: 1; /* Place section content on top */
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
