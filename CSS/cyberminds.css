@@ -28,13 +28,13 @@ header {
 
 .header-content {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
 }
 
 .header-content img {
   max-height: 55px;
-  margin-right: 10px;
+  margin-right: 3em;
 }
 
 nav {
@@ -43,11 +43,13 @@ nav {
   background-color: #000000;
   padding: 0.5em;
   align-items: center;
+  flex-grow: 1;
+  margin-right: 3em;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 15pt;
+  font-size: 17pt;
   color: #000000;
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -55,6 +57,8 @@ nav a {
   background-color: #9b5afb;
   text-decoration: none;
   margin-right: 10px;
+  padding: 0.3em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 15px; /* Make the buttons more rounded */
 }
 
 nav a:hover {
