@@ -77,17 +77,19 @@ nav a:hover {
 }
 
 .cybersecurityimagebackground {
-  display: inline-block;
-  margin-left: 0.8em;
-  margin-right: 0.8em;
-  padding: 0px;
+  max-height: 45em; /* Reduce the height of the image */
+  max-width: 100%; /* Make the image responsive */
+  margin: 0.8em;
   opacity: 40%;
-  max-height: 50em;
-  max-width: 79em;
+}
+
+.section-content {
+  text-align: center;
+  z-index: 1; /* Place section content on top */
 }
 
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 1em;
