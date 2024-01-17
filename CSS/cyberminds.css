@@ -1,3 +1,4 @@
+/* this page links to index */
 body {
   overflow-x: hidden;
 }
@@ -32,7 +33,7 @@ body {
 }
 
 body {
-  font-family: 'Georgia', sans-serif;
+  font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -44,12 +45,11 @@ body {
   flex-direction: column;
   height: 6000px;
   width: auto;
-  background-color: #1c4662; 
+  background-color: #1c4662;
 }
 
-
 header {
-  background-color: #1c4662; 
+  background-color: #1c4662;
   color: #ffffff;
   text-align: center;
   padding: 1em;
@@ -62,15 +62,14 @@ header {
 }
 
 .header-content img {
-  max-height: 50px; 
-  margin-right: 10px; 
+  max-height: 50px;
+  margin-right: 10px;
 }
-
 
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #00e1ff; 
+  background-color: #00e1ff;
   padding: 0.5em;
 }
 
@@ -101,4 +100,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
