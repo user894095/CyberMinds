@@ -10,8 +10,7 @@ function scrollDown() {
 
 function changePageMoreInfo() {
   window.location.href = "./HTML/moreinfo.html";
-
-
+}
 
 function changePageSupport() {
   window.location.href = "./HTML/support.html";
@@ -29,11 +28,8 @@ function changePageourTeam() {
   window.location.href = "./HTML/ourTeam.html";
 }
 
-
-
-
 function changePageContent() {
-// add the link to the content here
+  window.location.href = "./HTML/course_Contents.html";
 }
 
 const parentContainer = document.querySelector(".Parent-container");
