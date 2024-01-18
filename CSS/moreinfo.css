@@ -43,7 +43,7 @@ body {
   font-size: 70%;
 }
 
-.backtoHomeScreen {
+.backtoHomeScreenButton {
   margin-left: 10%;
   margin-right: 3%;
   vertical-align: middle;
@@ -57,8 +57,28 @@ body {
   );
   width: auto;
   height: 70%;
-  border: none;
+  border-color: silver;
   border-radius: 22%/90%;
+  font-family: sans-serif;
+  color: white;
+}
+
+.CoursesButton {
+  margin-left: 5%;
+  margin-right: 3%;
+  vertical-align: middle;
+  background: linear-gradient(
+    51deg,
+    rgba(35, 255, 119, 0.903),
+    rgba(35, 255, 119, 0.762),
+    rgb(6, 255, 197),
+    rgba(41, 169, 229, 0.778),
+    rgba(41, 169, 229, 0.305)
+  );
+  width: auto;
+  height: 70%;
+  border-color: silver;
+  border-radius: 29%/65%;
   font-family: sans-serif;
   color: white;
 }
@@ -88,12 +108,15 @@ p {
 ul {
   padding-left: 20px;
   color: white;
-  text-align: left;
+  text-align: center;
+  list-style: none;
 }
 
 li {
   margin-bottom: 5px;
   color: white;
+  scale: 110%;
+  font-style: italic;
 }
 
 a {
@@ -108,5 +131,5 @@ h2 {
   color: white;
   border-bottom: 2px solid #333;
   padding-bottom: 5px;
-  text-align: left;
+  text-align: center;
 }
