@@ -55,9 +55,9 @@ body {
     rgba(41, 169, 229, 0.778),
     rgba(41, 169, 229, 0.305)
   );
-  width: 22%;
+  width: auto;
   height: 70%;
-  border: none;
+  border-color: silver;
   border-radius: 22%/90%;
   font-family: sans-serif;
   color: white;
@@ -75,9 +75,9 @@ body {
     rgba(41, 169, 229, 0.778),
     rgba(41, 169, 229, 0.305)
   );
-  width: 12%;
+  width: auto;
   height: 70%;
-  border: none;
+  border-color: silver;
   border-radius: 29%/65%;
   font-family: sans-serif;
   color: white;
