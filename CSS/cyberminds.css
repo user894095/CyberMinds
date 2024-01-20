@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 6000px;
+  height: 200em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -45,9 +45,10 @@ nav {
   justify-content: space-between;
   background-color: #000000;
   padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
   align-items: center;
   flex-grow: 1;
-  margin-right: 3em;
 }
 
 nav a {
@@ -58,7 +59,7 @@ nav a {
   transition: background-color 0.3s;
   background-color: #174167;
   text-decoration: none;
-  margin-right: 1em;
+  margin-right: 0.9em;
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
   border-radius: 0.8em; /* Make the buttons more rounded */
   white-space: nowrap; /* Prevent text from wrapping */
@@ -89,7 +90,7 @@ nav a:hover {
 
 .section-wording {
   display: inline-block;
-  font-size: 2.79em;
+  font-size: 3.5em;
   font-family: "True Sans" !important;
   font-weight: 700 !important;
   color: rgb(255, 255, 255);
@@ -103,13 +104,13 @@ nav a:hover {
 .section-slogan {
   display: inline-block;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-family: "True Sans" !important;
   font-weight: 100 !important;
   color: rgb(255, 255, 255);
   font-stretch: expanded;
   position: absolute;
-  top: 29%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   word-spacing: 0.3em;
