@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./CSS/cyberminds.css" />
     <title>CyberMinds</title>
     <link rel="icon" type="jpg" href="./Images/circle.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -11,32 +12,52 @@
       <header>
         <div class="header-content">
           <img src="./Images/circle.jpg" alt="CyberMinds Logo" />
-          <nav>
-            <a href="#courses">Courses</a>
-            <a href="#activities">Activities</a>
+          <nav class="header-buttons">
             <a href="./HTML/moreinfo.html">More Info</a>
             <a href="./HTML/mission.html">Mission</a>
             <a href="./HTML/customize.html">Customize</a>
-            <a href="./HTML/ourTeam.html">Team</a>
+            <a href="./HTML/ourTeam.html">Our Team</a>
             <a href="./HTML/support.html">Support</a>
           </nav>
         </div>
       </header>
 
-      <section>
-        <video autoplay="" loop="" muted="" playsinline="" class="" poster="./Images/cybersecurity-predictions.jpg"
-          src="./Images/Cybermindsloop.mp4"></video>
+      <div class="section">
+        <img
+          class="cybersecurityimagebackground"
+          src="./Images/cybersecurity-predictions.jpg"
+        />
         <div class="section-wording">
-          <h2>Welcome to CyberMinds!</h2>
-          <p>This is a placeholder content. Add Necessary Content.</p>
-          <p>
-            If we finish this early please work on the Course Content screen!
-            Everything here should go on top of the image. Lastly, please try to
-            reduce the image's height if possible!
-          </p>
-          <p>IN PROGRESS!!!</p>
+          <h2>CyberMinds</h2>
         </div>
-      </section>
+        <div class="section-slogan">
+          <h2>Protecting the digital future.</h2>
+        </div>
+        <nav class="section-buttons">
+          <a href="#" onclick="scrollDown()">How it Works</a>
+          <a href="./HTML/course_Contents.html">Get Started</a>
+        </nav>
+      </div>
+
+      <div class="section">
+        <img
+          class="cybersecurityimagebackground"
+          src="./Images/blue_electricity.jpg"
+        />
+        <div class="works-wording">
+          <h2>How It Works</h2>
+        </div>
+        <div class="workslist-wording">
+          <p>1. Pick One of or Courses to Learn About</p>
+          <p>2. Learn About the Content Through the Reading</p>
+          <p>3. Play a Game to Strengthen your Skills</p>
+          <p>4. Take a Quiz to Test Your Knowledge</p>
+        </div>
+      </div>
+      
+ 
+
+      <div><p>there should be "how it works" here....</p></div>
     </div>
     <script src="./Javascript/cyberminds.js"></script>
   </body>
