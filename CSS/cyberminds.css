@@ -95,6 +95,32 @@ nav a:hover {
   z-index: 1; /* Place section content on top */
 }
 
+.works-wording {
+  display: inline-block;
+  font-size: 3.5em;
+  font-family: "True Sans" !important;
+  font-weight: 700 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 8.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.workslist-wording {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: "True Sans" !important;
+  font-weight: 700 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 footer {
   background-color: #000000;
   color: #fff;
