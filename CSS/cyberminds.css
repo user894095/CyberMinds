@@ -122,8 +122,11 @@ header {
   align-items: center;
   position: absolute;
   top: 60%;
-  word-spacing: 0.3em;
+  word-spacing: 0.1em;
   display: inline-flex;
+  gap: 12em;
+  margin-left: 20em;
+  margin-right: 20em;
 }
 
 .section-buttons a {
