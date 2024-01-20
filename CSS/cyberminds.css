@@ -40,7 +40,7 @@ header {
   margin-right: 3em;
 }
 
-nav {
+.header-buttons {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
@@ -51,7 +51,7 @@ nav {
   flex-grow: 1;
 }
 
-nav a {
+.header-buttons a {
   text-decoration: none;
   font-size: 14pt;
   color: #ffffff;
@@ -65,7 +65,7 @@ nav a {
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
-nav a:hover {
+.header-buttons a:hover {
   background-color: #286aa7;
 }
 
@@ -114,6 +114,33 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
   word-spacing: 0.3em;
+}
+
+.section-buttons {
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  word-spacing: 0.3em;
+  display: inline-flex;
+}
+
+.section-buttons a {
+  align-items: center;
+  text-decoration: none;
+  font-size: 17pt;
+  color: #ffffff;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  padding: 0.5em 0.9em; /* Smaller padding for a more compact button */
+  border-radius: 0.99em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.section-buttons a:hover {
+  background-color: #286aa7;
 }
 
 footer {
