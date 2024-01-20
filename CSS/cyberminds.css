@@ -65,28 +65,54 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #a6c5f7;
+  background-color: #286aa7;
 }
 
 .section {
-  padding: 2em;
-  background-color: rgb(36, 73, 73);
+  padding: 0.5em;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: inline-block;
 }
 
 .cybersecurityimagebackground {
-  height: auto; /* Reduce the height of the image */
+  height: 36em; /* Reduce the height of the image */
   width: 100%; /* Make the image responsive */
-  margin: 0.8em;
-  opacity: 40%;
+  margin: 0.2em;
+  padding: 0em;
+  opacity: 25%;
+  object-fit: cover;
+  display: inline-block;
 }
 
-.section-content {
-  text-align: center;
-  z-index: 1; /* Place section content on top */
+.section-wording {
+  display: inline-block;
+  font-size: 2.79em;
+  font-family: "True Sans" !important;
+  font-weight: 700 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 8.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-slogan {
+  display: inline-block;
+  margin: 0;
+  font-size: 0.9em;
+  font-family: "True Sans" !important;
+  font-weight: 100 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translateX(-50%);
+  word-spacing: 0.3em;
 }
 
 footer {
