@@ -23,6 +23,7 @@ body{
 .upper-flex{
     display:flex;
     flex-direction: row;
+
 }
 
 
@@ -36,6 +37,7 @@ button{
     background-color:lightslategray;
     border-color:lightslategray;
     margin: 0 auto;
+    vertical-align: middle;
 }
 
 button:hover{
