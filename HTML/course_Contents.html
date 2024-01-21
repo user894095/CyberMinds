@@ -1,2 +1,209 @@
 <!-- this screen should have all the courses in it and a small description of each course! 
-If you are working on this please ask for the cybersecurity word doc content  -->
+If you are working on this please ask for the cybersecurity word doc content (This is the base code with no course names or descriptions or top bar)-Harshith Gande -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0A1172; /* Royal Blue */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .course-card {
+            width: 300px; /* Adjust the width as needed */
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 150px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+
+        .course-info {
+            padding: 20px;
+        }
+
+        .course-title {
+            font-size: 1.2em; /* Adjust the font size as needed */
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            header {
+                position: static;
+            }
+        }
+      a {
+          text-decoration: none;
+          color: inherit; /* Inherit the color from the parent element */
+      }
+      a:hover {
+          text-decoration: underline;
+          color: inherit; /* Inherit the color from the parent element */
+      }
+      play-button{
+        width: 10%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Catalog</h1>
+    </header>
+
+    <section>
+        <!-- Course 1 -->
+        <a href="course2.html" class="course-card">
+            <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 1">
+            <div class="course-info">
+                <h2 class="course-title">Enter course name</h2>
+                <p class="course-description">Enter course description</p>                               </div>           
+          <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+            </div>
+        </a>
+
+        <!-- Course 2 -->
+        <a href="course2.html" class="course-card">
+            <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+            
+            <div class="course-info">
+                <h2 class="course-title">Enter course name</h2>
+                <p class="course-description">Enter course description</p>             </div>           
+          <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+            </div>
+          <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+        </a>
+        <!-- Course 3 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             
+          </div>
+        <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+      </a>
+    </section>
+    <section>
+        <!-- Course 4 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+          </div>
+      </a>
+        <!-- Course 5 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+          </div>
+      </a>
+        <!-- Course 6 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+          </div>
+        
+      </a>
+
+
+    </section>
+  <section>
+      <!-- Course 1 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 1">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+          </div>
+      </a>
+
+      <!-- Course 2 -->
+      <a href="course2.html" class="course-card">
+          <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+          <div class="course-info">
+              <h2 class="course-title">Enter course name</h2>
+              <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+          </div>
+      </a>
+      <!-- Course 3 -->
+    <a href="course2.html" class="course-card">
+        <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+        <div class="course-info">
+            <h2 class="course-title">Enter course name</h2>
+            <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+        </div>
+    </a>
+  </section>
+  <section>
+      <!-- Course 4 -->
+    <a href="course2.html" class="course-card">
+        <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+        <div class="course-info">
+            <h2 class="course-title">Enter course name</h2>
+            <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+        </div>
+    </a>
+      <!-- Course 5 -->
+    <a href="course2.html" class="course-card">
+        <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+        <div class="course-info">
+            <h2 class="course-title">Enter course name</h2>
+            <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+        </div>
+    </a>
+      <!-- Course 6 -->
+    <a href="course2.html" class="course-card">
+        <img class="course-image" src="https://via.placeholder.com/250x150" alt="Course Image 2">
+        <div class="course-info">
+            <h2 class="course-title">Enter course name</h2>
+            <p class="course-description">Enter course description</p>             </div>           <img style="width: 35%;position: relative;top: -200px;left:190px;" src="button.png">
+        </div>
+    </a>
+
+
+  </section>
+</body>
+</html>
