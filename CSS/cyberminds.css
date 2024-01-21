@@ -146,30 +146,26 @@ header {
   background-color: #286aa7;
 }
 
-.works-wording {
+.instruction-box {
+  width: 22%;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ffffff;
+  background-color: #77B8CC;
   display: inline-block;
-  font-size: 3.5em;
-  font-family: "True Sans" !important;
-  font-weight: 700 !important;
-  color: rgb(255, 255, 255);
-  font-stretch: expanded;
-  position: absolute;
-  top: 8.5%;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
 }
 
-.workslist-wording {
-  display: inline-block;
-  font-size: 1.5em;
+body {
   font-family: "True Sans" !important;
-  font-weight: 700 !important;
-  color: rgb(255, 255, 255);
-  font-stretch: expanded;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Georgia", sans-serif;
 }
 
 footer {
