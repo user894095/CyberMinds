@@ -91,7 +91,10 @@ a {
 .rectangle-2-Kjq {
   background-color: #4d31b2;
   height: 48.2rem;
-  width: 100%;
+  width: 45%;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
 .rectangle-3-XhV {
   background-color: #ab96fb;
