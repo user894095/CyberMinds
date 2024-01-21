@@ -5,7 +5,6 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
   width: auto;
   background-color: rgb(42, 44, 43);
 }
@@ -88,16 +87,25 @@ a {
   white-space: nowrap;
   width: 100%;
 }
+.parent-body {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+}
 .rectangle-2-Kjq {
-  background-color: #4d31b2;
-  height: 48.2rem;
+  background-color: #fff;
   width: 45%;
-  border: 15px solid green;
+  border: 15px solid #4d31b2;
   padding: 50px;
   margin: 20px;
 }
 .rectangle-3-XhV {
   background-color: #ab96fb;
-  height: 38.2rem;
   width: 45%;
+  border: 15px solid #ab96fb;
+  padding: 50px;
+  margin: 20px;
+}
+.page-footer {
+  height: 20px;
 }
