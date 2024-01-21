@@ -97,7 +97,7 @@ header {
   font-stretch: expanded;
   position: absolute;
   top: 8.5%;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
 }
 
@@ -110,7 +110,7 @@ header {
   color: rgb(255, 255, 255);
   font-stretch: expanded;
   position: absolute;
-  top: 35%;
+  top: 33%;
   left: 50%;
   transform: translateX(-50%);
   word-spacing: 0.3em;
@@ -151,7 +151,7 @@ header {
   padding: 20px;
   margin: 10px;
   border: 1px solid #ffffff;
-  background-color: #77B8CC;
+  background-color: #77b8cc;
   display: inline-block;
   text-align: center;
 }
