@@ -103,4 +103,7 @@ a {
 .rectangle-3-XhV {
   background-color: #ab96fb;
   width: 45%;
+  border: 15px solid #ab96fb;
+  padding: 50px;
+  margin: 20px;
 }
