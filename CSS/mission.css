@@ -88,11 +88,16 @@ a {
   white-space: nowrap;
   width: 100%;
 }
+.parent-body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 .rectangle-2-Kjq {
-  background-color: #4d31b2;
+  background-color: #fff;
   height: 48.2rem;
   width: 45%;
-  border: 15px solid green;
+  border: 15px solid #4d31b2;
   padding: 50px;
   margin: 20px;
 }
