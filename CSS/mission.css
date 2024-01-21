@@ -2,7 +2,6 @@
 body {
   overflow-x: hidden;
 }
-
 .Parent-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@ body {
   width: auto;
   background-color: rgb(42, 44, 43);
 }
-
 body {
   font-family: "Georgia", sans-serif;
   margin: 0;
@@ -19,7 +17,6 @@ body {
   color: #ffffff;
   text-align: center;
 }
-
 header {
   background-color: #000000;
   color: #ffffff;
@@ -35,12 +32,10 @@ header {
   align-items: center; /* Center the items vertically */
   justify-content: space-between; /* Space between the logo and nav */
 }
-
 .header-content img {
   max-height: 3em;
   margin-right: 3em;
 }
-
 .header-buttons {
   display: flex;
   justify-content: space-between;
@@ -51,7 +46,6 @@ header {
   align-items: center;
   flex-grow: 1;
 }
-
 .header-buttons a {
   text-decoration: none;
   font-size: 14pt;
@@ -65,7 +59,6 @@ header {
   border-radius: 0.8em; /* Make the buttons more rounded */
   white-space: nowrap; /* Prevent text from wrapping */
 }
-
 .header-buttons a:hover {
   background-color: #286aa7;
 }
@@ -75,12 +68,36 @@ h1 {
   margin-bottom: 10px;
   color: white;
 }
-
 p {
   line-height: 1.6;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+ul {
+  padding-left: 20px;
+  color: white;
+  text-align: center;
+  list-style: none;
+}
+li {
+  margin-bottom: 5px;
+  color: white;
+  scale: 110%;
+  font-style: italic;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: white;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  text-align: center;
 }
 .placeholder-1-MdM {
   height: 42.9rem;
