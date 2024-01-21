@@ -1,56 +1,5 @@
-
-
-
 body {
   overflow-x: hidden;
-}
-.placeholder-1-Nif {
-height: 42.9rem;
-object-fit: cover;
-vertical-align: top;
-width: 100%;
-}
-.replace-this-text-with-mission-statement-DiB {
-color: #000000;
-font-family: Inter, 'Source Sans Pro';
-font-size: 2rem;
-font-weight: 600;
-height: 2.5rem;
-line-height: 1.2125;
-white-space: nowrap;
-width: 100%;
-}
-.our-mission-vxB {
-color: #000000;
-font-family: Inter, 'Source Sans Pro';
-font-size: 4rem;
-font-weight: 600;
-height: 4.9rem;
-line-height: 1.2125;
-white-space: nowrap;
-width: 100%;
-}
-.Parent-container {
-    display: flex;
-    flex-direction: column;
-    height: 6000px;
-    width: auto;
-    background-color: #1c4662; 
-}
-.rectangle-1-fXZ {
-background-color: #77b8cc;
-height: 6.9rem;
-width: 100%;
-}
-.rectangle-2-r7u {
-background-color: #77b8cc;
-height: 48.2rem;
-width: 100%;
-}
-.rectangle-3-sYF {
-background-color: #ab96fb;
-height: 38.2rem;
-width: 100%;
 }
 header {
     background-color: #77b8cc; 
@@ -58,46 +7,38 @@ header {
     text-align: center;
     padding: 1em;
 }
-
 .header-content {
     display: flex;
     align-items: left;
-    justify-content: left;
-    
+    justify-content: left;   
 }
-
 .header-title {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .header-content img {
     max-height: 50px; 
     margin-right: 10px; 
 }
-
 body {
     font-family: 'Georgia', sans-serif;
     margin: 0;
     padding: 0;
     color: #ffffff;
 }
-
 #mission-content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     background-color: #00e1ff; 
     padding: 0.5em;
 }
-
 nav a {
     text-decoration: none;
     font-size: 15pt;
@@ -107,9 +48,48 @@ nav a {
     transition: background-color 0.3s;
     background-color: #00e1ff;
     left: auto;
-
 }
-
 nav a:hover {
     background-color: #0db4ca;
+}
+.placeholder-1-MdM {
+  height: 42.9rem;
+  object-fit: cover;
+  vertical-align: top;
+  width: 100%;
+}
+.replace-this-text-with-mission-statement-duD {
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 2rem;
+  font-weight: 600;
+  height: 2.5rem;
+  line-height: 1.2125;
+  white-space: nowrap;
+  width: 100%;
+}
+.our-mission-AK5 {
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 4rem;
+  font-weight: 600;
+  height: 4.9rem;
+  line-height: 1.2125;
+  white-space: nowrap;
+  width: 100%;
+}
+.rectangle-1-Zi3 {
+  background-color: #846cef;
+  height: 6.9rem;
+  width: 100%;
+}
+.rectangle-2-Kjq {
+  background-color: #4d31b2;
+  height: 48.2rem;
+  width: 100%;
+}
+.rectangle-3-XhV {
+  background-color: #ab96fb;
+  height: 38.2rem;
+  width: 100%;
 }
