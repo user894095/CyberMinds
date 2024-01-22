@@ -35,6 +35,11 @@ header {
   justify-content: space-between; /* Space between the logo and nav */
 }
 
+.header-content video {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
 .header-content img {
   max-height: 3em;
   margin-right: 3em;
@@ -101,68 +106,7 @@ header {
   transform: translateX(-50%);
 }
 
-.section-slogan {
-  display: inline-block;
-  margin: 0;
-  font-size: 0.95em;
-  font-family: "True Sans" !important;
-  font-weight: 100 !important;
-  color: rgb(255, 255, 255);
-  font-stretch: expanded;
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  transform: translateX(-50%);
-  word-spacing: 0.3em;
-}
-
-.section-buttons {
-  justify-content: space-between;
-  padding: 0.5em;
-  align-items: center;
-  position: absolute;
-  top: 60%;
-  word-spacing: 0.1em;
-  display: inline-flex;
-  gap: 12em;
-  margin-left: 20em;
-  margin-right: 20em;
-}
-
-.section-buttons a {
-  align-items: center;
-  text-decoration: none;
-  font-size: 17pt;
-  color: #ffffff;
-  transition: background-color 0.3s;
-  background-color: #174167;
-  text-decoration: none;
-  padding: 0.5em 0.9em; /* Smaller padding for a more compact button */
-  border-radius: 0.99em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-.section-buttons a:hover {
-  background-color: #286aa7;
-}
-
-.instruction-box {
-  width: 22%;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ffffff;
-  background-color: #77b8cc;
-  display: inline-block;
-  text-align: center;
-}
-
-body {
-  font-family: "True Sans" !important;
-  background-color: #ffffff;
-  padding: 0;
-}
-
-h1 {
+.section-content {
   text-align: center;
   color: #ffffff;
   font-family: "Georgia", sans-serif;
