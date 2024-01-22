@@ -4,14 +4,57 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333;
+  color: #000000;
 }
 
 header {
-  background-color: #0a1172; /* Royal Blue */
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   text-align: center;
-  padding: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
 }
 
 section {
