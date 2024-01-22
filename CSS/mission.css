@@ -8,6 +8,11 @@ body {
   width: auto;
   background-color: rgb(42, 44, 43);
 }
+.rectangle-1-ptT {
+background-color: #846cef;
+height: 6.9rem;
+width: 100%;
+}
 body {
   font-family: "Georgia", sans-serif;
   margin: 0;
