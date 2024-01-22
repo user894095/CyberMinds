@@ -78,7 +78,7 @@ header {
   display: inline-block;
 }
 
-.cybersecurityimagebackground {
+.section video {
   height: 36em; /* Reduce the height of the image */
   width: 100%; /* Make the image responsive */
   margin: 0.2em;
