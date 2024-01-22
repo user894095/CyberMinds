@@ -32,6 +32,11 @@ header {
   justify-content: space-between; /* Space between the logo and nav */
 }
 
+.header-content video {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
 .header-content img {
   max-height: 3em;
   margin-right: 3em;
@@ -77,9 +82,11 @@ nav a:hover {
 }
 
 .cybersecurityimagebackground {
+  display: block;
   max-height: 45em; /* Reduce the height of the image */
   max-width: 100%; /* Make the image responsive */
-  margin: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 40%;
 }
 
