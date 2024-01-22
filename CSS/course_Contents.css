@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.course-card {
+  width: 300px; /* Adjust the width as needed */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+}
+
+.course-description {
+  color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  header {
+    position: static;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+}
+a:hover {
+  text-decoration: underline;
+  color: inherit; /* Inherit the color from the parent element */
+}
+play-button {
+  width: 10%;
+  object-fit: cover;
+}

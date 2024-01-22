@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 6000px;
+  height: 200em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -23,7 +23,10 @@ header {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
 }
 
 .header-content {
@@ -42,57 +45,71 @@ header {
   margin-right: 3em;
 }
 
-nav {
+.header-buttons {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
   padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
   align-items: center;
   flex-grow: 1;
-  margin-right: 3em;
 }
 
-nav a {
+.header-buttons a {
   text-decoration: none;
-  font-size: 17pt;
-  color: #000000;
+  font-size: 14pt;
+  color: #ffffff;
   padding: 0.5em 1em;
-  border-radius: 5px;
   transition: background-color 0.3s;
-  background-color: #5f84fc;
+  background-color: #174167;
   text-decoration: none;
-  margin-right: 10px;
-  padding: 0.3em 0.8em; /* Smaller padding for a more compact button */
-  border-radius: 15px; /* Make the buttons more rounded */
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
   white-space: nowrap; /* Prevent text from wrapping */
-  margin-bottom: 0.8em;
 }
 
-nav a:hover {
-  background-color: #a6c5f7;
+.header-buttons a:hover {
+  background-color: #286aa7;
 }
 
 .section {
-  padding: 2em;
-  background-color: rgb(36, 73, 73);
+  padding: 0.5em;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: inline-block;
 }
 
 .cybersecurityimagebackground {
-  display: block;
-  max-height: 45em; /* Reduce the height of the image */
-  max-width: 100%; /* Make the image responsive */
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 40%;
+  height: 36em; /* Reduce the height of the image */
+  width: 100%; /* Make the image responsive */
+  margin: 0.2em;
+  padding: 0em;
+  opacity: 25%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.section-wording {
+  display: inline-block;
+  font-size: 3.5em;
+  font-family: "True Sans" !important;
+  font-weight: 700 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 8.5%;
+  left: 49%;
+  transform: translateX(-50%);
 }
 
 .section-content {
   text-align: center;
-  z-index: 1; /* Place section content on top */
+  color: #ffffff;
+  font-family: "Georgia", sans-serif;
 }
 
 footer {

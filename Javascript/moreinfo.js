@@ -3,5 +3,5 @@ function changepagetoHomeScreen() {
 }
 
 function changepagetoCourses() {
-  window.location.href = "../HTML/Courses and Activities/Course1.html";
+  window.location.href = "../HTML/course_Contents.html";
 }
