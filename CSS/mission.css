@@ -8,6 +8,11 @@ body {
   width: auto;
   background-color: rgb(42, 44, 43);
 }
+.rectangle-1-ptT {
+background-color:#1c4c7c;
+height: 6.9rem;
+width: 100%;
+}
 body {
   font-family: "Georgia", sans-serif;
   margin: 0;
@@ -95,14 +100,14 @@ a {
 .rectangle-2-Kjq {
   background-color: #fff;
   width: 45%;
-  border: 15px solid #4d31b2;
+  border: 15px solid #0c2030;
   padding: 50px;
   margin: 20px;
 }
 .rectangle-3-XhV {
-  background-color: #ab96fb;
+  background-color:#1c4c7c;
   width: 45%;
-  border: 15px solid #ab96fb;
+  border: 15px solid #0c2030;
   padding: 50px;
   margin: 20px;
 }

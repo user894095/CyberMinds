@@ -128,14 +128,6 @@ header {
   flex-grow: 1;
   top: 70%;
 
-  /* display: flex;
-  justify-content: space-between;
-  background-color: #000000;
-  padding: 0.5em;
-  padding-left: 6em;
-  padding-right: 6em;
-  align-items: center;
-  flex-grow: 1; */
 }
 
 .section-buttons a {
@@ -148,18 +140,6 @@ header {
   border-radius: 0.99em;
   white-space: nowrap;
 
-  /* text-decoration: none;
-  font-size: 14pt;
-  color: #ffffff;
-  padding: 0.5em 1em;
-  transition: background-color 0.3s;
-  background-color: #174167;
-  text-decoration: none;
-  margin-right: 0.9em;
-  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
-  /* border-radius: 0.8em; Make the buttons more rounded */
-  /* white-space: nowrap; 
-  Prevent text from wrapping */
 }
 
 .section-buttons a:hover {
