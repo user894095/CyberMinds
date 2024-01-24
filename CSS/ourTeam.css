@@ -16,18 +16,13 @@
 
 body {
   background-color: black;
-}
-body {
-  overflow-x: hidden;
-}
-
-body {
   font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   color: #ffffff;
   text-align: center;
+  overflow-x: hidden;
 }
 
 header {
