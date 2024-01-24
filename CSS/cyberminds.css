@@ -106,10 +106,64 @@ header {
   transform: translateX(-50%);
 }
 
-.section-content {
-  text-align: center;
+.section-slogan {
+  display: inline-block;
+  font-size: 0.9em;
+  font-family: "True Sans" !important;
+  font-weight: 700 !important;
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-buttons {
+  display: inline-flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  flex-grow: 1;
+  top: 70%;
+
+  /* display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1; */
+}
+
+.section-buttons a {
+  text-decoration: none;
+  font-size: 17pt;
   color: #ffffff;
-  font-family: "Georgia", sans-serif;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  padding: 0.5em 1em;
+  border-radius: 0.99em;
+  white-space: nowrap;
+
+  /* text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  /* border-radius: 0.8em; Make the buttons more rounded */
+  /* white-space: nowrap; 
+  Prevent text from wrapping */
+}
+
+.section-buttons a:hover {
+  background-color: #286aa7;
 }
 
 footer {
