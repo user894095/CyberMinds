@@ -114,7 +114,7 @@ header {
   color: rgb(255, 255, 255);
   font-stretch: expanded;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -122,12 +122,13 @@ header {
 .section-buttons {
   display: inline-flex;
   position: absolute;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12em;
   align-items: center;
   padding: 0.5em;
   flex-grow: 1;
+  width: 100%;
   top: 70%;
-
 }
 
 .section-buttons a {
@@ -139,7 +140,6 @@ header {
   padding: 0.5em 1em;
   border-radius: 0.99em;
   white-space: nowrap;
-
 }
 
 .section-buttons a:hover {
