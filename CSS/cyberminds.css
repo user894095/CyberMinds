@@ -86,8 +86,8 @@ header {
 }
 
 .section video {
-  height: 36em; /* Reduce the height of the image */
-  width: 100%; /* Make the image responsive */
+  width: 100%;
+  height: calc(100vh - 3%);
   margin: 0.2em;
   padding: 0em;
   opacity: 25%;
