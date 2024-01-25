@@ -54,6 +54,35 @@ header {
   background-color: #286aa7;
 }
 
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 0%;
+  font-family: "True Sans" !important;
+  letter-spacing: 0.05em;
+  font-weight: 700 !important;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 3.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +103,9 @@ section {
 
 .course-number {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #185db7;
 }
 
 .course-card:hover {
