@@ -95,6 +95,7 @@ header {
 
 .section-wording {
   display: inline-block;
+  letter-spacing: 0.1em;
   font-size: 3.5em;
   font-family: "True Sans" !important;
   font-weight: 700 !important;

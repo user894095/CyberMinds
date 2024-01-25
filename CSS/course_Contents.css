@@ -1,10 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #000000;
 }
 
 header {
@@ -65,14 +61,19 @@ section {
 }
 
 .course-card {
-  width: 300px; /* Adjust the width as needed */
+  width: 300px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
   transition: transform 0.3s ease-in-out;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.course-number {
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .course-card:hover {
@@ -81,7 +82,7 @@ section {
 
 .course-image {
   width: 100%;
-  height: 150px; /* Adjust the height as needed */
+  height: 150px;
   object-fit: cover;
 }
 
@@ -90,28 +91,31 @@ section {
 }
 
 .course-title {
-  font-size: 1.2em; /* Adjust the font size as needed */
-  margin-bottom: 10px;
+  font-size: 1.4em;
+  margin-bottom: 1%;
+  text-align: center;
+  margin-top: 0.1%;
 }
 
 .course-description {
   color: #555;
+  text-align: center;
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 600px) {
   header {
     position: static;
   }
 }
-a {
+.course-card {
   text-decoration: none;
-  color: inherit; /* Inherit the color from the parent element */
+  color: inherit;
 }
-a:hover {
+.course-card:hover .course-title {
   text-decoration: underline;
-  color: inherit; /* Inherit the color from the parent element */
+  color: inherit;
 }
+
 play-button {
   width: 10%;
   object-fit: cover;
