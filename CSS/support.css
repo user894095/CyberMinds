@@ -102,6 +102,11 @@ header {
 
 
 .title-image{
-  width: 23em;
-
+  width: 100%;
+  height: calc(75vh);
+  margin: 0.2em;
+  padding: 0em;
+  opacity: 25%;
+  object-fit: cover;
+  display: inline-block;
 }
