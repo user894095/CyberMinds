@@ -78,14 +78,16 @@ header {
   padding: 0.5em;
   position: relative;
   display: flex;
+  width: 100%;
+  height: calc(75vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
 }
 
 .section video {
-  height: 36em; /* Reduce the height of the image */
-  width: 100%; /* Make the image responsive */
+  width: 100%;
+  height: calc(75vh);
   margin: 0.2em;
   padding: 0em;
   opacity: 25%;
@@ -95,21 +97,89 @@ header {
 
 .section-wording {
   display: inline-block;
-  font-size: 3.5em;
-  font-family: "True Sans" !important;
-  font-weight: 700 !important;
-  color: rgb(255, 255, 255);
   font-stretch: expanded;
   position: absolute;
+  transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-  transform: translateX(-50%);
+  font-family: "True Sans" !important;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 3.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
-.section-content {
-  text-align: center;
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
+.section-slogan {
+  display: inline-block;
+  font-stretch: expanded;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 35%;
+  left: 50%;
+  font-family: "True Sans" !important;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 0.9em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
+.section-buttons {
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  gap: 12em;
+  align-items: center;
+  padding: 0.5em;
+  flex-grow: 1;
+  width: 100%;
+  top: 70%;
+}
+
+.section-buttons a {
+  text-decoration: none;
+  font-size: 17pt;
   color: #ffffff;
-  font-family: "Georgia", sans-serif;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  padding: 0.5em 1em;
+  border-radius: 0.99em;
+  white-space: nowrap;
+}
+
+.section-buttons a:hover {
+  background-color: #286aa7;
 }
 
 footer {

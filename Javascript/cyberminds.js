@@ -1,6 +1,6 @@
 function scrollDown() {
   const documentHeight = document.documentElement.scrollHeight;
-  const scrollAmount = documentHeight * 0.1;
+  const scrollAmount = documentHeight * 0.15;
 
   document.documentElement.scrollTo({
     top: scrollAmount,
@@ -17,7 +17,7 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
 function changePageMoreInfo() {
   window.location.href = "./HTML/moreinfo.html";
