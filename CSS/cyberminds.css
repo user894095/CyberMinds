@@ -182,6 +182,30 @@ header {
   background-color: #286aa7;
 }
 
+.instruction-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.circle-box {
+  text-align: center;
+  flex-basis: 45%; /* Adjust the width of each box */
+}
+
+.circle {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 footer {
   background-color: #000000;
   color: #fff;
