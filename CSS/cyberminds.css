@@ -148,7 +148,7 @@ header {
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
-@keyframes fadeIn {
+@keyframes fadeInSlogan {
   to {
     color: rgb(255, 255, 255);
     background-size: 200% 100%; /* Adjust the size of the gradient */
@@ -180,6 +180,37 @@ header {
 
 .section-buttons a:hover {
   background-color: #286aa7;
+}
+
+.section2 {
+  margin-top: 6%;
+  padding-top: 15%;
+  background-color: #010811;
+}
+
+.section2-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "True Sans" !important;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  font-size: 3em;
+  padding: 3%;
+  margin-bottom: 0%;
+}
+
+.description {
+  font-family: "True Sans" !important;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  padding-bottom: 10%;
+  padding-top: 0;
 }
 
 .instruction-container {
