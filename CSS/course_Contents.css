@@ -130,8 +130,9 @@ section {
 }
 
 .course-description {
-  color: #555;
+  color: #5089fd;
   text-align: center;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 600px) {
