@@ -79,7 +79,7 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(100vh - 3%);
+  height: calc(80vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -87,7 +87,7 @@ header {
 
 .section video {
   width: 100%;
-  height: calc(100vh - 3%);
+  height: calc(80vh);
   margin: 0.2em;
   padding: 0em;
   opacity: 25%;
