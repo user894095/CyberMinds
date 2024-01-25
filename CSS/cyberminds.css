@@ -78,6 +78,8 @@ header {
   padding: 0.5em;
   position: relative;
   display: flex;
+  width: 100%;
+  height: calc(100vh - 3%);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
