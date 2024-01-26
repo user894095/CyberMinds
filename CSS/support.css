@@ -110,3 +110,7 @@ header {
   object-fit: cover;
   display: inline-block;
 }
+
+.text{
+  transform: translateY(150%)
+}
