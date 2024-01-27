@@ -226,7 +226,7 @@ header {
 }
 
 .circle {
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -234,15 +234,21 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(213, 211, 211);
 }
 
 footer {
-  background-color: #000000;
+  background-color: #0a0a0a;
   color: #fff;
   text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
 }
