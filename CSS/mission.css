@@ -1,110 +1,125 @@
 /* this page links to index */
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.Parent-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: auto;
+  background-color: #1a2738;
+}
+
+body {
+  font-family: "Georgia", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.4em 0.8em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  margin-right: 0.9em;
+  border-radius: 0.8em;
+  white-space: nowrap;
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+.page-title {
+  font-family: "True Sans" !important;
+  letter-spacing: 0.05em;
+  font-weight: 700 !important;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 3.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
   }
-  
-  .Parent-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: auto;
-    background-color: #1a2738;
-  }
-  
-  body {
-    font-family: "Georgia", sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  header {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header-content img {
-    max-height: 3em;
-    margin-right: 3em;
-  }
-  
-  .header-buttons {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000000;
-    padding: 0.5em 6em;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .header-buttons a {
-    text-decoration: none;
-    font-size: 14pt;
-    color: #ffffff;
-    padding: 0.4em 0.8em;
-    transition: background-color 0.3s;
-    background-color: #174167;
-    margin-right: 0.9em;
-    border-radius: 0.8em;
-    white-space: nowrap;
-  }
-  
-  .header-buttons a:hover {
-    background-color: #286aa7;
-  }
-  
-  .page-title {
-    font-family: "True Sans", sans-serif;
-    letter-spacing: 0.05em;
-    font-weight: 700;
-    color: #fff;
-    font-size: 3.5em;
-    margin-bottom: 1em;
-  }
-  
-  main {
-    flex-grow: 1;
-    padding: 2em;
-  }
-  
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .mission-statement, .values {
-    text-align: left;
-    margin-top: 1em;
-  }
-  
-  .values ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background-color: #0a0a0a;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    font-size: 0.9em;
-  }
-  
-  .page-footer {
-    background-color: #0a0a0a;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    font-size: 0.9em;
-  }
-  
+}
+
+main {
+  flex-grow: 1;
+  padding: 2em;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-statement,
+.values {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
