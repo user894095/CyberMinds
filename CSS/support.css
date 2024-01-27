@@ -114,3 +114,7 @@ header {
 .text{
   transform: translateY(140%)
 }
+
+.questions{
+  transform: translateY(120%);
+}
