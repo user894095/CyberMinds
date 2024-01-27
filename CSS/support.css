@@ -100,8 +100,7 @@ header {
   }
 }
 
-
-.title-image{
+.title-image {
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
@@ -111,10 +110,26 @@ header {
   display: inline-block;
 }
 
-.text{
-  transform: translateY(140%)
+.text {
+  transform: translateY(140%);
 }
 
-.questions{
+.questions {
   transform: translateY(120%);
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
 }
