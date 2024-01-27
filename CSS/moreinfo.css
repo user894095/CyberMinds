@@ -5,8 +5,9 @@ body {
 
 .Parent-container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  height: 200em;
+  min-height: 100vh;
   width: auto;
   background-color: #1a2738;
 }
@@ -68,6 +69,10 @@ header {
 
 .header-buttons a:hover {
   background-color: #286aa7;
+}
+
+main {
+  padding-bottom: 3.5rem;
 }
 
 .page-title {
@@ -134,14 +139,9 @@ footer {
   background-color: #0a0a0a;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
   font-size: 0.9em;
-}
-
-.page-footer {
-  background-color: #0a0a0a;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 0.9em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem; 
 }
