@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="./CSS/cyberminds.css" />
+    <title>CyberMinds</title>
+    <link rel="icon" type="jpg" href="./Images/circle.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/511e914ee1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <link rel="stylesheet" href="./CSS/cyberminds.css" />
-  <title>CyberMinds</title>
-  <link rel="icon" type="jpg" href="./Images/circle.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/511e914ee1.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div class="Parent-container">
+      <header>
+        <div class="header-content">
+          <img src="./Images/circle.jpg" alt="CyberMinds Logo" />
+          <nav class="header-buttons">
+            <a href="./HTML/moreinfo.html">More Info</a>
+            <a href="./HTML/mission.html">Mission</a>
+            <a href="./HTML/LiveHelp.html">Live Help</a>
+            <a href="./HTML/ourTeam.html">Our Team</a>
+            <a href="./HTML/support.html">Support</a>
+          </nav>
+        </div>
+      </header>
 
-<body>
-  <div class="Parent-container">
-    <header>
-      <div class="header-content">
-        <img src="./Images/circle.jpg" alt="CyberMinds Logo" />
-        <nav class="header-buttons">
-          <a href="./HTML/moreinfo.html">More Info</a>
-          <a href="./HTML/mission.html">Mission</a>
-          <a href="./HTML/LiveHelp.html">Live Help</a>
-          <a href="./HTML/ourTeam.html">Our Team</a>
-          <a href="./HTML/support.html">Support</a>
+      <div class="section">
+        <video
+          autoplay=""
+          loop=""
+          muted=""
+          playsinline=""
+          class=""
+          poster="./Images/cybersecurity-predictions.jpg"
+          src="./Images/Cybermindsloop.mp4"
+        ></video>
+        <div class="section-wording">
+          <h2>CyberMinds.</h2>
+        </div>
+        <div class="section-slogan">
+          <h2>Protecting the digital future.</h2>
+        </div>
+        <nav class="section-buttons">
+          <a href="#" onclick="scrollDown()">How it Works</a>
+          <a href="./HTML/course_Contents.html">Get Started</a>
         </nav>
       </div>
-    </header>
-
-    <div class="section">
-      <video autoplay="" loop="" muted="" playsinline="" class="" poster="./Images/cybersecurity-predictions.jpg"
-        src="./Images/Cybermindsloop.mp4"></video>
-      <div class="section-wording">
-        <h2>CyberMinds.</h2>
+      <div>
+        <p class="section2-title">How It Works...</p>
       </div>
-      <div class="section-slogan">
-        <h2>Protecting the digital future.</h2>
-      </div>
-      <nav class="section-buttons">
-        <a href="#" onclick="scrollDown()">How it Works</a>
-        <a href="./HTML/course_Contents.html">Get Started</a>
-      </nav>
-    </div>
-    <div>
-      <p class="section2-title">How It Works...</p>
-    </div>
-    <div class="section2">
-      <div class="instruction-container">
-        <div class="circle-box">
-          <div class="circle">
-            <i class="fa-solid fa-signal fa-2xl" style="color: #fb582a"></i>
+      <div class="section2">
+        <div class="instruction-container">
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-signal fa-2xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">Accelerate through the <b>courses</b>.</p>
           </div>
-          <p class="description">Accelerate through the <b>courses</b>.</p>
-        </div>
 
-        <div class="circle-box">
-          <div class="circle">
-            <i class="fa-solid fa-book-open-reader fa-2xl" style="color: #fb582a"></i>
+          <div class="circle-box">
+            <div class="circle">
+              <i
+                class="fa-solid fa-book-open-reader fa-2xl"
+                style="color: #fb582a"
+              ></i>
+            </div>
+            <p class="description">
+              Learn About the <b>content</b> through the short <b>reading</b>.
+            </p>
           </div>
-          <p class="description">
-            Learn About the <b>content</b> through the short <b>reading</b>.
-          </p>
-        </div>
 
-        <div class="circle-box">
-          <div class="circle">
-            <i class="fa-solid fa-gamepad fa-2xl" style="color: #fb582a"></i>
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-gamepad fa-2xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">
+              Engage in an interactive <b>game</b> and <b>quiz</b> to enhance
+              your skills as part of the activity.
+            </p>
           </div>
-          <p class="description">
-            Engage in an interactive <b>game</b> and <b>quiz</b> to enhance
-            your skills as part of the activity.
-          </p>
-        </div>
 
-        <div class="circle-box">
-          <div class="circle">
-            <i class="fa-solid fa-code fa-2xl" style="color: #fb582a"></i>
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-code fa-2xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">
+              Compose <b>cybersecurity code</b> and have it verified using our
+              AI.
+            </p>
           </div>
-          <p class="description">
-            Compose <b>cybersecurity code</b> and have it verified using our
-            AI.
-          </p>
         </div>
       </div>
+      <footer class="page-footer">
+        <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
+      </footer>
     </div>
-  </div>
-  <script src="./Javascript/cyberminds.js"></script>
-</body>
-
+    <script src="./Javascript/cyberminds.js"></script>
+  </body>
 </html>
