@@ -5,8 +5,9 @@ body {
 
 .Parent-container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  height: 200em;
+  min-height: 100vh;
   width: auto;
   background-color: #1a2738;
 }
@@ -70,6 +71,10 @@ header {
   background-color: #286aa7;
 }
 
+main {
+  padding-bottom: 3.5rem;
+}
+
 .page-title {
   font-family: "True Sans" !important;
   letter-spacing: 0.05em;
@@ -128,4 +133,15 @@ h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 5px;
   text-align: center;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem; 
 }
