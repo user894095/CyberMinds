@@ -110,3 +110,11 @@ header {
   object-fit: cover;
   display: inline-block;
 }
+
+.text{
+  transform: translateY(140%)
+}
+
+.questions{
+  transform: translateY(120%);
+}
