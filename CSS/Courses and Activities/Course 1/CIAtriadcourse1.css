@@ -112,7 +112,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
- 
 }
 
 .leftRectangle-section1 {
@@ -264,7 +263,7 @@ section {
   background-color: #111927;
   justify-content: space-between; /* Distribute the buttons with space between them */
   align-items: center;
-  height: 3em;
+  height: 3.2em;
 }
 
 .right-side_rectangle-buttons a {
@@ -281,4 +280,11 @@ section {
 
 .right-side_rectangle-buttons .next_course {
   margin-left: auto; /
+}
+
+.right-side_rectangle-buttons a:hover ,
+.leftRectangle-section1 a:hover,
+.leftRectangle-section2 a:hover,
+.leftRectangle-section3 a:hover {
+  background-color: #1e6bb2;
 }
