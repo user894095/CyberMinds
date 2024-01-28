@@ -117,13 +117,8 @@ header {
 
 }
 
-.questions {
-
-
-}
-
 .question{
-  background-color:rgb(95, 106, 160);
+  background-color:#174167;
   margin-right: 30%;
   margin-left: 30%;
   border-radius: 1em;
@@ -176,4 +171,10 @@ footer {
 
 .show-text .plus-icon{
   display: none;
+}
+
+.question-btn{
+  margin-left: 90%;
+  transform: translateY(-70%)
+  
 }
