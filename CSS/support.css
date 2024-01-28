@@ -123,9 +123,11 @@ header {
 }
 
 .question{
-  background-color:cadetblue;
+  background-color:rgb(95, 106, 160);
   margin-right: 30%;
   margin-left: 30%;
+  border-radius: 1em;
+
 
 }
 footer {
@@ -145,12 +147,16 @@ footer {
 }
 
 .question-title{
+  border-bottom: 2px solid #f9f9f970;
+  border-width: 0.009em;
+  border-radius: 1em;
 
 
 }
 
 .question-text{
   display: none;
+
 
 
 }
