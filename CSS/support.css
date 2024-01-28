@@ -175,6 +175,7 @@ footer {
 
 .question-btn{
   margin-left: 90%;
-  transform: translateY(-70%)
-  
+  transform: translateY(-70%);
+  background-color:white;
+  border-radius: 0.2em;
 }
