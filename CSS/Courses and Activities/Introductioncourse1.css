@@ -122,17 +122,22 @@ section {
   justify-content: center;
 }
 
-.leftRectangle-section1 button {
-  width: 90%;
-  height: 2.5em;
-  border-radius: 0.5em; /* Adjust the border-radius as needed */
-  background-color: #182a47; /* Adjust the color as needed */
-  border: none; /* Remove border */
-  color: #ffffff; /* Text color */
-  cursor: pointer; /* Add a pointer cursor */
-  margin: 3%;
+.leftRectangle-section1 a {
   margin-bottom: 6%;
   margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .Empty-section {
@@ -161,17 +166,22 @@ section {
   color: white;
 }
 
-.leftRectangle-section2 button {
+.leftRectangle-section2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: 2.5em;
-  border-radius: 0.5em; /* Adjust the border-radius as needed */
-  background-color: #182a47; /* Adjust the color as needed */
-  border: none; /* Remove border */
-  color: #ffffff; /* Text color */
-  cursor: pointer; /* Add a pointer cursor */
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
   margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
 }
-.leftRectangle-section2 button:last-child {
+.leftRectangle-section2 a:last-child {
   margin-bottom: 9%;
 }
 
@@ -202,7 +212,7 @@ section {
   height: 3em;
 }
 
-.right-side_rectangle-buttons button {
+.right-side_rectangle-buttons a {
   border-radius: 0.5em;
   background-color: #182a47;
   border: none;
@@ -212,6 +222,6 @@ section {
   margin: 0 2%; /* Adjust the margin between "Previous" and "Next" buttons */
 }
 
-.right-side_rectangle-buttons .mark-completed {
-  margin-left: auto; /* This will push the "Mark as Completed" button to the right */
+.right-side_rectangle-buttons .next_course {
+  margin-left: auto; /
 }
