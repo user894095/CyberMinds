@@ -281,3 +281,23 @@ section {
 .right-side_rectangle-buttons .next_course {
   margin-left: auto; /
 }
+
+.right-side_rectangle-buttons a:hover ,
+.leftRectangle-section1 a:hover,
+.leftRectangle-section2 a:hover,
+.leftRectangle-section3 a:hover {
+  background-color: #1e6bb2;
+}
+
+
+
+.right-side_rectangle h2,
+.right-side_rectangle p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:2.3em;
+}
+
+.right-side_rectangle p {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

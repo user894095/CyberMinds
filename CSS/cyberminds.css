@@ -222,6 +222,7 @@ header {
 
 .circle-box {
   text-align: center;
+
   flex-basis: 45%; /* Adjust the width of each box */
 }
 

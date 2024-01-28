@@ -281,3 +281,11 @@ section {
 .right-side_rectangle-buttons .next_course {
   margin-left: auto; /
 }
+
+
+.right-side_rectangle-buttons a:hover ,
+.leftRectangle-section1 a:hover,
+.leftRectangle-section2 a:hover,
+.leftRectangle-section3 a:hover {
+  background-color: #1e6bb2;
+}
