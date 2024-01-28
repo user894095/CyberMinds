@@ -111,13 +111,23 @@ header {
 }
 
 .text {
-  transform: translateY(140%);
+
+  margin-top: 10%;
+
+
 }
 
 .questions {
-  transform: translateY(120%);
+
+
 }
 
+.question{
+  background-color:cadetblue;
+  margin-right: 30%;
+  margin-left: 30%;
+
+}
 footer {
   background-color: #0a0a0a;
   color: #fff;
@@ -135,20 +145,14 @@ footer {
 }
 
 .question-title{
-  background-color:#286aa7;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 0em;
-  margin-bottom: 0em;
+
+
 }
 
 .question-text{
   display: none;
-  background-color:#174167;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 0em;
-  margin-bottom: 0em;
+
+
 }
 
 .show-text .question-text{
