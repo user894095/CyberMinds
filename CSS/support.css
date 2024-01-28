@@ -111,13 +111,23 @@ header {
 }
 
 .text {
-  transform: translateY(140%);
+
+  margin-top: 10%;
+
+
 }
 
 .questions {
-  transform: translateY(120%);
+
+
 }
 
+.question{
+  background-color:cadetblue;
+  margin-right: 30%;
+  margin-left: 30%;
+
+}
 footer {
   background-color: #0a0a0a;
   color: #fff;
@@ -132,4 +142,32 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+.question-title{
+
+
+}
+
+.question-text{
+  display: none;
+
+
+}
+
+.show-text .question-text{
+  display: block;
+
+}
+
+.minus-icon{
+  display: none;
+}
+
+.show-text .minus-icon{
+  display:inline;
+}
+
+.show-text .plus-icon{
+  display: none;
 }
