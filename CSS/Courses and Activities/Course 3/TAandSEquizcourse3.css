@@ -57,7 +57,7 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 20%;
+  margin-left: 5%;
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
@@ -107,6 +107,13 @@ section {
   background-color: #1a2738;
 }
 
+.leftRectangle-section1-button-title {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: 700px;
+  color: white;
+}
+
 .leftRectangle-section1 {
   flex: 0.2;
   background-color: #111927;
@@ -140,7 +147,7 @@ section {
   white-space: nowrap;
 }
 
-.Empty-section {
+.Empty-section1 {
   flex: 1;
 }
 
@@ -181,12 +188,59 @@ section {
   text-decoration: none;
   white-space: nowrap;
 }
+
+
 .leftRectangle-section2 a:last-child {
   margin-bottom: 9%;
 }
 
 .Empty-section2 {
-  flex: 4;
+  flex: 1;
+}
+
+
+.leftRectangle-section3 {
+  flex: 0.2;
+  background-color: #111927;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRectangle-section3 a {
+  margin-bottom: 6%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.leftRectangle-section3-button-title {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: 700px;
+  color: white;
+}
+
+.Empty-section3 {
+  flex: 2;
 }
 
 .right-side_rectangle {
@@ -220,6 +274,8 @@ section {
   cursor: pointer;
   padding: 1%;
   margin: 0 2%; /* Adjust the margin between "Previous" and "Next" buttons */
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .right-side_rectangle-buttons .next_course {
