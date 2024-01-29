@@ -117,15 +117,12 @@ header {
 
 }
 
-.questions {
-
-
-}
-
 .question{
-  background-color:cadetblue;
+  background-color:#174167;
   margin-right: 30%;
   margin-left: 30%;
+  border-radius: 1em;
+
 
 }
 footer {
@@ -145,12 +142,16 @@ footer {
 }
 
 .question-title{
+  border-bottom: 2px solid #f9f9f970;
+  border-width: 0.009em;
+  border-radius: 1em;
 
 
 }
 
 .question-text{
   display: none;
+
 
 
 }
@@ -170,4 +171,11 @@ footer {
 
 .show-text .plus-icon{
   display: none;
+}
+
+.question-btn{
+  margin-left: 90%;
+  transform: translateY(-70%);
+  background-color:white;
+  border-radius: 0.2em;
 }
