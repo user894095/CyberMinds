@@ -163,6 +163,7 @@ footer {
 
 .minus-icon{
   display: none;
+
 }
 
 .show-text .minus-icon{
@@ -176,6 +177,17 @@ footer {
 .question-btn{
   margin-left: 90%;
   transform: translateY(-70%);
-  background-color:white;
+  background-color:transparent;
+  border-color: transparent;
   border-radius: 0.2em;
+
+  
+}
+
+.far.fa-plus-square{
+  font-size: 1.5em;
+}
+
+.far.fa-minus-square{
+  font-size: 1.5em;
 }

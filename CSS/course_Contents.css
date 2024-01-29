@@ -13,13 +13,27 @@ header {
   padding-right: 1em;
   padding-top: 1em;
 }
-
+.rect {
+background-color: #846cef;
+height: 6.9rem;
+width: 100%;
+}
 .header-content {
   display: flex;
   align-items: center; /* Center the items vertically */
   justify-content: space-between; /* Space between the logo and nav */
 }
-
+.rectangle-1-Cs5 {
+background-color
+: 
+#846cef;
+height
+: 
+6.9rem;
+width
+: 
+100%;
+}
 .header-content img {
   max-height: 3em;
   margin-right: 3em;
