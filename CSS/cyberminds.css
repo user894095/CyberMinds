@@ -123,12 +123,12 @@ header {
   float: left;
   -webkit-text-fill-color: #ffffff;
 }
-.section-right{
+.section-right {
   float: right;
-  -webkit-text-fill-color: #afc9e0;
+  -webkit-text-fill-color: #ffffff;
 }
 .section-left:hover {
-  -webkit-text-fill-color: #afc9e0;
+  -webkit-text-fill-color: #ffffff;
   transition: -webkit-text-fill-color 0.3s;
 }
 .section-left:hover ~ .section-right {
