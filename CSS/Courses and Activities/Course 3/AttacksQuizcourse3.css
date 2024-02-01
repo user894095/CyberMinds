@@ -1,3 +1,4 @@
+/* changes */
 body {
   margin: 0;
   padding: 0;
@@ -288,4 +289,28 @@ section {
 .leftRectangle-section2 a:hover,
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
+}
+
+.smaller {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.larger {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.3em;
+}
+
+.special {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(110,217,29);
+}
+
+.list {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(112,124,240);
 }

@@ -1,7 +1,7 @@
 .column {
   float: left;
   width: 18%;
-  padding: 15px;
+  padding: 1em;
   font-family: "True Sans" !important;
   color: white;
   text-align: center;
@@ -54,8 +54,8 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center; /* Center the items vertically */
-  justify-content: space-between; /* Space between the logo and nav */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-content img {
@@ -90,4 +90,8 @@ header {
 
 .header-buttons a:hover {
   background-color: #286aa7;
+}
+
+.h2 {
+  white-space: nowrap;
 }
