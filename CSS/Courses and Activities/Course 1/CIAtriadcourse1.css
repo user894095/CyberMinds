@@ -319,3 +319,20 @@ li{
   font-size: medium;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.yellow-word{
+  color: rgb(204, 255, 153);
+}
+
+.green-word{
+  color: rgb(110, 217, 29);
+}
+
+.purple-word{
+  color: rgb(112, 124, 240);
+
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
+}
