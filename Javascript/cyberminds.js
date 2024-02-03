@@ -61,35 +61,3 @@ buttonsInWholething.forEach((button) => {
     }
   });
 });
-
-buttonsInWholething.forEach((button) => {
-  button.addEventListener("mouseenter", () => {
-    console.log(button.class);
-    button.style.opacity = "0.8";
-    isHover = true;
-
-    button.addEventListener("mouseleave", () => {
-      button.style.opacity = "1";
-      isHover = false;
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dotsContainer = document.getElementById("dotsContainer");
-
-  // Number of dots
-  const numDots = 100;
-
-  for (let i = 0; i < numDots; i++) {
-    const dot = document.createElement("div");
-    dot.classList.add("dot");
-    dotsContainer.appendChild(dot);
-
-    // Set random position for each dot
-    const posX = Math.random() * 100;
-    const posY = Math.random() * 100;
-    dot.style.left = `${posX}%`;
-    dot.style.top = `${posY}%`;
-  }
-});
