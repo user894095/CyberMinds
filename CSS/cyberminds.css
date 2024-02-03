@@ -84,7 +84,7 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(75vh);
+  height: calc(80vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -114,10 +114,12 @@ header {
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 3.5em;
-  background: linear-gradient(to left,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255)
+  );
   /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
@@ -140,7 +142,7 @@ header {
   transition: -webkit-text-fill-color 0.3s;
 }
 
-.section-left:hover~.section-right {
+.section-left:hover ~ .section-right {
   -webkit-text-fill-color: #ffffff;
   transition: -webkit-text-fill-color 0.3s;
 }
@@ -166,10 +168,12 @@ header {
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 0.9em;
-  background: linear-gradient(to left,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  );
   /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
@@ -213,7 +217,7 @@ header {
 }
 
 .section2 {
-  margin-top: 6%;
+  margin-top: 3%;
   padding-top: 8%;
   background-color: #010811;
 }
