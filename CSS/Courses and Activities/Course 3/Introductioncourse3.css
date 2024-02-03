@@ -290,3 +290,20 @@ section {
   background-color: #1e6bb2;
 }
 
+.blue-word {
+  color: rgb(63, 225, 217);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: neue-haas-unica, sans-serif;
+  font-style: normal;
+}
+
+h2{
+  font-family: 'neue-haas-unica' ,sans-serif;
+  font-size:1.8em; 
+}
+
