@@ -216,22 +216,57 @@ header {
   background-color: #286aa7;
 }
 
+/* Your existing styles here */
 .section2 {
   margin-top: 3%;
   padding-top: 8%;
-  background-color: #010811;
+  background-color: #141e2b;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(75vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
 }
+
+/* .dots-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(90deg, #00bfff, #000080);
+  border-radius: 50%;
+  animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+} */
 
 .fa-3xl {
   font-size: 3.5em;
-  line-height: 4 em;
+  line-height: 4em;
 }
 
 .section2-title {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: -12%;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
@@ -241,7 +276,7 @@ header {
   font-weight: 700 !important;
   font-size: 4em;
   padding: 1%;
-  margin-bottom: 0;
+  margin-bottom: 1em; /* Adjusted margin-bottom */
   -webkit-text-fill-color: #ffffff;
 }
 
@@ -253,6 +288,8 @@ header {
   padding-top: 0;
   margin-left: 5em;
   margin-right: 5em;
+  margin-top: 5em;
+  margin: 0.3em;
 }
 
 .instruction-container {
@@ -260,13 +297,15 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  /* Allow wrapping on smaller screens */
+  align-self: flex-end;
+  margin-top: 20%;
 }
 
 .circle-box {
   text-align: center;
 
   flex-basis: 30%;
+
   /* Adjust the width of each box */
 }
 
@@ -281,7 +320,7 @@ header {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 10px rgb(213, 211, 211);
+  box-shadow: 0 0 1em rgb(141, 158, 247);
 }
 
 footer {
