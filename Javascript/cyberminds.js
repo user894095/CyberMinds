@@ -74,3 +74,22 @@ buttonsInWholething.forEach((button) => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dotsContainer = document.getElementById("dotsContainer");
+
+  // Number of dots
+  const numDots = 100;
+
+  for (let i = 0; i < numDots; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    dotsContainer.appendChild(dot);
+
+    // Set random position for each dot
+    const posX = Math.random() * 100;
+    const posY = Math.random() * 100;
+    dot.style.left = `${posX}%`;
+    dot.style.top = `${posY}%`;
+  }
+});
