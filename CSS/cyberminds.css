@@ -1,4 +1,4 @@
-/* this page links to index page Priyanshi */
+/* this page links to index page */
 body {
   overflow-x: hidden;
 }
@@ -31,8 +31,10 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center; /* Center the items vertically */
-  justify-content: space-between; /* Space between the logo and nav */
+  align-items: center;
+  /* Center the items vertically */
+  justify-content: space-between;
+  /* Space between the logo and nav */
 }
 
 .header-content video {
@@ -65,9 +67,12 @@ header {
   background-color: #174167;
   text-decoration: none;
   margin-right: 0.9em;
-  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
-  border-radius: 0.8em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 0.4em 0.8em;
+  /* Smaller padding for a more compact button */
+  border-radius: 0.8em;
+  /* Make the buttons more rounded */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
 }
 
 .header-buttons a:hover {
@@ -106,32 +111,36 @@ header {
   font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
+  color: transparent;
+  /* Set initial text color to transparent */
   font-size: 3.5em;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgb(255, 255, 255)
-  ); /* Adjust the colors and stops as needed */
+  background: linear-gradient(to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.8));
+  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+  animation: fadeIn 3s forwards;
+  /* Set the duration of the animation */
 }
 
 .section-left {
   float: left;
   -webkit-text-fill-color: #ffffff;
 }
+
 .section-right {
   float: right;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #afc9e0;
 }
+
 .section-left:hover {
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #afc9e0;
   transition: -webkit-text-fill-color 0.3s;
 }
-.section-left:hover ~ .section-right {
+
+.section-left:hover~.section-right {
   -webkit-text-fill-color: #ffffff;
   transition: -webkit-text-fill-color 0.3s;
 }
@@ -139,7 +148,8 @@ header {
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%; /* Adjust the size of the gradient */
+    background-size: 200% 100%;
+    /* Adjust the size of the gradient */
   }
 }
 
@@ -153,23 +163,25 @@ header {
   font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
+  color: transparent;
+  /* Set initial text color to transparent */
   font-size: 0.9em;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  ); /* Adjust the colors and stops as needed */
+  background: linear-gradient(to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.8));
+  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+  animation: fadeIn 3s forwards;
+  /* Set the duration of the animation */
 }
 
 @keyframes fadeInSlogan {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%; /* Adjust the size of the gradient */
+    background-size: 200% 100%;
+    /* Adjust the size of the gradient */
   }
 }
 
@@ -202,7 +214,7 @@ header {
 
 .section2 {
   margin-top: 6%;
-  padding-top: 1%;
+  padding-top: 8%;
   background-color: #010811;
 }
 
@@ -215,7 +227,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
+  margin-top: -12%;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
@@ -223,13 +235,10 @@ header {
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  font-size: 3em;
+  font-size: 4em;
   padding: 1%;
-  margin-bottom: 0%;
-  background-color: #010811;
+  margin-bottom: 0;
   -webkit-text-fill-color: #ffffff;
-  border-radius: 10%;
-  box-shadow: 0 0 10px rgb(213, 211, 211);
 }
 
 .description {
@@ -246,13 +255,15 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: nowrap;
+  /* Allow wrapping on smaller screens */
 }
 
 .circle-box {
   text-align: center;
 
-  flex-basis: 45%; /* Adjust the width of each box */
+  flex-basis: 30%;
+  /* Adjust the width of each box */
 }
 
 .circle {
