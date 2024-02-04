@@ -1,10 +1,17 @@
 .column {
   float: left;
   width: 18%;
-  padding: 1em;
+  padding: 15px;
   font-family: "True Sans" !important;
   color: white;
   text-align: center;
+  font-size: 0.9em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .pagetitle {

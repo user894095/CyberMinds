@@ -298,40 +298,35 @@ section {
 }
 
 h2{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:2.3em;
+  font-family: 'neue-haas-unica' ,sans-serif;
+  font-size:1.8em; 
 }
 
 p{
-  font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: neue-haas-unica,sans-serif;
+  font-style: normal;
 }
 
 li{
-  font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 32px;
+  font-family: neue-haas-unica,sans-serif;
+  font-style: normal;
 }
 
-.yellow-word{
-  color: rgb(204, 255, 153);
-}
 
-.green-word{
-  color: rgb(110, 217, 29);
-}
-
-.purple-word{
-  color: rgb(112, 124, 240);
-
-}
 
 .blue-word{
-  color: rgb(63, 225, 217);
+  color: rgb(99, 255, 247);
 }
 
 h3{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.9375em;
+  font-size: 1em;
 }
 
 .graph2{
@@ -340,4 +335,11 @@ h3{
   display: block;
   width: 60%;
 
+}
+
+.course2{
+  font-size: medium;
+  background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

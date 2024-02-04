@@ -61,16 +61,3 @@ buttonsInWholething.forEach((button) => {
     }
   });
 });
-
-buttonsInWholething.forEach((button) => {
-  button.addEventListener("mouseenter", () => {
-    console.log(button.class);
-    button.style.opacity = "0.8";
-    isHover = true;
-
-    button.addEventListener("mouseleave", () => {
-      button.style.opacity = "1";
-      isHover = false;
-    });
-  });
-});

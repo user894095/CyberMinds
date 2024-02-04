@@ -291,7 +291,7 @@ section {
 
 .congratulations{
   font-size: medium;
-  background: -webkit-linear-gradient(right, rgb(204, 255, 153), rgb(110, 217, 29), rgb(63, 225, 217), rgb(112, 124, 240));
+  background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -301,18 +301,24 @@ section {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 60%;
+  width: 70%;
+  margin: 3em;
+  align-self: center;
   
 }
 
+
 h2{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:2.3em;
+  font-family: 'neue-haas-unica' ,sans-serif;
+  font-size:1.8em; 
 }
 
 p{
-  font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: neue-haas-unica,sans-serif;
+  font-style: normal;
 }
 
 li{
@@ -320,17 +326,9 @@ li{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.yellow-word{
-  color: rgb(204, 255, 153);
-}
-
-.green-word{
-  color: rgb(110, 217, 29);
-}
-
-.purple-word{
-  color: rgb(112, 124, 240);
-
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
 }
 
 .blue-word{
