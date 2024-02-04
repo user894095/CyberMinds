@@ -320,3 +320,10 @@ h3{
 .blue-word{
   color: rgb(63, 225, 217);
 }
+
+
+.locksecurity{
+  width: 15em;
+  height: auto;
+  align-self: center;
+}
