@@ -87,30 +87,32 @@ header {
   white-space: nowrap;
 }
 
-
-.flex-container{
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
 }
 
-.flex-item{
+.flex-item {
   flex: 20%;
   font-family: "True Sans" !important;
   color: white;
   text-align: center;
   font-size: 0.9em;
-  padding-bottom: 70px;
+  margin-bottom: 2.5em;
+}
+
+.img {
+  box-shadow: 0 0 0.4em rgb(0, 251, 255);
 }
 
 @media (max-width: 1000px) {
-  .flex-item{
-    flex: 33%
+  .flex-item {
+    flex: 33%;
   }
 }
 
 @media (max-width: 600px) {
-  .flex-item{
-    flex: 100%
+  .flex-item {
+    flex: 100%;
   }
 }
