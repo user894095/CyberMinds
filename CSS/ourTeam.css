@@ -5,6 +5,9 @@
   font-family: "True Sans" !important;
   color: white;
   text-align: center;
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .pagetitle {
