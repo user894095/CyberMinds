@@ -32,124 +32,190 @@
 
     <section>
       <div class="right-side_rectangle">
-        <h2 class="question">1. You receive a phone call. The caller addresses you by name and tells you that a suspicious amount of money was spent on your credit card and that you must provide your personal information to fix this. You believe this is phishing, what type of phishing is this?</h2>
-  <ul class="options">
-    <li class="option">
-      <input type="radio" name="q1" value="SW" id="q1-SW">
-      <label for="q1-SW">
-        SMishing and Whaling
-        <div id="q1-SW-detail" class="answer-detail">This is not SMishing it is not over text, and unless you are a high profile individual, this is not whaling.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q1" value="ES" id="q1-ES">
-      <label for="q1-ES">
-        Email Phishing and Spear Phishing
-        <div id="q1-ES-detail" class="answer-detail">This was not over email.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q1" value="VW" id="q1-VW">
-      <label for="q1-VW">
-        Vishing and Whaling
-        <div id="q1-VW-detail" class="answer-detail">Unless you are a high profile individual, this is not whaling.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q1" value="VS" id="q1-VS">
-      <label for="q1-VS">
-        Vishing and Spear Phishing
-        <div id="q1-VS-detail" class="answer-detail">Correct! This is over the phone so it is vishing. Since you are also be addressed by name, the attacker specifically knows who you are and is targeting a specific individual, so this is spear phishing. </div>
-      </label>
-    </li>
-  </ul>
+        <h2 class="question">
+          1. You receive a phone call. The caller addresses you by name and
+          tells you that a suspicious amount of money was spent on your credit
+          card and that you must provide your personal information to fix this.
+          You believe this is phishing, what type of phishing is this?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q1" value="SW" id="q1-SW" />
+            <label for="q1-SW">
+              SMishing and Whaling
+              <div id="q1-SW-detail" class="answer-detail">
+                This is not SMishing it is not over text, and unless you are a
+                high profile individual, this is not whaling.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="ES" id="q1-ES" />
+            <label for="q1-ES">
+              Email Phishing and Spear Phishing
+              <div id="q1-ES-detail" class="answer-detail">
+                This was not over email.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VW" id="q1-VW" />
+            <label for="q1-VW">
+              Vishing and Whaling
+              <div id="q1-VW-detail" class="answer-detail">
+                Unless you are a high profile individual, this is not whaling.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VS" id="q1-VS" />
+            <label for="q1-VS">
+              Vishing and Spear Phishing
+              <div id="q1-VS-detail" class="answer-detail">
+                Correct! This is over the phone so it is vishing. Since you are
+                also be addressed by name, the attacker specifically knows who
+                you are and is targeting a specific individual, so this is spear
+                phishing.
+              </div>
+            </label>
+          </li>
+        </ul>
 
-  <h2 class="question">2. You receive a work email from someone claiming that they are from a company overseas working with your company, they attach a file pertaining to work. Their grammar has many flaws in it. You are not sure if this is phishing, what should you do to verify this?</h2>
-  <ul class="options">
-    <li class="option">
-      <input type="radio" name="q2" value="open" id="q2-open">
-      <label for="q2-open" name = "q2">
-        Open the file to make sure it is legit
-        <div id="q2-open-detail" class="answer-detail">You are not yet sure if this email is an attack, so do not open the file! It may download malware.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q2" value="grammar" id="q2-grammar">
-      <label for="q2-grammar" name = "q2">
-        Because of the many grammar mistakes, it is most definitely phishing
-        <div id="q2-grammar-detail" class="answer-detail">The sender may not speak the same language that you speak so you cannot conclude that this is phishing just from that.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q2" value="verify" id="q2-verify">
-      <label for="q2-verify" name = "q2">
-        Verify the company and the matters they brought up to you are legit
-        <div id="q2-verify-detail" class="answer-detail">Correct! If you can verify this was a supervisor or other source of information, you can be sure that this email is legit and safe.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q2" value="ignore" id="q2-ignore">
-      <label for="q2-ignore" name = "q2">
-        Ignore the email
-        <div id="q2-ignore-detail" class="answer-detail">If the email does not turn out to be an attack, you could have potentially wasted yours and your company's time by not following up on work.</div>
-      </label>
-    </li>
-  </ul>
+        <h2 class="question">
+          2. You receive a work email from someone claiming that they are from a
+          company overseas working with your company, they attach a file
+          pertaining to work. Their grammar has many flaws in it. You are not
+          sure if this is phishing, what should you do to verify this?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q2" value="open" id="q2-open" />
+            <label for="q2-open" name="q2">
+              Open the file to make sure it is legit
+              <div id="q2-open-detail" class="answer-detail">
+                You are not yet sure if this email is an attack, so do not open
+                the file! It may download malware.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+            <label for="q2-grammar" name="q2">
+              Because of the many grammar mistakes, it is most definitely
+              phishing
+              <div id="q2-grammar-detail" class="answer-detail">
+                The sender may not speak the same language that you speak so you
+                cannot conclude that this is phishing just from that.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="verify" id="q2-verify" />
+            <label for="q2-verify" name="q2">
+              Verify the company and the matters they brought up to you are
+              legit
+              <div id="q2-verify-detail" class="answer-detail">
+                Correct! If you can verify this was a supervisor or other source
+                of information, you can be sure that this email is legit and
+                safe.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+            <label for="q2-ignore" name="q2">
+              Ignore the email
+              <div id="q2-ignore-detail" class="answer-detail">
+                If the email does not turn out to be an attack, you could have
+                potentially wasted yours and your company's time by not
+                following up on work.
+              </div>
+            </label>
+          </li>
+        </ul>
 
-  <h2 class="question">3. Searching through paper files in a company's physical recycle bin is an example of dumpster diving.</h2>
-  <ul class="options">
-    <li class="option">
-      <input type="radio" name="q3" value="true" id="q3-true">
-      <label for="q3-true" name = "q3">
-        True
-        <div id="q3-true-detail" class="answer-detail">Correct! Confidential information can still be found on physical files. Having an unauthorized person go through them can absolutely be considered dumpster diving and a security risk!</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q3" value="false" id="q3-false">
-      <label for="q3-false" name = "q3">
-        False
-        <div id="q3-false-detail" class="answer-detail">Confidential information can still be found on physical files. Having an unauthorized person go through them can absolutely be considered dumpster diving and a security risk!</div>
-      </label>
-    </li>
-  </ul>
+        <h2 class="question">
+          3. Searching through paper files in a company's physical recycle bin
+          is an example of dumpster diving.
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q3" value="true" id="q3-true" />
+            <label for="q3-true" name="q3">
+              True
+              <div id="q3-true-detail" class="answer-detail">
+                Correct! Confidential information can still be found on physical
+                files. Having an unauthorized person go through them can
+                absolutely be considered dumpster diving and a security risk!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="false" id="q3-false" />
+            <label for="q3-false" name="q3">
+              False
+              <div id="q3-false-detail" class="answer-detail">
+                Confidential information can still be found on physical files.
+                Having an unauthorized person go through them can absolutely be
+                considered dumpster diving and a security risk!
+              </div>
+            </label>
+          </li>
+        </ul>
 
-  <h2 class="question">4. You and a man who seems like a coworker at your workplace are walking to the same building. Assuming that he actually works there, you type in the passcode to the building, letting both of you in, he watches you type the code in. Which attack could the man have carried out?</h2>
-  <ul class="options">
-    <li class="option">
-      <input type="radio" name="q4" value="tail" id="q4-tail">
-      <label for="q4-tail" name = "q4">
-        Tailgating
-        <div id="q4-tail-detail" class="answer-detail">Correct! The man followed you to the building to gain entrance, this is tailgating.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q4" value="dive" id="q4-dive">
-      <label for="q4-dive" name = "q4">
-        Dumpster Diving
-        <div id="q4-dive-detail" class="answer-detail">There is no indication that recycled files, either physical or on a device, were looked through.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q4" value="phishing" id="q4-phishing">
-      <label for="q4-phishing" name = "q4">
-        Phishing
-        <div id="q4-phishing-detail" class="answer-detail">There was no interaction between you and the man, especially none related to social engineering.</div>
-      </label>
-    </li>
-    <li class="option">
-      <input type="radio" name="q4" value="none" id="q4-none">
-      <label for="q4-none" name = "q4">
-        None of the above, the man is a coworker
-        <div id="q4-none-detail" class="answer-detail">If you haven't seen him around before, you cannot be so sure he actually works at your company.</div>
-      </label>
-    </li>
-  </ul>
+        <h2 class="question">
+          4. You and a man who seems like a coworker at your workplace are
+          walking to the same building. Assuming that he actually works there,
+          you type in the passcode to the building, letting both of you in, he
+          watches you type the code in. Which attack could the man have carried
+          out?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q4" value="tail" id="q4-tail" />
+            <label for="q4-tail" name="q4">
+              Tailgating
+              <div id="q4-tail-detail" class="answer-detail">
+                Correct! The man followed you to the building to gain entrance,
+                this is tailgating.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="dive" id="q4-dive" />
+            <label for="q4-dive" name="q4">
+              Dumpster Diving
+              <div id="q4-dive-detail" class="answer-detail">
+                There is no indication that recycled files, either physical or
+                on a device, were looked through.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="phishing" id="q4-phishing" />
+            <label for="q4-phishing" name="q4">
+              Phishing
+              <div id="q4-phishing-detail" class="answer-detail">
+                There was no interaction between you and the man, especially
+                none related to social engineering.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="none" id="q4-none" />
+            <label for="q4-none" name="q4">
+              None of the above, the man is a coworker
+              <div id="q4-none-detail" class="answer-detail">
+                If you haven't seen him around before, you cannot be so sure he
+                actually works at your company.
+              </div>
+            </label>
+          </li>
+        </ul>
 
-  <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
+        <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
 
-  <p id="result"></p>
-
+        <p id="result"></p>
 
         <div class="right-side_rectangle-buttons">
           <a
@@ -207,6 +273,7 @@
           <a href="../Course 3/SQLInjectionActivitycourse3.html">
             Activity- SQL Injection
           </a>
+          <a href="../Course 3/Game_Course3.html"> Course 3- Game </a>
         </div>
         <div class="Empty-section2">
           <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
@@ -273,26 +340,28 @@
         }
       }
 
-      var labels = document.querySelectorAll('label');
+      var labels = document.querySelectorAll("label");
       labels.forEach(function (label) {
-        label.addEventListener('click', function () {
+        label.addEventListener("click", function () {
           // Remove 'selected' class from all labels
           labels.forEach(function (otherLabel) {
-            var radioLabel = label.closest('li.option'); // Assuming the radio is wrapped in an <li> with class "option"
-            var radioName =radioLabel.querySelector('input[type="radio"]').getAttribute('name');
-            var otherRadioLabel = otherLabel.closest('li.option'); // Assuming the radio is wrapped in an <li> with class "option"
-            var otherRadioName =otherRadioLabel.querySelector('input[type="radio"]').getAttribute('name');
-              if (otherRadioName === radioName) {
-                otherLabel.classList.remove('selected');
-              }
-            });
+            var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var radioName = radioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var otherRadioName = otherRadioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            if (otherRadioName === radioName) {
+              otherLabel.classList.remove("selected");
+            }
+          });
 
           // Add 'selected' class to the clicked label
-          label.classList.add('selected');
+          label.classList.add("selected");
         });
       });
     </script>
   </body>
-
-  
 </html>
