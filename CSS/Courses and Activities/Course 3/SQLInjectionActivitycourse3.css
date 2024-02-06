@@ -61,9 +61,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -337,29 +337,6 @@ header {
   background-color: #286aa7;
 }
 
-.page-title {
-  display: flex;
-  justify-content: left;
-  margin-left: 15%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  padding: 0%;
-  font-family: "True Sans" !important;
-  letter-spacing: 0.05em;
-  font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
-  font-size: 2.5em;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  ); /* Adjust the colors and stops as needed */
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: fadeIn 6s forwards; /* Set a longer duration for the animation */
-}
-
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
@@ -572,3 +549,18 @@ section {
   background-color: #1e6bb2;
 }
 
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}

@@ -61,9 +61,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -288,7 +288,7 @@ section {
 }
 
 h2 {
-  font-family: "neue-haas-unica", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.8em;
 }
 
@@ -296,20 +296,24 @@ p {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.7em;
-  font-family: neue-haas-unica, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-style: normal;
 }
 
 li {
   font-size: medium;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
 }
 
 .blue-word {
   color: rgb(63, 225, 217);
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }

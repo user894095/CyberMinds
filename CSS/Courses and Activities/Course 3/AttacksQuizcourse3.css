@@ -62,9 +62,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -292,24 +292,24 @@ section {
 }
 
 .smaller {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: medium;
 }
 
 .larger {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2.3em;
 }
 
 .special {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: medium;
   font-weight: bold;
   color: rgb(110,217,29);
 }
 
 .list {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: medium;
   font-weight: bold;
   color: rgb(112,124,240);
@@ -322,7 +322,7 @@ section {
 
 .question {
   margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .options {
@@ -346,7 +346,7 @@ label {
   border: 1px solid #182a47;
   cursor: pointer;
   border-radius: 5px; /* Add border-radius for a bevel effect */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: medium;
   max-width: 30%; /* Set the maximum width for the label */
   overflow: hidden;
@@ -368,7 +368,7 @@ label.selected {
   font-weight: bold;
   margin-top: 20px;
   margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .submit {
@@ -378,13 +378,28 @@ label.selected {
   border: 1px solid rgb(110,217,29);
   cursor: pointer;
   border-radius: 5px; /* Add border-radius for a bevel effect */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: medium;
   max-width: 10%; /* Set the maximum width for the label */
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
   color:#ffffff;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }
