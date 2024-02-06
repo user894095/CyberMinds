@@ -99,19 +99,21 @@ header {
   text-align: center;
   font-size: 0.9em;
   margin-bottom: 2.5em;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .img {
   box-shadow: 0 0 0.4em rgb(0, 251, 255);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
   .flex-item {
     flex: 33%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 20em) {
   .flex-item {
     flex: 100%;
   }
