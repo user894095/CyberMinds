@@ -162,9 +162,9 @@ header {
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500px;
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 0.9em;
@@ -272,10 +272,10 @@ header {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   font-size: 4em;
   padding: 1%;
   margin-bottom: 1em; /* Adjusted margin-bottom */
@@ -283,7 +283,7 @@ header {
 }
 
 .description {
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
   font-size: 1.3em;
   padding-bottom: 10%;
@@ -339,4 +339,14 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 500 px;
+  font-size: 4.5 em;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }
