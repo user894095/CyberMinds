@@ -48,7 +48,7 @@ header {
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
   border-radius: 0.8em; /* Make the buttons more rounded */
   white-space: nowrap; /* Prevent text from wrapping */
-  font-family: "True Sans" ;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .header-buttons a:hover {
