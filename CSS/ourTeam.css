@@ -1,9 +1,9 @@
 .pagetitle {
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -117,4 +117,17 @@ header {
   .flex-item {
     flex: 100%;
   }
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }

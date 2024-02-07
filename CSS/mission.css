@@ -64,11 +64,12 @@ header {
 }
 
 .page-title {
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 4.5em;
+  font-weight: 500;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -122,4 +123,24 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
 }

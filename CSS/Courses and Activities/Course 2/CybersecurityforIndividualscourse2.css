@@ -313,7 +313,29 @@ h3 {
 .blue-word {
   color: rgb(63, 225, 217);
 }
-
-a {
+h2 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8em;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+}
+
+li {
+  font-size: medium;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word {
+  color: rgb(63, 225, 217);
 }
