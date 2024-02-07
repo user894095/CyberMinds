@@ -77,11 +77,11 @@ header {
   transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -91,6 +91,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
+  margin-bottom: 30;
 }
 
 @keyframes fadeIn {
@@ -190,4 +191,16 @@ footer {
 
 .far.fa-minus-square{
   font-size: 1.5em;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }
