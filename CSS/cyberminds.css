@@ -101,57 +101,34 @@ header {
 }
 
 .section-wording {
+  white-space: none;
   display: inline-block;
   font-stretch: expanded;
   clear: both;
   position: absolute;
+  font-size: 2.3em;
   transform: translateX(-50%);
+  font-family: "Nova Square", sans-serif;
   top: 8.5%;
   left: 50%;
-  font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent;
-  /* Set initial text color to transparent */
-  font-size: 3.5em;
+  color: transparent; /* Set initial text color to transparent */
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
     rgb(255, 255, 255)
   );
-  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards;
-  /* Set the duration of the animation */
-}
-
-.section-left {
-  float: left;
-  -webkit-text-fill-color: #ffffff;
-}
-
-.section-right {
-  float: right;
-  -webkit-text-fill-color: #ffffff;
-}
-
-.section-left:hover {
-  -webkit-text-fill-color: #afc9e0;
-  transition: -webkit-text-fill-color 0.3s;
-}
-
-.section-left:hover ~ .section-right {
-  -webkit-text-fill-color: #ffffff;
-  transition: -webkit-text-fill-color 0.3s;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%;
-    /* Adjust the size of the gradient */
+    background-size: 200% 100%; /* Adjust the size of the gradient */
   }
 }
 
@@ -162,30 +139,26 @@ header {
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-  font-family: "MuseoModerno", sans-serif;
-  letter-spacing: 0.1em;
-  font-weight: 500px;
-  color: transparent;
-  /* Set initial text color to transparent */
-  font-size: 0.9em;
+  font-family: "Cookie", cursive;
+  letter-spacing: 0.3em;
+  word-spacing: 0.2em;
+  font-size: 1.1em;
+  color: transparent; /* Set initial text color to transparent */
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  );
-  /* Adjust the colors and stops as needed */
+    rgb(255, 255, 255)
+  ); /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards;
-  /* Set the duration of the animation */
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
-@keyframes fadeInSlogan {
+@keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%;
-    /* Adjust the size of the gradient */
+    background-size: 200% 100%; /* Adjust the size of the gradient */
   }
 }
 
@@ -272,7 +245,9 @@ header {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
   font-weight: 500 !important;
@@ -285,9 +260,10 @@ header {
 .description {
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom: 10%;
   padding-top: 0;
+  padding: 2em;
   margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
@@ -339,12 +315,6 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
-}
-
-h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 500 px;
-  font-size: 4.5 em;
 }
 
 a {
