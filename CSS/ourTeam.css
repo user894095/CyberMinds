@@ -1,5 +1,6 @@
 .pagetitle {
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Parisienne", cursive;
+
   letter-spacing: 0.05em;
   font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
@@ -85,6 +86,7 @@ header {
 
 .h2 {
   white-space: nowrap;
+  font-family: "Parisienne", cursive;
 }
 
 .flex-container {
@@ -120,12 +122,9 @@ header {
 }
 
 h3 {
-  font-family: "Space Grotesk", sans-serif;
-}
-
-h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  font-size: 1em;
 }
 
 a {
