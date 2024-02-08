@@ -139,10 +139,10 @@ header {
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-  font-family: "Cookie", cursive;
-  letter-spacing: 0.3em;
-  word-spacing: 0.2em;
-  font-size: 1.1em;
+
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  font-size: 0.8em;
   color: transparent; /* Set initial text color to transparent */
   background: linear-gradient(
     to left,
