@@ -54,6 +54,21 @@ header {
   background-color: #286aa7;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+iframe {
+  align-self: center;
+  width: 560px;
+  height: 315px;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  box-sizing: border-box; /* Include padding in the total height */
+}
+
 .page-title {
   display: flex;
   justify-content: left;
