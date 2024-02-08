@@ -339,3 +339,7 @@ h3 {
 .blue-word {
   color: rgb(63, 225, 217);
 }
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
