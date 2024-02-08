@@ -1,5 +1,7 @@
 .pagetitle {
-  font-family: "Parisienne", cursive;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
 
   letter-spacing: 0.05em;
   font-weight: 500;
@@ -25,7 +27,6 @@
 
 body {
   background-color: #1a2738;
-  font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -84,11 +85,6 @@ header {
   background-color: #286aa7;
 }
 
-.h2 {
-  white-space: nowrap;
-  font-family: "Parisienne", cursive;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +92,7 @@ header {
 
 .flex-item {
   flex: 20%;
-  font-family: "True Sans" !important;
+
   color: white;
   text-align: center;
   font-size: 0.9em;
