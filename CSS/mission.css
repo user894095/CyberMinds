@@ -64,7 +64,9 @@ header {
 }
 
 .page-title {
-  font-family: "Parisienne", cursive;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   font-size: 4.5em;
   font-weight: 500;
   letter-spacing: 0.05em;
