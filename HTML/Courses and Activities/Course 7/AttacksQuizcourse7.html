@@ -30,23 +30,157 @@
 
     <section>
       <div class="right-side_rectangle">
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <div class="right-side_rectangle-buttons">
-          <a href="../Course 7/InterceptionAttackscourse7.html"
-            >&lt; Previous</a
-          >
-          <a href="../Course 8/Introductioncourse8.html">Next ></a>
-          <a
-            href="../../Courses and Activities/Course 8/Introductioncourse8.html"
-            class="next_course"
-            >Skip to Next Course</a
-          >
+        <h2 class="question">
+          1. A persistent attack is one that:
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q1" value="SW" id="q1-SW" />
+            <label for="q1-SW">
+              Constantly attacks, they are highly advanced and successful
+              <div id="q1-SW-detail" class="answer-detail">
+                Incorrect.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="ES" id="q1-ES" />
+            <label for="q1-ES">
+              Constantly attempts to attack, with little success
+              <div id="q1-ES-detail" class="answer-detail">
+                Incorrect.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VW" id="q1-VW" />
+            <label for="q1-VW">
+              Maintains a continuous connection once it has infiltrated a system
+              <div id="q1-VW-detail" class="answer-detail">
+                Correct! Persistence in security usually refers to maintaining a continuous connection.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VS" id="q1-VS" />
+            <label for="q1-VS">
+              Maintains a continuous attack pattern
+              <div id="q1-VS-detail" class="answer-detail">
+                Incorrect.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          2. Interception is similar to:
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q2" value="open" id="q2-open" />
+            <label for="q2-open" name="q2">
+              Ransomware
+              <div id="q2-open-detail" class="answer-detail">
+                Ransomware is unrelated.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+            <label for="q2-grammar" name="q2">
+              Spyware
+              <div id="q2-grammar-detail" class="answer-detail">
+                Correct! Interception and spyware/spying share many characteristics. 
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="verify" id="q2-verify" />
+            <label for="q2-verify" name="q2">
+              Seeware
+              <div id="q2-verify-detail" class="answer-detail">
+                This is not a thing. 
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+            <label for="q2-ignore" name="q2">
+              Malware
+              <div id="q2-ignore-detail" class="answer-detail">
+                Malware is an incredibly broad category and it would be incorrect to say that interception 
+                is similar to every form of malware. There is a closer option.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          3. Man-in-the-browser is a network layer attack, while man-in-the-middle is an application 
+          layer attack.
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q3" value="true" id="q3-true" />
+            <label for="q3-true" name="q3">
+              True
+              <div id="q3-true-detail" class="answer-detail">
+                See false for explanation.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="false" id="q3-false" />
+            <label for="q3-false" name="q3">
+              False
+              <div id="q3-false-detail" class="answer-detail">
+                Correct! Man-in-the-browser is actually an application layer attack, 
+                while man-in-the-middle is a network layer attack.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          4. Spoofing can be used interchangeably with social engineering. 
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q4" value="true" id="q4-true" />
+            <label for="q4-true" name="q4">
+              True
+              <div id="q4-true-detail" class="answer-detail">
+                See false for explanation. 
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="false" id="q4-false" />
+            <label for="q4-false" name="q4">
+              False
+              <div id="q4-false-detail" class="answer-detail">
+                Spoofing refers to more technical impersonation (of devices, etc.), while social 
+                engineering is more social impersonation.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
+
+        <p id="result"></p>\
+        
+
+        <div class="right-side_rectangle">
+          <div class="right-side_rectangle-buttons">
+            <a href="../Course 7/TryAttackscourse7.html">&lt; Previous</a>
+            <a href="../Course 8/Introductioncourse8.html">Next ></a>
+            <a
+              href="../../Courses and Activities/Course 8/Introductioncourse8.html"
+              class="next_course"
+              >Skip to Next Course</a
+            >
+          </div>
         </div>
       </div>
 
@@ -62,18 +196,16 @@
         <div class="leftRectangle-section2">
           <p class="leftRectangle-section2-button-title">Table of Contents</p>
           <a href="Introductioncourse7.html"> Reading - Introduction </a>
-          <a
-            href="../../Courses and Activities/Course 7/PersistentThreatscourse7.html"
-          >
-            Persistent Threats
+          <a href="../../Courses and Activities/Course 7/Spoofingcourse7.html">
+            Reading - Spoofing (XSS, CSRF)
           </a>
           <a
-            href="../../../HTML/Courses and Activities/Course 7/Spoofingcourse7.html"
-            >Spoofing
+            href="../../../HTML/Courses and Activities/Course 7/InterceptionAttackscourse7.html"
+            >Reading - Interception Attacks
           </a>
           <a
-            href="../../../HTML/Courses and Activities/Course 7/InterceptionAttackscourse7.html "
-            >Interception Attacks
+            href="../../../HTML/Courses and Activities/Course 7/TryAttackscourse7.html"
+            >Resources to Try Attacks
           </a>
           <a
             href="../../../HTML/Courses and Activities/Course 7/AttacksQuizcourse7.html"
@@ -102,5 +234,78 @@
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
     </section>
+    <script>
+      function submitQuiz() {
+        var score = 0;
+
+        // Check answer for question 1
+        var q1Answer = document.querySelector('input[name="q1"]:checked');
+        if (q1Answer && q1Answer.value === "VW") {
+          score++;
+        }
+        showAnswerDetail("q1-SW-detail");
+        showAnswerDetail("q1-ES-detail");
+        showAnswerDetail("q1-VW-detail");
+        showAnswerDetail("q1-VS-detail");
+
+        // Check answer for question 2
+        var q2Answer = document.querySelector('input[name="q2"]:checked');
+        if (q2Answer && q2Answer.value === "grammar") {
+          score++;
+        }
+        showAnswerDetail("q2-open-detail");
+        showAnswerDetail("q2-grammar-detail");
+        showAnswerDetail("q2-verify-detail");
+        showAnswerDetail("q2-ignore-detail");
+
+        var q3Answer = document.querySelector('input[name="q3"]:checked');
+        if (q3Answer && q3Answer.value === "false") {
+          score++;
+        }
+        showAnswerDetail("q3-true-detail");
+        showAnswerDetail("q3-false-detail");
+
+        var q4Answer = document.querySelector('input[name="q4"]:checked');
+        if (q4Answer && q4Answer.value === "false") {
+          score++;
+        }
+        showAnswerDetail("q4-true-detail");
+        showAnswerDetail("q4-false-detail");
+
+        // Display the result
+        var resultElement = document.getElementById("result");
+        resultElement.innerHTML = "Your score is: " + score + "/4";
+      }
+
+      function showAnswerDetail(detailId) {
+        var detailElement = document.getElementById(detailId);
+        if (detailElement) {
+          detailElement.style.display = "block";
+        }
+      }
+
+      var labels = document.querySelectorAll("label");
+      labels.forEach(function (label) {
+        label.addEventListener("click", function () {
+          // Remove 'selected' class from all labels
+          labels.forEach(function (otherLabel) {
+            var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var radioName = radioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var otherRadioName = otherRadioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            if (otherRadioName === radioName) {
+              otherLabel.classList.remove("selected");
+            }
+          });
+
+          // Add 'selected' class to the clicked label
+          label.classList.add("selected");
+        });
+      });
+    </script>
   </body>
 </html>
