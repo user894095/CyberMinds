@@ -192,8 +192,7 @@ header {
 }
 
 /* Your existing styles here */
-.section2,
-.section3 {
+.section2 {
   margin-top: 3%;
   padding-top: 8%;
   background-color: #141e2b;
@@ -320,4 +319,108 @@ footer {
 
 a {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.section3 {
+  margin-top: 3%;
+  padding-top: 8%;
+  background-color: #1e2d42;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(80vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+}
+
+.section3-title {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.board-members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust based on your design preference */
+}
+
+.board-member-item {
+  margin: 1em;
+  flex-basis: 12%; /* Adjust the width as needed */
+  color: #ffffff;
+}
+
+.board-member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  border: 3px solid #fb582a; /* Border color like the icons in section2 */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board-member-name {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.board-quote {
+  color: #ffffff;
+  margin-top: 2em;
+  font-style: italic;
+  padding: 0 15%;
+}
+
+.board-quote blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.board-quote blockquote:before,
+.board-quote blockquote:after {
+  color: #fb582a; /* This color is just a placeholder; adjust as needed */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.board-quote-author {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.contact-information {
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+.contact-information h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-information p {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Default styling for the email link */
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
 }
