@@ -1,116 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../../../CSS/Courses and Activities/Course 6/TheFileSystemcourse6.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Course 6 - The Filesystem</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
-        <nav class="header-buttons">
-          <a href="../../../index.html">Back to Home Screen</a>
-          <a href="../../moreinfo.html">More Info</a>
-          <a href="../../course_Contents.html">Mission</a>
-          <a href="../../LiveHelp.html">Live Help</a>
-          <a href="../../ourTeam.html">Our Team</a>
-          <a href="../../support.html">Support</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../CSS/Courses and Activities/Course 6/TheFileSystemcourse6.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+
+  <title>Course 6 - The Filesystem</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+      <nav class="header-buttons">
+        <a href="../../../index.html">Back to Home Screen</a>
+        <a href="../../moreinfo.html">More Info</a>
+        <a href="../../course_Contents.html">Mission</a>
+        <a href="../../LiveHelp.html">Live Help</a>
+        <a href="../../ourTeam.html">Our Team</a>
+        <a href="../../support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <p class="page-title">Course 6 - The Filesystem</p>
+  </div>
+
+  <section>
+    <h2 class="important-heading">The Filesystem</h2>
+    <h3>The Basics:</h3>
+    <p>
+      Without the help of graphics, it is important to know the specific commands to navigate a <span
+        class="blue-word">Linux filesystem</span>,
+      especially if you ever end up in a professional setting.
+    </p>
+    <p>
+      The Linux filesystem is made of directories and of course, files. The <span class="blue-word">root
+        directory</span> where all other nodes stem
+      from is represented with a simple <span class="blue-word">backslash(/)</span>. Each following directory is
+      referenced by a backslash and its name (ex. /user).
+      Files are simply referenced using their name and file extension. Here is an example:
+    </p>
+    <p>
+      /home/user/Downloads/cats.txt
+    </p>
+    <p>
+      This is a file path to the <span class="blue-word">cats.txt text document</span>. The above expression states that
+      from the root directory, stems the home directory,
+      which can access the user directory, which can access the Downloads directory.
+      Finally, <span class="blue-word">the cats.txt text document</span> is the Downloads directory. A single typo in
+      this statement will result in the file not being found.
+    </p>
+    <p>
+      <span class="blue-word">Note:</span> remember that you can press <span class="blue-word">tab</span> to get Linux
+      to autocomplete input for you!
+    </p>
+    <h3>Filesystem Commands:</h3>
+    <ul>
+      <li>
+        <span class="blue-word">ls:</span> lists all contents in the current directory. Use the option <span
+          class="blue-word">-a</span> to reveal hidden
+        files which start with a period (.).
+      </li>
+      <li>
+        <span class="blue-word">cd:</span> short for <span class="blue-word">"change directory"</span>. Use cd followed
+        by a
+        <span class="blue-word">file path</span> to bring you to the end of the specified path. If the directory or file
+        you want to access
+        is already in your current directory, just type its name, there is no need to type in the entire file path.
+      </li>
+      <li>
+        <span class="blue-word">pwd:</span> short for <span class="blue-word">"print working directory:"</span>. Will
+        print out your current file path.
+      </li>
+      <li>
+        <span class="blue-word">touch(file.txt):</span> touch keyword <span class="blue-word">creates</span> a new file.
+      </li>
+      <li>
+        <span class="blue-word">rm(file.txt):</span> rm keyword <span class="blue-word">removes</span> a file.
+      </li>
+      <li>
+        <span class="blue-word">mkdir(Directory):</span> mkdir keyword <span class="blue-word">creates</span> a
+        directory.
+      </li>
+      <li>
+        <span class="blue-word">rmdir(Directory):</span> rmdir keyword <span class="blue-word">removes</span> a
+        directory.
+      </li>
+    </ul>
+    <div class="right-side_rectangle">
+      <div class="right-side_rectangle-buttons">
+        <a href="../../Courses and Activities/Course 6/ExploreSudocourse6.html">&lt; Previous</a>
+        <a href="../../Courses and Activities/Course 6/ExploreFileSystemcourse6.html">
+          Next></a>
+        <a href="../../Courses and Activities/Course 7/Introductioncourse7.html" class="next_course">Skip to Next
+          Course</a>
       </div>
-    </header>
-
-    <div>
-      <p class="page-title">Course 6 - The Filesystem</p>
     </div>
 
-    <section>
-      <div class="right-side_rectangle">
-        <div class="right-side_rectangle-buttons">
-          <a
-            href="../../Courses and Activities/Course 6/ExploreSudocourse6.html"
-            >&lt; Previous</a
-          >
-          <a
-            href="../../Courses and Activities/Course 6/ExploreFileSystemcourse6.html"
-          >
-            Next></a
-          >
-          <a
-            href="../../Courses and Activities/Course 7/Introductioncourse7.html"
-            class="next_course"
-            >Skip to Next Course</a
-          >
-        </div>
+    <div class="left-side_rectangle">
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <!-- PUT TEXT HERE FROM THE ARTICLE -->
+      <div class="leftRectangle-section1">
+        <p class="leftRectangle-section1-button-title">Go back?</p>
+        <a href="../../course_Contents.html">Back to all Courses</a>
+      </div>
+      <div class="Empty-section1">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <div class="left-side_rectangle">
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <!-- PUT TEXT HERE FROM THE ARTICLE -->
-        <div class="leftRectangle-section1">
-          <p class="leftRectangle-section1-button-title">Go back?</p>
-          <a href="../../course_Contents.html">Back to all Courses</a>
-        </div>
-        <div class="Empty-section1">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="leftRectangle-section2">
-          <p class="leftRectangle-section2-button-title">Table of Contents</p>
-          <a href="../Course 6/Introductioncourse6.html">
-            Course 6 - Introduction
-          </a>
-          <a href="../Course 6/SettingUpLinuxcourse6.html"
-            >Reading - Setting Up Linux
-          </a>
-          <a href="../Course 6/BasicCommandscourse6.html"
-            >Basic Commands & Getting Help
-          </a>
-          <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html"
-            >Sudo & Privilege Escalation
-          </a>
-          <a href="../Course 6/ExploreSudocourse6.html">Explore Sudo </a>
-          <a href="../Course 6/TheFileSystemcourse6.html"> The Filesystem </a>
-          <a href="../Course 6/ExploreFileSystemcourse6.html">
-            Explore the Filesystem
-          </a>
-          <a href="../Course 6/Permissionscourse6.html"> Permissions </a>
-          <a href="../Course 6/ExplorePermissionscourse6.html">
-            Explore Permissions
-          </a>
-          <a href="../Course 6/QuizLinuxcourse6.html"> Linux Quiz </a>
-          <!-- <a href="add game here">  >add more here </a> -->
-        </div>
-        <div class="Empty-section2">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="Empty-section3">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
+      <div class="leftRectangle-section2">
+        <p class="leftRectangle-section2-button-title">Table of Contents</p>
+        <a href="../Course 6/Introductioncourse6.html">
+          Course 6 - Introduction
+        </a>
+        <a href="../Course 6/SettingUpLinuxcourse6.html">Reading - Setting Up Linux
+        </a>
+        <a href="../Course 6/BasicCommandscourse6.html">Basic Commands & Getting Help
+        </a>
+        <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html">Sudo & Privilege Escalation
+        </a>
+        <a href="../Course 6/ExploreSudocourse6.html">Explore Sudo </a>
+        <a href="../Course 6/TheFileSystemcourse6.html"> The Filesystem </a>
+        <a href="../Course 6/ExploreFileSystemcourse6.html">
+          Explore the Filesystem
+        </a>
+        <a href="../Course 6/Permissionscourse6.html"> Permissions </a>
+        <a href="../Course 6/ExplorePermissionscourse6.html">
+          Explore Permissions
+        </a>
+        <a href="../Course 6/QuizLinuxcourse6.html"> Linux Quiz </a>
+        <!-- <a href="add game here">  >add more here </a> -->
+      </div>
+      <div class="Empty-section2">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <!-- <footer class="page-footer">
+      <div class="Empty-section3">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+      </div>
+    </div>
+
+    <!-- <footer class="page-footer">
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>
