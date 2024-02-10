@@ -1,242 +1,178 @@
-<!-- this screen should have all the courses in it and a small description of each course! 
-If you are working on this please ask for the cybersecurity word doc content (This is the base code with no course names or descriptions or top bar)-Harshith Gande -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/cyberminds.css" />
+    <title>CyberMinds</title>
+    <link rel="icon" type="jpg" href="./Images/circle.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/course_Contents.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <title>Course Catalog</title>
+    <script
+      src="https://kit.fontawesome.com/511e914ee1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <header>
-      <div class="header-content">
-        <img src="../Images/circle.jpg" alt="CyberMinds Logo" />
-        <nav class="header-buttons">
-          <a href="../index.html">Back to Home Screen</a>
-          <a href="./moreinfo.html">More Info</a>
-          <a href="./mission.html">Mission</a>
-          <a href="./LiveHelp.html">Live Help</a>
-          <a href="./ourTeam.html">Our Team</a>
-          <a href="./support.html">Support</a>
+    <div class="Parent-container">
+      <header>
+        <div class="header-content">
+          <img src="./Images/circle.jpg" alt="CyberMinds Logo" />
+          <nav class="header-buttons">
+            <a href="./HTML/moreinfo.html">More Info</a>
+            <a href="./HTML/mission.html">Mission</a>
+            <a href="./HTML/LiveHelp.html">Live Help</a>
+            <a href="./HTML/course_Contents.html">Courses</a>
+            <a href="./HTML/ourTeam.html">Our Team</a>
+            <a href="./HTML/support.html">Support</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="section">
+        <video
+          autoplay=""
+          loop=""
+          muted=""
+          playsinline=""
+          class=""
+          poster="./Images/cybersecurity-predictions.jpg"
+          src="./Images/Cybermindsloop.mp4"
+        ></video>
+        <div class="section-wording">
+          <h2 class="section-wording">CyberMinds.</h2>
+        </div>
+        <div class="section-slogan">
+          <h2>Protecting the digital future.</h2>
+        </div>
+        <nav class="section-buttons">
+          <a href="#" onclick="scrollDown()">How it Works</a>
+          <a href="./HTML/course_Contents.html">Get Started</a>
         </nav>
       </div>
-    </header>
-    <p class="page-title">Courses</p>
 
-    <section>
-      <!-- Course 1 -->
-      <a
-        href="../HTML/Courses and Activities/Course 1/Introductioncourse1.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/introTosecurity.png"
-          alt="Course Image 1"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 1</p></div>
-          <h2 class="course-title">Introduction to Security, Core concepts</h2>
-          <p class="course-description">
-            Basic cybersecurity concepts and career insights, covering the
-            importance of cybersecurity and security jobs.
+      <div class="section2">
+        <div>
+          <p class="section2-title">How It Works...</p>
+        </div>
+        <!-- <div class="dots-container" id="dotsContainer"> -->
+        <div class="instruction-container">
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-signal fa-3xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">
+              Accelerate through the <b> 10 courses.</b> Learn from experts and
+              gain basic cybersecurity knowledge.
+            </p>
+          </div>
+
+          <div class="circle-box">
+            <div class="circle">
+              <i
+                class="fa-solid fa-book-open-reader fa-3xl"
+                style="color: #fb582a"
+              ></i>
+            </div>
+            <p class="description">
+              Learn our <b>content</b> through short segments of engaging
+              <b>reading.</b>
+            </p>
+          </div>
+
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-gamepad fa-3xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">
+              Engage in an interactive <b>game</b> and <b>quiz</b> to enhance
+              your skills.
+            </p>
+          </div>
+
+          <div class="circle-box">
+            <div class="circle">
+              <i class="fa-solid fa-code fa-3xl" style="color: #fb582a"></i>
+            </div>
+            <p class="description">
+              Write <b>cybersecurity-related code</b> in our interactive
+              terminals and have it verified by our <b>uniquely tailored AI.</b>
+            </p>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="section3">
+        <h2 class="section3-title">Our Esteemed Board</h2>
+
+        <div class="board-members-container">
+          <div class="board-member-item">
+            <img
+              src="../Images/VeronicaPak.png"
+              alt="Board Member 1"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Veronica P.</p>
+          </div>
+          <div class="board-member-item">
+            <img
+              src="./Images/board-member-2.jpg"
+              alt="Board Member 2"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Dhruv R.</p>
+          </div>
+          <div class="board-member-item">
+            <img
+              src="./Images/board-member-3.jpg"
+              alt="Board Member 3"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Neha R.</p>
+          </div>
+          <div class="board-member-item">
+            <img
+              src="./Images/board-member-4.jpg"
+              alt="Board Member 4"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Aarohi G.</p>
+          </div>
+          <div class="board-member-item">
+            <img
+              src="./Images/board-member-5.jpg"
+              alt="Board Member 4"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Tejaswi</p>
+          </div>
+          <div class="board-member-item">
+            <img
+              src="./Images/board-member-6.jpg"
+              alt="Board Member 4"
+              class="board-member-image"
+            />
+            <p class="board-member-name">Advaith V.</p>
+          </div>
+        </div>
+        <div class="board-quote">
+          <blockquote>
+            "Cybersecurity is not just about protecting data, but about
+            protecting the trust, <br />confidence, and faith in our digital
+            world."
+          </blockquote>
+
+          <p class="board-quote-author">- The CyberMinds Board</p>
+        </div>
+        <div class="contact-information">
+          <h3>Contact Us</h3>
+          <p>
+            Email us at:
+            <a class="emailForCyberminds" href="CYBER_MINDS@outlook.com"
+              >CYBER_MINDS@outlook.com</a
+            >
           </p>
         </div>
-      </a>
-
-      <!-- Course 2 -->
-      <a
-        href="../HTML/Courses and Activities/Course 2/Introductioncourse2.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/IndividualsVS.Companies.png"
-          alt="Course Image 2"
-        />
-
-        <div class="course-info">
-          <div class="course-number"><p>Course 2</p></div>
-          <h2 class="course-title">Individuals vs. Companies</h2>
-          <p class="course-description">Learn about the difference between security for individuals and companies and what each group should do differently to stay secure.</p>
-        </div>
-      </a>
-      <!-- Course 3 -->
-      <a
-        href="../HTML/Courses and Activities/Course 3/Introductioncourse3.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/introToAttacksSecurity.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 3</p></div>
-          <h2 class="course-title">Intro to Attacks in Security</h2>
-          <p class="course-description">Introduction to attackers and attacks as well as the consequences they can have.</p>
-        </div>
-      </a>
-    </section>
-    <section>
-      <!-- Course 4 -->
-      <a
-        href="../HTML/Courses and Activities/Course 4/Introductioncourse4.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/defenseToSecurity.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 4</p></div>
-          <h2 class="course-title">Intro to Defensive Measures in Security</h2>
-          <p class="course-description">Learn about the need for defense online and how you and others should act to stay safe.</p>
-        </div>
-      </a>
-      <!-- Course 5 -->
-      <a
-        href="../HTML/Courses and Activities/Course 5/Introductioncourse5.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/cryptography.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 5</p></div>
-          <h2 class="course-title">Cryptography & Steganography</h2>
-          <p class="course-description">Enter course description</p>
-        </div>
-      </a>
-      <!-- Course 6 -->
-      <a
-        href="../HTML/Courses and Activities/Course 6/Introductioncourse6.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/linux.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 6</p></div>
-          <h2 class="course-title">Intro to Linux</h2>
-          <p class="course-description">Beginner friendly introduction to an important operating in cybersecuity: Linux. You will learn about Linux's importance and your first basic commands.</p>
-        </div>
-      </a>
-    </section>
-    <section>
-      <!-- Course 7 -->
-      <a
-        href="../HTML/Courses and Activities/Course 7/Introductioncourse7.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/attacksInCybersecurity(advanced).png"
-          alt="Course Image 1"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 7</p></div>
-          <h2 class="course-title">Attacks in Security 2</h2>
-          <p class="course-description">Learn about even more attacks that can happen in cyberspace, as well as more of the specifics of how they work.</p>
-        </div>
-      </a>
-
-      <!-- Course 8 -->
-      <a
-        href="../HTML/Courses and Activities/Course 8/Introductioncourse8.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/mobileSecurity.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 8</p></div>
-          <h2 class="course-title">Digital Forensics</h2>
-          <p class="course-description">Enter course description</p>
-        </div>
-      </a>
-      <!-- Course 9 -->
-      <a
-        href="../HTML/Courses and Activities/Course 9/Introductioncourse9.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/digitalForensics.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 9</p></div>
-          <h2 class="course-title">Penetration Testing</h2>
-          <p class="course-description">Learn about penetration testing types, concepts, and where you can try authorized hacking for yourself.</p>
-        </div>
-      </a>
-    </section>
-    <section>
-      <!-- Course 10 -->
-      <a
-        href="../HTML/Courses and Activities/Course 10/Introductioncourse10.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/Incident Response.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 10</p></div>
-          <h2 class="course-title">Networking for Security</h2>
-          <p class="course-description">A supplemental course that will deepen your understanding of security through core networking concepts.</p>
-        </div>
-      </a>
-      <!-- Course 11 -->
-      <a
-        href="../HTML/Courses and Activities/Course 11/Introductioncourse11.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/pen testing concepts cybersecurity.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 11</p></div>
-          <h2 class="course-title">Coming soon!</h2>
-          <p class="course-description"> </p>
-        </div>
-      </a>
-      <!-- Course 12 -->
-      <a
-        href="../HTML/Courses and Activities/Course 12/Introductioncourse12.html"
-        class="course-card"
-      >
-        <img
-          class="course-image"
-          src="../Images/Networking for Security.png"
-          alt="Course Image 2"
-        />
-        <div class="course-info">
-          <div class="course-number"><p>Course 12</p></div>
-          <h2 class="course-title">Coming soon!</h2>
-          <p class="course-description"> </p>
-        </div>
-      </a>
-
-      <!-- <footer class="page-footer">
-        <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
-      </footer> -->
-    </section>
+      </div>
+    </div>
+    <script src="./Javascript/cyberminds.js"></script>
   </body>
 </html>
