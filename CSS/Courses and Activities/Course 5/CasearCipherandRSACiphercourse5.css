@@ -263,7 +263,7 @@ section {
   background-color: #111927;
   justify-content: space-between; /* Distribute the buttons with space between them */
   align-items: center;
-  height: 3em;
+  height: 3.2em;
 }
 
 .right-side_rectangle-buttons a {

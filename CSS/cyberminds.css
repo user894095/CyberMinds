@@ -101,26 +101,26 @@ header {
 }
 
 .section-wording {
-    display: inline-block;
+  display: inline-block;
   font-stretch: expanded;
   clear: both;
   position: absolute;
-    transform: translateX(-50%);
-    top: 8.5%;
+  transform: translateX(-50%);
+  top: 8.5%;
   left: 50%;
-font-family: "True Sans" !important;
+  font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
   color: transparent;
   /* Set initial text color to transparent */
-font-size: 3.5em;
+  font-size: 2.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
     rgb(255, 255, 255)
   );
-/* Adjust the colors and stops as needed */
+  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
@@ -140,12 +140,12 @@ font-size: 3.5em;
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-font-family: "True Sans" !important;
+  font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
   color: transparent;
   /* Set initial text color to transparent */
-font-size: 0.9em;
+  font-size: 0.9em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -192,9 +192,10 @@ font-size: 0.9em;
 }
 
 /* Your existing styles here */
-.section2, .section3{
+.section2,
+.section3 {
   margin-top: 3%;
-    padding-top: 8%;
+  padding-top: 8%;
   background-color: #141e2b;
   padding: 0.5em;
   position: relative;
@@ -206,8 +207,6 @@ font-size: 0.9em;
   display: inline-block;
   text-align: center;
 }
-
-
 
 /* .dots-container {
   position: absolute;
@@ -242,7 +241,7 @@ font-size: 0.9em;
 
 .section2-title {
   display: flex;
-    width: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -266,7 +265,7 @@ font-size: 0.9em;
   font-size: 1em;
   padding-bottom: 10%;
   padding-top: 0;
-    margin-left: 5em;
+  margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
   margin: 0.3em;
