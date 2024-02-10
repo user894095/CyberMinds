@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
+  height: 135em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -217,7 +217,7 @@ header {
 }
 
 /* Your existing styles here */
-.section2 {
+.section2, .section3{
   margin-top: 3%;
   padding-top: 8%;
   background-color: #141e2b;
@@ -229,7 +229,10 @@ header {
   align-items: center;
   justify-content: space-between;
   display: inline-block;
+  text-align: center;
 }
+
+
 
 /* .dots-container {
   position: absolute;

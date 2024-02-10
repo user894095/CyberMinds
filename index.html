@@ -9,6 +9,91 @@
       src="https://kit.fontawesome.com/511e914ee1.js"
       crossorigin="anonymous"
     ></script>
+
+    <style>
+     .section3{
+      height: 35em
+     }
+
+.section3-title {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.board-members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust based on your design preference */
+}
+
+.board-member-item {
+  margin: 1em;
+  flex-basis: 12%; /* Adjust the width as needed */
+  color: #ffffff;
+}
+
+.board-member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  border: 3px solid #fb582a; /* Border color like the icons in section2 */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board-member-name {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.board-quote {
+  color: #ffffff;
+  margin-top: 2em;
+  font-style: italic;
+  padding: 0 15%;
+}
+
+.board-quote blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.board-quote blockquote:before,
+.board-quote blockquote:after {
+  color: #fb582a; /* This color is just a placeholder; adjust as needed */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.board-quote-author {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.contact-information {
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+.contact-information h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-information p{
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+
+
+
+    </style>
+    
   </head>
 
   <body>
@@ -97,6 +182,48 @@
           <!-- </div> -->
         </div>
       </div>
+      <div class="section3">
+
+        <h2 class="section3-title">Our Esteemed Board</h2>
+
+        <div class="board-members-container">
+          <div class="board-member-item">
+            <img src="./Images/board-member-1.jpg" alt="Board Member 1" class="board-member-image"/>
+            <p class="board-member-name">Board Member 1</p>
+          </div>
+          <div class="board-member-item">
+            <img src="./Images/board-member-2.jpg" alt="Board Member 2" class="board-member-image"/>
+            <p class="board-member-name">Board Member 2</p>
+          </div>
+          <div class="board-member-item">
+            <img src="./Images/board-member-3.jpg" alt="Board Member 3" class="board-member-image"/>
+            <p class="board-member-name">Board Member 3</p>
+          </div>
+          <div class="board-member-item">
+            <img src="./Images/board-member-4.jpg" alt="Board Member 4" class="board-member-image"/>
+            <p class="board-member-name">Board Member 4</p>
+          </div>
+          <div class="board-member-item">
+            <img src="./Images/board-member-5.jpg" alt="Board Member 4" class="board-member-image"/>
+            <p class="board-member-name">Board Member 4</p>
+          </div>
+          <div class="board-member-item">
+            <img src="./Images/board-member-6.jpg" alt="Board Member 4" class="board-member-image"/>
+            <p class="board-member-name">Board Member 4</p>
+          </div>
+        </div>
+        <div class="board-quote">
+          <blockquote>"Insert quote here"</blockquote>
+          <p class="board-quote-author">- The CyberMinds Board</p>
+        </div>
+        <div class="contact-information">
+          <h3>Contact Us</h3>
+          <p>Email us at: <a href=mailto:contact@cyberminds.com style="color: #ffffff;">What is the email</a></p>
+        </div>
+      </div>
+      
+      
+      
     </div>
     <script src="./Javascript/cyberminds.js"></script>
   </body>
