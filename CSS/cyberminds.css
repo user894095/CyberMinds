@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
+  height: 135em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -101,25 +101,26 @@ header {
 }
 
 .section-wording {
-  white-space: none;
-  display: inline-block;
+    display: inline-block;
   font-stretch: expanded;
   clear: both;
   position: absolute;
-  font-size: 2.3em;
-  transform: translateX(-50%);
-  font-family: "Nova Square", sans-serif;
-  top: 8.5%;
+    transform: translateX(-50%);
+    top: 8.5%;
   left: 50%;
+font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
+  color: transparent;
+  /* Set initial text color to transparent */
+font-size: 3.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
     rgb(255, 255, 255)
   );
+/* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
@@ -139,11 +140,12 @@ header {
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-
+font-family: "True Sans" !important;
   letter-spacing: 0.1em;
-  word-spacing: 0.1em;
-  font-size: 0.8em;
-  color: transparent; /* Set initial text color to transparent */
+  font-weight: 700 !important;
+  color: transparent;
+  /* Set initial text color to transparent */
+font-size: 0.9em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -190,9 +192,9 @@ header {
 }
 
 /* Your existing styles here */
-.section2 {
-  margin-top: 1%;
-  padding-top: 8%;
+.section2, .section3{
+  margin-top: 3%;
+    padding-top: 8%;
   background-color: #141e2b;
   padding: 0.5em;
   position: relative;
@@ -202,7 +204,10 @@ header {
   align-items: center;
   justify-content: space-between;
   display: inline-block;
+  text-align: center;
 }
+
+
 
 /* .dots-container {
   position: absolute;
@@ -237,9 +242,7 @@ header {
 
 .section2-title {
   display: flex;
-  margin-top: 1%;
-  padding-top: 0%;
-  width: 100%;
+    width: 100%;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -263,8 +266,7 @@ header {
   font-size: 1em;
   padding-bottom: 10%;
   padding-top: 0;
-  padding: 2em;
-  margin-left: 5em;
+    margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
   margin: 0.3em;
