@@ -7,9 +7,58 @@
       rel="stylesheet"
       href="../../../CSS/Courses and Activities/Course 6/Sudo+PrivilegeEscalationcourse6.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-    <title>Course 6 - Sudo & Privilege Escalations</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .important-text {
+        font-size: 1.2em;
+        color: rgb(149,28,240); 
+      }
+      .links {
+        font-size: 1em;
+        color: rgb(0,102,255); 
+      }
+      .bottomlinks {
+        font-size: 1.5em;
+        color: rgb(0,102,255); 
+      }
+
+      .important-heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: lightgray;
+        margin-bottom: .00001em; /* Adjust this value to decrease or increase the space */
+      }
+
+      .less-important-text {
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: lightgray;
+      }
+
+      .container {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .square {
+        width: 300px; /* Adjust the width of the square */
+        height: 300px; /* Adjust the height of the square */
+        
+        padding: 20px; /* Adjust the padding inside the square */
+        margin-right: 5em;
+      }
+    </style>
+
+    <title>Course 6 - Sudo & Privilege Escalation</title>
   </head>
   <body>
     <header>
@@ -26,45 +75,38 @@
       </div>
     </header>
 
-    <div><p class="page-title">Course 6 - Sudo & Privilege Escalations</p></div>
+    <div><p class="page-title">Course 6 - Sudo & Privilege Escalation</p></div>
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Adfsdfsdfsdfsdfe</h2>
-        <p>ADD TEXT HERE</p>
+        <h2 class="important-heading">Sudo and Privilege Escalation</h2>
+        <div class="container">
+          
+          <div class="square">
+        <p class="less-important-text">
+          <span class="important-text">“sudo”</span> (lowercase), is a <span class="important-text">Linux keyword </span> stands for <span class="important-text">“superuser do.”</span> It helps users perform <span class="important-text">privilege escalation</span>. Sometimes, Linux users are not able to perform certain commands due to the permissions that the system admin gives them, even though it may be necessary for them to do their job.
+        </p>
+            <p class="less-important-text">
+              <span class="important-text">Privilege escalation</span> is the process of gaining more permissions than before. This is what happens when sudo is used. It is <span class="important-text">unsafe</span> to let any user run whatever they want at any time, so sudo is the solution to this, only granting temporary privileges. Not everyone is allowed to use sudo either. On Linux, there is a file called the <span class="important-text">“sudoer’s file,”</span> listing all users that can use sudo.
+            </p>
+            </div>
+          <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Your Image" style="width: 600px;height: 500px;">
+          
+          </div>
 
-        <h2>SDFLDSFLKDSFJLKSDJFLSKDFJLSKDFJLSKDJFF</h2>
-        <p>SDFSDLFKHSLDKFHSLDKFHLSKDFJLSKDJFLKSD</p>
-        <ul>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-        </ul>
+        
+          
 
-        <h2>SDFSDFSDFSDF</h2>
-        <p>SDFSDFSDFSDFSDFSDF</p>
-        <ul>
-          <li>DSFSDFSDFSDFSDFSDFSDFSDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDFSDFSDSSDFSDSFDFDFS!</li>
-          <li>HGFHGFDGRGAGSSFDFDSFDFDFDFDAFAD</li>
-        </ul>
+        <p style="font-size:medium;color: rgb(0,102,255);">
+          *Note: permanently granting yourself sudo privileges can lead to irreversible effects if mistakes are made. Always be careful when using or granting others sudo privileges.
+        </p>
 
         <div class="right-side_rectangle-buttons">
-          <a href="../../Courses and Activities/Course 6/LinuxHousekeeping.html"
+          <a
+            href="../../Courses and Activities/Course 6/WhatIsLinuxcourse6.html"
             >&lt; Previous</a
           >
-          <a
-            href="../../Courses and Activities/Course 6/UsersandPrivileges_FileSystemcourse6.html"
+          <a href="../../Courses and Activities/Course 6/LinuxHousekeeping.html"
             >Next ></a
           >
           <a
@@ -84,25 +126,19 @@
           <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
         </div>
 
-        <div class="leftRectangle-section2">
+       <div class="leftRectangle-section2">
           <p class="leftRectangle-section2-button-title">Table of Contents</p>
           <a href="../Course 6/Introductioncourse6.html">
             Course 6 - Introduction
           </a>
-          <a href="../Course 6/WhatIsLinuxcourse6.html">
-            Reading - What is Linux?
-          </a>
           <a href="../Course 6/SettingUpLinuxcourse6.html"
             >Reading - Setting Up Linux
           </a>
-          <a href="../Course 6/LinuxHousekeeping.html"
-            >Reading - Linux HouseKeeping
-          </a>
           <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html"
-            >Sudo & Privilege Escalations
+            >Sudo & Privilege Escalation
           </a>
-          <a href="../Course 6/UsersandPrivileges_FileSystemcourse6.html">
-            Users and Privileges
+          <a href="../Course 6/Permissionscourse6.html">
+            Permissions
           </a>
           <a href="../Course 6/QuizLinux.html"> Linux Quiz </a>
           <!-- <a href="add game here">  >add more here </a> -->
@@ -117,8 +153,4 @@
       </div>
 
       <!-- <footer class="page-footer">
-        <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
-      </footer> -->
-    </section>
-  </body>
-</html>
+        <p>&copy; 2024 CyberM

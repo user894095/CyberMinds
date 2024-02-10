@@ -112,6 +112,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
+  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section1 {
@@ -171,6 +172,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
+  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section2 a {
@@ -237,6 +239,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
+  font-family: "True Sans" !important;
 }
 
 .Empty-section3 {
@@ -282,10 +285,41 @@ section {
   margin-left: auto; /
 }
 
-
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
+}
+
+
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+h2{
+  font-family: 'neue-haas-unica' ,sans-serif;
+  font-size:1.8em; 
+}
+
+p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: neue-haas-unica,sans-serif;
+  font-style: normal;
+}
+
+li{
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
 }

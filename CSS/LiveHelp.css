@@ -70,17 +70,20 @@ header {
   background-color: #286aa7;
 }
 .page-title {
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   display: inline-block;
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-  font-family: "True Sans" !important;
+
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -97,4 +100,16 @@ header {
     color: rgb(255, 255, 255);
     background-size: 200% 100%; /* Adjust the size of the gradient */
   }
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }

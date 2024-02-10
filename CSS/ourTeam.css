@@ -1,18 +1,12 @@
-.column {
-  float: left;
-  width: 18%;
-  padding: 1em;
-  font-family: "True Sans" !important;
-  color: white;
-  text-align: center;
-}
-
 .pagetitle {
-  font-family: "True Sans" !important;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
+
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -33,7 +27,6 @@
 
 body {
   background-color: #1a2738;
-  font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -92,6 +85,44 @@ header {
   background-color: #286aa7;
 }
 
-.h2 {
-  white-space: nowrap;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 20%;
+
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 2.5em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.img {
+  box-shadow: 0 0 0.4em rgb(0, 251, 255);
+}
+
+@media (max-width: 62.5em) {
+  .flex-item {
+    flex: 33%;
+  }
+}
+
+@media (max-width: 20em) {
+  .flex-item {
+    flex: 100%;
+  }
+}
+
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }

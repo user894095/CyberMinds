@@ -123,35 +123,13 @@ font-size: 3.5em;
 /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards;
-  /* Set the duration of the animation */
-}
-
-.section-left {
-  float: left;
-  -webkit-text-fill-color: #ffffff;
-}
-
-.section-right {
-  float: right;
-  -webkit-text-fill-color: #afc9e0;
-}
-
-.section-left:hover {
-  -webkit-text-fill-color: #afc9e0;
-  transition: -webkit-text-fill-color 0.3s;
-}
-
-.section-left:hover ~ .section-right {
-  -webkit-text-fill-color: #ffffff;
-  transition: -webkit-text-fill-color 0.3s;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%;
-    /* Adjust the size of the gradient */
+    background-size: 200% 100%; /* Adjust the size of the gradient */
   }
 }
 
@@ -160,7 +138,7 @@ font-size: 3.5em;
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
-  top: 35%;
+  top: 40%;
   left: 50%;
 font-family: "True Sans" !important;
   letter-spacing: 0.1em;
@@ -172,20 +150,17 @@ font-size: 0.9em;
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  );
-  /* Adjust the colors and stops as needed */
+    rgb(255, 255, 255)
+  ); /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards;
-  /* Set the duration of the animation */
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
-@keyframes fadeInSlogan {
+@keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%;
-    /* Adjust the size of the gradient */
+    background-size: 200% 100%; /* Adjust the size of the gradient */
   }
 }
 
@@ -225,7 +200,7 @@ font-size: 0.9em;
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(75vh);
+  height: calc(70vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -273,10 +248,12 @@ font-size: 0.9em;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   font-size: 4em;
   padding: 1%;
   margin-bottom: 1em; /* Adjusted margin-bottom */
@@ -284,9 +261,9 @@ font-size: 0.9em;
 }
 
 .description {
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom: 10%;
   padding-top: 0;
     margin-left: 5em;
@@ -301,7 +278,7 @@ font-size: 0.9em;
   align-items: center;
   flex-wrap: nowrap;
   align-self: flex-end;
-  margin-top: 20%;
+  margin-top: 25vh;
 }
 
 .circle-box {
@@ -340,4 +317,8 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }

@@ -54,6 +54,21 @@ header {
   background-color: #286aa7;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+iframe {
+  align-self: center;
+  width: 560px;
+  height: 315px;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  box-sizing: border-box; /* Include padding in the total height */
+}
+
 .page-title {
   display: flex;
   justify-content: left;
@@ -61,9 +76,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -290,12 +305,12 @@ section {
 }
 
 h3{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
 }
 
 h2{
-  font-family: 'neue-haas-unica' ,sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size:1.8em; 
 }
 
@@ -303,16 +318,21 @@ p{
   font-weight: 400;
   font-size: 1em;
   line-height: 1.7em;
-  font-family: neue-haas-unica,sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-style: normal;
 }
 
 li{
   font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 h3{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
 }
 

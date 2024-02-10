@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="../../../CSS/Courses and Activities/Course 6/SettingUpLinuxcourse6.css"
+      href="../../../CSS/Courses and Activities/Course 6/Introductioncourse6.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-    <title>Course 6 - Setting Up Linux?</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .important-text {
+        font-size: 1.2em;
+        color: rgb(149,28,240); 
+      }
+      .links {
+        font-size: 1em;
+        color: rgb(0,102,255); 
+      }
+      .bottomlinks {
+        font-size: 1.5em;
+        color: rgb(0,102,255); 
+      }
+  
+      .important-heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: lightgray;
+      }
+
+      .less-important-text {
+        font-size: medium;
+        color: lightgray;
+      }
+    </style>
+
+    <title>Course 6 - Setting Up Linux</title>
   </head>
   <body>
     <header>
@@ -26,47 +60,53 @@
       </div>
     </header>
 
-    <div><p class="page-title">Course 6 - Setting Up Linux?</p></div>
+    <div><p class="page-title">Course 6 - Setting Up Linux</p></div>
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Adfsdfsdfsdfsdfe</h2>
-        <p>ADD TEXT HERE</p>
+        <h2 class="important-heading">1) Install VirtualBox <a href="https://www.virtualbox.org" target="_blank" class="links">here</a></h2>
+        <p class="less-important-text">
+          VirtualBox is a <span class="important-text">virtual machine application</span> which will allow Linux distros to run on it, separating what we do on Linux from what we do outside of it.
+        </p>
 
-        <h2>SDFLDSFLKDSFJLKSDJFLSKDFJLSKDFJLSKDJFF</h2>
-        <p>SDFSDLFKHSLDKFHSLDKFHLSKDFJLSKDJFLKSD</p>
-        <ul>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-        </ul>
+        <h2 class="important-heading">2) Download a Linux distro.</h2>
+        <p class="less-important-text">
+          We highly recommend <span class="important-text">Kali Linux or Parrot OS</span>. They are very similar because they are both derivatives of <span class="important-text">Debian</span>. Both are also commonly used and <span class="important-text">beginner-friendly</span>.
+        </p>
+        <p class="less-important-text">
+          Download <span class="important-text">Kali Linux</span> <a href="https://www.kali.org/get-kali/#kali-platforms" target="_blank" class="links">here</a>. Click on <span class="important-text">“Installer Images”</span> and download the <span class="important-text">first result</span>.
+        </p>
+        <p class="less-important-text">
+          Download <span class="important-text">Parrot OS</span> <a href="https://www.parrotsec.org/download/" target="_blank" class="links">here</a>. For our activities, the home version is enough, but it is okay to choose another version.
+        </p>
 
-        <h2>SDFSDFSDFSDF</h2>
-        <p>SDFSDFSDFSDFSDFSDF</p>
-        <ul>
-          <li>DSFSDFSDFSDFSDFSDFSDFSDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDFSDFSDSSDFSDSFDFDFS!</li>
-          <li>HGFHGFDGRGAGSSFDFDSFDFDFDFDAFAD</li>
-        </ul>
+        <h2 class="important-heading">3) On Virtual Box, click on “New”.</h2>
+        <p class="less-important-text">
+          You can put <span class="important-text">anything</span> for the title. Select your downloaded Linux distro under <span class="important-text">ISO image</span> (should have a .iso extension). VirtualBox will prompt you to select how much of your current resources you want to allocate to Linux. You can click <span class="important-text">next</span> with all the <span class="important-text">default settings</span> they give you.
+        </p>
+
+        <h2 class="important-heading">4) Once you have set up your Linux distro on VirtualBox, we need to install the distro itself.</h2>
+        <p class="less-important-text">
+          For <span class="important-text">Parrot and Kali</span>, you can follow these resources:
+        </p>
+        <p class="less-important-text">
+          <a href="https://www.kali.org/get-kali/#kali-platforms" target="_blank" class="bottomlinks" ">Kali Linux Installation here.</a>
+        </p>
+        <p class="less-important-text">
+          <a href="https://www.parrotsec.org/download/" target="_blank" class="bottomlinks" >Parrot OS Installation here.</a>
+        </p>
+
+        <p class="important-heading">Congrats! You have successfully set up Linux.</p>
 
         <div class="right-side_rectangle-buttons">
           <a
             href="../../Courses and Activities/Course 6/WhatIsLinuxcourse6.html"
             >&lt; Previous</a
           >
-          <a href="../../Courses and Activities/Course 6/LinuxHousekeeping.html"
-            >Next ></a
-          >
+          <a
+          href="../../Courses and Activities/Course 6/Sudo+PrivilegeEscalationcourse6.html"
+          >&lt; Next</a
+        >
           <a
             href="../../Courses and Activities/Course 7/Introductioncourse7.html"
             class="next_course"
@@ -84,25 +124,19 @@
           <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
         </div>
 
-        <div class="leftRectangle-section2">
+         <div class="leftRectangle-section2">
           <p class="leftRectangle-section2-button-title">Table of Contents</p>
           <a href="../Course 6/Introductioncourse6.html">
             Course 6 - Introduction
           </a>
-          <a href="../Course 6/WhatIsLinuxcourse6.html">
-            Reading - What is Linux?
-          </a>
           <a href="../Course 6/SettingUpLinuxcourse6.html"
             >Reading - Setting Up Linux
           </a>
-          <a href="../Course 6/LinuxHousekeeping.html"
-            >Reading - Linux Housekeeping
-          </a>
           <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html"
-            >Sudo & Privilege Escalations
+            >Sudo & Privilege Escalation
           </a>
-          <a href="../Course 6/UsersandPrivileges_FileSystemcourse6.html">
-            Users and Privileges
+          <a href="../Course 6/Permissionscourse6.html">
+            Permissions
           </a>
           <a href="../Course 6/QuizLinux.html"> Linux Quiz </a>
           <!-- <a href="add game here">  >add more here </a> -->
