@@ -35,6 +35,100 @@
 
   <section>
     <div class="right-side_rectangle">
+      <h2>Permissions</h2>
+      <p>
+        <center>
+          <span class="blue-word">
+            drwxr-xr--
+          </span>
+        </center>
+      </p>
+      <p>
+        This may seem like a random string of characters, but strings like this give users all the information that
+        users need to know about the privileges
+        of certain files and directories. We can break this down:
+      </p>
+      <ul>
+        <li>
+          The first character will be a <span class="blue-word">d</span> or a <span class="blue-word">-</span>. A <span
+            class="blue-word">d</span>
+          stands for directory and a <span class="blue-word">hyphen</span> signifies a file.
+        </li>
+        <li>
+          The next three characters represent permissions for the <span class="blue-word">file owner</span>.
+        </li>
+        <li>
+          The second set of three characters represent permissions for the <span class="blue-word">file owner's
+            group</span>. Users can be put into
+          groups that are given similar permissions.
+        </li>
+        <li>
+          The last three characters represent the permissions for <span class="blue-word">all other users</span>.
+        </li>
+      </ul>
+      <p>
+        Finally, what do <span class="blue-word">r</span>, <span class="blue-word">w</span>, and <span
+          class="blue-word">x</span> stand for?
+      </p>
+      <ul>
+        <li>
+          <span class="blue-word">r: read</span>. Users can view the file or directory's contents.
+        </li>
+        <li>
+          <span class="blue-word">w: write</span>. Users can edit files and directories.
+        </li>
+        <li>
+          <span class="blue-word">x: execute</span>. If executable, users can execute files or change into a directory.
+        </li>
+      </ul>
+      <h3>Changing Privileges:</h3>
+      <p>
+        Privileges are changed using the <span class="blue-word">chmod</span> command (you may need to use sudo). We
+        will teach you to ways to use this:
+      </p>
+      <h4>1. Format: <span class="blue-word">chmod u+rwx,g+rwx,o+rwx myFile</span></h4>
+      <p>
+        This format changes the permissions of myFile to rwx for users, rwx for group, and rwx for others.
+        If you want to leave a permission out, you can add only the permissions you want (ex. u+rw). You can also
+        subtract permissions (ex. u-rwx).
+      </p>
+      <h4>2. Format: <span class="blue-word">chmod 254 myFile</span></h4>
+      <p>
+        This format changes the permissions of myFile to -w- for users, r-x for group, and r-- for others. If you are
+        familiar with binary, you may be able to understand why this is.
+        If you are not, all you need to know is that the first, second, and third digits passed in as an argument
+        correlate to the permissions
+        of users, the group, and others, respectively. Each number correlates to a permission setting:
+      </p>
+      <ul>
+        <li>
+          <span class="blue-word">0</span>= ---
+        </li>
+        <li>
+          <span class="blue-word">1</span>= --x
+        </li>
+        <li>
+          <span class="blue-word">2</span>= -w-
+        </li>
+        <li>
+          <span class="blue-word">3</span>= -wx
+        </li>
+        <li>
+          <span class="blue-word">4</span>= r--
+        </li>
+        <li>
+          <span class="blue-word">5</span>= r-x
+        </li>
+        <li>
+          <span class="blue-word">6</span>= rw-
+        </li>
+        <li>
+          <span class="blue-word">7</span>= rwx
+        </li>
+      </ul>
+      <p>
+        Don’t worry if you think you have not grasped these commands yet. We will practice in the next activity.
+      </p>
 
 
 
