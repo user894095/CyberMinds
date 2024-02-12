@@ -290,27 +290,20 @@ section {
   background-color: #1e6bb2;
 }
 
-
-h3{
+h3 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1em;
 }
 
-h2{
-  font-family: "Space Grotesk", sans-serif;
-  font-size:1.8em; 
-}
-
-p{
+h2 {
+  font-family: "MuseoModerno", sans-serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.7em;
-  font-family: "Space Grotesk", sans-serif;
-  font-style: normal;
 }
 
-li{
-  font-size: medium;
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
   font-family: "Space Grotesk", sans-serif;
 }
 

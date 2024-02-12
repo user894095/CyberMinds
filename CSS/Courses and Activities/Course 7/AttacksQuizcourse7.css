@@ -397,3 +397,24 @@ label.selected {
   color:#ffffff;
   margin: 0 auto; 
 }
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
