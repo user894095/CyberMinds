@@ -61,9 +61,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -390,10 +390,31 @@ label.selected {
   border-radius: 5px; /* Add border-radius for a bevel effect */
   font-family: "Space Grotesk", sans-serif;
   font-size: medium;
-  max-width: 10%; /* Set the maximum width for the label */
+  max-width: 20%; /* Set the maximum width for the label */
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
   color:#ffffff;
   margin: 0 auto; 
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
 }

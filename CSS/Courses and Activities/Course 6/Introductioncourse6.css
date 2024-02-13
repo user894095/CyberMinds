@@ -322,3 +322,28 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .important-text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.3em;
+        color: rgb(149,28,240); 
+      }
+
+      .important-heading {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: lightgray;
+      }
+
+      .less-important-text {
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: lightgray;
+      }

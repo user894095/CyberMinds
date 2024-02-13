@@ -1,133 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../../../CSS/Courses and Activities/Course 6/Permissionsc6.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Course 6 - Permissions</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
-        <nav class="header-buttons">
-          <a href="../../../index.html">Back to Home Screen</a>
-          <a href="../../moreinfo.html">More Info</a>
-          <a href="../../course_Contents.html">Mission</a>
-          <a href="../../LiveHelp.html">Live Help</a>
-          <a href="../../ourTeam.html">Our Team</a>
-          <a href="../../support.html">Support</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../CSS/Courses and Activities/Course 6/Permissionsc6.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+
+  <title>Course 6 - Permissions</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+      <nav class="header-buttons">
+        <a href="../../../index.html">Back to Home Screen</a>
+        <a href="../../moreinfo.html">More Info</a>
+        <a href="../../course_Contents.html">Mission</a>
+        <a href="../../LiveHelp.html">Live Help</a>
+        <a href="../../ourTeam.html">Our Team</a>
+        <a href="../../support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <p class="page-title">Course 6 - Permissions</p>
+  </div>
+
+  <section>
+    <div class="right-side_rectangle">
+      <h2>Permissions</h2>
+      <p>
+        <center>
+          <span class="blue-word">
+            drwxr-xr--
+          </span>
+        </center>
+      </p>
+      <p>
+        This may seem like a random string of characters, but strings like this give users all the information that
+        users need to know about the privileges
+        of certain files and directories. We can break this down:
+      </p>
+      <ul>
+        <li>
+          The first character will be a <span class="blue-word">d</span> or a <span class="blue-word">-</span>. A <span
+            class="blue-word">d</span>
+          stands for directory and a <span class="blue-word">hyphen</span> signifies a file.
+        </li>
+        <li>
+          The next three characters represent permissions for the <span class="blue-word">file owner</span>.
+        </li>
+        <li>
+          The second set of three characters represent permissions for the <span class="blue-word">file owner's
+            group</span>. Users can be put into
+          groups that are given similar permissions.
+        </li>
+        <li>
+          The last three characters represent the permissions for <span class="blue-word">all other users</span>.
+        </li>
+      </ul>
+      <p>
+        Finally, what do <span class="blue-word">r</span>, <span class="blue-word">w</span>, and <span
+          class="blue-word">x</span> stand for?
+      </p>
+      <ul>
+        <li>
+          <span class="blue-word">r: read</span>. Users can view the file or directory's contents.
+        </li>
+        <li>
+          <span class="blue-word">w: write</span>. Users can edit files and directories.
+        </li>
+        <li>
+          <span class="blue-word">x: execute</span>. If executable, users can execute files or change into a directory.
+        </li>
+      </ul>
+      <h3>Changing Privileges:</h3>
+      <p>
+        Privileges are changed using the <span class="blue-word">chmod</span> command (you may need to use sudo). We
+        will teach you to ways to use this:
+      </p>
+      <h4>1. Format: <span class="blue-word">chmod u+rwx,g+rwx,o+rwx myFile</span></h4>
+      <p>
+        This format changes the permissions of myFile to rwx for users, rwx for group, and rwx for others.
+        If you want to leave a permission out, you can add only the permissions you want (ex. u+rw). You can also
+        subtract permissions (ex. u-rwx).
+      </p>
+      <h4>2. Format: <span class="blue-word">chmod 254 myFile</span></h4>
+      <p>
+        This format changes the permissions of myFile to -w- for users, r-x for group, and r-- for others. If you are
+        familiar with binary, you may be able to understand why this is.
+        If you are not, all you need to know is that the first, second, and third digits passed in as an argument
+        correlate to the permissions
+        of users, the group, and others, respectively. Each number correlates to a permission setting:
+      </p>
+      <ul>
+        <li>
+          <span class="blue-word">0</span>= ---
+        </li>
+        <li>
+          <span class="blue-word">1</span>= --x
+        </li>
+        <li>
+          <span class="blue-word">2</span>= -w-
+        </li>
+        <li>
+          <span class="blue-word">3</span>= -wx
+        </li>
+        <li>
+          <span class="blue-word">4</span>= r--
+        </li>
+        <li>
+          <span class="blue-word">5</span>= r-x
+        </li>
+        <li>
+          <span class="blue-word">6</span>= rw-
+        </li>
+        <li>
+          <span class="blue-word">7</span>= rwx
+        </li>
+      </ul>
+      <p>
+        Don’t worry if you think you have not grasped these commands yet. We will practice in the next activity.
+      </p>
+
+
+
+      <div class="right-side_rectangle-buttons">
+        <a href="../../Courses and Activities/Course 6/ExploreFileSystemcourse6.html">&lt; Previous</a>
+        <a href="../../Courses and Activities/Course 6/ExplorePermissionscourse6.html">Next ></a>
+        <a href="../../Courses and Activities/Course 7/Introductioncourse7.html" class="next_course">Skip to Next
+          Course</a>
       </div>
-    </header>
+    </div>
 
-    <div><p class="page-title">Course 6 - Permissions</p></div>
-
-    <section>
-      <div class="right-side_rectangle">
-        <h2>Adfsdfsdfsdfsdfe</h2>
-        <p>ADD TEXT HERE</p>
-
-        <h2>SDFLDSFLKDSFJLKSDJFLSKDFJLSKDFJLSKDJFF</h2>
-        <p>SDFSDLFKHSLDKFHSLDKFHLSKDFJLSKDJFLKSD</p>
-        <ul>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
-          </li>
-        </ul>
-
-        <h2>SDFSDFSDFSDF</h2>
-        <p>SDFSDFSDFSDFSDFSDF</p>
-        <ul>
-          <li>DSFSDFSDFSDFSDFSDFSDFSDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDFSDFSDSSDFSDSFDFDFS!</li>
-          <li>HGFHGFDGRGAGSSFDFDSFDFDFDFDAFAD</li>
-        </ul>
-
-        <div class="right-side_rectangle-buttons">
-          <a
-            href="../../Courses and Activities/Course 6/ExploreFileSystemcourse6.html"
-            >&lt; Previous</a
-          >
-          <a
-            href="../../Courses and Activities/Course 6/ExplorePermissionscourse6.html"
-            >Next ></a
-          >
-          <a
-            href="../../Courses and Activities/Course 7/Introductioncourse7.html"
-            class="next_course"
-            >Skip to Next Course</a
-          >
-        </div>
+    <div class="left-side_rectangle">
+      <div class="leftRectangle-section1">
+        <p class="leftRectangle-section1-button-title">Go back?</p>
+        <a href="../../course_Contents.html">Back to all Courses</a>
+      </div>
+      <div class="Empty-section1">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <div class="left-side_rectangle">
-        <div class="leftRectangle-section1">
-          <p class="leftRectangle-section1-button-title">Go back?</p>
-          <a href="../../course_Contents.html">Back to all Courses</a>
-        </div>
-        <div class="Empty-section1">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="leftRectangle-section2">
-          <p class="leftRectangle-section2-button-title">Table of Contents</p>
-          <a href="../Course 6/Introductioncourse6.html">
-            Course 6 - Introduction
-          </a>
-          <a href="../Course 6/SettingUpLinuxcourse6.html"
-            >Reading - Setting Up Linux
-          </a>
-          <a href="../Course 6/BasicCommandscourse6.html"
-            >Basic Commands & Getting Help
-          </a>
-          <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html"
-            >Sudo & Privilege Escalation
-          </a>
-          <a href="../Course 6/ExploreSudocourse6.html">Explore Sudo </a>
-          <a href="../Course 6/TheFileSystemcourse6.html"> The Filesystem </a>
-          <a href="../Course 6/ExploreFileSystemcourse6.html">
-            Explore the Filesystem
-          </a>
-          <a href="../Course 6/Permissionscourse6.html"> Permissions </a>
-          <a href="../Course 6/ExplorePermissionscourse6.html">
-            Explore Permissions
-          </a>
-          <a href="../Course 6/QuizLinuxcourse6.html"> Linux Quiz </a>
-          <!-- <a href="add game here">  >add more here </a> -->
-        </div>
-        <div class="Empty-section2">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="Empty-section3">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
+      <div class="leftRectangle-section2">
+        <p class="leftRectangle-section2-button-title">Table of Contents</p>
+        <a href="../Course 6/Introductioncourse6.html">
+          Course 6 - Introduction
+        </a>
+        <a href="../Course 6/SettingUpLinuxcourse6.html">Reading - Setting Up Linux
+        </a>
+        <a href="../Course 6/BasicCommandscourse6.html">Basic Commands & Getting Help
+        </a>
+        <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html">Sudo & Privilege Escalation
+        </a>
+        <a href="../Course 6/ExploreSudocourse6.html">Explore Sudo </a>
+        <a href="../Course 6/TheFileSystemcourse6.html"> The Filesystem </a>
+        <a href="../Course 6/ExploreFileSystemcourse6.html">
+          Explore the Filesystem
+        </a>
+        <a href="../Course 6/Permissionscourse6.html"> Permissions </a>
+        <a href="../Course 6/ExplorePermissionscourse6.html">
+          Explore Permissions
+        </a>
+        <a href="../Course 6/QuizLinuxcourse6.html"> Linux Quiz </a>
+        <!-- <a href="add game here">  >add more here </a> -->
+      </div>
+      <div class="Empty-section2">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <!-- <footer class="page-footer">
+      <div class="Empty-section3">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+      </div>
+    </div>
+
+    <!-- <footer class="page-footer">
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>
