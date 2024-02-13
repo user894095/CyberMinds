@@ -313,6 +313,10 @@ section {
     background-color: #1e6bb2;
 }
 
+.end-text {
+    font-style: italic;
+}
+
 h3 {
     font-family:
         "Space Grotesk", sans-serif;
