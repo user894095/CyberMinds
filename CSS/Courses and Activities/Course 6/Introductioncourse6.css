@@ -302,23 +302,33 @@ section {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h3 {
+h2{
   font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
 }
 
-h2 {
-  font-family: "MuseoModerno", sans-serif;
+p{
   font-weight: 400;
-}
-
-p {
+  font-size: 1em;
+  line-height: 1.7em;
   font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
-li {
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
 }
 
 a {
   font-family: "Space Grotesk", sans-serif;
+}
+
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
 }

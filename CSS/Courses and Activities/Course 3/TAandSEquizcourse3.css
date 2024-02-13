@@ -372,7 +372,7 @@ label.selected {
   border-radius: 5px; /* Add border-radius for a bevel effect */
   font-family: "Space Grotesk", sans-serif;
   font-size: medium;
-  max-width: 10%; /* Set the maximum width for the label */
+  max-width: 20%; /* Set the maximum width for the label */
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
