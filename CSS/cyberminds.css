@@ -361,8 +361,7 @@ a {
   width: 100%;
   height: auto;
   border-radius: 50%; /* Circular images */
-  border: 3px solid #fb582a; /* Border color like the icons in section2 */
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.05em 0.1em 0.7em rgba(70, 200, 255, 0.974); /* Shadow color and intensity */
 }
 
 .board-member-name {
@@ -383,7 +382,7 @@ a {
 
 .board-quote blockquote:before,
 .board-quote blockquote:after {
-  color: #fb582a; /* This color is just a placeholder; adjust as needed */
+  color: #2aedfb; /* This color is just a placeholder; adjust as needed */
   font-size: 4em;
   line-height: 0.1em;
   vertical-align: -0.4em;
