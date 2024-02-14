@@ -329,7 +329,7 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(80vh);
+  height: calc(95vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
