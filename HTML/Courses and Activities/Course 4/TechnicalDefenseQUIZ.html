@@ -34,34 +34,154 @@
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Adfsdfsdfsdfsdfe</h2>
-        <p>ADD TEXT HERE</p>
-
-        <h2>SDFLDSFLKDSFJLKSDJFLSKDFJLSKDFJLSKDJFF</h2>
-        <p>SDFSDLFKHSLDKFHSLDKFHLSKDFJLSKDJFLKSD</p>
-        <ul>
-          <li>
-            <!-- add text here -->
+        <h2 class="question">
+          1. What does SIEM stand for?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q1" value="SW" id="q1-SW" />
+            <label for="q1-SW">
+              Standards of Information and Event Management
+              <div id="q1-SW-detail" class="answer-detail">
+              </div>
+            </label>
           </li>
-          <li>
-            <!-- add text here -->
+          <li class="option">
+            <input type="radio" name="q1" value="ES" id="q1-ES" />
+            <label for="q1-ES">
+              Security Information and Event Management
+              <div id="q1-ES-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
           </li>
-          <li>
-            <!-- add text here -->
+          <li class="option">
+            <input type="radio" name="q1" value="VW" id="q1-VW" />
+            <label for="q1-VW">
+              Social Inducement and Engineering Methods
+              <div id="q1-VW-detail" class="answer-detail">
+              </div>
+            </label>
           </li>
-          <li>
-            <!-- add text here -->
+          <li class="option">
+            <input type="radio" name="q1" value="VS" id="q1-VS" />
+            <label for="q1-VS">
+              Systems of Information and Engineering Methods
+              <div id="q1-VS-detail" class="answer-detail">
+              </div>
+            </label>
           </li>
         </ul>
 
-        <h2>SDFSDFSDFSDF</h2>
-        <p>SDFSDFSDFSDFSDFSDF</p>
-        <ul>
-          <li>DSFSDFSDFSDFSDFSDFSDFSDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDFSDFSDSSDFSDSFDFDFS!</li>
-          <li>HGFHGFDGRGAGSSFDFDSFDFDFDFDAFAD</li>
+        <h2 class="question">
+          2. Which of the following is true about an IDS and an IPS?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q2" value="open" id="q2-open" />
+            <label for="q2-open" name="q2">
+              An IDS is more secure than an IPS because it alerts the user of an intrusion
+              <div id="q2-open-detail" class="answer-detail">
+                An IPS will also alert users of intrusions.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+            <label for="q2-grammar" name="q2">
+              It is better to choose either an IDS or an IPS than use both
+              <div id="q2-grammar-detail" class="answer-detail">
+                Although they have some overlapping functionality, 
+                it does not hurt to use more than one if necessary.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="verify" id="q2-verify" />
+            <label for="q2-verify" name="q2">
+              Neither should be used if SIEM tools are being used
+              <div id="q2-verify-detail" class="answer-detail">
+                Although they have some overlapping functionality, it does not hurt to use more than one if necessary.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+            <label for="q2-ignore" name="q2">
+              An IPS is more secure than an IDS because an IPS takes preventative measures
+              <div id="q2-ignore-detail" class="answer-detail">
+                Correct! An IPS will usually have all the functionality of an IDS but with preventative measures.
+              </div>
+            </label>
+          </li>
         </ul>
+
+        <h2 class="question">
+          3. Programming your own script for security automation is more secure than using automation tools.
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q3" value="true" id="q3-true" />
+            <label for="q3-true" name="q3">
+              True
+              <div id="q3-true-detail" class="answer-detail">
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="false" id="q3-false" />
+            <label for="q3-false" name="q3">
+              False
+              <div id="q3-false-detail" class="answer-detail">
+                Correct! Both your own programming and automation tools can complete your tasks. Programming your own tools can make it more customizable and fitting to your needs, but that does not mean it is inherently more secure than automation tools.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          4. Which of these languages are commonly used to automate security tasks? Select one of the two correct answers.
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q4" value="tail" id="q4-tail" />
+            <label for="q4-tail" name="q4">
+              HTML and CSS
+              <div id="q4-tail-detail" class="answer-detail">
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="dive" id="q4-dive" />
+            <label for="q4-dive" name="q4">
+              Python
+              <div id="q4-dive-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="phishing" id="q4-phishing" />
+            <label for="q4-phishing" name="q4">
+              Bash Scripting
+              <div id="q4-phishing-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="none" id="q4-none" />
+            <label for="q4-none" name="q4">
+              SQL
+              <div id="q4-none-detail" class="answer-detail">
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
+
+        <p id="result"></p>
 
         <div class="right-side_rectangle-buttons">
           <a
@@ -134,5 +254,80 @@
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
     </section>
+    <script>
+      function submitQuiz() {
+        var score = 0;
+
+        // Check answer for question 1
+        var q1Answer = document.querySelector('input[name="q1"]:checked');
+        if (q1Answer && q1Answer.value === "ES") {
+          score++;
+        }
+        showAnswerDetail("q1-SW-detail");
+        showAnswerDetail("q1-ES-detail");
+        showAnswerDetail("q1-VW-detail");
+        showAnswerDetail("q1-VS-detail");
+
+        // Check answer for question 2
+        var q2Answer = document.querySelector('input[name="q2"]:checked');
+        if (q2Answer && q2Answer.value === "ignore") {
+          score++;
+        }
+        showAnswerDetail("q2-open-detail");
+        showAnswerDetail("q2-grammar-detail");
+        showAnswerDetail("q2-verify-detail");
+        showAnswerDetail("q2-ignore-detail");
+
+        var q3Answer = document.querySelector('input[name="q3"]:checked');
+        if (q3Answer && q3Answer.value === "false") {
+          score++;
+        }
+        showAnswerDetail("q3-true-detail");
+        showAnswerDetail("q3-false-detail");
+
+        var q4Answer = document.querySelector('input[name="q4"]:checked');
+        if (q4Answer && q4Answer.value === "dive" || q4Answer && q4Answer.value === "phishing") {
+          score++;
+        }
+        showAnswerDetail("q4-tail-detail");
+        showAnswerDetail("q4-dive-detail");
+        showAnswerDetail("q4-phishing-detail");
+        showAnswerDetail("q4-none-detail");
+
+        // Display the result
+        var resultElement = document.getElementById("result");
+        resultElement.innerHTML = "Your score is: " + score + "/4";
+      }
+
+      function showAnswerDetail(detailId) {
+        var detailElement = document.getElementById(detailId);
+        if (detailElement) {
+          detailElement.style.display = "block";
+        }
+      }
+
+      var labels = document.querySelectorAll("label");
+      labels.forEach(function (label) {
+        label.addEventListener("click", function () {
+          // Remove 'selected' class from all labels
+          labels.forEach(function (otherLabel) {
+            var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var radioName = radioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var otherRadioName = otherRadioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            if (otherRadioName === radioName) {
+              otherLabel.classList.remove("selected");
+            }
+          });
+
+          // Add 'selected' class to the clicked label
+          label.classList.add("selected");
+        });
+      });
+    </script>
   </body>
 </html>
