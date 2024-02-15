@@ -305,3 +305,11 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+iframe {
+  align-self: center;
+  width: 560px;
+  height: 315px;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  box-sizing: border-box; /* Include padding in the total height */
+}
