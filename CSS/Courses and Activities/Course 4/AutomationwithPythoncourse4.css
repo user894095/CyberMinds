@@ -318,3 +318,8 @@ a {
 .blue-word{
   color: rgb(189, 228, 229)
 }
+
+.editor1 {
+  background-color: rgb(1, 126, 143);
+  margin-bottom: 25px;
+}
