@@ -310,3 +310,16 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.purple-word{
+  color: rgb(112,124,240)
+}
+
+.blue-word{
+  color: rgb(189, 228, 229)
+}
+
+.editor1 {
+  background-color: rgb(1, 126, 143);
+  margin-bottom: 25px;
+}

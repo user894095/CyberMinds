@@ -339,3 +339,15 @@ a {
     font-family: "Space Grotesk",
         sans-serif;
 }
+
+.editor1 {
+    background-color: rgb(1, 126, 143);
+}
+
+.editor2 {
+    background-color: rgb(1, 126, 143);
+}
+
+.editor {
+    background-color: #000000;
+  }
