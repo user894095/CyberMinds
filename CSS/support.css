@@ -77,11 +77,13 @@ header {
   transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-  font-family: "True Sans" !important;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -91,6 +93,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
+  margin-bottom: 30;
 }
 
 @keyframes fadeIn {
@@ -111,19 +114,14 @@ header {
 }
 
 .text {
-
   margin-top: 10%;
-
-
 }
 
-.question{
-  background-color:#174167;
+.question {
+  background-color: #174167;
   margin-right: 30%;
   margin-left: 30%;
   border-radius: 1em;
-
-
 }
 footer {
   background-color: #0a0a0a;
@@ -141,53 +139,56 @@ footer {
   font-size: 0.9em;
 }
 
-.question-title{
+.question-title {
   border-bottom: 2px solid #f9f9f970;
   border-width: 0.009em;
   border-radius: 1em;
-
-
 }
 
-.question-text{
+.question-text {
   display: none;
-
-
-
 }
 
-.show-text .question-text{
+.show-text .question-text {
   display: block;
-
 }
 
-.minus-icon{
-  display: none;
-
-}
-
-.show-text .minus-icon{
-  display:inline;
-}
-
-.show-text .plus-icon{
+.minus-icon {
   display: none;
 }
 
-.question-btn{
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+.question-btn {
   margin-left: 90%;
   transform: translateY(-70%);
-  background-color:transparent;
+  background-color: transparent;
   border-color: transparent;
   border-radius: 0.2em;
-
-  
 }
 
-.far.fa-plus-square{
+.far.fa-plus-square {
   font-size: 1.5em;
 }
 
-.far.fa-minus-square{
+.far.fa-minus-square {
   font-size: 1.5em;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }

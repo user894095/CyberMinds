@@ -1,4 +1,4 @@
-/* this page links to index page Priyanshi */
+/* this page links to index page */
 body {
   overflow-x: hidden;
 }
@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
+  height: 135em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -31,8 +31,10 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center; /* Center the items vertically */
-  justify-content: space-between; /* Space between the logo and nav */
+  align-items: center;
+  /* Center the items vertically */
+  justify-content: space-between;
+  /* Space between the logo and nav */
 }
 
 .header-content video {
@@ -65,9 +67,12 @@ header {
   background-color: #174167;
   text-decoration: none;
   margin-right: 0.9em;
-  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
-  border-radius: 0.8em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 0.4em 0.8em;
+  /* Smaller padding for a more compact button */
+  border-radius: 0.8em;
+  /* Make the buttons more rounded */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
 }
 
 .header-buttons a:hover {
@@ -79,7 +84,7 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(75vh);
+  height: calc(80vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -106,34 +111,19 @@ header {
   font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  color: transparent;
+  /* Set initial text color to transparent */
+  font-size: 2.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
     rgb(255, 255, 255)
-  ); /* Adjust the colors and stops as needed */
+  );
+  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
-}
-
-.section-left {
-  float: left;
-  -webkit-text-fill-color: #ffffff;
-}
-.section-right {
-  float: right;
-  -webkit-text-fill-color: #ffffff;
-}
-.section-left:hover {
-  -webkit-text-fill-color: #ffffff;
-  transition: -webkit-text-fill-color 0.3s;
-}
-.section-left:hover ~ .section-right {
-  -webkit-text-fill-color: #ffffff;
-  transition: -webkit-text-fill-color 0.3s;
 }
 
 @keyframes fadeIn {
@@ -148,25 +138,26 @@ header {
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
-  top: 35%;
+  top: 40%;
   left: 50%;
   font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
-  color: transparent; /* Set initial text color to transparent */
+  color: transparent;
+  /* Set initial text color to transparent */
   font-size: 0.9em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
+    rgb(255, 255, 255)
   ); /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards; /* Set the duration of the animation */
 }
 
-@keyframes fadeInSlogan {
+@keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
     background-size: 200% 100%; /* Adjust the size of the gradient */
@@ -200,59 +191,100 @@ header {
   background-color: #286aa7;
 }
 
+/* Your existing styles here */
 .section2 {
-  margin-top: 6%;
-  padding-top: 1%;
-  background-color: #010811;
+  margin-top: 3%;
+  padding-top: 8%;
+  background-color: #141e2b;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(70vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
 }
+
+/* .dots-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(90deg, #00bfff, #000080);
+  border-radius: 50%;
+  animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+} */
 
 .fa-3xl {
   font-size: 3.5em;
-  line-height: 4 em;
+  line-height: 4em;
 }
 
 .section2-title {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
-  font-size: 3em;
+  font-weight: 500 !important;
+  font-size: 4em;
   padding: 1%;
-  margin-bottom: 0%;
-  background-color: #010811;
+  margin-bottom: 1em; /* Adjusted margin-bottom */
   -webkit-text-fill-color: #ffffff;
-  border-radius: 10%;
-  box-shadow: 0 0 10px rgb(213, 211, 211);
 }
 
 .description {
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom: 10%;
   padding-top: 0;
-  margin-left: 15em;
-  margin-right: 15em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 5em;
+  margin: 0.3em;
 }
 
 .instruction-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  margin-top: 25vh;
 }
 
 .circle-box {
   text-align: center;
 
-  flex-basis: 45%; /* Adjust the width of each box */
+  flex-basis: 30%;
+
+  /* Adjust the width of each box */
 }
 
 .circle {
@@ -266,7 +298,7 @@ header {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 10px rgb(213, 211, 211);
+  box-shadow: 0 0 1em rgb(141, 158, 247);
 }
 
 footer {
@@ -283,4 +315,111 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.section3 {
+  margin-top: 3%;
+  padding-top: 8%;
+  background-color: #1e2d42;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(95vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+}
+
+.section3-title {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.board-members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust based on your design preference */
+}
+
+.board-member-item {
+  margin: 1em;
+  flex-basis: 12%; /* Adjust the width as needed */
+  color: #ffffff;
+}
+
+.board-member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  box-shadow: 0.05em 0.1em 0.7em rgba(70, 200, 255, 0.974); /* Shadow color and intensity */
+}
+
+.board-member-name {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.board-quote {
+  color: #ffffff;
+  margin-top: 2em;
+  font-style: italic;
+  padding: 0 15%;
+}
+
+.board-quote blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.board-quote blockquote:before,
+.board-quote blockquote:after {
+  color: #2aedfb; /* This color is just a placeholder; adjust as needed */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.board-quote-author {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.contact-information {
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+.contact-information h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-information p {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Default styling for the email link */
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
 }
