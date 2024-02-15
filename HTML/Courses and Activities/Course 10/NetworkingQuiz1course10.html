@@ -32,17 +32,161 @@
 
     <section>
       <div class="right-side_rectangle">
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
+        <h2 class="question">
+          1. What are the three states of data?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q1" value="SW" id="q1-SW" />
+            <label for="q1-SW">
+              Data in storage, data in transit, data at rest
+              <div id="q1-SW-detail" class="answer-detail">
+                Data at rest and in storage are the same thing.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="ES" id="q1-ES" />
+            <label for="q1-ES">
+              Data at rest, data in networking, data in presentation
+              <div id="q1-ES-detail" class="answer-detail">
+                Data in networking and in presentation are incorrect names.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VW" id="q1-VW" />
+            <label for="q1-VW">
+              Data in storage, data in transit, data in use
+              <div id="q1-VW-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VS" id="q1-VS" />
+            <label for="q1-VS">
+              There are only two states: data at rest and data in use
+              <div id="q1-VS-detail" class="answer-detail">
+                There are three states.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          2. Which of the following is true about these port numbers?
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q2" value="open" id="q2-open" />
+            <label for="q2-open" name="q2">
+              Port 80 is for HTTP, 443 is for HTTPS
+              <div id="q2-open-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+            <label for="q2-grammar" name="q2">
+              Port 80 is for HTTPS, 443 is for HTTP
+              <div id="q2-grammar-detail" class="answer-detail">
+                These should be flipped.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="verify" id="q2-verify" />
+            <label for="q2-verify" name="q2">
+              Port 80 is for FTP, 443 is for DNS
+              <div id="q2-verify-detail" class="answer-detail">
+                FTP is 20/21 and DNS is 53
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+            <label for="q2-ignore" name="q2">
+              Port 80 is for DNS, 443 is for FTP
+              <div id="q2-ignore-detail" class="answer-detail">
+                FTP is 20/21 and DNS is 53
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          3. A MAC address cannot be changed, while an IP address can be changed.
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q3" value="true" id="q3-true" />
+            <label for="q3-true" name="q3">
+              True
+              <div id="q3-true-detail" class="answer-detail">
+                Correct! A MAC address is a physical identifier, there is no way it can be changed. 
+                Since an IP address is virtual, it can be changed.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="false" id="q3-false" />
+            <label for="q3-false" name="q3">
+              False
+              <div id="q3-false-detail" class="answer-detail">
+                See true for explanation.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="question">
+          4. A network is:
+        </h2>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q4" value="tail" id="q4-tail" />
+            <label for="q4-tail" name="q4">
+              Connected routers
+              <div id="q4-tail-detail" class="answer-detail">
+                A network can have more devices than just routers.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="dive" id="q4-dive" />
+            <label for="q4-dive" name="q4">
+              Connected devices
+              <div id="q4-dive-detail" class="answer-detail">
+                Correct! A network is just a bunch of connected devices, regardless of how or what is connected.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="phishing" id="q4-phishing" />
+            <label for="q4-phishing" name="q4">
+              Connected devices that are wired
+              <div id="q4-phishing-detail" class="answer-detail">
+                Wireless devices can be part of a network too.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="none" id="q4-none" />
+            <label for="q4-none" name="q4">
+              Connected personal devices, both wired and wireless
+              <div id="q4-none-detail" class="answer-detail">
+                Although it is true that devices can be both wired and wireless in a network, 
+                the devices are not always personal devices. 
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
+
+        <p id="result"></p>
         <div class="right-side_rectangle-buttons">
           <a
             href="../../Courses and Activities/Course 10/Addresses&Packetscourse10.html"
@@ -130,5 +274,80 @@
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
     </section>
+    <script>
+      function submitQuiz() {
+        var score = 0;
+
+        // Check answer for question 1
+        var q1Answer = document.querySelector('input[name="q1"]:checked');
+        if (q1Answer && q1Answer.value === "VW") {
+          score++;
+        }
+        showAnswerDetail("q1-SW-detail");
+        showAnswerDetail("q1-ES-detail");
+        showAnswerDetail("q1-VW-detail");
+        showAnswerDetail("q1-VS-detail");
+
+        // Check answer for question 2
+        var q2Answer = document.querySelector('input[name="q2"]:checked');
+        if (q2Answer && q2Answer.value === "open") {
+          score++;
+        }
+        showAnswerDetail("q2-open-detail");
+        showAnswerDetail("q2-grammar-detail");
+        showAnswerDetail("q2-verify-detail");
+        showAnswerDetail("q2-ignore-detail");
+
+        var q3Answer = document.querySelector('input[name="q3"]:checked');
+        if (q3Answer && q3Answer.value === "true") {
+          score++;
+        }
+        showAnswerDetail("q3-true-detail");
+        showAnswerDetail("q3-false-detail");
+
+        var q4Answer = document.querySelector('input[name="q4"]:checked');
+        if (q4Answer && q4Answer.value === "dive") {
+          score++;
+        }
+        showAnswerDetail("q4-tail-detail");
+        showAnswerDetail("q4-dive-detail");
+        showAnswerDetail("q4-phishing-detail");
+        showAnswerDetail("q4-none-detail");
+
+        // Display the result
+        var resultElement = document.getElementById("result");
+        resultElement.innerHTML = "Your score is: " + score + "/4";
+      }
+
+      function showAnswerDetail(detailId) {
+        var detailElement = document.getElementById(detailId);
+        if (detailElement) {
+          detailElement.style.display = "block";
+        }
+      }
+
+      var labels = document.querySelectorAll("label");
+      labels.forEach(function (label) {
+        label.addEventListener("click", function () {
+          // Remove 'selected' class from all labels
+          labels.forEach(function (otherLabel) {
+            var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var radioName = radioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var otherRadioName = otherRadioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            if (otherRadioName === radioName) {
+              otherLabel.classList.remove("selected");
+            }
+          });
+
+          // Add 'selected' class to the clicked label
+          label.classList.add("selected");
+        });
+      });
+    </script>
   </body>
 </html>
