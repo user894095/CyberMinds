@@ -320,6 +320,15 @@ a {
 }
 
 .editor1 {
-  background-color: rgb(1, 126, 143);
+  background-color: rgb(0, 0, 0);
   margin-bottom: 25px;
+} 
+
+.cm-gutter.cm-lineNumbers{
+  background-color: #000000;
 }
+
+div.cm-gutterElement.cm-activeLineGutter:active {
+  background-color: grey !important;
+}
+
