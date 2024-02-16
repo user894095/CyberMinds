@@ -332,3 +332,90 @@ div.cm-gutterElement.cm-activeLineGutter:active {
   background-color: grey !important;
 }
 
+
+.ͼo {
+  background-color: #000000;
+}
+
+.ͼ1 .cm-gutter {
+  display: flex !important;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+
+}
+
+.ͼo .cm-gutters {
+  background-color: #282c34;
+  color: #bdc3cf;
+  border: none;
+}
+
+.ͼ1 .cm-gutter {
+  display: flex !important;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+  max-width: 1.5em;
+  background-color: black;
+}
+
+.ͼ1 .cm-gutter {
+  display: flex !important;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+div {
+  display: block;
+}
+.ͼo .cm-gutters {
+  background-color: #282c34;
+  color: #84adff;
+  border: none;
+}
+
+.ͼo .cm-gutters {
+  background-color: #282c34;
+  color: #7d8799;
+  border: none;
+}
+
+.ͼ3 .cm-gutters {
+  background-color: #333338;
+  color: #ccc;
+}
+
+.ͼ1 .cm-scroller {
+  display: flex !important;
+  align-items: flex-start !important;
+  font-family: monospace;
+  line-height: 1.4;
+  height: 100%;
+  overflow-x: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.ͼo {
+  color: #abb2bf;
+  background-color: #282c34;
+}
+.right-side_rectangle {
+  flex: 8;
+  margin: 2%;
+  margin-right: 0%;
+  margin-left: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #1a2738;
+  color: rgb(212, 212, 212);
+  overflow-wrap: break-word;
+}
