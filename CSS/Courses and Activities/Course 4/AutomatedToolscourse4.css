@@ -309,3 +309,11 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+
+iframe {
+  display: block; /* Make sure it's a block-level element */
+
+  align-self: center;
+
+}
