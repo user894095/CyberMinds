@@ -48,6 +48,7 @@ header {
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
   border-radius: 0.8em; /* Make the buttons more rounded */
   white-space: nowrap; /* Prevent text from wrapping */
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .header-buttons a:hover {
@@ -112,7 +113,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section1 {
@@ -172,7 +172,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section2 a {
@@ -239,7 +238,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .Empty-section3 {
@@ -292,20 +290,27 @@ section {
   background-color: #1e6bb2;
 }
 
-h3 {
+
+h3{
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-h2 {
-  font-family: "MuseoModerno", sans-serif;
+h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
+}
+
+p{
   font-weight: 400;
-}
-
-p {
+  font-size: 1em;
+  line-height: 1.7em;
   font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
-li {
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
 }
 
