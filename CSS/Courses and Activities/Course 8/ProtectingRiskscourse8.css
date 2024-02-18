@@ -343,9 +343,6 @@ a {
   align-self: center;
 }
 
-.indent{
-  text-indent: 5%;
-}
 
 .list-without-bullet-points{
   list-style: None;
