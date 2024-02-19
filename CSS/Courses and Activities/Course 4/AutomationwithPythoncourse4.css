@@ -419,3 +419,7 @@ div {
   color: rgb(212, 212, 212);
   overflow-wrap: break-word;
 }
+
+#act-img {
+  rotate: -1deg;
+}
