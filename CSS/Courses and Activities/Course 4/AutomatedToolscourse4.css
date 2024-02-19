@@ -317,3 +317,7 @@ iframe {
   align-self: center;
 
 }
+
+#act-img {
+  rotate: -1deg;
+}

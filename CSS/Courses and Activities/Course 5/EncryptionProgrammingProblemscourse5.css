@@ -351,3 +351,7 @@ a {
 .editor {
     background-color: #000000;
   }
+
+.act-img {
+rotate: -1deg;
+}

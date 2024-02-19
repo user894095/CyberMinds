@@ -352,3 +352,7 @@ a {
   font-size: 0.8em;
   font-family: "MuseoModerno", sans-serif;
 }
+
+.act-img {
+  rotate: -1deg;
+}

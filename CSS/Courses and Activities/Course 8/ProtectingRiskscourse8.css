@@ -112,7 +112,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif !important;
 }
 
 .leftRectangle-section1 {
@@ -153,7 +153,7 @@ section {
 }
 
 .leftRectangle-section2 {
-  flex: 2;
+  flex: 1;
   background-color: #111927;
   margin-top: auto;
   margin-bottom: auto;
@@ -172,7 +172,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif !important;
 }
 
 .leftRectangle-section2 a {
@@ -239,7 +239,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif !important;
 }
 
 .Empty-section3 {
@@ -285,6 +285,7 @@ section {
   margin-left: auto; /
 }
 
+
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
@@ -292,27 +293,58 @@ section {
   background-color: #1e6bb2;
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
-}
-
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8em;
 }
 
 p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
   font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
 li {
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word {
+  color: rgb(63, 225, 217);
+}
+
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9375em;
+}
+
+h4{
+  font-family: "Space Grotesk", sans-serif;
+
+}
 a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.blue-word{
-  color: rgb(63, 225, 217);
+.firewall{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  margin: 3em;
+  align-self: center;
 }
+
+
+.list-without-bullet-points{
+  list-style: None;
+}
+
