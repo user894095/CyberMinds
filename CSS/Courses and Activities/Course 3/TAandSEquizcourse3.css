@@ -379,3 +379,7 @@ label.selected {
   color:#ffffff;
   margin: 0 auto; 
 }
+
+#act-img {
+  rotate: -1deg;
+}
