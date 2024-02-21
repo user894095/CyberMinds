@@ -314,3 +314,51 @@ a {
 .act-img {
   rotate: -1deg;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.important-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  color: rgb(149,28,240); 
+}
+.links {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: rgb(0,102,255); 
+}
+.bottomlinks {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  color: rgb(0,102,255); 
+}
+
+.important-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: lightgray;
+  margin-bottom: .00001em; /* Adjust this value to decrease or increase the space */
+}
+
+.less-important-text {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: lightgray;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.square {
+  width: 300px; /* Adjust the width of the square */
+  height: 300px; /* Adjust the height of the square */
+  
+  padding: 20px; /* Adjust the padding inside the square */
+  margin-right: 5em;
+}

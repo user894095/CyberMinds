@@ -428,12 +428,12 @@ a {
 }
 
 footer {
-  background-color: #0a0a0a;
+  padding-top: 2em;
+  background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
-  background-color: #0a0a0a;
   color: #fff;
   text-align: center;
   padding: 1em 0;
