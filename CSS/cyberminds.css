@@ -30,10 +30,8 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
-  /* Center the items vertically */
-  justify-content: space-between;
-  /* Space between the logo and nav */
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
 }
 
 .header-content video {
@@ -328,7 +326,7 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(95vh);
+  height: calc(105vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -337,6 +335,7 @@ a {
 
 .section3-title {
   color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2.5em;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -371,6 +370,7 @@ a {
 .board-quote {
   color: #ffffff;
   margin-top: 2em;
+  font-family: "Space Grotesk", sans-serif;
   font-style: italic;
   padding: 0 15%;
   word-spacing: 0.09em; /* Adjust the value to increase or decrease word spacing */
@@ -438,5 +438,9 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
   font-family: "Space Grotesk", sans-serif;
 }

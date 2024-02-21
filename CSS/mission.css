@@ -24,7 +24,10 @@ header {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
 }
 
 .header-content {
@@ -49,14 +52,16 @@ header {
 
 .header-buttons a {
   text-decoration: none;
-  font-size: 13pt;
+  font-size: 14pt;
   color: #ffffff;
-  padding: 0.4em 0.8em;
+  padding: 0.5em 1em;
   transition: background-color 0.3s;
   background-color: #174167;
+  text-decoration: none;
   margin-right: 0.9em;
-  border-radius: 0.8em;
-  white-space: nowrap;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .header-buttons a:hover {
