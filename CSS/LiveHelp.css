@@ -70,9 +70,7 @@ header {
   background-color: #286aa7;
 }
 .page-title {
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
   display: inline-block;
   font-stretch: expanded;
   position: absolute;
