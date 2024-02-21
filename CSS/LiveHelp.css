@@ -113,3 +113,20 @@ a {
 p {
   font-family: "Space Grotesk", sans-serif;
 }
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
