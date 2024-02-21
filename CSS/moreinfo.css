@@ -77,11 +77,9 @@ main {
 }
 
 .page-title {
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
   font-size: 4.5em;
   background: linear-gradient(

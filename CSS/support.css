@@ -77,9 +77,7 @@ header {
   transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
