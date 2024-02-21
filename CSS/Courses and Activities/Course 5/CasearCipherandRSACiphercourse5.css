@@ -309,3 +309,7 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.act-img {
+  rotate: -1deg;
+}

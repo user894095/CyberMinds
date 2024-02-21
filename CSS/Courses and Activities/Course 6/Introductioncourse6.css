@@ -332,3 +332,7 @@ h3{
 .blue-word{
   color: rgb(63, 225, 217);
 }
+
+.act-img {
+  rotate: -1deg;
+}

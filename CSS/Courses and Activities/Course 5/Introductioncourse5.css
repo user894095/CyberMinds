@@ -323,3 +323,7 @@ a {
 .purple-word{
   color: rgb(112,124,240)
 }
+
+.act-img {
+  rotate: -1deg;
+}

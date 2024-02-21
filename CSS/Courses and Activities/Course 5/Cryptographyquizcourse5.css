@@ -294,8 +294,10 @@ h3 {
 }
 
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  margin-bottom: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-size: 1.1em;
 }
 
 p {
@@ -312,15 +314,17 @@ a {
 
 .box {
   background-color: #182a47; /* Light gray background */
-  border: 10px solid #182a47;
-  width:300px;
-  height: 100px;
+  border: 0.5em solid #182a47;
+  width: 22em;
+  height: 6em;
   perspective: 1000px;
+  align-self: center;
 }
 .box-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  align-self: center;
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
@@ -332,18 +336,28 @@ a {
 .box-back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  align-self: center;
   backface-visibility: hidden;
 }
 .box-front {
-  background-color: #cccccc;
+  background-color: #9db9f5;
   color: #111111;
   font-family: "MuseoModerno", sans-serif;
 }
 .box-back {
-  background-color: rgb(110,217,29);
-  color: #eeeeee;
+  background-color: rgb(173, 255, 141);
+  color: #0e1636;
   transform: rotateY(180deg);
-  font-size: 10px;
+  font-size: 0.8em;
   font-family: "MuseoModerno", sans-serif;
+}
+
+.act-img {
+  rotate: -1deg;
+}
+
+.flip-headings {
+  display: inline-block;
+  vertical-align: middle;
 }

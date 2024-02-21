@@ -317,3 +317,14 @@ a {
 .blue-word{
   color: rgb(63, 225, 217);
 }
+
+.act-img {
+  rotate: -1deg;
+}
+
+.networkingimage{
+  width: 60%;
+  height: auto;
+  align-self: center;
+  margin-top: 2em;
+}

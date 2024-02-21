@@ -313,3 +313,7 @@ iframe {
   padding: 20px 0; /* Add padding to the top and bottom */
   box-sizing: border-box; /* Include padding in the total height */
 }
+
+#act-img {
+  rotate: -1deg;
+}
