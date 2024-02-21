@@ -15,7 +15,7 @@ body {
   font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /*this is body*/
   color: #ffffff;
   text-align: center;
 }
