@@ -356,3 +356,8 @@ a {
 .act-img {
   rotate: -1deg;
 }
+
+.flip-headings {
+  display: inline-block;
+  vertical-align: middle;
+}
