@@ -6,7 +6,6 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 135em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -60,7 +59,7 @@ header {
 
 .header-buttons a {
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 1.2em;
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
@@ -374,18 +373,12 @@ a {
   margin-top: 2em;
   font-style: italic;
   padding: 0 15%;
+  word-spacing: 0.09em; /* Adjust the value to increase or decrease word spacing */
+  letter-spacing: 0.02em; /* Adjust the value to increase or decrease letter spacing */
 }
 
 .board-quote blockquote {
   quotes: "“" "”" "‘" "’";
-}
-
-.board-quote blockquote:before,
-.board-quote blockquote:after {
-  color: #2aedfb; /* This color is just a placeholder; adjust as needed */
-  font-size: 4em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
 }
 
 .board-quote-author {
@@ -422,4 +415,28 @@ a {
   color: #ffffff; /* Dark blue color on hover */
   text-decoration: underline; /* Underline on hover */
   font-weight: bold; /* Bold on hover */
+}
+
+.board-member-title {
+  color: #ffffff; /* Dark green color */
+  text-shadow: 0.1em 0.2em 0.3em rgb(0, 0, 0); /* Add a subtle shadow */
+  font-size: 1em;
+}
+
+.blue-word {
+  color: rgb(139, 207, 255);
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
 }
