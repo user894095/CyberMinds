@@ -6,7 +6,6 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 135em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -31,10 +30,8 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
-  /* Center the items vertically */
-  justify-content: space-between;
-  /* Space between the logo and nav */
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
 }
 
 .header-content video {
@@ -60,7 +57,7 @@ header {
 
 .header-buttons a {
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 1.2em;
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
@@ -329,7 +326,7 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(95vh);
+  height: calc(105vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -338,6 +335,7 @@ a {
 
 .section3-title {
   color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2.5em;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -372,20 +370,15 @@ a {
 .board-quote {
   color: #ffffff;
   margin-top: 2em;
+  font-family: "Space Grotesk", sans-serif;
   font-style: italic;
   padding: 0 15%;
+  word-spacing: 0.09em; /* Adjust the value to increase or decrease word spacing */
+  letter-spacing: 0.02em; /* Adjust the value to increase or decrease letter spacing */
 }
 
 .board-quote blockquote {
   quotes: "“" "”" "‘" "’";
-}
-
-.board-quote blockquote:before,
-.board-quote blockquote:after {
-  color: #2aedfb; /* This color is just a placeholder; adjust as needed */
-  font-size: 4em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
 }
 
 .board-quote-author {
@@ -422,4 +415,32 @@ a {
   color: #ffffff; /* Dark blue color on hover */
   text-decoration: underline; /* Underline on hover */
   font-weight: bold; /* Bold on hover */
+}
+
+.board-member-title {
+  color: #ffffff; /* Dark green color */
+  text-shadow: 0.1em 0.2em 0.3em rgb(0, 0, 0); /* Add a subtle shadow */
+  font-size: 1em;
+}
+
+.blue-word {
+  color: rgb(139, 207, 255);
+}
+
+footer {
+  padding-top: 2em;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }

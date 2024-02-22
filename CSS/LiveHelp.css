@@ -70,9 +70,7 @@ header {
   background-color: #286aa7;
 }
 .page-title {
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
   display: inline-block;
   font-stretch: expanded;
   position: absolute;
@@ -111,5 +109,22 @@ a {
 }
 
 p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
 }

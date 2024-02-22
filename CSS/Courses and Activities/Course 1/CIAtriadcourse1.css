@@ -156,8 +156,8 @@ section {
   background-color: #111927;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0em;
+  margin-right: 0em;
   width: 100%;
 
   display: flex;
@@ -298,8 +298,6 @@ section {
 
 
 .cia-triad-image{
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   width: 70%;
   margin: 3em;

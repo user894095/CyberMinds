@@ -60,9 +60,7 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
   font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
@@ -164,5 +162,19 @@ p {
 }
 
 a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
 }
