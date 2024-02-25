@@ -317,8 +317,8 @@ h3 {
 }
 
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8em;
 }
 
 p {
@@ -332,6 +332,11 @@ li {
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.blue-word {
+  color: rgb(63, 225, 217);
+}
+
 .footer-class{
   background-color: #f8f9fa;
   color: #6c757d;
