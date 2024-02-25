@@ -361,3 +361,8 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
+
+.box-images {
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}

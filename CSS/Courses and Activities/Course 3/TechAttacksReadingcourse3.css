@@ -288,6 +288,9 @@ section {
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
 }
+h1{
+  font-family: "Space Grotesk", sans-serif;
+}
 
 h2 {
   font-family: "Space Grotesk", sans-serif;
@@ -307,4 +310,8 @@ a {
 
 #act-img {
   rotate: -1deg;
+}
+
+.blue-word {
+  color: rgb(63,225,217)
 }
