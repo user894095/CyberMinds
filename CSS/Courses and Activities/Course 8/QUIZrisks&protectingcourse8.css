@@ -57,7 +57,7 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 15%;
+  margin-left: 5%;
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
@@ -112,7 +112,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section1 {
@@ -172,7 +171,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .leftRectangle-section2 a {
@@ -239,7 +237,6 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
 }
 
 .Empty-section3 {
@@ -285,6 +282,7 @@ section {
   margin-left: auto; /
 }
 
+
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
@@ -292,13 +290,8 @@ section {
   background-color: #1e6bb2;
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
-}
-
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 p {
@@ -313,17 +306,17 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.blue-word{
-  color: rgb(63, 225, 217);
-}
+
 .quiz-container {
   max-width: 600px;
   margin: auto;
 }
 
 .question {
-  margin-bottom: 10px;
+  margin-bottom: 2em;
   font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-size: 1.1em;
 }
 
 .options {
@@ -333,36 +326,37 @@ a {
 }
 
 .option {
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
 }
 
 input[type="radio"] {
   display: none; /* Hide the radio buttons */
 }
-
 label {
   display: block;
-  padding: 10px;
-  background-color: #182a47; /* Light gray background */
-  border: 1px solid #182a47;
+  padding: 0.3em;
+  background-color: #16305a; /* Light gray background */
   cursor: pointer;
-  border-radius: 5px; /* Add border-radius for a bevel effect */
+  border-radius: 0.4em; /* Add border-radius for a bevel effect */
   font-family: "Space Grotesk", sans-serif;
   font-size: medium;
-  max-width: 30%; /* Set the maximum width for the label */
+  width: 50%; /* Set the maximum width for the label */
+  text-align: center; /* Center the text */
+  margin-top:  0.6em;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  
+  margin: 0 auto; /* Center horizontally using margin */
 }
 
+
 label.selected {
-  background-color:  rgb(110,217,29); /* Change the background color for the selected label */
+  background-color:  rgb(61, 78, 163); /* Change the background color for the selected label */
 }
 
 .answer-detail {
   display: none;
-  margin-top: 10px;
+  margin-top: 0.6px;
 }
 
 #result {
@@ -370,15 +364,17 @@ label.selected {
   margin-top: 20px;
   margin: 0 auto;
   font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 2em;
 }
 
 .submit {
   display: block;
-  padding: 10px;
-  background-color: rgb(110,217,29); /* Light gray background */
-  border: 1px solid rgb(110,217,29);
+  padding: 0.5em;
+  margin-bottom: 0.6em;
+  background-color: rgb(83, 168, 19); /* Light gray background */
+  border: 0.1em solid rgb(72, 151, 12);
   cursor: pointer;
-  border-radius: 5px; /* Add border-radius for a bevel effect */
+  border-radius: 0.6em; /* Add border-radius for a bevel effect */
   font-family: "Space Grotesk", sans-serif;
   font-size: medium;
   max-width: 20%; /* Set the maximum width for the label */
@@ -386,5 +382,7 @@ label.selected {
   text-overflow: ellipsis;
   text-align: center;
   color:#ffffff;
-  margin: 0 auto; 
+  align-self: center;
 }
+
+
