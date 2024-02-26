@@ -19,7 +19,16 @@ body {
   color: #ffffff;
   text-align: center;
 }
-
+.chat {
+  margin: 50;
+}
+.white-rectangle {
+  background-color: #FFFFFF; 
+  margin: 0 auto; 
+  width: 50%; 
+  height: 100%; 
+  background-size: 50%, auto; 
+}
 header {
   background-color: #000000;
   color: #ffffff;
