@@ -101,6 +101,7 @@ main {
 .content {
   max-width: 800px;
   margin: 0 auto;
+
 }
 
 .mission-statement,
@@ -109,6 +110,11 @@ main {
   margin-top: 1em;
 }
 
+.mission-statement{
+  background-color:#0a0a0a5a;
+  border-radius: 1em;
+  padding: 2em;
+}
 .values ul {
   list-style-type: disc;
   padding-left: 20px;
