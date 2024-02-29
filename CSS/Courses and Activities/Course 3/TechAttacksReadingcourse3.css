@@ -61,9 +61,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -288,4 +288,30 @@ section {
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
 }
+h1{
+  font-family: "Space Grotesk", sans-serif;
+}
 
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#act-img {
+  rotate: -1deg;
+}
+
+.blue-word {
+  color: rgb(63,225,217)
+}

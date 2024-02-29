@@ -60,11 +60,11 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 3.5em;
+  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -150,4 +150,31 @@ section {
 play-button {
   width: 10%;
   object-fit: cover;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
 }

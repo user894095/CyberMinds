@@ -61,9 +61,9 @@ header {
   margin-bottom: 2%;
   margin-top: 2%;
   padding: 0%;
-  font-family: "True Sans" !important;
+  font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -290,26 +290,37 @@ section {
   background-color: #1e6bb2;
 }
 
-.smaller {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
+h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
 }
 
-.larger {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.3em;
+p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
-.special {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+li{
   font-size: medium;
-  font-weight: bold;
-  color: rgb(110,217,29);
+  font-family: "Space Grotesk", sans-serif;
 }
 
-.list {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
-  font-weight: bold;
-  color: rgb(112,124,240);
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#act-img {
+  rotate: -1deg;
 }

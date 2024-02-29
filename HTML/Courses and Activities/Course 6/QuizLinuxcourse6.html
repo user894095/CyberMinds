@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../CSS/Courses and Activities/Course 6/QuizLinux.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Course 6 - Linux Quiz</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+        <nav class="header-buttons">
+          <a href="../../../index.html">Back to Home Screen</a>
+          <a href="../../moreinfo.html">More Info</a>
+          <a href="../../course_Contents.html">Mission</a>
+          <a href="../../LiveHelp.html">Live Help</a>
+          <a href="../../ourTeam.html">Our Team</a>
+          <a href="../../support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <div><p class="page-title">Course 6 - Linux Quiz</p></div>
+
+    <section>
+      <div class="right-side_rectangle">
+        <div class="question">
+          1. Which of the following would add the execute permission for all other users?
+        </div>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q1" value="SW" id="q1-SW" />
+            <label for="q1-SW">
+              u+w
+              <div id="q1-SW-detail" class="answer-detail">
+                This adds a write permission for the file owner
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="ES" id="q1-ES" />
+            <label for="q1-ES">
+              g-r
+              <div id="q1-ES-detail" class="answer-detail">
+                This removes the read permission from group
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VW" id="q1-VW" />
+            <label for="q1-VW">
+              x+e
+              <div id="q1-VW-detail" class="answer-detail">
+                This is not a thing :\
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q1" value="VS" id="q1-VS" />
+            <label for="q1-VS">
+              o+x
+              <div id="q1-VS-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <div class="question">
+          2. Which of the following would create a new file called polarBears.txt?
+        </divs>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q2" value="open" id="q2-open" />
+            <label for="q2-open" name="q2">
+              newFile polarBears.txt
+              <div id="q2-open-detail" class="answer-detail">
+                newFile is not a keyword.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+            <label for="q2-grammar" name="q2">
+              polarBears.txt nf
+              <div id="q2-grammar-detail" class="answer-detail">
+                nf is not a keyword. Furthermore, the keyword should come before the file name.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="verify" id="q2-verify" />
+            <label for="q2-verify" name="q2">
+              nf polarBears.txt
+              <div id="q2-verify-detail" class="answer-detail">
+                nf is not a keyword.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+            <label for="q2-ignore" name="q2">
+              touch polarBears.txt
+              <div id="q2-ignore-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <div class="question">
+          3. Which of the following is an accurate description of sudo?
+        </div>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q3" value="a1" id="q3-a1" />
+            <label for="q3-a1" name="q3">
+              Sudo is the superuser that gives permissions to all other users
+              <div id="q3-a1-detail" class="answer-detail">
+                The superuser is known as a root user, this is unrelated to the definition of sudo.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="a2" id="q3-a2" />
+            <label for="q3-a2" name="q3">
+              Sudo is a keyword that allows any user to have elevated permissions until they end their session on Linux
+              <div id="q3-a2-detail" class="answer-detail">
+                Sudo cannot be used by everyone. Only users on the sudoers file can use it. 
+                The elevated permissions also only last for the one command in which sudo was used.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="a3" id="q3-a3" />
+            <label for="q3-a3" name="q3">
+              Sudo is a keyword that allows some users to have temporary elevated permissions
+              <div id="q3-a3-detail" class="answer-detail">
+                Correct!
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q3" value="a4" id="q3-a4" />
+            <label for="q3-a4" name="q3">
+              Sudo is the name of the Linux filesystem
+              <div id="q3-a4-detail" class="answer-detail">
+                Sudo is unrelated to the filesystem.
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <div class="question">
+          4. Which of the following keywords allows you to view file contents?
+        </div>
+        <ul class="options">
+          <li class="option">
+            <input type="radio" name="q4" value="tail" id="q4-tail" />
+            <label for="q4-tail" name="q4">
+              chmod
+              <div id="q4-tail-detail" class="answer-detail">
+                This changes file permissions.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="dive" id="q4-dive" />
+            <label for="q4-dive" name="q4">
+              cd
+              <div id="q4-dive-detail" class="answer-detail">
+                This changes directories.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="phishing" id="q4-phishing" />
+            <label for="q4-phishing" name="q4">
+              cat
+              <div id="q4-phishing-detail" class="answer-detail">
+                Correct! Concatenating a file uses the cat keyword.
+              </div>
+            </label>
+          </li>
+          <li class="option">
+            <input type="radio" name="q4" value="none" id="q4-none" />
+            <label for="q4-none" name="q4">
+              con
+              <div id="q4-none-detail" class="answer-detail">
+                This is not a keyword
+              </div>
+            </label>
+          </li>
+        </ul>
+
+        <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
+
+        <p id="result"></p>
+
+        <div class="right-side_rectangle-buttons">
+          <a
+            href="../../Courses and Activities/Course 6/ExplorePermissionscourse6.html"
+            >&lt; Previous</a
+          >
+          <a
+            href="../../Courses and Activities/Course 7/Introductioncourse7.html"
+            >Next ></a
+          >
+          <a
+            href="../../Courses and Activities/Course 7/Introductioncourse7.html"
+            class="next_course"
+            >Skip to Next Course</a
+          >
+        </div>
+      </div>
+
+      <div class="left-side_rectangle">
+        <div class="leftRectangle-section1">
+          <p class="leftRectangle-section1-button-title">Go back?</p>
+          <a href="../../course_Contents.html">Back to all Courses</a>
+        </div>
+        <div class="Empty-section1">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
+
+        <div class="leftRectangle-section2">
+          <p class="leftRectangle-section2-button-title">Table of Contents</p>
+          <a href="../Course 6/Introductioncourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            Course 6 - Introduction
+          </a>
+          <a href="../Course 6/SettingUpLinuxcourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            Setting Up Linux
+          </a>
+          <a href="../Course 6/BasicCommandscourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            Basics/Getting Help
+          </a>
+          <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            Sudo & Privilege Escalation
+          </a>
+          <a href="../Course 6/ExploreSudocourse6.html">
+            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            Explore Sudo </a>
+          <a href="../Course 6/TheFileSystemcourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            The Filesystem </a>
+          <a href="../Course 6/ExploreFileSystemcourse6.html">
+            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            Explore the Filesystem
+          </a>
+          <a href="../Course 6/Permissionscourse6.html">
+            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            Permissions </a>
+          <a href="../Course 6/ExplorePermissionscourse6.html">
+            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            Explore Permissions
+          </a>
+          <a href="../Course 6/QuizLinuxcourse6.html"> 
+            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40">
+            Linux Quiz </a>
+          <!-- <a href="add game here">  >add more here </a> -->
+        </div>
+        <div class="Empty-section2">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
+
+        <div class="Empty-section3">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
+      </div>
+
+      <!-- <footer class="page-footer">
+        <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
+      </footer> -->
+    </section>
+    <script>
+      function submitQuiz() {
+        var score = 0;
+
+        // Check answer for question 1
+        var q1Answer = document.querySelector('input[name="q1"]:checked');
+        if (q1Answer && q1Answer.value === "VS") {
+          score++;
+        }
+        showAnswerDetail("q1-SW-detail");
+        showAnswerDetail("q1-ES-detail");
+        showAnswerDetail("q1-VW-detail");
+        showAnswerDetail("q1-VS-detail");
+
+        // Check answer for question 2
+        var q2Answer = document.querySelector('input[name="q2"]:checked');
+        if (q2Answer && q2Answer.value === "ignore") {
+          score++;
+        }
+        showAnswerDetail("q2-open-detail");
+        showAnswerDetail("q2-grammar-detail");
+        showAnswerDetail("q2-verify-detail");
+        showAnswerDetail("q2-ignore-detail");
+
+        var q3Answer = document.querySelector('input[name="q3"]:checked');
+        if (q3Answer && q3Answer.value === "a3") {
+          score++;
+        }
+        showAnswerDetail("q3-a1-detail");
+        showAnswerDetail("q3-a2-detail");
+        showAnswerDetail("q3-a3-detail");
+        showAnswerDetail("q3-a4-detail");
+
+        var q4Answer = document.querySelector('input[name="q4"]:checked');
+        if (q4Answer && q4Answer.value === "phishing") {
+          score++;
+        }
+        showAnswerDetail("q4-tail-detail");
+        showAnswerDetail("q4-dive-detail");
+        showAnswerDetail("q4-phishing-detail");
+        showAnswerDetail("q4-none-detail");
+
+        // Display the result
+        var resultElement = document.getElementById("result");
+        resultElement.innerHTML = "Your score is: " + score + "/4";
+      }
+
+      function showAnswerDetail(detailId) {
+        var detailElement = document.getElementById(detailId);
+        if (detailElement) {
+          detailElement.style.display = "block";
+        }
+      }
+
+      var labels = document.querySelectorAll("label");
+      labels.forEach(function (label) {
+        label.addEventListener("click", function () {
+          // Remove 'selected' class from all labels
+          labels.forEach(function (otherLabel) {
+            var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var radioName = radioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+            var otherRadioName = otherRadioLabel
+              .querySelector('input[type="radio"]')
+              .getAttribute("name");
+            if (otherRadioName === radioName) {
+              otherLabel.classList.remove("selected");
+            }
+          });
+
+          // Add 'selected' class to the clicked label
+          label.classList.add("selected");
+        });
+      });
+    </script>
+  </body>
+</html>
