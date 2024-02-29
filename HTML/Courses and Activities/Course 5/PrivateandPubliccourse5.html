@@ -35,25 +35,94 @@
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Adfsdfsdfsdfsdfe</h2>
-        <p>ADD TEXT HERE</p>
-
-        <h2>SDFLDSFLKDSFJLKSDJFLSKDFJLSKDFJLSKDJFF</h2>
-        <p>SDFSDLFKHSLDKFHSLDKFHLSKDFJLSKDJFLKSD</p>
+        <h2>Public vs. Private Key Cryptography</h2>
+        
+        <h3>Basic Terms of Cryptography:</h3>
         <ul>
           <li>
-            <!-- add text here -->
+            <span class="purple-word">Plaintext:</span> original text, unencrypted
           </li>
           <li>
-            <!-- add text here -->
+            <span class="purple-word">Ciphertext:</span> encrypted text
           </li>
           <li>
-            <!-- add text here -->
-          </li>
-          <li>
-            <!-- add text here -->
+            <span class="purple-word">Key:</span> a piece of information used to encode and decode messages
           </li>
         </ul>
+
+        <h3>Private Key Cryptography:</h3>
+        <p>	<span class="purple-word">Private key algorithms, also known as symmetric algorithms, use the same key for encryption and decryption.</span> 
+          Although it is faster and takes up less storage to save only one key, it is less secure. This key is also 
+          known as a <span class="purple-word">private key</span> and it known between the parties of communication. If an attacker were to get a hold 
+          of the key, entire systems using  a symmetric algorithm could be at risk.</p>
+
+        <p><span class="blue-word">Symmetric Encryption Algorithms:</span></p>
+        <ul>
+          <li>
+            Caesar Cipher
+          </li>
+          <li>
+            Vigenere Cipher
+          </li>
+          <li>
+            Advanced Encryption Standard (AES)
+          </li>
+          <li>
+            Data Encryption Standard (DES)
+          </li>
+        </ul>
+
+        <p><span class="blue-word">The Caesar Cipher (Example):</span></p>
+        <p>	The Caesar Cipher got its name from being created around the time of Caesar. It is one of the earliest 
+          forms of encryption and was used by Caesar to send messages to his military. It is also quite basic, here is how it works:</p>
+
+          <ul>
+            <li>
+              Plaintext: hello world
+            </li>
+            <li>
+              Key: 5
+            </li>
+            <li>
+              Ciphertext: mjqqt btwqi
+            </li>
+          </ul>
+
+          <p>	Just from this information, you might be able to see how this cipher works. The key, which is an integer, represents how many letters in the alphabet the original message should be shifted by.
+          </p>
+
+        <h3>Public Key Cryptography:</h3>
+
+        <p>	<span class="purple-word">Public key algorithms are also called asymmetric algorithms, they use one key for encryption and a different key for decryption.</span> Each party in an asymmetric algorithm has a public key and a private key. 
+          Public key algorithms take up more space and are slower, but they are definitely more secure. They are developed using some complex math… we will go over an example of how one of the algorithms work, 
+          but for a start, here is a general example.</p>
+
+        <p><span class="blue-word">General Example:</span></p>
+
+        <ol type="1">
+          <li>
+            Alice wants to send Bob a message with asymmetric encryption. 
+          </li>
+          <br>
+          <li>
+            Alice uses <span class="purple-word">Bob’s public key</span> to encrypt her message as she sends it to Bob
+          </li>
+          <br>
+          <li>
+            Bob receives the encrypted message and uses <span class="purple-word">Bob’s private key</span> to decrypt it.
+          </li>
+          <br>
+          <li>
+            Bob wants to send a message back, he encrypts it with <span class="purple-word">Alice’s public key</span>.
+          </li>
+          <br>
+          <li>
+            Alice receives the message and uses <span class="purple-word">Alice’s private key</span> to decrypt it.
+          </li>
+        </ol>
+
+      <p>To remember this, you can use the analogy of a mailbox. Messages are sent and encrypted using the recipient’s public key, similar to how you can put mail in a recipient’s mailbox, 
+        which is available to everyone. Messages are decrypted using the recipient’s own private key, similar to how the recipient is the only one that has the key to their own mailbox. When the mail is in the mailbox, it is equivalent to a message being in the state of encryption.</p>
 
         <iframe
           width="560"
@@ -69,14 +138,68 @@
           *Video Credit: <i>Simply Explained</i> on Youtube
         </p>
 
-        <h2>SDFSDFSDFSDF</h2>
-        <p>SDFSDFSDFSDFSDFSDF</p>
-        <ul>
-          <li>DSFSDFSDFSDFSDFSDFSDFSDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDDFSDF</li>
-          <li>SDFSDFSDFSDFSDFSDFSDFSDFSDSSDFSDSFDFDFS!</li>
-          <li>HGFHGFDGRGAGSSFDFDSFDFDFDFDAFAD</li>
-        </ul>
+      <p><span class="blue-word">Symmetric Encryption Algorithms:</span></p>
+
+      <ul>
+        <li>
+          Rivest-Shamir-Adleman (RSA)
+        </li>
+        <li>
+          Diffie-Hellman
+        </li>
+        <li>
+          Elliptic Curve Cryptography (ECC)
+        </li>
+      </ul>
+
+      <p><span class="blue-word">RSA Algorithm (Example):</span></p>
+
+      <p>	If you have been wondering how the use of more than one key can result in the same message, this RSA may help you understand more. This example will use small numbers for simplicity. But in the real world, 
+        RSA relies on incredibly large prime numbers and the fact that they are difficult to compute, even for computers. </p>
+
+      <p><span class="blue-word">RSA Encoding Process:</span></p>
+
+      <dl>
+        <dt>1)  Choose two large prime numbers, p and q:</dt>
+        <dd>We are going to use two small ones, 5 and 7.</dd>
+        <br>
+        <dt>2)  The public key consists of two parts: integer n and integer e. The n value equals p times q.</dt>
+        <dd>n = p*q</dd>
+        <dd>n = 5*7 = 35</dd>
+        <br>
+        <dt>3) The e value must also be an integer, but not a factor of phi of n (Φ(n) = (p-1)(q-1)).</dt>
+        <dd>Φ(n) = (p-1)(q-1)</dd>
+        <dd>Φ(n) = (5-1)(7-1) = (4)(6) = 24</dd>
+        <dd>e = 5</dd>
+        <br>
+        <dt>4) Now we must create our private key, d. The d value uses the previously generated values, (d*e)%Φ must be equal to 1.</dt>
+        <dd>(d*e)%Φ = 1</dd>
+        <dd>(d*5)%24 = 1</dd>
+        <dd>d = 5</dd>
+        <br>
+        <dt>5) We will now use our generated values to encrypt our plaintext (a). Ciphertext (c) = (a^e)%n</dt>
+        <dd>c = (a^e)%n</dd>
+        <dd>H: c = (8^5)%35 = 8</dd>
+        <dd>I: c = (9^5)%35 = 4</dd>
+        <br>
+        <dd><span class="purple-word">*Note, try to use a programming or scientific calculator if you are unable to find modulo on a standard calculator.</span></dd>
+        <dd><span class="purple-word">*Note 2: the ciphertext for the letter H ended up the same as the plaintext for this example. This is just a coincidence and it does not always happen.</span></dd>
+        <br>
+        <dd>The cipher text for the word “HI” using our keys is 8 4</dd>
+        <br>
+        <dt>6) We will decrypt the message. The equation for this is: (a) = (c^d)%n</dt>
+        <dd>a = (c^e)%n</dd>
+        <dd>H: a = (8^5)%35 = 8</dd>
+        <dd>I: a = (4^5)%35 = 9</dd>
+      </dl>
+
+      <p>
+	That was definitely a lot, but we successfully used a public key to encrypt and a private key to decrypt, and we got the same message! 
+  This example used a lot of smaller numbers for the sake of simplicity, so there were a lot of repeating numbers. The point is, the math 
+  checks out so that even when you use a different key to decrypt, you will end up with the same plaintext. Feel free to try this with 
+  larger numbers, and you will get more realistic examples of how this works. There are also plenty of resources online that can explain 
+  the math behind this algorithm, walkthroughs and calculators for RSA, and other information on this and other ciphers!
+      </p>
 
         <div class="right-side_rectangle-buttons">
           <a
