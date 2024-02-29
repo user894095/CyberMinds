@@ -290,15 +290,26 @@ section {
   background-color: #1e6bb2;
 }
 
-h2 {
+h3{
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-p {
+h2{
   font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
 }
 
-li {
+p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+}
+
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -306,18 +317,22 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-iframe {
-  align-self: center;
-  width: 560px;
-  height: 315px;
-  padding: 20px 0; /* Add padding to the top and bottom */
-  box-sizing: border-box; /* Include padding in the total height */
-}
-
-#act-img {
-  rotate: -1deg;
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
 .blue-word{
-  color: rgb(63,225,217);
+  color: rgb(63, 225, 217);
 }
+
+
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
+
+  .list-without-bullet-points{
+    list-style: None;
+    line-height: 2em;
+  }
+

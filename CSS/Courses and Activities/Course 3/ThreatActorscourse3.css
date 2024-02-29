@@ -294,8 +294,13 @@ h2 {
   font-family: "Space Grotesk", sans-serif;
 }
 
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9375em;
+}
 p {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 li {
@@ -313,6 +318,14 @@ iframe {
   padding: 20px 0; /* Add padding to the top and bottom */
   box-sizing: border-box; /* Include padding in the total height */
 }
+.blue-word {
+  color: rgb(63, 225, 217);
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 
 #act-img {
   rotate: -1deg;
