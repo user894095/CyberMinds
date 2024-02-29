@@ -145,13 +145,15 @@ li {
   opacity: 30%;
   border-radius: 2em;
   display: inline-block;
+  height: 120%;
+  
 }
 
 .page-title {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -310%);
   font-family: "Space Grotesk", sans-serif;
   font-size: 4.5em;
   font-weight: 500;
@@ -177,4 +179,6 @@ li {
 
 .image-item{
   position: absolute;
+  transform: translateY(-80%);
 }
+
