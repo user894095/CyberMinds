@@ -1,120 +1,166 @@
-<div class="rectangle-1-UM1" id="1:3"></div>
-<p class="our-mission-rCK" id="1:4">Our Mission</p>
-div class="rectangle-2-KuV" id="2:8"></div>
-<div class="rectangle-3-6gT" id="2:9"></div>
-<p class="replace-this-text-with-mission-statement-VE3" id="2:6">*Replace this text with mission statement*</p
-<img class="placeholder-1-KPh" src="/api/prod-us-east-2-first-cluster/projects/KaXCQxa..." id="2:7"/>
-
-
+/* this page links to index */
 body {
   overflow-x: hidden;
 }
-.placeholder-1-Nif {
-height: 42.9rem;
-object-fit: cover;
-vertical-align: top;
-width: 100%;
-}
-.replace-this-text-with-mission-statement-DiB {
-color: #000000;
-font-family: Inter, 'Source Sans Pro';
-font-size: 2rem;
-font-weight: 600;
-height: 2.5rem;
-line-height: 1.2125;
-white-space: nowrap;
-width: 100%;
-}
-.our-mission-vxB {
-color: #000000;
-font-family: Inter, 'Source Sans Pro';
-font-size: 4rem;
-font-weight: 600;
-height: 4.9rem;
-line-height: 1.2125;
-white-space: nowrap;
-width: 100%;
-}
+
 .Parent-container {
-    display: flex;
-    flex-direction: column;
-    height: 6000px;
-    width: auto;
-    background-color: #1c4662; 
-}
-.rectangle-1-fXZ {
-background-color: #846cef;
-height: 6.9rem;
-width: 100%;
-}
-.rectangle-2-r7u {
-background-color: #4d31b2;
-height: 48.2rem;
-width: 100%;
-}
-.rectangle-3-sYF {
-background-color: #ab96fb;
-height: 38.2rem;
-width: 100%;
-}
-header {
-    background-color: #1c4662; 
-    color: #ffffff;
-    text-align: center;
-    padding: 1em;
-}
-
-.header-content {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    
-}
-
-.header-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.header-content img {
-    max-height: 50px; 
-    margin-right: 10px; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: auto;
+  background-color: #1a2738;
 }
 
 body {
-    font-family: 'Georgia', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
+  font-family: "Georgia", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #ffffff;
+  text-align: center;
 }
 
-#mission-content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #00e1ff; 
-    padding: 0.5em;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav a {
-    text-decoration: none;
-    font-size: 15pt;
-    color: #1c4662;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    background-color: #00e1ff;
-    left: auto;
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+.page-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 4.5em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 4.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
+main {
+  flex-grow: 1;
+  padding: 2em;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
 
 }
 
-nav a:hover {
-    background-color: #0db4ca;
+.mission-statement,
+.values {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.mission-statement{
+  background-color:#0a0a0a5a;
+  border-radius: 1em;
+  padding: 2em;
+}
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.title-img{
+  width: 100%;
+  opacity: 30%;
+  border-radius: 2em;
+  
+
 }

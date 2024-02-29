@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a2738;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 0%;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 4.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.course-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.course-number {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #185db7;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 1.4em;
+  margin-bottom: 1%;
+  text-align: center;
+  margin-top: 0.1%;
+}
+
+.course-description {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: static;
+  }
+}
+.course-card {
+  text-decoration: none;
+  color: inherit;
+}
+.course-card:hover .course-title {
+  text-decoration: underline;
+  color: inherit;
+}
+
+play-button {
+  width: 10%;
+  object-fit: cover;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}

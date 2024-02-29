@@ -1,4 +1,4 @@
-/* this page links to index */
+/* this page links to index page */
 body {
   overflow-x: hidden;
 }
@@ -6,7 +6,6 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
   width: auto;
   background-color: rgb(0, 0, 0);
 }
@@ -35,6 +34,11 @@ header {
   justify-content: space-between; /* Space between the logo and nav */
 }
 
+.header-content video {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
 .header-content img {
   max-height: 3em;
   margin-right: 3em;
@@ -53,16 +57,19 @@ header {
 
 .header-buttons a {
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 1.2em;
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
   background-color: #174167;
   text-decoration: none;
   margin-right: 0.9em;
-  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
-  border-radius: 0.8em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 0.4em 0.8em;
+  /* Smaller padding for a more compact button */
+  border-radius: 0.8em;
+  /* Make the buttons more rounded */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
 }
 
 .header-buttons a:hover {
@@ -73,14 +80,16 @@ header {
   padding: 0.5em;
   position: relative;
   display: flex;
+  width: 100%;
+  height: calc(80vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
 }
 
-.cybersecurityimagebackground {
-  height: 36em; /* Reduce the height of the image */
-  width: 100%; /* Make the image responsive */
+.section video {
+  width: 100%;
+  height: calc(75vh);
   margin: 0.2em;
   padding: 0em;
   opacity: 25%;
@@ -90,68 +99,348 @@ header {
 
 .section-wording {
   display: inline-block;
-  font-size: 3.5em;
-  font-family: "True Sans" !important;
-  font-weight: 700 !important;
-  color: rgb(255, 255, 255);
   font-stretch: expanded;
+  clear: both;
   position: absolute;
+  transform: translateX(-50%);
   top: 8.5%;
   left: 50%;
-  transform: translateX(-50%);
+  font-family: "True Sans" !important;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  color: transparent;
+  /* Set initial text color to transparent */
+  font-size: 2.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255)
+  );
+  /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
 }
 
 .section-slogan {
   display: inline-block;
-  margin: 0;
-  font-size: 0.95em;
-  font-family: "True Sans" !important;
-  font-weight: 100 !important;
-  color: rgb(255, 255, 255);
   font-stretch: expanded;
   position: absolute;
-  top: 35%;
-  left: 50%;
   transform: translateX(-50%);
-  word-spacing: 0.3em;
+  top: 40%;
+  left: 50%;
+  font-family: "True Sans" !important;
+  letter-spacing: 0.1em;
+  font-weight: 700 !important;
+  color: transparent;
+  /* Set initial text color to transparent */
+  font-size: 0.9em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
 }
 
 .section-buttons {
-  justify-content: space-between;
-  padding: 0.5em;
-  align-items: center;
-  position: absolute;
-  top: 60%;
-  word-spacing: 0.1em;
   display: inline-flex;
+  position: absolute;
+  justify-content: center;
   gap: 12em;
-  margin-left: 20em;
-  margin-right: 20em;
+  align-items: center;
+  padding: 0.5em;
+  flex-grow: 1;
+  width: 100%;
+  top: 70%;
 }
 
 .section-buttons a {
-  align-items: center;
   text-decoration: none;
   font-size: 17pt;
   color: #ffffff;
   transition: background-color 0.3s;
   background-color: #174167;
-  text-decoration: none;
-  padding: 0.5em 0.9em; /* Smaller padding for a more compact button */
-  border-radius: 0.99em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 0.5em 1em;
+  border-radius: 0.99em;
+  white-space: nowrap;
 }
 
 .section-buttons a:hover {
   background-color: #286aa7;
 }
 
+/* Your existing styles here */
+.section2 {
+  margin-top: 3%;
+  padding-top: 8%;
+  background-color: #141e2b;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(70vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+}
+
+/* .dots-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(90deg, #00bfff, #000080);
+  border-radius: 50%;
+  animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+} */
+
+.fa-3xl {
+  font-size: 3.5em;
+  line-height: 4em;
+}
+
+.section2-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Alice", serif;
+  font-family: "Cookie", cursive;
+  font-family: "Domine", serif;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  font-weight: 500 !important;
+  font-size: 4em;
+  padding: 1%;
+  margin-bottom: 1em; /* Adjusted margin-bottom */
+  -webkit-text-fill-color: #ffffff;
+}
+
+.description {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  padding-bottom: 10%;
+  padding-top: 0;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 5em;
+  margin: 0.3em;
+}
+
+.instruction-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  margin-top: 25vh;
+}
+
+.circle-box {
+  text-align: center;
+
+  flex-basis: 30%;
+
+  /* Adjust the width of each box */
+}
+
+.circle {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 1em rgb(141, 158, 247);
+}
+
 footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.section3 {
+  margin-top: 3%;
+  padding-top: 8%;
+  background-color: #1e2d42;
+  padding: 0.5em;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: calc(105vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+}
+
+.section3-title {
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.board-members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust based on your design preference */
+}
+
+.board-member-item {
+  margin: 1em;
+  flex-basis: 12%; /* Adjust the width as needed */
+  color: #ffffff;
+}
+
+.board-member-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  box-shadow: 0.05em 0.1em 0.7em rgba(70, 200, 255, 0.974); /* Shadow color and intensity */
+}
+
+.board-member-name {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.board-quote {
+  color: #ffffff;
+  margin-top: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: italic;
+  padding: 0 15%;
+  word-spacing: 0.09em; /* Adjust the value to increase or decrease word spacing */
+  letter-spacing: 0.02em; /* Adjust the value to increase or decrease letter spacing */
+}
+
+.board-quote blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.board-quote-author {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.contact-information {
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+.contact-information h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-information p {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Default styling for the email link */
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
+}
+
+.board-member-title {
+  color: #ffffff; /* Dark green color */
+  text-shadow: 0.1em 0.2em 0.3em rgb(0, 0, 0); /* Add a subtle shadow */
+  font-size: 1em;
+}
+
+.blue-word {
+  color: rgb(139, 207, 255);
+}
+
+footer {
+  padding-top: 2em;
   background-color: #000000;
   color: #fff;
   text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 1em 0;
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }

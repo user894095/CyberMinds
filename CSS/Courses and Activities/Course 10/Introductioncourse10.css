@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a2738;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+.page-title {
+  display: flex;
+  justify-content: left;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 0%;
+  font-family: "MuseoModerno", sans-serif !important;
+  letter-spacing: 0.05em;
+  font-weight: 400 !important;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 2.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 6s forwards; /* Set a longer duration for the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #1a2738;
+  width: 84%;
+  justify-self: center;
+  height: 100vh;
+}
+
+.left-side_rectangle {
+  flex: 3;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+  gap: 2%; /* Space between buttons */
+  align-items: center;
+  background-color: #1a2738;
+}
+
+.leftRectangle-section1-button-title {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: 700px;
+  color: white;
+  font-family: "True Sans" !important;
+}
+
+.leftRectangle-section1 {
+  flex: 0.2;
+  background-color: #111927;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRectangle-section1 a {
+  margin-bottom: 6%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Empty-section1 {
+  flex: 1;
+}
+
+.leftRectangle-section2 {
+  flex: 2;
+  background-color: #111927;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRectangle-section2-button-title {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: 700px;
+  color: white;
+  font-family: "True Sans" !important;
+}
+
+.leftRectangle-section2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+.leftRectangle-section2 a:last-child {
+  margin-bottom: 9%;
+}
+
+.Empty-section2 {
+  flex: 1;
+}
+
+
+.leftRectangle-section3 {
+  flex: 0.2;
+  background-color: #111927;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRectangle-section3 a {
+  margin-bottom: 6%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.leftRectangle-section3-button-title {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: 700px;
+  color: white;
+  font-family: "True Sans" !important;
+}
+
+.Empty-section3 {
+  flex: 2;
+}
+
+.right-side_rectangle {
+  flex: 8;
+  margin: 2%;
+  margin-right: 0%;
+  margin-left: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #1a2738;
+  color: rgb(212, 212, 212);
+  overflow-wrap: break-word; /* This property allows the text to wrap onto the next line */
+}
+
+.right-side_rectangle-buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: #111927;
+  justify-content: space-between; /* Distribute the buttons with space between them */
+  align-items: center;
+  height: 3.2em;
+}
+
+.right-side_rectangle-buttons a {
+  border-radius: 0.5em;
+  background-color: #182a47;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1%;
+  margin: 0 2%; /* Adjust the margin between "Previous" and "Next" buttons */
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.right-side_rectangle-buttons .next_course {
+  margin-left: auto; /
+}
+
+.right-side_rectangle-buttons a:hover ,
+.leftRectangle-section1 a:hover,
+.leftRectangle-section2 a:hover,
+.leftRectangle-section3 a:hover {
+  background-color: #1e6bb2;
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
+}
+
+.act-img {
+  rotate: -1deg;
+}

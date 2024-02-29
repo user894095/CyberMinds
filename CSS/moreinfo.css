@@ -1,101 +1,103 @@
+/* this page links to index */
+body {
+  overflow-x: hidden;
+}
+
 .Parent-container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
-  height: auto;
-  width: 100%;
-  background-color: rgb(42, 44, 43);
-}
-
-.first-box {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 2.5%;
-  padding-bottom: 20px;
-  padding-top: 0px;
-  background-color: rgb(0, 0, 0);
-}
-
-.circle {
-  height: 110%;
+  min-height: 100vh;
   width: auto;
-  margin: 0px;
-  padding-top: 10px;
-  border-radius: 10px;
-  border-color: black;
-  vertical-align: middle;
-  margin-left: 2%;
-}
-
-.firstbox-buttons {
-  display: inline-block;
-  height: 50px;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  vertical-align: top;
-  border: none;
-  margin-top: 10px;
-  font-size: 70%;
-}
-
-.backtoHomeScreenButton {
-  margin-left: 10%;
-  margin-right: 3%;
-  vertical-align: middle;
-  background: linear-gradient(
-    51deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  width: auto;
-  height: 70%;
-  border-color: silver;
-  border-radius: 22%/90%;
-  font-family: sans-serif;
-  color: white;
-}
-
-.CoursesButton {
-  margin-left: 5%;
-  margin-right: 3%;
-  vertical-align: middle;
-  background: linear-gradient(
-    51deg,
-    rgba(35, 255, 119, 0.903),
-    rgba(35, 255, 119, 0.762),
-    rgb(6, 255, 197),
-    rgba(41, 169, 229, 0.778),
-    rgba(41, 169, 229, 0.305)
-  );
-  width: auto;
-  height: 70%;
-  border-color: silver;
-  border-radius: 29%/65%;
-  font-family: sans-serif;
-  color: white;
+  background-color: #1a2738;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(42, 44, 43);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow-x: hidden;
+  color: #ffffff;
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: white;
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  padding-top: 1em;
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
+}
+
+.header-content img {
+  max-height: 3em;
+  margin-right: 3em;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  margin-right: 0.9em;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.header-buttons a:hover {
+  background-color: #286aa7;
+}
+
+main {
+  padding-bottom: 3.5rem;
+}
+
+.page-title {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: transparent; /* Set initial text color to transparent */
+  font-size: 4.5em;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
+@keyframes fadeIn {
+  to {
+    color: rgb(255, 255, 255);
+    background-size: 200% 100%; /* Adjust the size of the gradient */
+  }
 }
 
 p {
@@ -132,4 +134,37 @@ h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 5px;
   text-align: center;
+}
+
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
 }
