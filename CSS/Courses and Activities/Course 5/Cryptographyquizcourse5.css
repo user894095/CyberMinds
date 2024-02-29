@@ -366,3 +366,10 @@ a {
   vertical-align: middle;
   margin-bottom: 1rem;
 }
+
+.question {
+  margin-bottom: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-size: 1.1em;
+}
