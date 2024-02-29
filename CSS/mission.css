@@ -168,3 +168,13 @@ li {
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards;
 }
+
+.image-container{
+  position: relative;
+  text-align: center;
+
+}
+
+.image-item{
+  position: absolute;
+}
