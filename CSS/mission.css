@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
   width: auto;
   background-color: #1a2738;
+  height: 140vh;
+
 }
 
 body {
@@ -18,6 +20,7 @@ body {
   overflow-x: hidden;
   color: #ffffff;
   text-align: center;
+
 }
 
 header {
@@ -140,18 +143,25 @@ li {
 }
 
 .title-img {
+  
+  
   position: relative;
   width: 100%;
   opacity: 30%;
   border-radius: 2em;
   display: inline-block;
+  height: 35em;
+
+
+
+  
 }
 
 .page-title {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -650%);
   font-family: "Space Grotesk", sans-serif;
   font-size: 4.5em;
   font-weight: 500;
@@ -168,3 +178,16 @@ li {
   -webkit-background-clip: text;
   animation: fadeIn 3s forwards;
 }
+
+.image-container{
+  position: relative;
+  text-align: center;
+
+}
+
+.image-item{
+  position: absolute;
+  transform: translateY(-150%);
+
+}
+
