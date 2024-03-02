@@ -168,3 +168,16 @@ li {
 p {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
+}

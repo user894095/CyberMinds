@@ -290,6 +290,11 @@ section {
   background-color: #1e6bb2;
 }
 
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
 h2{
   font-family: "Space Grotesk", sans-serif;
   font-size:1.8em; 
@@ -308,6 +313,10 @@ li{
   font-family: "Space Grotesk", sans-serif;
 }
 
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 h3{
   font-family: "Space Grotesk", sans-serif;
   font-size: 1em;
@@ -317,10 +326,12 @@ h3{
   color: rgb(63, 225, 217);
 }
 
-a {
-  font-family: "Space Grotesk", sans-serif;
-}
 
-#act-img {
-  rotate: -1deg;
-}
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
+
+  .list-without-bullet-points{
+    list-style: None;
+  }
+
