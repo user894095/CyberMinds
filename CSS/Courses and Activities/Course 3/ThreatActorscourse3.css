@@ -294,6 +294,11 @@ h2 {
   font-family: "Space Grotesk", sans-serif;
 }
 
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8em;
+}
+
 p {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -316,4 +321,8 @@ iframe {
 
 #act-img {
   rotate: -1deg;
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
 }
