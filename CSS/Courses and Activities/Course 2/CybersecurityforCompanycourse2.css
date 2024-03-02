@@ -340,3 +340,11 @@ h3{
 a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
+.list-without-bullet-points{
+  list-style: None;
+}
