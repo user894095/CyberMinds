@@ -200,6 +200,7 @@ p {
   background-color: #0a0a0a5a;
   background-image: url('https://media.istockphoto.com/id/1213363511/vector/abstract-blurred-background-defocused-blue-gradient.jpg?s=612x612&w=0&k=20&c=Kl-cljKkxzJNZ8mnpyyPKWUtIOQIoBuZQNvltxLhxhw=');
   background-size:cover;
+  background-repeat: no-repeat;
   border-radius: 1em;
   padding: 1em;
   margin-left: 1em;
