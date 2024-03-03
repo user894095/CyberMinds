@@ -354,6 +354,14 @@ label.selected {
   background-color:  rgb(61, 78, 163); /* Change the background color for the selected label */
 }
 
+.wrong {
+  background-color:  rgb(255, 0, 0); /* Change the background color for the selected label */
+}
+
+.right {
+  background-color:  rgb(21, 255, 0); /* Change the background color for the selected label */
+}
+
 .answer-detail {
   display: none;
   margin-top: 0.6px;
