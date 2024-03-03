@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   width: auto;
   background-color: #1a2738;
+  background-image: url('https://www.securitymagazine.com/ext/resources/images/cyber-products-tech-fp1170x650.jpg?1671553963');
 }
 
 body {
@@ -34,8 +35,10 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center; /* Center the items vertically */
-  justify-content: space-between; /* Space between the logo and nav */
+  align-items: center;
+  /* Center the items vertically */
+  justify-content: space-between;
+  /* Space between the logo and nav */
 }
 
 .header-content img {
@@ -63,9 +66,12 @@ header {
   background-color: #174167;
   text-decoration: none;
   margin-right: 0.9em;
-  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
-  border-radius: 0.8em; /* Make the buttons more rounded */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 0.4em 0.8em;
+  /* Smaller padding for a more compact button */
+  border-radius: 0.8em;
+  /* Make the buttons more rounded */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
 }
 
 .header-buttons a:hover {
@@ -80,23 +86,25 @@ main {
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
   font-weight: 500;
-  color: transparent; /* Set initial text color to transparent */
+  color: transparent;
+  /* Set initial text color to transparent */
   font-size: 4.5em;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  ); /* Adjust the colors and stops as needed */
+  background: linear-gradient(to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.8));
+  /* Adjust the colors and stops as needed */
   background-clip: text;
   -webkit-background-clip: text;
-  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+  animation: fadeIn 3s forwards;
+  /* Set the duration of the animation */
 }
 
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
-    background-size: 200% 100%; /* Adjust the size of the gradient */
+    background-size: 200% 100%;
+    /* Adjust the size of the gradient */
   }
 }
 
@@ -170,20 +178,28 @@ p {
 }
 
 .emailForCyberminds {
-  color: #ffffff; /* Light blue color */
-  text-decoration: none; /* No underline */
-  font-size: 0.8em; /* Smaller font size */
+  color: #ffffff;
+  /* Light blue color */
+  text-decoration: none;
+  /* No underline */
+  font-size: 0.8em;
+  /* Smaller font size */
 }
 
 /* Hover effect for the email link */
 .emailForCyberminds:hover {
-  color: #ffffff; /* Dark blue color on hover */
-  text-decoration: underline; /* Underline on hover */
-  font-weight: bold; /* Bold on hover */
+  color: #ffffff;
+  /* Dark blue color on hover */
+  text-decoration: underline;
+  /* Underline on hover */
+  font-weight: bold;
+  /* Bold on hover */
 }
 
-.text-container{
+.text-container {
   background-color: #0a0a0a5a;
+  background-image: url('https://media.istockphoto.com/id/1213363511/vector/abstract-blurred-background-defocused-blue-gradient.jpg?s=612x612&w=0&k=20&c=Kl-cljKkxzJNZ8mnpyyPKWUtIOQIoBuZQNvltxLhxhw=');
+  background-size:cover;
   border-radius: 1em;
   padding: 1em;
   margin-left: 1em;
