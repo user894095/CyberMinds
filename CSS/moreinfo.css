@@ -131,7 +131,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: 15px;
   color: white;
-  border-bottom: 2px solid #333;
+  /*border-bottom: 2px solid #333;*/
   padding-bottom: 5px;
   text-align: center;
 }
@@ -167,4 +167,27 @@ li {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
+}
+
+.text-container{
+  background-color: #0a0a0a5a;
+  border-radius: 1em;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
