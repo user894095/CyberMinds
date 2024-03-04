@@ -6,7 +6,7 @@ body {
 .Parent-container {
   display: flex;
   flex-direction: column;
-  height: 200em;
+  height: 80em;
   width: auto;
   background-color: #1a2738;
 }
@@ -208,4 +208,22 @@ footer {
   padding: 1em 0;
   font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
+}
+
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
+}
+
+.header-image{
+  opacity: 30%;
+  border-radius: 2em;
 }
