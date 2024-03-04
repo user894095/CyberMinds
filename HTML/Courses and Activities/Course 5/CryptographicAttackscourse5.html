@@ -26,7 +26,7 @@
           <a href="../../course_Contents.html">Mission</a>
           <a href="../../LiveHelp.html">Live Help</a>
           <a href="../../ourTeam.html">Our Team</a>
-          <a href="../../support.html">Support</a>
+          <a href="../../CTF.html">CTF</a>
         </nav>
       </div>
     </header>
@@ -37,72 +37,116 @@
       <div class="right-side_rectangle">
         <h2>Cryptographic Attacks</h2>
         <p>
-          <span class = "yellow-word">*Note: please do not try any of these attacks on a real system, only practice these on designated software :)</span>
+          <span class="yellow-word"
+            >*Note: please do not try any of these attacks on a real system,
+            only practice these on designated software :)</span
+          >
         </p>
 
         <p>
-          <span class="blue-word">A cryptographic attack is a cyberattack that allows the attacker to bypass cryptographic defenses.</span> The most 
-          common example of a cryptographic attack would be attempting to log into an account with different credentials 
-          because this is meant to get around the fact that credentials are hashed when stored and cannot be accessed in 
-          their databases. In this article, we will explore how different cryptographic attacks relate to this example.</p>
+          <span class="blue-word"
+            >A cryptographic attack is a cyberattack that allows the attacker to
+            bypass cryptographic defenses.</span
+          >
+          The most common example of a cryptographic attack would be attempting
+          to log into an account with different credentials because this is
+          meant to get around the fact that credentials are hashed when stored
+          and cannot be accessed in their databases. In this article, we will
+          explore how different cryptographic attacks relate to this example.
+        </p>
 
-        <p><span class = "yellow-word">*Note: This process of attempting to crack or exploit cryptographic systems is called cryptanalysis. 
-          However, cryptanalysis refers more to cracking a cryptographic algorithm rather than bypassing it. </span></p>
+        <p>
+          <span class="yellow-word"
+            >*Note: This process of attempting to crack or exploit cryptographic
+            systems is called cryptanalysis. However, cryptanalysis refers more
+            to cracking a cryptographic algorithm rather than bypassing it.
+          </span>
+        </p>
 
         <h3>Brute Forcing:</h3>
-        <p><span class="blue-word">Brute forcing, like the name implies, is the process of trying every combination of credentials in order
-           to gain access to a system,</span> specifically finding a password to a certain username. Obviously, there are 
-           billions of combinations for an attacker to try. Computer programs are used to speed this process up, but we 
-           could all be dead before a successful combination is found. That is why there are some strategies and variations 
-           of brute forcing that are used to find a match:
+        <p>
+          <span class="blue-word"
+            >Brute forcing, like the name implies, is the process of trying
+            every combination of credentials in order to gain access to a
+            system,</span
+          >
+          specifically finding a password to a certain username. Obviously,
+          there are billions of combinations for an attacker to try. Computer
+          programs are used to speed this process up, but we could all be dead
+          before a successful combination is found. That is why there are some
+          strategies and variations of brute forcing that are used to find a
+          match:
         </p>
 
         <ul>
           <li>
-            <span class="purple-word">Ordinary Brute Forcing:</span> trying every combination ever, not a very efficient use of time 
+            <span class="purple-word">Ordinary Brute Forcing:</span> trying
+            every combination ever, not a very efficient use of time
           </li>
-          <br>
-            <ul>
-              <li>
-                <span class="green-word">Likelihood of Success:</span> Guaranteed	 
-              </li>
-              <li>
-                <span class="green-word">Time: </span>Could be 2 septillion years…
-              </li>
-            </ul>
-          <br>
+          <br />
+          <ul>
+            <li>
+              <span class="green-word">Likelihood of Success:</span> Guaranteed
+            </li>
+            <li>
+              <span class="green-word">Time: </span>Could be 2 septillion years…
+            </li>
+          </ul>
+          <br />
           <li>
-            <span class="purple-word">Rainbow Table Attack:</span> a rainbow table attack uses a wordlist with each credential’s hash. 
-            It is likely to have less credentials to go through than a dictionary since the hashes take up more space.
+            <span class="purple-word">Rainbow Table Attack:</span> a rainbow
+            table attack uses a wordlist with each credential’s hash. It is
+            likely to have less credentials to go through than a dictionary
+            since the hashes take up more space.
           </li>
-          <br>
-            <ul>
-              <li>
-                <span class="green-word">Likelihood of Success:</span> Higher the larger the dictionary is, attackers are likely to use something that makes is possible for them to succeed	 
-              </li>
-              <li>
-                <span class="green-word">Time:</span> Longer the larger the dictionary is, attackers will use something that a computer can go through in a short to medium amount of time
-              </li>
-            </ul>
-          <br>
+          <br />
+          <ul>
+            <li>
+              <span class="green-word">Likelihood of Success:</span> Higher the
+              larger the dictionary is, attackers are likely to use something
+              that makes is possible for them to succeed
+            </li>
+            <li>
+              <span class="green-word">Time:</span> Longer the larger the
+              dictionary is, attackers will use something that a computer can go
+              through in a short to medium amount of time
+            </li>
+          </ul>
+          <br />
           <li>
-            <span class="purple-word">Reverse Brute Forcing:</span> taking a commonly used password and trying many usernames with it. Reverse brute forcing
-             (and other attacks not mentioned here) can be paired with wordlists or rainbow tables to expedite the brute forcing process.
+            <span class="purple-word">Reverse Brute Forcing:</span> taking a
+            commonly used password and trying many usernames with it. Reverse
+            brute forcing (and other attacks not mentioned here) can be paired
+            with wordlists or rainbow tables to expedite the brute forcing
+            process.
           </li>
-          <br>
+          <br />
           <li>
-            <span class="purple-word">Using Common Credentials (additional concept):</span> Attackers can minimize the amount of time to brute force by 
-            limiting their wordlists to only credentials that are common.
+            <span class="purple-word"
+              >Using Common Credentials (additional concept):</span
+            >
+            Attackers can minimize the amount of time to brute force by limiting
+            their wordlists to only credentials that are common.
           </li>
         </ul>
 
         <h3>Collision-Exploiting Attacks:</h3>
-        <p><span class="blue-word">Collision-exploiting attacks take advantage of repeating hashes, or collisions. </span>Sometimes, these can exploit errors in a poorly constructed 
-          hashing algorithm that resulted in collisions. They can also exploit repeat hashes in databases. Examples of collision-exploiting attacks are 
-          classic collision attacks and birthday attacks. <span class="blue-word">A cryptographic defense to collision attacks is salting. Salting is when a random string of 
-          characters, known as a salt, is appended to the end of a credential before it is hashed.</span> So, if two people use the same password, the added 
-          salt changes the hashes so they are not the same in storage. </p>
-        
+        <p>
+          <span class="blue-word"
+            >Collision-exploiting attacks take advantage of repeating hashes, or
+            collisions. </span
+          >Sometimes, these can exploit errors in a poorly constructed hashing
+          algorithm that resulted in collisions. They can also exploit repeat
+          hashes in databases. Examples of collision-exploiting attacks are
+          classic collision attacks and birthday attacks.
+          <span class="blue-word"
+            >A cryptographic defense to collision attacks is salting. Salting is
+            when a random string of characters, known as a salt, is appended to
+            the end of a credential before it is hashed.</span
+          >
+          So, if two people use the same password, the added salt changes the
+          hashes so they are not the same in storage.
+        </p>
 
         <div class="right-side_rectangle-buttons">
           <a
@@ -133,28 +177,56 @@
         <div class="leftRectangle-section2">
           <p class="leftRectangle-section2-button-title">Table of Contents</p>
           <a href="../Course 5/Introductioncourse5.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Course 5 - Introduction
           </a>
           <a href="../Course 5/PrivateandPubliccourse5.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Public/Private Encryption
           </a>
           <a href="../Course 5/CasearCipherandRSACiphercourse5.html">
-            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img"> 
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              class="act-img"
+            />
             Casear Cipher/RSA Cipher</a
           >
           <a href="../Course 5/EncryptionProgrammingProblemscourse5.html">
-            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              class="act-img"
+            />
             Python Encryption
           </a>
-          <a href="../Course 5/Hashingcourse5.html"><img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">Hashing </a>
+          <a href="../Course 5/Hashingcourse5.html"
+            ><img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />Hashing
+          </a>
           <a href="../Course 5/CryptographicAttackscourse5.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-            Cryptographic Attacks 
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Cryptographic Attacks
           </a>
           <a href="../Course 5/Cryptographyquizcourse5.html">
-            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40">
+            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
             Cryptography Quiz
           </a>
           <!-- <a href="add game here">  >add more here </a> -->

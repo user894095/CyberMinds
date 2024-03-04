@@ -1,10 +1,12 @@
 .pagetitle {
   font-family: "Space Grotesk", sans-serif;
-
-  letter-spacing: 0.05em;
-  font-weight: 500;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  padding-bottom: 1em;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -121,7 +123,8 @@ h3 {
   font-size: 1em;
 }
 
-a, h3 {
+a,
+h3 {
   font-family: "Space Grotesk", sans-serif;
 }
 

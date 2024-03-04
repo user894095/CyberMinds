@@ -23,11 +23,11 @@ body {
   margin: 50;
 }
 .white-rectangle {
-  background-color: #FFFFFF; 
-  margin: 0 auto; 
-  width: 50%; 
-  height: 100%; 
-  background-size: 50%, auto; 
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  background-size: 50%, auto;
 }
 header {
   background-color: #000000;
@@ -80,17 +80,18 @@ header {
 }
 .page-title {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
   display: inline-block;
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
   top: 8.5%;
   left: 49%;
-
-  letter-spacing: 0.1em;
-  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
