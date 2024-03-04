@@ -202,15 +202,15 @@ header {
   text-align: center;
   background-image: radial-gradient(
     circle at top left,
-    #000000 0%,
-    #0b1118 25%,
-    #101924 30%,
+    #152332 0%,
+    #1d3146 25%,
+    #254061 30%,
     #284363 45%,
     #1c578f 60%,
-    #2365a2 75%,
-    #1a2738 90% /* Adjusted percentage */
+    #20647d 75%,
+    #21637b 90% /* Adjusted percentage */
   );
-  background-size: 500%;
+  background-size: 140%;
   animation: GradientMove 7s ease infinite;
 }
 
@@ -480,16 +480,16 @@ a {
   margin-left: 4%;
   background-image: radial-gradient(
     circle at top left,
-    rgb(40, 60, 50) 0%,
-    rgb(55, 86, 46) 10%,
-    #3a6f27 20%,
-    rgb(83, 156, 56) 30%,
-    #52a734 40%,
-    #2f8a2f 50%,
-    #25923e 60%,
-    #2d874c 70%,
-    #183a2a 80%,
-    #193e28 90%
+    rgb(24, 151, 140) 0%,
+    rgb(49, 131, 139) 10%,
+    rgb(49, 131, 139) 20%,
+    rgb(46, 96, 120) 30%,
+    rgb(41, 78, 120) 40%,
+    rgb(39, 68, 104) 50%,
+    rgb(42, 88, 142) 60%,
+    rgb(41, 94, 134) 70%,
+    rgb(46, 96, 120) 80%,
+    rgb(24, 151, 140) 90%
   );
   background-size: 140%;
 }
@@ -501,14 +501,14 @@ a {
     circle at top left,
     rgb(24, 151, 140) 0%,
     rgb(49, 131, 139) 10%,
-    rgb(46, 96, 120) 20%,
-    rgb(50, 89, 135) 30%,
+    rgb(49, 131, 139) 20%,
+    rgb(46, 96, 120) 30%,
     rgb(41, 78, 120) 40%,
-    rgb(62, 79, 127) 50%,
-    rgb(71, 66, 127) 60%,
-    rgb(92, 29, 141) 70%,
-    rgb(78, 48, 101) 80%,
-    rgb(131, 55, 178) 90%
+    rgb(39, 68, 104) 50%,
+    rgb(42, 88, 142) 60%,
+    rgb(41, 94, 134) 70%,
+    rgb(46, 96, 120) 80%,
+    rgb(24, 151, 140) 90%
   );
   background-size: 140%;
 }
@@ -569,7 +569,7 @@ a {
 
 .mr-2:hover {
   font-size: 1.4em;
-  color: rgb(27, 245, 85);
+  color: rgb(71, 181, 240);
 }
 
 .section5 {
@@ -651,6 +651,9 @@ p {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.red-word {
+  color: rgb(200, 71, 16);
+}
 a {
   text-decoration: none;
 }
