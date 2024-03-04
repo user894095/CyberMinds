@@ -10,7 +10,6 @@ body {
   width: auto;
   background-color: #1a2738;
   height: 140vh;
-
 }
 
 body {
@@ -20,7 +19,6 @@ body {
   overflow-x: hidden;
   color: #ffffff;
   text-align: center;
-
 }
 
 header {
@@ -143,18 +141,12 @@ li {
 }
 
 .title-img {
-  
-  
   position: relative;
   width: 100%;
   opacity: 30%;
   border-radius: 2em;
   display: inline-block;
   height: 35em;
-
-
-
-  
 }
 
 .page-title {
@@ -163,11 +155,12 @@ li {
   left: 50%;
   transform: translate(-50%, -650%);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 4.5em;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: transparent;
-  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -179,15 +172,12 @@ li {
   animation: fadeIn 3s forwards;
 }
 
-.image-container{
+.image-container {
   position: relative;
   text-align: center;
-
 }
 
-.image-item{
+.image-item {
   position: absolute;
   transform: translateY(-150%);
-
 }
-
