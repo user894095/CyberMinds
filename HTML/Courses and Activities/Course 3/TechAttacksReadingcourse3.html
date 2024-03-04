@@ -1,158 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../CSS/Courses and Activities/Course 3/TechAttacksReadingcourse3.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../../CSS/Courses and Activities/Course 3/TechAttacksReadingcourse3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-    rel="stylesheet">
+    <title>Course 3- Technical Attacks</title>
+  </head>
 
-  <title>Course 3- Technical Attacks</title>
-</head>
-
-<body>
-  <header>
-    <div class="header-content">
-      <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
-      <nav class="header-buttons">
-        <a href="../../../index.html">Back to Home Screen</a>
-        <a href="../../moreinfo.html">More Info</a>
-        <a href="../../course_Contents.html">Mission</a>
-        <a href="../../LiveHelp.html">Live Help</a>
-        <a href="../../ourTeam.html">Our Team</a>
-        <a href="../../support.html">Support</a>
-      </nav>
-    </div>
-  </header>
-
-  <div>
-    <p class="page-title">Course 3- Technical Attacks</p>
-  </div>
-
-  <section>
-    <div class="right-side_rectangle">
-      <h1>Malware:</h1>
-
-      <p> Malware is a <span class="blue-word">malicious software</span> that aims to damage or exploit computer
-        systems. The following technologies that will be discussed are all examples of malware.</p>
-
-      <h2>Viruses and Worms:</h2>
-
-      <p>Viruses and worms are both <span class="blue-word">self-replicating malware</span>. As they infect systems,
-        they can jump to different files or computers on the network on their own. The difference is that viruses will
-        begin replicating upon being triggered by a human action, such as opening a file or clicking a button. Worms do
-        not need this cue. </p>
-
-      <h2>Other Malware:</h2>
-
-      <ul>
-        <li><span class="blue-word">Ransomware</span>: <span class="blue-word">encrypts</span> the victim’s data and
-          will only provide a decryption key once a ransom is paid to the attacker (you will learn about encryption in
-          course 5).</li>
-        <li><span class="blue-word">Spyware</span>: malware that <span class="blue-word">sends a user’s personal
-            information</span> back to the attacker, such as login credentials.</li>
-        <li><span class="blue-word">Adware</span>: <span class="blue-word">spams</span> the victim with unwanted
-          advertisements.</li>
-        <li><span class="blue-word">Trojan</span>: a malicious <span class="blue-word">disguised</span> as a good
-          program to bait users into downloading it.</li>
-      </ul>
-
-      <h1>Other Attacks/Attack Concepts:</h1>
-
-      <h2>Amplification:</h2>
-
-      <p>An amplification attack is a <span class="blue-word">larger, or more numerous</span> version of an existing
-        attack. For example, a denial of service (DoS) attack spams a system with data packets and prevents it from
-        operating via an overload of information. An amplified version of this is a distributed denial of service (DDos)
-        attack, which is a barrage of DoS attacks from many sources.</p>
-
-      <h2>Injection:</h2>
-
-      <p>An injection attack is when malicious code is <span class="blue-word">inputted, or “injected”</span> into a
-        program via search queries or user input queries. A popular example of this is a <span class="blue-word">SQL
-          injection. SQL (pronounced “sequel”)</span> stands for structured query language, and is used to make and
-        query databases. SQL code can be injected into search queries to return results that users may otherwise not be
-        able to see.
-      </p>
-      <p>In this next activity, we will walk through a SQL injection example and see how powerful they can be.</p>
-
-
-      <div class="right-side_rectangle-buttons">
-        <a href="../../Courses and Activities/Course 3/AttacksQuizcourse3.html">&lt; Previous</a>
-        <a href="../../Courses and Activities/Course 3/SQLInjectionActivitycourse3.html">Next ></a>
-        <a href="../../Courses and Activities/Course 4/Introductioncourse4.html" class="next_course">Skip to Next
-          Course</a>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+        <nav class="header-buttons">
+          <a href="../../../index.html">Back to Home Screen</a>
+          <a href="../../moreinfo.html">More Info</a>
+          <a href="../../course_Contents.html">Mission</a>
+          <a href="../../LiveHelp.html">Live Help</a>
+          <a href="../../ourTeam.html">Our Team</a>
+          <a href="../../CTF.html">CTF</a>
+        </nav>
       </div>
+    </header>
+
+    <div>
+      <p class="page-title">Course 3- Technical Attacks</p>
     </div>
 
-    <div class="left-side_rectangle">
-      <div class="leftRectangle-section1">
-        <p class="leftRectangle-section1-button-title">Go back?</p>
-        <a href="../../course_Contents.html">Back to all Courses</a>
-      </div>
-      <div class="Empty-section1">
-        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+    <section>
+      <div class="right-side_rectangle">
+        <h2>Examples of Technical Attacks:</h2>
+        <h3><span class="blue-word">Malware:</span></h3>
+
+        <p>
+          Malware is a <span class="blue-word">malicious software</span> that
+          aims to damage or exploit computer systems. The following technologies
+          that will be discussed are all examples of malware.
+        </p>
+
+        <h3><span class="blue-word">Viruses and Worms:</span></h3>
+
+        <p>
+          Viruses and worms are both
+          <span class="blue-word">self-replicating malware</span>. As they
+          infect systems, they can jump to different files or computers on the
+          network on their own. The difference is that viruses will begin
+          replicating upon being triggered by a human action, such as opening a
+          file or clicking a button. Worms do not need this cue.
+        </p>
+
+        <h3><span class="blue-word">Other Malware:</span></h3>
+
+        <ul>
+          <li>
+            <span class="green-word">Ransomware</span>: encrypts the victim’s
+            data and will only provide a decryption key once a ransom is paid to
+            the attacker (you will learn about encryption in course 5).
+          </li>
+          <li>
+            <span class="green-word">Spyware</span>: malware that sends a user’s
+            personal information back to the attacker, such as login
+            credentials.
+          </li>
+          <li>
+            <span class="green-word">Adware</span>: spams the victim with
+            unwanted advertisements.
+          </li>
+          <li>
+            <span class="green-word">Trojan</span>: a malicious disguised as a
+            good program to bait users into downloading it.
+          </li>
+        </ul>
+
+        <h3>Other Attacks/Attack Concepts:</h3>
+
+        <h3><span class="blue-word">Amplification:</span></h3>
+
+        <p>
+          An amplification attack is a
+          <span class="blue-word">larger, or more numerous</span> version of an
+          existing attack. For example, a denial of service (DoS) attack spams a
+          system with data packets and prevents it from operating via an
+          overload of information. An amplified version of this is a distributed
+          denial of service (DDos) attack, which is a barrage of DoS attacks
+          from many sources.
+        </p>
+
+        <h3><span class="blue-word">Injection:</span></h3>
+
+        <p>
+          An injection attack is when malicious code is
+          <span class="blue-word">inputted, or “injected”</span> into a program
+          via search queries or user input queries. A popular example of this is
+          a
+          <span class="blue-word"
+            >SQL injection. SQL (pronounced “sequel”)</span
+          >
+          stands for structured query language, and is used to make and query
+          databases. SQL code can be injected into search queries to return
+          results that users may otherwise not be able to see.
+        </p>
+        <p>
+          In this next <span class="congratulations">activity</span>, we will
+          walk through a SQL injection example and see how powerful they can be.
+        </p>
+
+        <div class="right-side_rectangle-buttons">
+          <a
+            href="../../Courses and Activities/Course 3/AttacksQuizcourse3.html"
+            >&lt; Previous</a
+          >
+          <a
+            href="../../Courses and Activities/Course 3/SQLInjectionActivitycourse3.html"
+            >Next ></a
+          >
+          <a
+            href="../../Courses and Activities/Course 4/Introductioncourse4.html"
+            class="next_course"
+            >Skip to Next Course</a
+          >
+        </div>
       </div>
 
-      <div class="leftRectangle-section2">
-        <p class="leftRectangle-section2-button-title">Table of Contents</p>
-        <a href="Introductioncourse3.html"> <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">Course 3
-          - Introduction</a>
-        <a href="../../Courses and Activities/Course 3/ThreatActorscourse3.html"> <img
-            src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-          Threat Actors
-        </a>
-        <a href="../../Courses and Activities/Course 3/SocialEngineeringcourse3.html"> <img
-            src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-          Social Engineering
-        </a>
-        <a href="../../../HTML/Courses and Activities/Course 3/TAandSEquizcourse3.html"> <img
-            src="../../../Images/ICON_QUIZ.png" width="40" height="40">
-          Threats/Social Engineering
-        </a>
-        <a href="../Course 3/PhishingAttacks.course3.html">
-          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-          Phishing Attacks
-        </a>
-        <a href="../Course 3/NonTechAttacksReadingcourse3.html">
-          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-          Non-Techical Attacks
-        </a>
-        <a href="../Course 3/AttacksQuizcourse3.html">
-          <img src="../../../Images/ICON_QUIZ.png" width="40" height="40">
-          Attacks Quiz
-        </a>
-        <a href="../Course 3/TechAttacksReadingcourse3.html">
-          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-          Technical Attacks
-        </a>
-        <a href="../Course 3/SQLInjectionActivitycourse3.html">
-          <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" id="act-img">
-          SQL Injection
-        </a>
-        <a href="../Course 3/Game_Course3.html">
-          <img src="../../../Images/ICON_GAME.png" width="40" height="40">
-          Course 3 Game
-        </a>
-      </div>
-      <div class="Empty-section2">
-        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+      <div class="left-side_rectangle">
+        <div class="leftRectangle-section1">
+          <p class="leftRectangle-section1-button-title">Go back?</p>
+          <a href="../../course_Contents.html">Back to all Courses</a>
+        </div>
+        <div class="Empty-section1">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
+
+        <div class="leftRectangle-section2">
+          <p class="leftRectangle-section2-button-title">Table of Contents</p>
+          <a href="Introductioncourse3.html">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />Course 3 - Introduction</a
+          >
+          <a
+            href="../../Courses and Activities/Course 3/ThreatActorscourse3.html"
+          >
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Threat Actors
+          </a>
+          <a
+            href="../../Courses and Activities/Course 3/SocialEngineeringcourse3.html"
+          >
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Social Engineering
+          </a>
+          <a
+            href="../../../HTML/Courses and Activities/Course 3/TAandSEquizcourse3.html"
+          >
+            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
+            Threats/Social Engineering
+          </a>
+          <a href="../Course 3/PhishingAttacks.course3.html">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Phishing Attacks
+          </a>
+          <a href="../Course 3/NonTechAttacksReadingcourse3.html">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Non-Techical Attacks
+          </a>
+          <a href="../Course 3/AttacksQuizcourse3.html">
+            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
+            Attacks Quiz
+          </a>
+          <a href="../Course 3/TechAttacksReadingcourse3.html">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Technical Attacks
+          </a>
+          <a href="../Course 3/SQLInjectionActivitycourse3.html">
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              id="act-img"
+            />
+            SQL Injection
+          </a>
+          <a href="../Course 3/Game_Course3.html">
+            <img src="../../../Images/ICON_GAME.png" width="40" height="40" />
+            Course 3 Game
+          </a>
+        </div>
+        <div class="Empty-section2">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
+
+        <div class="Empty-section3">
+          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+        </div>
       </div>
 
-      <div class="Empty-section3">
-        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-      </div>
-    </div>
-
-    <!-- <footer class="page-footer">
+      <!-- <footer class="page-footer">
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
