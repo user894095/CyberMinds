@@ -78,10 +78,12 @@ header {
   top: 8.5%;
   left: 49%;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
   letter-spacing: 0.1em;
-  font-weight: 500;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
