@@ -339,3 +339,13 @@ h3{
 .blue-word{
   color: rgb(63, 225, 217);
 }
+
+
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
+
+  .list-without-bullet-points{
+    list-style: None;
+  }
+

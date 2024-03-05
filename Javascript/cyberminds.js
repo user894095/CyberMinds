@@ -8,13 +8,32 @@ function scrollDown() {
   });
 }
 
+// document.addEventListener("scroll", function () {
+//   var section2Container = document.querySelector(".section2-container");
+//   var section3 = document.querySelector(".section3");
+//   var scrollY = window.scrollY || window.pageYOffset;
+//   var documentHeight = document.documentElement.scrollHeight;
+//   var scrollThreshold = documentHeight * 0.3; // 20% of the document height
+//   var maxTopPosition = 25; // Maximum top position in percentage
+
+//   // Check if the scroll position is beyond the scroll threshold
+//   if (scrollY > scrollThreshold) {
+//     // Calculate the top position with a maximum value
+//     var topPosition = 30;
+//     section2Container.style.top = topPosition + "%";
+//   } else {
+//     // Reset the top position if below the scroll threshold
+//     section2Container.style.top = topPosition + "%";
+//   }
+// });
+
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-4em";
   }
   prevScrollpos = currentScrollPos;
 };

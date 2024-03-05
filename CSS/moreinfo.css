@@ -78,10 +78,12 @@ main {
 
 .page-title {
   font-family: "Space Grotesk", sans-serif;
-  letter-spacing: 0.05em;
-  font-weight: 500;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: transparent; /* Set initial text color to transparent */
-  font-size: 4.5em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -131,7 +133,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: 15px;
   color: white;
-  border-bottom: 2px solid #333;
+  /*border-bottom: 2px solid #333;*/
   padding-bottom: 5px;
   text-align: center;
 }
@@ -167,4 +169,27 @@ li {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.emailForCyberminds {
+  color: #ffffff; /* Light blue color */
+  text-decoration: none; /* No underline */
+  font-size: 0.8em; /* Smaller font size */
+}
+
+/* Hover effect for the email link */
+.emailForCyberminds:hover {
+  color: #ffffff; /* Dark blue color on hover */
+  text-decoration: underline; /* Underline on hover */
+  font-weight: bold; /* Bold on hover */
+}
+
+.text-container {
+  background-color: #0a0a0a5a;
+  border-radius: 1em;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
