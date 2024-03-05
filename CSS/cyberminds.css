@@ -1,21 +1,13 @@
 /* this page links to index page */
 body {
   overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
 }
 
 .Parent-container {
   display: flex;
   flex-direction: column;
   width: auto;
-  background-color: rgb(0, 0, 0);
-}
-
-body {
-  font-family: "Georgia", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  color: #ffffff;
 }
 
 header {
@@ -77,6 +69,7 @@ header {
 }
 
 .section {
+  margin-bottom: 5em;
   padding: 0.5em;
   position: relative;
   display: flex;
@@ -88,11 +81,11 @@ header {
 }
 
 .section video {
+  opacity: 30%;
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
   padding: 0em;
-  opacity: 25%;
   object-fit: cover;
   display: inline-block;
 }
@@ -188,47 +181,48 @@ header {
   background-color: #286aa7;
 }
 
+/* .section2-container {
+  width: 100%;
+  top: 100%; 
+  transition: top 0.5s ease; 
+  position: fixed;
+} */
+
 /* Your existing styles here */
 .section2 {
-  margin-top: 3%;
-  padding-top: 8%;
-  background-color: #141e2b;
-  padding: 0.5em;
+  border-radius: 1em 1em 1em 1em;
   position: relative;
   display: flex;
+  padding-bottom: 1.5em;
   width: 100%;
   height: calc(70vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
   text-align: center;
+  background-image: radial-gradient(
+    circle at top left,
+    #152332 0%,
+    #1d3146 25%,
+    #254061 30%,
+    #284363 45%,
+    #1c578f 60%,
+    #20647d 75%,
+    #21637b 90% /* Adjusted percentage */
+  );
+  background-size: 140%;
+  animation: GradientMove 7s ease infinite;
 }
 
-/* .dots-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.dot {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(90deg, #00bfff, #000080);
-  border-radius: 50%;
-  animation: moveUp 5s linear infinite;
-}
-
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
+@keyframes GradientMove {
+  0%,
   100% {
-    transform: translateY(-100%);
+    background-position: 15% 65%;
   }
-} */
+  50% {
+    background-position: 45% 65%;
+  }
+}
 
 .fa-3xl {
   font-size: 3.5em;
@@ -236,6 +230,7 @@ header {
 }
 
 .section2-title {
+  margin-top: 2em;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -243,32 +238,29 @@ header {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  font-family: "Alice", serif;
-  font-family: "Cookie", cursive;
-  font-family: "Domine", serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: normal;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
-  font-weight: 500 !important;
-  font-size: 4em;
   padding: 1%;
-  margin-bottom: 1em; /* Adjusted margin-bottom */
+  margin-bottom: 1em;
+
   -webkit-text-fill-color: #ffffff;
 }
 
 .description {
+  flex: 2;
   font-family: "Space Grotesk", sans-serif;
+  color: white;
   letter-spacing: 0.1em;
   font-size: 1em;
-  padding-bottom: 10%;
-  padding-top: 0;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 5em;
-  margin: 0.3em;
 }
 
 .instruction-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
@@ -276,15 +268,26 @@ header {
   margin-top: 25vh;
 }
 
-.circle-box {
-  text-align: center;
+.flex_empty {
+  flex: 1;
+}
 
-  flex-basis: 30%;
+.circle-box {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 9;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 1em 1em 1em 1em;
+  background-color: rgb(12, 18, 27);
 
   /* Adjust the width of each box */
 }
 
 .circle {
+  margin-top: 2em;
   background-color: hsl(0, 0%, 100%);
   border-radius: 50%;
   width: 100px;
@@ -298,47 +301,48 @@ header {
   box-shadow: 0 0 1em rgb(141, 158, 247);
 }
 
-footer {
-  background-color: #0a0a0a;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 0.9em;
-}
-
-.page-footer {
-  background-color: #0a0a0a;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 0.9em;
-}
-
 a {
   font-family: "Space Grotesk", sans-serif;
 }
 
 .section3 {
+  border-radius: 1em 1em 1em 1em;
+  background-color: rgb(0, 0, 0);
   margin-top: 3%;
-  padding-top: 8%;
-  background-color: #1e2d42;
-  padding: 0.5em;
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(105vh);
+  height: calc(90vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
   text-align: center;
+  animation: rotateBoxShadow 4s infinite linear; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 5em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 6em #206ca2;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 6em #237dbe;
+  }
+  100% {
+    box-shadow: inset 0em 0em 6em #143852;
+  }
 }
 
 .section3-title {
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2.5em;
-  margin-top: 2em;
+  font-size: 3em;
+  margin-top: 1em;
   margin-bottom: 1em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .board-members-container {
@@ -346,7 +350,7 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1200px; /* Adjust based on your design preference */
+  padding: 0;
 }
 
 .board-member-item {
@@ -358,8 +362,23 @@ a {
 .board-member-image {
   width: 100%;
   height: auto;
-  border-radius: 50%; /* Circular images */
-  box-shadow: 0.05em 0.1em 0.7em rgba(70, 200, 255, 0.974); /* Shadow color and intensity */
+  border-radius: 50%;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.7em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 0.9em rgba(70, 167, 237, 0.8);
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1em rgb(32, 125, 191);
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.7em rgba(20, 56, 82, 0.8);
+  }
 }
 
 .board-member-name {
@@ -427,6 +446,193 @@ a {
   color: rgb(139, 207, 255);
 }
 
+.section4 {
+  background-color: rgb(0, 0, 0);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: 3%;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100vh);
+  margin-bottom: 3%;
+}
+
+.verticalbox1,
+.verticalbox2 {
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  flex: 1;
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 -8em 7em #1a2332;
+}
+
+/* Gradient background */
+.verticalbox1 {
+  margin-right: 1.9%;
+  margin-left: 4%;
+  background-image: radial-gradient(
+    circle at top left,
+    rgb(24, 151, 140) 0%,
+    rgb(49, 131, 139) 10%,
+    rgb(49, 131, 139) 20%,
+    rgb(46, 96, 120) 30%,
+    rgb(41, 78, 120) 40%,
+    rgb(39, 68, 104) 50%,
+    rgb(42, 88, 142) 60%,
+    rgb(41, 94, 134) 70%,
+    rgb(46, 96, 120) 80%,
+    rgb(24, 151, 140) 90%
+  );
+  background-size: 140%;
+}
+
+.verticalbox2 {
+  margin-right: 4%;
+  margin-left: 1.9%;
+  background-image: radial-gradient(
+    circle at top left,
+    rgb(24, 151, 140) 0%,
+    rgb(49, 131, 139) 10%,
+    rgb(49, 131, 139) 20%,
+    rgb(46, 96, 120) 30%,
+    rgb(41, 78, 120) 40%,
+    rgb(39, 68, 104) 50%,
+    rgb(42, 88, 142) 60%,
+    rgb(41, 94, 134) 70%,
+    rgb(46, 96, 120) 80%,
+    rgb(24, 151, 140) 90%
+  );
+  background-size: 140%;
+}
+
+.imageforverticalbox {
+  align-self: center;
+}
+.imgpurple,
+.imggreen {
+  margin-top: 7%;
+  align-self: center;
+  z-index: 1; /* Set a higher z-index value */
+  align-self: center;
+  height: calc(40vh);
+  width: auto;
+  border-radius: 1em 1em 1em 1em;
+  flex: 2;
+}
+
+.textforverticalbox {
+  align-self: center;
+  margin: 4%;
+  color: rgba(233, 232, 232, 0.799);
+  font-weight: 600;
+  font-size: 1.2em;
+  flex: 3;
+  z-index: 1; /* Set a higher z-index value */
+}
+
+.specifictitle {
+  margin-left: 0.5em;
+  margin-top: 1.5em;
+  text-align: left;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.08em;
+  letter-spacing: 0.007em;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: white;
+}
+
+.mr-2 {
+  z-index: 1; /* Set a higher z-index value */
+  margin-left: 5%;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.08em;
+  letter-spacing: 0.007em;
+  color: white;
+  transition: font-size 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mr-2:hover {
+  font-size: 1.4em;
+  color: rgb(71, 181, 240);
+}
+
+.section5 {
+  border-radius: 1em 1em 1em 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  padding-bottom: 1.5em;
+  width: 100%;
+  height: calc(70vh);
+  align-items: center;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+  background-image: radial-gradient(
+    circle at top left,
+    #000000 0%,
+    #0b1118 25%,
+    #101924 30%,
+    #1d2d41 45%,
+    #174167 60%,
+    #195b99 75%,
+    #1a2738 90%
+  );
+  background-size: 600%;
+  animation: GradientMove 7s ease infinite;
+}
+
+@keyframes GradientMove {
+  0%,
+  100% {
+    background-position: 15% 65%;
+  }
+  50% {
+    background-position: 45% 65%;
+  }
+}
+
+.titleforsection5 {
+  align-items: center;
+  flex: 1;
+}
+
+.section5-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  padding: 1%;
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
 footer {
   padding-top: 2em;
   background-color: #000000;
@@ -443,4 +649,26 @@ footer {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.red-word {
+  color: rgb(200, 71, 16);
+}
+a {
+  text-decoration: none;
+}
+footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+.page-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
 }
