@@ -313,9 +313,15 @@ section {
   color: rgb(255, 255, 100);
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .blue-word {
   color: rgb(63, 225, 217);
 }
+
+
 
 .congratulations {
   font-size: medium;
