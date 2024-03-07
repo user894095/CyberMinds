@@ -63,7 +63,7 @@ header {
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -288,40 +288,57 @@ section {
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
 }
-
-h3 {
+h3{
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-h2 {
+h2{
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.8em;
+  font-size:1.8em; 
 }
 
-p {
+p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
   font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
-li {
+
+
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0.4em;
 }
 
 a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.blue-word {
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
   color: rgb(63, 225, 217);
 }
 
 
-iframe {
-  display: block; /* Make sure it's a block-level element */
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
 
-  align-self: center;
+  .list-without-bullet-points{
+    list-style: None;
+  }
 
-}
-
-#act-img {
-  rotate: -1deg;
-}
+  .congratulations{
+    font-size: medium;
+    background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
