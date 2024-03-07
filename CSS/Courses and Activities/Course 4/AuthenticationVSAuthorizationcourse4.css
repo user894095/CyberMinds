@@ -328,9 +328,22 @@ h3{
   font-size: 1em;
 }
 
-.blue-word{
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+.blue-word {
   color: rgb(63, 225, 217);
 }
+
+
+.footer-class{
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 20px 0;
+}
+
 
 
   .green-word {

@@ -313,6 +313,10 @@ li{
   font-family: "Space Grotesk", sans-serif;
   margin-bottom: 0.4em;
 }
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 
 a {
   font-family: "Space Grotesk", sans-serif;
