@@ -202,16 +202,16 @@ header {
   text-align: center;
   background-image: radial-gradient(
     circle at top left,
-    #152332 0%,
+    #131e2b 0%,
     #1d3146 25%,
-    #254061 30%,
-    #284363 45%,
-    #1c578f 60%,
-    #20647d 75%,
-    #21637b 90% /* Adjusted percentage */
+    #243c5a 30%,
+    #2d4b6f 45%,
+    #1d6477 60%,
+    #124e5d 79%,
+    #197495 90% /* Adjusted percentage */
   );
-  background-size: 140%;
-  animation: GradientMove 7s ease infinite;
+  background-size: 200%;
+  animation: GradientMove 3s ease infinite;
 }
 
 @keyframes GradientMove {
@@ -247,7 +247,20 @@ header {
   padding: 1%;
   margin-bottom: 1em;
 
-  -webkit-text-fill-color: #ffffff;
+  animation: TitleMove 3s ease infinite;
+}
+
+@keyframes TitleMove {
+  0%,
+  100% {
+    transform: translateX(-50%);
+    color: #ffffff; /* Initial color, adjust as needed */
+  }
+  50% {
+    transform: translateX(-50%);
+    color: #69b1f9; /* Opposite color to background, adjust as needed */
+    background-position: 100% 100%; /* Start position of the underline */
+  }
 }
 
 .description {
@@ -540,10 +553,10 @@ a {
 
 .specifictitle {
   margin-left: 0.5em;
-  margin-top: 1.5em;
+  margin-top: 1em;
+  margin-bottom: none;
   text-align: left;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.5em;
   font-weight: 700;
   font-style: normal;
   word-spacing: 0.08em;
@@ -551,6 +564,11 @@ a {
   font-size: 2.5em;
   font-weight: 600;
   color: white;
+}
+
+.Otherextratext {
+  margin-bottom: 0.9em;
+  margin-top: 0.1em;
 }
 
 .mr-2 {
@@ -609,11 +627,6 @@ a {
   }
 }
 
-.titleforsection5 {
-  align-items: center;
-  flex: 1;
-}
-
 .section5-title {
   display: flex;
   width: 100%;
@@ -653,6 +666,11 @@ p {
 
 .red-word {
   color: rgb(230, 86, 46);
+}
+
+.blue-word {
+  color: rgb(111, 219, 240);
+  font-family: sans-serif;
 }
 a {
   text-decoration: none;
