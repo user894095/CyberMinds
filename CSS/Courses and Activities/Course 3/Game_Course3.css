@@ -311,12 +311,21 @@ section {
 
 .yellow-word {
   color: rgb(255, 255, 100);
+
 }
 
-.blue-word {
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
   color: rgb(63, 225, 217);
 }
-
 .congratulations {
   font-size: medium;
   background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
@@ -340,10 +349,7 @@ h2 {
   font-size: 1.8em;
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.4em;
-}
+
 
 p {
   font-weight: 400;
