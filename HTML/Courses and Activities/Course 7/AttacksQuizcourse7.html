@@ -39,21 +39,21 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q1" value="SW" id="q1-SW" />
-            <label for="q1-SW">
+            <label for="q1-SW" id="q1-a1">
               Constantly attacks, they are highly advanced and successful
               <div id="q1-SW-detail" class="answer-detail">Incorrect.</div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q1" value="ES" id="q1-ES" />
-            <label for="q1-ES">
+            <label for="q1-ES" id="q1-a2">
               Constantly attempts to attack, with little success
               <div id="q1-ES-detail" class="answer-detail">Incorrect.</div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VW" id="q1-VW" />
-            <label for="q1-VW">
+            <label for="q1-VW" id="q1-a3">
               Maintains a continuous connection once it has infiltrated a system
               <div id="q1-VW-detail" class="answer-detail">
                 Correct! Persistence in security usually refers to maintaining a
@@ -63,7 +63,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VS" id="q1-VS" />
-            <label for="q1-VS">
+            <label for="q1-VS" id="q1-a4">
               Maintains a continuous attack pattern
               <div id="q1-VS-detail" class="answer-detail">Incorrect.</div>
             </label>
@@ -74,7 +74,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q2" value="open" id="q2-open" />
-            <label for="q2-open" name="q2">
+            <label for="q2-open" name="q2" id="q2-a1">
               Ransomware
               <div id="q2-open-detail" class="answer-detail">
                 Ransomware is unrelated.
@@ -83,7 +83,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="grammar" id="q2-grammar" />
-            <label for="q2-grammar" name="q2">
+            <label for="q2-grammar" name="q2" id="q2-a2">
               Spyware
               <div id="q2-grammar-detail" class="answer-detail">
                 Correct! Interception and spyware/spying share many
@@ -93,7 +93,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="verify" id="q2-verify" />
-            <label for="q2-verify" name="q2">
+            <label for="q2-verify" name="q2" id="q2-a3">
               Seeware
               <div id="q2-verify-detail" class="answer-detail">
                 This is not a thing.
@@ -102,7 +102,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="ignore" id="q2-ignore" />
-            <label for="q2-ignore" name="q2">
+            <label for="q2-ignore" name="q2" id="q2-a4">
               Malware
               <div id="q2-ignore-detail" class="answer-detail">
                 Malware is an incredibly broad category and it would be
@@ -120,7 +120,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q3" value="true" id="q3-true" />
-            <label for="q3-true" name="q3">
+            <label for="q3-true" name="q3" id="q3-a1">
               True
               <div id="q3-true-detail" class="answer-detail">
                 See false for explanation.
@@ -129,7 +129,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q3" value="false" id="q3-false" />
-            <label for="q3-false" name="q3">
+            <label for="q3-false" name="q3" id="q3-a2">
               False
               <div id="q3-false-detail" class="answer-detail">
                 Correct! Man-in-the-browser is actually an application layer
@@ -145,7 +145,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q4" value="true" id="q4-true" />
-            <label for="q4-true" name="q4">
+            <label for="q4-true" name="q4" id="q4-a1">
               True
               <div id="q4-true-detail" class="answer-detail">
                 See false for explanation.
@@ -154,7 +154,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q4" value="false" id="q4-false" />
-            <label for="q4-false" name="q4">
+            <label for="q4-false" name="q4" id="q4-a2">
               False
               <div id="q4-false-detail" class="answer-detail">
                 Spoofing refers to more technical impersonation (of devices,
@@ -268,34 +268,58 @@
         if (q1Answer && q1Answer.value === "VW") {
           score++;
         }
+        var lab = document.getElementById('q1-a1');
         showAnswerDetail("q1-SW-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a2');
         showAnswerDetail("q1-ES-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a3');
         showAnswerDetail("q1-VW-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q1-a4');
         showAnswerDetail("q1-VS-detail");
+        lab.style.color = "red";
 
         // Check answer for question 2
         var q2Answer = document.querySelector('input[name="q2"]:checked');
         if (q2Answer && q2Answer.value === "grammar") {
           score++;
         }
+        lab = document.getElementById('q2-a1');
         showAnswerDetail("q2-open-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a2');
         showAnswerDetail("q2-grammar-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q2-a3');
         showAnswerDetail("q2-verify-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a4');
         showAnswerDetail("q2-ignore-detail");
+        lab.style.color = "red";
 
         var q3Answer = document.querySelector('input[name="q3"]:checked');
         if (q3Answer && q3Answer.value === "false") {
           score++;
         }
+        lab = document.getElementById('q3-a1');
         showAnswerDetail("q3-true-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q3-a2');
         showAnswerDetail("q3-false-detail");
+        lab.style.color = "lightgreen";
 
         var q4Answer = document.querySelector('input[name="q4"]:checked');
         if (q4Answer && q4Answer.value === "false") {
           score++;
         }
+        lab = document.getElementById('q4-a1');
         showAnswerDetail("q4-true-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q4-a2');
         showAnswerDetail("q4-false-detail");
+        lab.style.color = "lightgreen";
 
         // Display the result
         var resultElement = document.getElementById("result");
