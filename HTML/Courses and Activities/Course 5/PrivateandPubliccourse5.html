@@ -55,9 +55,9 @@
         <h3>Private Key Cryptography:</h3>
         <p>
           Private key algorithms, also known as symmetric algorithms, use the
-          same key for encryption and decryption.
-          Although it is faster and takes up less storage to save only one key,
-          it is less secure. This key is also known as a
+          same key for encryption and decryption. Although it is faster and
+          takes up less storage to save only one key, it is less secure. This
+          key is also known as a
           <span class="blue-word">private key</span> and it known between the
           parties of communication. If an attacker were to get a hold of the
           key, entire systems using a symmetric algorithm could be at risk.
@@ -94,13 +94,13 @@
         <h3>Public Key Cryptography:</h3>
 
         <p>
-          Public key algorithms are also called asymmetric algorithms, they
-            use one key for encryption and a different key for decryption.
-          Each party in an asymmetric algorithm has a public key and a private
-          key. Public key algorithms take up more space and are slower, but they
-          are definitely more secure. They are developed using some complex
-          math… we will go over an example of how one of the algorithms work,
-          but for a start, here is a general example.
+          Public key algorithms are also called asymmetric algorithms, they use
+          one key for encryption and a different key for decryption. Each party
+          in an asymmetric algorithm has a public key and a private key. Public
+          key algorithms take up more space and are slower, but they are
+          definitely more secure. They are developed using some complex math… we
+          will go over an example of how one of the algorithms work, but for a
+          start, here is a general example.
         </p>
 
         <p><span class="blue-word">General Example:</span></p>
@@ -173,51 +173,69 @@
 
         <dl>
           <dt>1) Choose two large prime numbers, p and q:</dt>
-          <dd>We are going to use two small ones, 5 and 7.</dd>
+          <dd>
+            We are going to use two small ones,
+            <span class="green-word">5</span> and
+            <span class="green-word">7</span>.
+          </dd>
           <br />
           <dt>
             2) The public key consists of two parts: integer n and integer e.
             The n value equals p times q.
           </dt>
           <dd>n = p*q</dd>
-          <dd>n = 5*7 = 35</dd>
+          <dd>
+            n = <span class="green-word">5</span>*<span class="green-word"
+              >7</span
+            >
+            = <span class="green-word">35</span>
+          </dd>
           <br />
           <dt>
             3) The e value must also be an integer, but not a factor of phi of n
             (Φ(n) = (p-1)(q-1)).
           </dt>
           <dd>Φ(n) = (p-1)(q-1)</dd>
-          <dd>Φ(n) = (5-1)(7-1) = (4)(6) = 24</dd>
-          <dd>e = 5</dd>
+          <dd>
+            Φ(n) = (<span class="green-word">5</span>-1)(<span
+              class="green-word"
+              >7</span
+            >-1) = (<span class="green-word">4</span>)(<span class="green-word"
+              >6</span
+            >) = <span class="green-word">24</span>
+          </dd>
+          <dd>e = <span class="green-word">5</span></dd>
           <br />
           <dt>
             4) Now we must create our private key, d. The d value uses the
             previously generated values, (d*e)%Φ must be equal to 1.
           </dt>
           <dd>(d*e)%Φ = 1</dd>
-          <dd>(d*5)%24 = 1</dd>
-          <dd>d = 5</dd>
+          <dd>
+            (<span class="green-word">5</span>*<span class="green-word">5</span
+            >)%<span class="green-word">24</span> =
+            <span class="green-word">1</span>
+          </dd>
+          <dd>d = <span class="green-word">5</span></dd>
           <br />
           <dt>
             5) We will now use our generated values to encrypt our plaintext
-            (a). Ciphertext (c) = (a^e)%n
+            (a). Ciphertext (c) = (<span class="green-word">a</span>^e)%n
           </dt>
+
           <dd>c = (a^e)%n</dd>
           <dd>H: c = (8^5)%35 = 8</dd>
           <dd>I: c = (9^5)%35 = 4</dd>
           <br />
           <dd>
-            <span class="green-word"
-              >*Note, try to use a programming or scientific calculator if you
-              are unable to find modulo on a standard calculator.</span
-            >
+            <span class="green-word">Note:</span>Try to use a programming or
+            scientific calculator if you are unable to find modulo on a standard
+            calculator.
           </dd>
           <dd>
-            <span class="green-word"
-              >*Note 2: the ciphertext for the letter H ended up the same as the
-              plaintext for this example. This is just a coincidence and it does
-              not always happen.</span
-            >
+            <span class="green-word">Note 2:</span> the ciphertext for the
+            letter H ended up the same as the plaintext for this example. This
+            is just a coincidence and it does not always happen. >
           </dd>
           <br />
           <dd>The cipher text for the word “HI” using our keys is 8 4</dd>
@@ -227,8 +245,18 @@
             (c^d)%n
           </dt>
           <dd>a = (c^e)%n</dd>
-          <dd>H: a = (8^5)%35 = 8</dd>
-          <dd>I: a = (4^5)%35 = 9</dd>
+          <dd>
+            H: a = (<span class="green-word">8</span>^<span class="green-word"
+              >5</span
+            >)%<span class="green-word">35</span> =
+            <span class="green-word">8</span>
+          </dd>
+          <dd>
+            I: a = (<span class="green-word">4</span>^<span class="green-word"
+              >5</span
+            >)%<span class="green-word">35</span> =
+            <span class="green-word">9</span>
+          </dd>
         </dl>
 
         <p>
