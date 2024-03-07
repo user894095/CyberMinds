@@ -69,7 +69,7 @@ header {
 }
 
 .section {
-  margin-bottom: 5em;
+  margin-bottom: 0.5em;
   padding: 0.5em;
   position: relative;
   display: flex;
@@ -81,7 +81,7 @@ header {
 }
 
 .section video {
-  opacity: 30%;
+  opacity: 35%;
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
@@ -202,16 +202,16 @@ header {
   text-align: center;
   background-image: radial-gradient(
     circle at top left,
-    #152332 0%,
+    #131e2b 0%,
     #1d3146 25%,
-    #254061 30%,
-    #284363 45%,
-    #1c578f 60%,
-    #20647d 75%,
-    #21637b 90% /* Adjusted percentage */
+    #243c5a 30%,
+    #2d4b6f 45%,
+    #1d6477 60%,
+    #124e5d 79%,
+    #197495 90% /* Adjusted percentage */
   );
-  background-size: 140%;
-  animation: GradientMove 7s ease infinite;
+  background-size: 200%;
+  animation: GradientMove 3s ease infinite;
 }
 
 @keyframes GradientMove {
@@ -247,7 +247,20 @@ header {
   padding: 1%;
   margin-bottom: 1em;
 
-  -webkit-text-fill-color: #ffffff;
+  animation: TitleMove 3s ease infinite;
+}
+
+@keyframes TitleMove {
+  0%,
+  100% {
+    transform: translateX(-50%);
+    color: #ffffff; /* Initial color, adjust as needed */
+  }
+  50% {
+    transform: translateX(-50%);
+    color: #69b1f9; /* Opposite color to background, adjust as needed */
+    background-position: 100% 100%; /* Start position of the underline */
+  }
 }
 
 .description {
@@ -513,6 +526,14 @@ a {
   background-size: 140%;
 }
 
+.verticalbox1:hover {
+  font-size: 1.05em;
+}
+
+.verticalbox2:hover {
+  font-size: 1.05em;
+}
+
 .imageforverticalbox {
   align-self: center;
 }
@@ -540,10 +561,10 @@ a {
 
 .specifictitle {
   margin-left: 0.5em;
-  margin-top: 1.5em;
+  margin-top: 1em;
+  margin-bottom: none;
   text-align: left;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.5em;
   font-weight: 700;
   font-style: normal;
   word-spacing: 0.08em;
@@ -553,12 +574,17 @@ a {
   color: white;
 }
 
+.Otherextratext {
+  margin-bottom: 0.9em;
+  margin-top: 0.1em;
+}
+
 .mr-2 {
   z-index: 1; /* Set a higher z-index value */
   margin-left: 5%;
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   font-style: normal;
   word-spacing: 0.08em;
@@ -569,7 +595,7 @@ a {
 
 .mr-2:hover {
   font-size: 1.4em;
-  color: rgb(71, 181, 240);
+  color: rgb(111, 219, 240);
 }
 
 .section5 {
@@ -609,11 +635,6 @@ a {
   }
 }
 
-.titleforsection5 {
-  align-items: center;
-  flex: 1;
-}
-
 .section5-title {
   display: flex;
   width: 100%;
@@ -647,12 +668,41 @@ footer {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.revealmagically {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.revealmagically.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 p {
   font-family: "Space Grotesk", sans-serif;
 }
 
 .red-word {
   color: rgb(230, 86, 46);
+}
+
+.blue-word {
+  color: rgb(111, 219, 240);
+  font-family: sans-serif;
 }
 a {
   text-decoration: none;

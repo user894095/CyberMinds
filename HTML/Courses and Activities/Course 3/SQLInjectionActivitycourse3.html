@@ -41,128 +41,171 @@
       <div class="right-side_rectangle">
         <h2>SQL Injection Walkthrough</h2>
         <p>
-          SQL is used to manage and query databases. These databases are made up
+          SQL is used to manage and query
+          <span class="blue-word">databases</span>. These databases are made up
           of data tables. When queried, SQL will return data to the user. The
-          SQL query for this activity is formatted as such:
+          SQL query for this <span class="blue-word">activity</span> is
+          formatted as such:
         </p>
 
-        <h2>
-          SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 0;
-        </h2>
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium =
+            0;</span
+          >
+        </h3>
         <p>
-          This example of a SQL query would return all columns from the
-          all_movies table where the genre is Sci-Fi and the value “premium” is
-          equal to 0.
+          This example of a <span class="blue-word">SQL query</span> would
+          return all columns from the all_movies table where the genre is Sci-Fi
+          and the value “premium” is equal to 0.
         </p>
         <ul>
+          <h3><span class="blue-word">Keywords:</span></h3>
           <li>
-            <!-- SELECT: Selects a column or many columns. Putting an asterisk (*) results in the selection of all columns
- -->
+            <span class="green-word">SELECT:</span> Selects a column or many
+            columns. Putting an asterisk (*) results in the selection of all
+            columns
           </li>
           <li>
-            <!-- FROM: signifies which table to return data from -->
+            <span class="green-word">FROM:</span> Signifies which table to
+            return data from
           </li>
           <li>
-            <!-- WHERE: specifies conditions to filter data
- -->
+            <span class="green-word">WHERE:</span> specifies conditions to
+            filter data
           </li>
-          <li>
-            <!-- AND: and -->
-          </li>
+          <li><span class="green-word">AND:</span> and</li>
         </ul>
 
         <p>
           For this example that you see (in the terminal), let’s say that this
-          is a query for users to search for movies on a streaming website via
-          their name. As long as you do not have a premium account, you cannot
-          access certain films for premium users. Let’s also assume that the
-          value “premium” is either true or false for every movie, with false
-          being represented by a 0 and true being represented by a 1. When you
-          use a search query, developers always hide the SQL behind it. Because
-          of this, you cannot return data from whatever database or column you
-          want. Whatever you input usually becomes the input for the WHERE
-          keyword, which will look for results that fulfill a certain condition
-          that you typed in. For example, if you wanted to look for a movie with
-          the name, “Star Wars.” While you only type the name of the movie, the
-          full SQL query would be:
+          is a query for users to search for
+          <span class="blue-word">movies</span> on a streaming website via their
+          name. As long as you do not have a premium account, you cannot access
+          certain films for premium users. Let’s also assume that the value
+          <span class="blue-word">"premium"</span> is either true or false for
+          every movie, with false being represented by a 0 and true being
+          represented by a 1.
         </p>
-        <h2>SELECT * FROM all_movies WHERE name = ‘Star Wars’;</h2>
+
         <p>
-          Our goal with this SQL injection is to try and return hidden results.
-          In this case, returning all movies with a premium value of 1. In other
-          words, premium movies. We need our SQL input to force the query to
-          filter the data this way. The obvious solution would be to just input
-          “premium = 1” right? We also still want to find Star Wars movies. Type
-          in “Star Wars AND premium = 1”.
+          When you use a <span class="blue-word">search query</span>, developers
+          always hide the SQL behind it. Because of this, you cannot return data
+          from whatever database or column you want. Whatever you input usually
+          becomes the input for the WHERE keyword, which will look for results
+          that fulfill a certain condition that you typed in. For example, if
+          you wanted to look for a movie with the name,
+          <span class="blue-word">"Star Wars..."</span> While you only type the
+          name of the movie, the full SQL query would be:
         </p>
-        <p>*Note: Strings should be put in ‘single quotes.’</p>
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’;</span
+          >
+        </h3>
+        <p>
+          Our <span class="blue-word">goal</span> with this SQL injection is to
+          try and return hidden results. In this case, returning all movies with
+          a premium value of 1. In other words, premium movies. We need our SQL
+          input to force the query to filter the data this way. The obvious
+          solution would be to just input
+          <span class="blue-word">"premium = 1"</span> right? We also still want
+          to find Star Wars movies. Type in “Star Wars AND premium = 1”.
+        </p>
+        <p>
+          <span class="green-word"
+            >Note: Strings should be put in ‘single quotes.’</span
+          >
+        </p>
         <p>
           This did not necessarily work. Why? SQL queries are likely to put user
           input in quotation marks. In the previous examples, SQL makes input a
-          string by default. So, the “Star Wars AND premium = 1” command became
-          a string too. To bypass this, we need to first close the quotation
-          marks around the input. Try typing in “Star Wars’ AND premium = 1’”.
-          Close the quotation marks at the beginning and end of the input. This
-          time, nothing is returned. When you typed in that last statement, the
-          full SQL query became:
+          string by default. So, the “Star Wars
+          <span class="blue-word">AND</span> premium = 1” command became a
+          string too. To bypass this, we need to first close the quotation marks
+          around the input. Try typing in “Star Wars’ AND premium = 1’”. Close
+          the <span class="blue-word">quotation marks</span> at the beginning
+          and end of the input. This time, nothing is returned. When you typed
+          in that last statement, the full SQL query became:
         </p>
-        <h2>
-          SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1’’
-          AND premium = 0;
-        </h2>
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1’’
+            AND premium = 0;</span
+          >
+        </h3>
         <p>
           First of all, there is a random set of quotes after “premium = 1,”
-          this does not make sense. Even though we closed the end quotation
-          marks, they were left in a place that doesn’t align with SQL’s syntax
-          rules. Furthermore, premium cannot be true and false at the same time.
-          We cannot get rid of the premium = 0 statement because it is already
-          there by default. We need some way to get rid of it.
+          this does not make sense. Even though we closed the
+          <span class="blue-word">end</span> quotation marks, they were left in
+          a place that doesn’t align with SQL’s syntax rules. Furthermore,
+          premium cannot be <span class="blue-word">true</span> and
+          <span class="blue-word">false</span> at the same time. We cannot get
+          rid of the premium = 0 statement because it is already there by
+          default. We need some way to get rid of it.
         </p>
         <p>
           Thankfully, SQL like many other languages, has the ability for users
           to add comments. In SQL this is notated as two hyphens: -- . We can
-          use this comment feature to comment out the rest of the query that we
-          don’t want. Now, try typing in “Star Wars’ AND premium = 1 --”. We
-          don’t need to worry about closing the end quotation marks because they
-          will be commented out.
+          use this comment feature to <span class="blue-word">comment</span> out
+          the rest of the query that we don’t want. Now, try typing in “Star
+          Wars’ AND premium = 1 --”. We don’t need to worry about
+          <span class="blue-word">closing</span> the end quotation marks because
+          they will be commented out.
         </p>
-        <p>Finally! This works. The SQL query became:</p>
-        <h2>
-          SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1--’
-          AND premium = 0;
-        </h2>
+        <p>
+          <span class="congratulations"> FINALLY!</span> This works. The SQL
+          query became:
+        </p>
+
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1--’
+            AND premium = 0;</span
+          >
+        </h3>
         <p>Due to the comment, the query was interpreted like this:</p>
-        <h2>
-          SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1--’
-          AND premium = 0;
-        </h2>
+
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’ AND premium = 1--’
+            AND premium = 0;</span
+          >
+        </h3>
         <p>
           With this query, you have successfully returned all Star Wars movies
-          that were for premium users. Imagine how powerful this tactic could be
-          to attackers in the real world. SQL injections, or code injections in
-          other languages can be used to return more sensitive data such as
-          passwords, credit card numbers, etc,.
+          that were for premium users. Imagine how
+          <span class="blue-word">powerful</span> this tactic could be to
+          attackers in the real world. SQL injections, or code injections in
+          other <span class="blue-word">languages</span> can be used to return
+          more sensitive data such as passwords, credit card numbers, etc,.
         </p>
+
         <h2>Additional Reading (Optional):</h2>
         <p>
           A much more common example of a SQL injection is to inject the
           statement, “1=1”. This is often used because 1=1 will always be true.
-          If we apply this to our previous example, we could input something
-          like, “Star Wars’ OR 1=1--”. The full query would be:
+          If we <span class="blue-word">apply</span> this to our previous
+          example, we could input something like, “Star Wars’ OR 1=1--”. The
+          full <span class="blue-word">query</span> would be:
         </p>
-        <h2>
-          SELECT * FROM all_movies WHERE name = ‘Star Wars’ OR 1=1--’ AND
-          premium = 0;
-        </h2>
+        <h3>
+          <span class="blue-word">
+            SELECT * FROM all_movies WHERE name = ‘Star Wars’ OR 1=1--’ AND
+            premium = 0;</span
+          >
+        </h3>
         <p>
-          This would return all Star Wars movies regardless of premium value.
+          This would return <span class="blue-word">ALL</span> Star Wars movies
+          regardless of <span class="blue-word">premium</span> value.
           Additionally, we wouldn’t be able to just comment out everything after
-          “Star Wars” because that would get rid of the quotation surrounding
-          the movie name, which we want to keep. The additional condition that
-          doesn’t rely on strings is needed so we can input a comment without
-          worrying about quotation marks. The 1=1 statement is simply a
-          statement that can be applied to many situations hence why it is
-          commonly used.
+          “Star Wars” because that would get
+          <span class="blue-word">rid</span> of the quotation surrounding the
+          movie name, which we want to keep. The additional condition that
+          doesn’t rely on strings is needed so we can input a
+          <span class="blue-word">comment</span> without worrying about
+          quotation marks. The 1=1 statement is simply a statement that can be
+          applied to many situations hence why it is commonly used.
         </p>
 
         <div class="right-side_rectangle-buttons">
