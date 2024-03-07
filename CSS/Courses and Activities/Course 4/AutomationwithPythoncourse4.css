@@ -406,6 +406,11 @@ div {
   color: #abb2bf;
   background-color: #282c34;
 }
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .right-side_rectangle {
   flex: 8;
   margin: 2%;
