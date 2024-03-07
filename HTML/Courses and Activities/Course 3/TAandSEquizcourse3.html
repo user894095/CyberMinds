@@ -49,7 +49,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q1" value="SW" id="q1-SW" />
-            <label for="q1-SW">
+            <label for="q1-SW" id="q1-a1">
               Familiarity/Liking
               <div id="q1-SW-detail" class="answer-detail">
                 While you may be familiar with your supervisor, there is no
@@ -60,7 +60,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q1" value="ES" id="q1-ES" />
-            <label for="q1-ES">
+            <label for="q1-ES" id="q1-a2">
               Authority
               <div id="q1-ES-detail" class="answer-detail">
                 Correct! Since this attacker is impersonating your supervisor,
@@ -70,7 +70,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VW" id="q1-VW" />
-            <label for="q1-VW">
+            <label for="q1-VW" id="q1-a3">
               Intimidation
               <div id="q1-VW-detail" class="answer-detail">
                 There is no indication that your supervisor was trying to
@@ -80,7 +80,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VS" id="q1-VS" />
-            <label for="q1-VS">
+            <label for="q1-VS" id="q1-a4">
               Consensus/Social Proof
               <div id="q1-VS-detail" class="answer-detail">
                 There is no indication of social proof.
@@ -99,7 +99,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q2" value="open" id="q2-open" />
-            <label for="q2-open" name="q2">
+            <label for="q2-open" name="q2" id="q2-a1">
               Familiarity/Liking and Consensus/Social Proof
               <div id="q2-open-detail" class="answer-detail">
                 There is no indication that the attack was attempting to gain or
@@ -109,7 +109,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="grammar" id="q2-grammar" />
-            <label for="q2-grammar" name="q2">
+            <label for="q2-grammar" name="q2" id="q2-a2">
               Authority and Intimidation
               <div id="q2-grammar-detail" class="answer-detail">
                 The attack was neither threatening nor from a figure of
@@ -119,7 +119,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="verify" id="q2-verify" />
-            <label for="q2-verify" name="q2">
+            <label for="q2-verify" name="q2" id="q2-a3">
               Scarcity and Familiarity/Liking
               <div id="q2-verify-detail" class="answer-detail">
                 There is no indication that the attack was attempting to gain or
@@ -129,7 +129,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="ignore" id="q2-ignore" />
-            <label for="q2-ignore" name="q2">
+            <label for="q2-ignore" name="q2" id="q2-a4">
               Consensus/Social Proof and Scarcity
               <div id="q2-ignore-detail" class="answer-detail">
                 Correct! By saying that most dentists recommend this toothpaste,
@@ -151,7 +151,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q3" value="a1" id="q3-a1" />
-            <label for="q3-a1" name="q3">
+            <label for="q3-a1" name="q3" id="q3-a1l">
               Insider threat
               <div id="q3-a1-detail" class="answer-detail">
                 This is correct because the individual, having been employed by
@@ -162,7 +162,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q3" value="a2" id="q3-a2" />
-            <label for="q3-a2" name="q3">
+            <label for="q3-a2" name="q3" id="q3-a2l">
               Authority
               <div id="q3-a2-detail" class="answer-detail">
                 Incorrect. Authority typically refers to authorized access and
@@ -172,7 +172,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q3" value="a3" id="q3-a3" />
-            <label for="q3-a3" name="q3">
+            <label for="q3-a3" name="q3" id="q3-a3l">
               Script Kiddie
               <div id="q3-a3-detail" class="answer-detail">
                 Incorrect. Script kiddies are typically inexperienced
@@ -183,7 +183,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q3" value="a4" id="q3-a4" />
-            <label for="q3-a4" name="q3">
+            <label for="q3-a4" name="q3" id="q3-a4l">
               Familiarity/Liking
               <div id="q3-a4-detail" class="answer-detail">
                 Incorrect. Familiarity or liking doesn't directly apply in this
@@ -204,7 +204,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q4" value="tail" id="q4-tail" />
-            <label for="q4-tail" name="q4">
+            <label for="q4-tail" name="q4" id="q4-a1">
               Script Kiddie
               <div id="q4-tail-detail" class="answer-detail">
                 Since your company was already fairly secure, it is unlikely
@@ -214,7 +214,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q4" value="dive" id="q4-dive" />
-            <label for="q4-dive" name="q4">
+            <label for="q4-dive" name="q4" id="q4-a2">
               Insider
               <div id="q4-dive-detail" class="answer-detail">
                 There is no indication that a company employee gave information
@@ -224,7 +224,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q4" value="phishing" id="q4-phishing" />
-            <label for="q4-phishing" name="q4">
+            <label for="q4-phishing" name="q4" id="q4-a3">
               Cybercriminal
               <div id="q4-phishing-detail" class="answer-detail">
                 Correct! Cybercriminals usually have enough experience to
@@ -235,7 +235,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q4" value="none" id="q4-none" />
-            <label for="q4-none" name="q4">
+            <label for="q4-none" name="q4" id="q4-a4">
               State-Sponsored Hacker
               <div id="q4-none-detail" class="answer-detail">
                 While state-sponsored hackers absolutely have enough experience
@@ -376,38 +376,70 @@
         if (q1Answer && q1Answer.value === "ES") {
           score++;
         }
+        var lab = document.getElementById('q1-a1');
         showAnswerDetail("q1-SW-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a2');
         showAnswerDetail("q1-ES-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q1-a3');
         showAnswerDetail("q1-VW-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a4');
         showAnswerDetail("q1-VS-detail");
+        lab.style.color = "red";
 
         // Check answer for question 2
         var q2Answer = document.querySelector('input[name="q2"]:checked');
         if (q2Answer && q2Answer.value === "ignore") {
           score++;
         }
+        lab = document.getElementById('q2-a1');
         showAnswerDetail("q2-open-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a2');
         showAnswerDetail("q2-grammar-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a3');
         showAnswerDetail("q2-verify-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a4');
         showAnswerDetail("q2-ignore-detail");
+        lab.style.color = "lightgreen";
 
         var q3Answer = document.querySelector('input[name="q3"]:checked');
         if (q3Answer && q3Answer.value === "a1") {
           score++;
         }
+        lab = document.getElementById('q3-a1l');
         showAnswerDetail("q3-a1-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q3-a2l');
         showAnswerDetail("q3-a2-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q3-a3l');
         showAnswerDetail("q3-a3-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q3-a4l');
         showAnswerDetail("q3-a4-detail");
+        lab.style.color = "red";
 
         var q4Answer = document.querySelector('input[name="q4"]:checked');
         if (q4Answer && q4Answer.value === "phishing") {
           score++;
         }
+        lab = document.getElementById('q4-a1');
         showAnswerDetail("q4-tail-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q4-a2');
         showAnswerDetail("q4-dive-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q4-a3');
         showAnswerDetail("q4-phishing-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q4-a4');
         showAnswerDetail("q4-none-detail");
+        lab.style.color = "red";
 
         // Display the result
         var resultElement = document.getElementById("result");

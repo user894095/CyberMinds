@@ -41,28 +41,28 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q1" value="SW" id="q1-SW" />
-            <label for="q1-SW">
+            <label for="q1-SW" id="q1-a1">
               Standards of Information and Event Management
               <div id="q1-SW-detail" class="answer-detail"></div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q1" value="ES" id="q1-ES" />
-            <label for="q1-ES">
+            <label for="q1-ES" id="q1-a2">
               Security Information and Event Management
               <div id="q1-ES-detail" class="answer-detail">Correct!</div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VW" id="q1-VW" />
-            <label for="q1-VW">
+            <label for="q1-VW" id="q1-a3">
               Social Inducement and Engineering Methods
               <div id="q1-VW-detail" class="answer-detail"></div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q1" value="VS" id="q1-VS" />
-            <label for="q1-VS">
+            <label for="q1-VS" id="q1-a4">
               Systems of Information and Engineering Methods
               <div id="q1-VS-detail" class="answer-detail"></div>
             </label>
@@ -75,7 +75,7 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q2" value="open" id="q2-open" />
-            <label for="q2-open" name="q2">
+            <label for="q2-open" name="q2" id="q2-a1">
               An IDS is more secure than an IPS because it alerts the user of an
               intrusion
               <div id="q2-open-detail" class="answer-detail">
@@ -85,7 +85,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="grammar" id="q2-grammar" />
-            <label for="q2-grammar" name="q2">
+            <label for="q2-grammar" name="q2" id="q2-a2">
               It is better to choose either an IDS or an IPS than use both
               <div id="q2-grammar-detail" class="answer-detail">
                 Although they have some overlapping functionality, it does not
@@ -95,7 +95,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="verify" id="q2-verify" />
-            <label for="q2-verify" name="q2">
+            <label for="q2-verify" name="q2" id="q2-a3">
               Neither should be used if SIEM tools are being used
               <div id="q2-verify-detail" class="answer-detail">
                 Although they have some overlapping functionality, it does not
@@ -105,7 +105,7 @@
           </li>
           <li class="option">
             <input type="radio" name="q2" value="ignore" id="q2-ignore" />
-            <label for="q2-ignore" name="q2">
+            <label for="q2-ignore" name="q2" id="q2-a4">
               An IPS is more secure than an IDS because an IPS takes
               preventative measures
               <div id="q2-ignore-detail" class="answer-detail">
@@ -123,14 +123,14 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q3" value="true" id="q3-true" />
-            <label for="q3-true" name="q3">
+            <label for="q3-true" name="q3" id="q3-a1">
               True
               <div id="q3-true-detail" class="answer-detail"></div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q3" value="false" id="q3-false" />
-            <label for="q3-false" name="q3">
+            <label for="q3-false" name="q3" id="q3-a2">
               False
               <div id="q3-false-detail" class="answer-detail">
                 Correct! Both your own programming and automation tools can
@@ -149,28 +149,28 @@
         <ul class="options">
           <li class="option">
             <input type="radio" name="q4" value="tail" id="q4-tail" />
-            <label for="q4-tail" name="q4">
+            <label for="q4-tail" name="q4" id="q4-a1">
               HTML and CSS
               <div id="q4-tail-detail" class="answer-detail"></div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q4" value="dive" id="q4-dive" />
-            <label for="q4-dive" name="q4">
+            <label for="q4-dive" name="q4" id="q4-a2">
               Python
               <div id="q4-dive-detail" class="answer-detail">Correct!</div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q4" value="phishing" id="q4-phishing" />
-            <label for="q4-phishing" name="q4">
+            <label for="q4-phishing" name="q4" id="q4-a3">
               Bash Scripting
               <div id="q4-phishing-detail" class="answer-detail">Correct!</div>
             </label>
           </li>
           <li class="option">
             <input type="radio" name="q4" value="none" id="q4-none" />
-            <label for="q4-none" name="q4">
+            <label for="q4-none" name="q4" id="q4-a4">
               SQL
               <div id="q4-none-detail" class="answer-detail"></div>
             </label>
@@ -285,27 +285,47 @@
         if (q1Answer && q1Answer.value === "ES") {
           score++;
         }
+        var lab = document.getElementById('q1-a1');
         showAnswerDetail("q1-SW-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a2');
         showAnswerDetail("q1-ES-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q1-a3');
         showAnswerDetail("q1-VW-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q1-a4');
         showAnswerDetail("q1-VS-detail");
+        lab.style.color = "red";
 
         // Check answer for question 2
         var q2Answer = document.querySelector('input[name="q2"]:checked');
         if (q2Answer && q2Answer.value === "ignore") {
           score++;
         }
+        lab = document.getElementById('q2-a1');
         showAnswerDetail("q2-open-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a2');
         showAnswerDetail("q2-grammar-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a3');
         showAnswerDetail("q2-verify-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q2-a4');
         showAnswerDetail("q2-ignore-detail");
+        lab.style.color = "lightgreen";
 
         var q3Answer = document.querySelector('input[name="q3"]:checked');
         if (q3Answer && q3Answer.value === "false") {
           score++;
         }
+        lab = document.getElementById('q3-a1');
         showAnswerDetail("q3-true-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q3-a2');
         showAnswerDetail("q3-false-detail");
+        lab.style.color = "lightgreen";
 
         var q4Answer = document.querySelector('input[name="q4"]:checked');
         if (
@@ -314,10 +334,18 @@
         ) {
           score++;
         }
+        lab = document.getElementById('q4-a1');
         showAnswerDetail("q4-tail-detail");
+        lab.style.color = "red";
+        lab = document.getElementById('q4-a2');
         showAnswerDetail("q4-dive-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q4-a3');
         showAnswerDetail("q4-phishing-detail");
+        lab.style.color = "lightgreen";
+        lab = document.getElementById('q4-a4');
         showAnswerDetail("q4-none-detail");
+        lab.style.color = "red";
 
         // Display the result
         var resultElement = document.getElementById("result");
