@@ -8,6 +8,43 @@ function scrollDown() {
   });
 }
 
+function redirectToLink(link) {
+  window.location.href = link;
+}
+
+window.addEventListener("scroll", reveal);
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop =
+      reveals[i].getBoundingClientRect().top + reveals[i].clientHeight / 2;
+    var revealpoint = 130;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealmagically);
+function revealmagically() {
+  var revealmagicallys = document.querySelectorAll(".revealmagically");
+  for (var i = 0; i < revealmagicallys.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealmagicallytop = revealmagicallys[i].getBoundingClientRect().top;
+    var revealpoint2 = 100;
+
+    if (revealmagicallytop < windowheight - revealpoint2) {
+      revealmagicallys[i].classList.add("active");
+    } else {
+      revealmagicallys[i].classList.remove("active");
+    }
+  }
+}
+
 // document.addEventListener("scroll", function () {
 //   var section2Container = document.querySelector(".section2-container");
 //   var section3 = document.querySelector(".section3");

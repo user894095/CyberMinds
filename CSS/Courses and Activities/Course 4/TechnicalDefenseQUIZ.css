@@ -359,6 +359,11 @@ label.selected {
   margin-top: 0.6px;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
+
 #result {
   font-weight: bold;
   margin-top: 20px;
