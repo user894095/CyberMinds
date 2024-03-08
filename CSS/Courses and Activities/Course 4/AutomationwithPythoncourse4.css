@@ -63,7 +63,7 @@ header {
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 400 !important;
   color: transparent; /* Set initial text color to transparent */
   font-size: 2.5em;
   background: linear-gradient(
@@ -282,130 +282,66 @@ section {
   margin-left: auto; /
 }
 
-
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
 }
-
-h3 {
+h3{
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-h2 {
-  font-family: "MuseoModerno", sans-serif;
+h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
+}
+
+p{
   font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
 }
 
-p {
-  font-family: "Space Grotesk", sans-serif;
-}
 
-li {
+
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0.4em;
 }
 
 a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.purple-word{
-  color: rgb(112,124,240)
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
 .blue-word{
-  color: rgb(189, 228, 229)
-}
-
-.editor1 {
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 25px;
-} 
-
-.cm-gutter.cm-lineNumbers{
-  background-color: #000000;
-}
-
-div.cm-gutterElement.cm-activeLineGutter:active {
-  background-color: grey !important;
+  color: rgb(63, 225, 217);
 }
 
 
-.ͼo {
-  background-color: #000000;
-}
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
 
-.ͼ1 .cm-gutter {
-  display: flex !important;
-  flex-direction: column;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  min-height: 100%;
-
-}
-
-.ͼo .cm-gutters {
-  background-color: #282c34;
-  color: #bdc3cf;
-  border: none;
-}
-
-.ͼ1 .cm-gutter {
-  display: flex !important;
-  flex-direction: column;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  min-height: 100%;
-  max-width: 1.5em;
-  background-color: black;
-}
-
-.ͼ1 .cm-gutter {
-  display: flex !important;
-  flex-direction: column;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  min-height: 100%;
-  overflow: hidden;
-}
-
-div {
-  display: block;
-}
-.ͼo .cm-gutters {
-  background-color: #282c34;
-  color: #84adff;
-  border: none;
-}
-
-.ͼo .cm-gutters {
-  background-color: #282c34;
-  color: #7d8799;
-  border: none;
-}
-
-.ͼ3 .cm-gutters {
-  background-color: #333338;
-  color: #ccc;
-}
-
-.ͼ1 .cm-scroller {
-  display: flex !important;
-  align-items: flex-start !important;
-  font-family: monospace;
-  line-height: 1.4;
-  height: 100%;
-  overflow-x: auto;
-  position: relative;
-  z-index: 0;
-}
 
 .ͼo {
   color: #abb2bf;
   background-color: #282c34;
 }
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .right-side_rectangle {
   flex: 8;
   margin: 2%;
@@ -420,6 +356,14 @@ div {
   overflow-wrap: break-word;
 }
 
-#act-img {
-  rotate: -1deg;
-}
+  .list-without-bullet-points{
+    list-style: None;
+  }
+
+
+  .congratulations{
+    font-size: medium;
+    background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
