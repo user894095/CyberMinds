@@ -124,8 +124,9 @@ h3 {
 }
 
 a,
-h3 {
+h2 {
   font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 footer {
