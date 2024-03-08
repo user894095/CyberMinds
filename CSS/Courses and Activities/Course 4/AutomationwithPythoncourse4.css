@@ -367,3 +367,7 @@ h3{
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  #act-img {
+    rotate: -1deg;
+  }

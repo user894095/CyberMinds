@@ -344,8 +344,6 @@ h3{
   padding: 20px 0;
 }
 
-
-
   .green-word {
     color: rgb(117, 255, 78);
   }
@@ -359,4 +357,8 @@ h3{
     background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  #act-img {
+    rotate: -1deg;
   }
