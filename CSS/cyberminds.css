@@ -91,14 +91,14 @@ header {
 }
 
 .section-wording {
+  font-family: "Space Grotesk", sans-serif;
   display: inline-block;
   font-stretch: expanded;
   clear: both;
   position: absolute;
   transform: translateX(-50%);
-  top: 8.5%;
+  top: 5.5%;
   left: 50%;
-  font-family: "True Sans" !important;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
   color: transparent;
@@ -128,9 +128,9 @@ header {
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
-  top: 40%;
+  top: 45%;
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 700 !important;
   color: transparent;
@@ -195,7 +195,7 @@ header {
   display: flex;
   padding-bottom: 1.5em;
   width: 100%;
-  height: calc(70vh);
+  height: fit-content;
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -230,7 +230,7 @@ header {
 }
 
 .section2-title {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -287,6 +287,7 @@ header {
 
 .circle-box {
   margin-top: 2em;
+  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -325,7 +326,7 @@ a {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(90vh);
+  height: fit-content;
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -505,6 +506,8 @@ a {
     rgb(24, 151, 140) 90%
   );
   background-size: 140%;
+  height: fit-content;
+  padding: 1em;
 }
 
 .verticalbox2 {
@@ -524,6 +527,8 @@ a {
     rgb(24, 151, 140) 90%
   );
   background-size: 140%;
+  height: fit-content;
+  padding: 1em;
 }
 
 .verticalbox1:hover {
@@ -603,6 +608,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 4%;
   margin-bottom: 2%;
   padding-bottom: 1.5em;
   width: 100%;
@@ -622,7 +628,7 @@ a {
     #1a2738 90%
   );
   background-size: 600%;
-  animation: GradientMove 7s ease infinite;
+  animation: GradientMove 6s ease infinite;
 }
 
 @keyframes GradientMove {
