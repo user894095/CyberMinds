@@ -332,9 +332,34 @@ h3{
     color: rgb(117, 255, 78);
   }
 
+
+.ͼo {
+  color: #abb2bf;
+  background-color: #282c34;
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
+.right-side_rectangle {
+  flex: 8;
+  margin: 2%;
+  margin-right: 0%;
+  margin-left: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #1a2738;
+  color: rgb(212, 212, 212);
+  overflow-wrap: break-word;
+}
+
   .list-without-bullet-points{
     list-style: None;
   }
+
 
   .congratulations{
     font-size: medium;
