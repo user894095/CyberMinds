@@ -68,7 +68,7 @@ verticalBox2.addEventListener("mouseout", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const numberOfCircles = 300; // You can adjust the number of circles
+  const numberOfCircles = 50; // You can adjust the number of circles
 
   const circlesContainer = document.getElementById("circles-container");
 
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     circle.style.opacity = `${Math.random() * 100}%`;
     circle.style.animationDelay = `${Math.random() * 3}s`;
     var randomDuration = Math.random() * 20;
-    if (randomDuration < 2) {
+    if (randomDuration < 8) {
       randomDuration = randomDuration + 4;
     }
     circle.style.animationDuration = `${randomDuration}s`;
