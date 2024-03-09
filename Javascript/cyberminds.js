@@ -145,3 +145,5 @@ buttonsInWholething.forEach((button) => {
     }
   });
 });
+
+// Function to handle the mouse hovering on each sections - if the mouse is hovering   - Section will Glow
