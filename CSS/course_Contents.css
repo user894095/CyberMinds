@@ -1,7 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a2738;
+  background-color: black;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 15em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 17em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 17em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 15em #143852;
+  }
 }
 
 header {
@@ -94,13 +110,28 @@ section {
 
 .course-card {
   width: 18.75em;
-  background-color: white;
+  background-color: #17263b;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
   transition: transform 0.3s ease-in-out;
   margin-bottom: 20px;
   cursor: pointer;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.1em 0.1em 0.5em rgba(24, 55, 68, 0.5);
+  }
+  33% {
+    box-shadow: 0.1em 0.2em 0.6em #39699a;
+  }
+  66% {
+    box-shadow: 0.1em 0.3em 0.7em #38557d;
+  }
+  100% {
+    box-shadow: 0.1em 0.2em 0.6em rgba(17, 48, 70, 0.4);
+  }
 }
 
 .course-number {
@@ -121,7 +152,7 @@ section {
 }
 
 .course-info {
-  padding: 20px;
+  padding: 1.2em;
 }
 
 .course-title {
@@ -145,8 +176,9 @@ section {
   color: inherit;
 }
 .course-card:hover .course-title {
-  text-decoration: underline;
   color: inherit;
+  color: white;
+  font-size: 1.5em;
 }
 
 play-button {
@@ -157,10 +189,18 @@ play-button {
 h2 {
   font-family: "MuseoModerno", sans-serif;
   font-weight: 500;
+  color: white;
+}
+
+.courseclass {
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(44, 207, 236);
+  font-weight: 200;
 }
 
 p {
   font-family: "Space Grotesk", sans-serif;
+  color: rgba(255, 255, 255, 0.91);
 }
 
 a {
