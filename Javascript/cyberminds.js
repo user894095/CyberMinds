@@ -34,7 +34,7 @@ function revealmagically() {
   for (var i = 0; i < revealmagicallys.length; i++) {
     var windowheight = window.innerHeight;
     var revealmagicallytop = revealmagicallys[i].getBoundingClientRect().top;
-    var revealpoint2 = 100;
+    var revealpoint2 = 40;
 
     if (revealmagicallytop < windowheight - revealpoint2) {
       revealmagicallys[i].classList.add("active");
@@ -44,24 +44,53 @@ function revealmagically() {
   }
 }
 
-// document.addEventListener("scroll", function () {
-//   var section2Container = document.querySelector(".section2-container");
-//   var section3 = document.querySelector(".section3");
-//   var scrollY = window.scrollY || window.pageYOffset;
-//   var documentHeight = document.documentElement.scrollHeight;
-//   var scrollThreshold = documentHeight * 0.3; // 20% of the document height
-//   var maxTopPosition = 25; // Maximum top position in percentage
+const verticalBox1 = document.querySelector(".verticalbox1");
+const verticalBox2 = document.querySelector(".verticalbox2");
 
-//   // Check if the scroll position is beyond the scroll threshold
-//   if (scrollY > scrollThreshold) {
-//     // Calculate the top position with a maximum value
-//     var topPosition = 30;
-//     section2Container.style.top = topPosition + "%";
-//   } else {
-//     // Reset the top position if below the scroll threshold
-//     section2Container.style.top = topPosition + "%";
-//   }
-// });
+verticalBox1.addEventListener("mouseover", () => {
+  const imgGreen = document.querySelector(".imggreen");
+  imgGreen.style.transform = "scale(1.03)";
+});
+
+verticalBox2.addEventListener("mouseover", () => {
+  const imgPurple = document.querySelector(".imgpurple");
+  imgPurple.style.transform = "scale(1.03)";
+});
+
+verticalBox1.addEventListener("mouseout", () => {
+  const imgGreen = document.querySelector(".imggreen");
+  imgGreen.style.transform = "scale(1)";
+});
+
+verticalBox2.addEventListener("mouseout", () => {
+  const imgPurple = document.querySelector(".imgpurple");
+  imgPurple.style.transform = "scale(1)";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const numberOfCircles = 300; // You can adjust the number of circles
+
+  const circlesContainer = document.getElementById("circles-container");
+
+  for (let i = 0; i < numberOfCircles; i++) {
+    const circle = document.createElement("li");
+
+    // Randomize properties
+    circle.style.left = `${Math.random() * 97}%`;
+    circle.style.width = `${Math.random() * 0.5}em`;
+    var width = circle.style.width;
+    circle.style.height = width;
+    circle.style.opacity = `${Math.random() * 100}%`;
+    circle.style.animationDelay = `${Math.random() * 3}s`;
+    var randomDuration = Math.random() * 20;
+    if (randomDuration < 2) {
+      randomDuration = randomDuration + 4;
+    }
+    circle.style.animationDuration = `${randomDuration}s`;
+    console.log(randomDuration);
+    circlesContainer.appendChild(circle);
+  }
+});
 
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
