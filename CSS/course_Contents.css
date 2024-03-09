@@ -110,7 +110,7 @@ section {
 
 .course-card {
   width: 18.75em;
-  background-color: #17263b;
+  background-color: rgb(17, 25, 35);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
