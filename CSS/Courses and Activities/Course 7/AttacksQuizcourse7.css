@@ -54,6 +54,21 @@ header {
   background-color: #286aa7;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+iframe {
+  align-self: center;
+  width: 560px;
+  height: 315px;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  box-sizing: border-box; /* Include padding in the total height */
+}
+
 .page-title {
   display: flex;
   justify-content: left;
@@ -282,7 +297,6 @@ section {
   margin-left: auto; /
 }
 
-
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
@@ -290,15 +304,26 @@ section {
   background-color: #1e6bb2;
 }
 
-h2 {
+h3{
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-p {
+h2{
   font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
 }
 
-li {
+p{
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+}
+
+li{
+  font-size: medium;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -306,83 +331,20 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-
-.quiz-container {
-  max-width: 600px;
-  margin: auto;
-}
-
-.question {
-  margin-bottom: 2em;
+h3{
   font-family: "Space Grotesk", sans-serif;
-  font-weight: none;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-.options {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: -0px;
-}
-
-.option {
-  margin-bottom: 0.5em;
-}
-
-input[type="radio"] {
-  display: none; /* Hide the radio buttons */
-}
-label {
-  display: block;
-  padding: 0.3em;
-  background-color: #16305a; /* Light gray background */
-  cursor: pointer;
-  border-radius: 0.4em; /* Add border-radius for a bevel effect */
-  font-family: "Space Grotesk", sans-serif;
-  font-size: medium;
-  width: 50%; /* Set the maximum width for the label */
-  text-align: center; /* Center the text */
-  margin-top:  0.6em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-  margin: 0 auto; /* Center horizontally using margin */
+.blue-word{
+  color: rgb(63, 225, 217);
 }
 
 
-label.selected {
-  background-color:  rgb(61, 78, 163); /* Change the background color for the selected label */
-}
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
 
-.answer-detail {
-  display: none;
-  margin-top: 0.6px;
-}
-
-#result {
-  font-weight: bold;
-  margin-top: 20px;
-  margin: 0 auto;
-  font-family: "Space Grotesk", sans-serif;
-  margin-bottom: 2em;
-}
-
-.submit {
-  display: block;
-  padding: 0.5em;
-  margin-bottom: 0.6em;
-  background-color: rgb(83, 168, 19); /* Light gray background */
-  border: 0.1em solid rgb(72, 151, 12);
-  cursor: pointer;
-  border-radius: 0.6em; /* Add border-radius for a bevel effect */
-  font-family: "Space Grotesk", sans-serif;
-  font-size: medium;
-  max-width: 20%; /* Set the maximum width for the label */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-  color:#ffffff;
-  align-self: center;
-}
-
-
+  .list-without-bullet-points{
+    list-style: None;
+  }
