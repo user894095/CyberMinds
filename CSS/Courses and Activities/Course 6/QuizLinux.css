@@ -367,6 +367,10 @@ label.selected {
   margin-bottom: 2em;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .submit {
   display: block;
   padding: 0.5em;
