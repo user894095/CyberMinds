@@ -41,10 +41,10 @@ body {
     box-shadow: inset 0px 0em 15em #102d42;
   }
   33% {
-    box-shadow: inset 0px 1em 17em #1a2738;
+    box-shadow: inset 0px 1em 20em #213f67;
   }
   66% {
-    box-shadow: inset 0px 0.5em 17em #1a2738;
+    box-shadow: inset 0px 0.5em 20em #132b49;
   }
   100% {
     box-shadow: inset 0em 0em 15em #143852;
@@ -89,7 +89,7 @@ header {
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #174867;
   text-decoration: none;
   margin-right: 0.9em;
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
@@ -118,7 +118,7 @@ header {
 }
 
 .img {
-  border-radius: 1em 1em 1em 1em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
   animation: rotateBoxShadow1 4s infinite linear;
 }
 
