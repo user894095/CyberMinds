@@ -136,7 +136,7 @@ header {
   font-stretch: expanded;
   position: absolute;
   transform: translateX(-50%);
-  top: 45%;
+  top: 40%;
   left: 50%;
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
@@ -930,7 +930,7 @@ footer {
   height: 0.01em;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 13em 13em #0674b347;
+  box-shadow: 0 0 10em 10em #0662974f;
   position: fixed;
 }
 
@@ -941,6 +941,6 @@ footer {
   height: 0.01em;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 13em 13em #0aa5ff2e;
+  box-shadow: 0 0 11em 11em #0aa5ff2e;
   position: fixed;
 }

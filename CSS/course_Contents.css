@@ -121,16 +121,16 @@ section {
 
 @keyframes rotateBoxShadow1 {
   0% {
-    box-shadow: 0.1em 0.1em 0.5em rgba(24, 55, 68, 0.5);
+    box-shadow: 0.1em 0.1em 1em rgba(24, 55, 68, 0.2); /* Adjust the opacity */
   }
   33% {
-    box-shadow: 0.1em 0.2em 0.6em #39699a;
+    box-shadow: 0.1em 0.2em 0.5em #305982; /* Adjust the spread and color */
   }
   66% {
-    box-shadow: 0.1em 0.3em 0.7em #38557d;
+    box-shadow: 0.1em 0.2em 0.4em #38557d; /* Adjust the spread and color */
   }
   100% {
-    box-shadow: 0.1em 0.2em 0.6em rgba(17, 48, 70, 0.4);
+    box-shadow: 0.1em 0.2em 0.5em rgba(36, 84, 117, 0.5); /* Adjust the spread and opacity */
   }
 }
 
