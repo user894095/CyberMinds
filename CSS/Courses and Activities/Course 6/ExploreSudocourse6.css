@@ -323,6 +323,10 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .act-img {
   rotate: -1deg;
 }
