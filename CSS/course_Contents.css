@@ -220,3 +220,65 @@ footer {
   font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
 }
+
+.pop-up {
+  background-color: #145763;
+  width: 20em;
+  height: 15em;
+  padding: auto;
+  border-radius: 0.8em;
+  align-self: center;
+  text-align: center;
+  position: fixed;
+  top: 100vh;
+  opacity: 0;
+}
+
+.pop-up.active {
+  opacity: 100;
+  top: 30vh;
+}
+
+.exit-button {
+  background-color: #174167;
+  margin: 0.5em;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  float: right;
+  width: 2em;
+  height: 2em;
+  transition: background-color 0.3s;
+}
+
+.exit-button:hover {
+  background-color: #286aa7;
+}
+
+.fa-x {
+  color: white;
+  margin-top: 1px;
+  font-size: 19px;
+}
+
+.pop-up-text {
+  margin-top: 30%;
+  font-size: larger;
+}
+
+.pop-up-button {
+  text-decoration: none;
+  font-size: 14pt;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+  background-color: #174167;
+  text-decoration: none;
+  padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
+  border-radius: 0.8em; /* Make the buttons more rounded */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.pop-up-button:hover {
+  background-color: #286aa7;
+}
