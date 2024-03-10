@@ -26,13 +26,29 @@
 }
 
 body {
-  background-color: #1a2738;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   color: #ffffff;
   text-align: center;
   overflow-x: hidden;
+  background-color: black;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 15em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 17em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 17em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 15em #143852;
+  }
 }
 
 header {
@@ -102,7 +118,23 @@ header {
 }
 
 .img {
-  box-shadow: 0 0 0.4em rgb(0, 251, 255);
+  border-radius: 1em 1em 1em 1em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #38557d;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }
 
 @media (max-width: 62.5em) {

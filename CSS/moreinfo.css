@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: auto;
-  background-color: #1a2738;
 }
 
 body {
@@ -17,8 +16,24 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #ffffff;
   text-align: center;
+  background-color: black;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 15em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 17em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 17em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 15em #143852;
+  }
 }
 
 header {
@@ -136,6 +151,7 @@ h2 {
   /*border-bottom: 2px solid #333;*/
   padding-bottom: 5px;
   text-align: center;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 footer {
@@ -153,10 +169,6 @@ footer {
   padding: 1em 0;
   font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
-}
-
-h2 {
-  font-family: "MuseoModerno", sans-serif;
 }
 
 a {
@@ -185,7 +197,7 @@ p {
 }
 
 .text-container {
-  background-color: #0a0a0a5a;
+  background-color: #111923;
   border-radius: 1em;
   padding: 1em;
   margin-left: 1em;
