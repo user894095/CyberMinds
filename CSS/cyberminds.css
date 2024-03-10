@@ -53,7 +53,7 @@ header {
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #16425d;
   text-decoration: none;
   margin-right: 0.9em;
   padding: 0.4em 0.8em;
@@ -81,7 +81,7 @@ header {
 }
 
 .section video {
-  opacity: 35%;
+  opacity: 30%;
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
@@ -91,7 +91,6 @@ header {
 }
 
 .section-wording {
-  font-family: "Space Grotesk", sans-serif;
   display: inline-block;
   font-stretch: expanded;
   clear: both;
@@ -100,7 +99,11 @@ header {
   top: 5.5%;
   left: 50%;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100;
+
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 2.5em;
@@ -121,6 +124,11 @@ header {
     color: rgb(255, 255, 255);
     background-size: 200% 100%; /* Adjust the size of the gradient */
   }
+}
+
+.MindsforCYBERMINDS {
+  font-weight: 500;
+  letter-spacing: 0.15em;
 }
 
 .section-slogan {
@@ -167,11 +175,12 @@ header {
 }
 
 .section-buttons a {
+  border-radius: 0.1em black;
   text-decoration: none;
   font-size: 17pt;
   color: #ffffff;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #16425d;
   padding: 0.5em 1em;
   border-radius: 0.99em;
   white-space: nowrap;
@@ -181,15 +190,10 @@ header {
   background-color: #286aa7;
 }
 
-/* .section2-container {
-  width: 100%;
-  top: 100%; 
-  transition: top 0.5s ease; 
-  position: fixed;
-} */
-
 /* Your existing styles here */
 .section2 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 1em 1em 1em 1em;
   position: relative;
   display: flex;
@@ -266,6 +270,7 @@ header {
 }
 
 .circle-box {
+  z-index: 10001;
   margin-top: 2em;
   margin-bottom: 2em;
   display: flex;
@@ -274,10 +279,9 @@ header {
   flex: 9;
   padding-right: 1.5em;
   padding-left: 1.5em;
-  border-radius: 1em 1em 1em 1em;
+  border-radius: 1em;
   background-color: rgb(17, 25, 35);
-
-  /* Adjust the width of each box */
+  position: relative; /* Add this line */
 }
 
 .circle {
@@ -315,11 +319,13 @@ a {
 }
 
 .section3 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 1em 1em 1em 1em;
   background-color: rgb(0, 0, 0);
   margin-top: 3%;
-  position: relative;
-  display: flex;
+  z-index: 999;
+  position: absolute;
   width: 100%;
   height: fit-content;
   align-items: center;
@@ -345,6 +351,7 @@ a {
 }
 
 .section3-title {
+  z-index: 999;
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
   font-size: 3em;
@@ -355,6 +362,7 @@ a {
 }
 
 .board-members-container {
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -363,12 +371,16 @@ a {
 }
 
 .board-member-item {
+  position: relative;
+  z-index: 10004;
   margin: 1em;
   flex-basis: 12%; /* Adjust the width as needed */
   color: #ffffff;
 }
 
 .board-member-image {
+  position: relative;
+  z-index: 10004;
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -456,6 +468,8 @@ a {
 }
 
 .section4 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: rgb(0, 0, 0);
   border-radius: 1em 1em 1em 1em;
   margin-top: 3%;
@@ -466,23 +480,22 @@ a {
   width: 100%;
   height: calc(100vh);
   margin-bottom: 3%;
+  box-shadow: none; /* Remove the box shadow for section4 */
 }
 
 .verticalbox1,
 .verticalbox2 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 0.5em 0.5em 0.5em 0.5em;
   flex: 1;
-  height: fit-content;
-
   margin-top: 2%;
   margin-bottom: 2%;
-  padding-bottom: 2%;
-
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 -8em 7em #1a2332;
+  box-shadow: inset 0 -8em 7em #1a2332; /* Add the box shadow for verticalbox1 and verticalbox2 */
 }
 
 /* Gradient background */
@@ -538,9 +551,13 @@ a {
 
 .imageforverticalbox {
   align-self: center;
+  position: relative;
+  z-index: 10001;
 }
 .imgpurple,
 .imggreen {
+  position: relative;
+  z-index: 10001;
   margin-top: 7%;
   align-self: center;
   z-index: 1; /* Set a higher z-index value */
@@ -607,7 +624,7 @@ a {
   margin-top: 4%;
   margin-bottom: 2%;
   width: 100%;
-  height: calc(100vh);
+  height: calc(90vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -649,13 +666,11 @@ a {
   text-align: center;
   letter-spacing: 0.1em;
   color: white;
-
 }
 
 .animatedbackgroundwithCircles {
   width: 100%;
   height: calc(90vh);
-
 }
 
 .animatedbackgroundwithCircles::before {
@@ -699,8 +714,6 @@ a {
   }
 }
 
-
-
 /* THE FEEDBACK BOXES */
 .contentforverticalboxFeedback {
   border-radius: 0.5em 0.5em 0.5em 0.5em;
@@ -729,8 +742,7 @@ a {
   background-color: transparent; /* Make scrollbar track transparent */
 }
 
-
-.FeedbackColumn1{
+.FeedbackColumn1 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -739,7 +751,7 @@ a {
   margin-left: 2%;
   margin-right: 1%;
 }
-.FeedbackColumn2{
+.FeedbackColumn2 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -748,7 +760,7 @@ a {
   margin-left: 1%;
   margin-right: 1%;
 }
-.FeedbackColumn3{
+.FeedbackColumn3 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -758,35 +770,34 @@ a {
   margin-right: 2%;
 }
 
-
-.Feedback1{
+.Feedback1 {
+  position: relative;
+  z-index: 10001;
   flex: 3;
   background-color: #111923;
   border-radius: 1em 1em 1em 1em;
   opacity: 90%;
-
 }
 
-
-.Feedback2{
+.Feedback2 {
+  z-index: 10001;
   margin-top: 3%;
-  margin-bottom: 3%;
   flex: 5;
   background-color: #111923;
-  border-radius: 1em 1em 1em 1em; 
-   opacity: 90%;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
 }
 
-.Feedback3{
+.Feedback3 {
+  z-index: 10001;
   flex: 10;
   background-color: #111923;
-  border-radius: 1em 1em 1em 1em; 
-   opacity: 90%;
-
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
 }
 
-
-.Feedback4{
+.Feedback4 {
+  z-index: 10001;
   margin-top: 3%;
   flex: 2;
   background-color: #111923;
@@ -794,15 +805,16 @@ a {
   opacity: 90%;
 }
 
-.Feedback5{
+.Feedback5 {
+  z-index: 10001;
   flex: 7;
   background-color: #111923;
   border-radius: 1em 1em 1em 1em;
   opacity: 90%;
 }
 
-
-.Feedback6{
+.Feedback6 {
+  z-index: 10001;
   margin-top: 3%;
   flex: 20;
   background-color: #111923;
@@ -810,40 +822,36 @@ a {
   opacity: 90%;
 }
 
-
-.FeedbackTitle{
-  color:white;
-  font-size: 1.1em ;
+.FeedbackTitle {
+  color: white;
+  font-size: 1.1em;
   font-family: "Space Grotesk", sans-serif;
   align-self: left;
   padding-right: 40%;
   font-weight: 600;
 }
 
-.stars{
-
-  color:white;
-  font-size: 1.1em ;
+.stars {
+  color: white;
+  font-size: 1.1em;
   font-family: "Space Grotesk", sans-serif;
   align-self: left;
 
   font-weight: 600;
 }
 
-.theFeedback{
-  color:rgba(255, 255, 255, 0.832);
-  font-size: 0.9em ;
+.theFeedback {
+  color: rgba(255, 255, 255, 0.832);
+  font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
   align-self: center;
   padding-left: 6%;
   padding-right: 6%;
-  text-align: left; 
+  text-align: left;
   letter-spacing: 0.02em;
   word-spacing: 0.05em;
   line-height: 1.7em;
-
 }
-
 
 footer {
   padding-top: 2em;
@@ -913,4 +921,26 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+.cursor {
+  z-index: 9999;
+  background-color: #068edd44;
+  width: 0.01em;
+  height: 0.01em;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 13em 13em #0674b347;
+  position: fixed;
+}
+
+.cursor1 {
+  z-index: 10000;
+  background-color: #068edd55;
+  width: 0.01em;
+  height: 0.01em;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 13em 13em #0aa5ff2e;
+  position: fixed;
 }
