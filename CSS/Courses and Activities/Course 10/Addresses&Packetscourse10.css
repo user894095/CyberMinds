@@ -112,7 +112,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .leftRectangle-section1 {
@@ -172,7 +172,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .leftRectangle-section2 a {
@@ -239,7 +239,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .Empty-section3 {
@@ -323,3 +323,4 @@ a {
 .act-img {
   rotate: -1deg;
 }
+

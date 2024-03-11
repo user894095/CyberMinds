@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="../../../CSS/Courses and Activities/Course 10/NetworkingQuiz1course10.css"
     />
+    <script
+      src="https://kit.fontawesome.com/5964d931e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../../CSS/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +21,7 @@
 
     <title>Course 10 - Networking Quiz 1</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="header-content">
         <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
@@ -33,7 +38,7 @@
 
     <div><p class="page-title">Course 10 - Networking Quiz 1</p></div>
 
-    <section>
+    <section class="section">
       <div class="right-side_rectangle">
         <div class="question">1. What are the three states of data?</div>
         <ul class="options">
@@ -193,11 +198,18 @@
           <a href="../../Courses and Activities/Course 10/OSI&TCPcourse10.html"
             >Next ></a
           >
-          <a
-            href="../../Courses and Activities/Course 11/Introductioncourse11.html"
-            class="next_course"
-            >Skip to Next Course</a
-          >
+          <a class="next_course">Skip to Next Course</a>
+        </div>
+        <div class="pop-up">
+          <div class="exit-button">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <p class="pop-up-text">
+            Course 11 is currently under progress. Please come back later!
+          </p>
+          <a href="../../course_Contents.html">
+            <span class="mr-2">Back to Course Content<span>&gt;</span></span>
+          </a>
         </div>
       </div>
 
@@ -325,16 +337,16 @@
         if (q1Answer && q1Answer.value === "VW") {
           score++;
         }
-        var lab = document.getElementById('q1-a1');
+        var lab = document.getElementById("q1-a1");
         showAnswerDetail("q1-SW-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q1-a2');
+        lab = document.getElementById("q1-a2");
         showAnswerDetail("q1-ES-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q1-a3');
+        lab = document.getElementById("q1-a3");
         showAnswerDetail("q1-VW-detail");
         lab.style.color = "lightgreen";
-        lab = document.getElementById('q1-a4');
+        lab = document.getElementById("q1-a4");
         showAnswerDetail("q1-VS-detail");
         lab.style.color = "red";
 
@@ -343,16 +355,16 @@
         if (q2Answer && q2Answer.value === "open") {
           score++;
         }
-        lab = document.getElementById('q2-a1');
+        lab = document.getElementById("q2-a1");
         showAnswerDetail("q2-open-detail");
         lab.style.color = "lightgreen";
-        lab = document.getElementById('q2-a2');
+        lab = document.getElementById("q2-a2");
         showAnswerDetail("q2-grammar-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q2-a3');
+        lab = document.getElementById("q2-a3");
         showAnswerDetail("q2-verify-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q2-a4');
+        lab = document.getElementById("q2-a4");
         showAnswerDetail("q2-ignore-detail");
         lab.style.color = "red";
 
@@ -360,10 +372,10 @@
         if (q3Answer && q3Answer.value === "true") {
           score++;
         }
-        lab = document.getElementById('q3-a1');
+        lab = document.getElementById("q3-a1");
         showAnswerDetail("q3-true-detail");
         lab.style.color = "lightgreen";
-        lab = document.getElementById('q3-a2');
+        lab = document.getElementById("q3-a2");
         showAnswerDetail("q3-false-detail");
         lab.style.color = "red";
 
@@ -371,16 +383,16 @@
         if (q4Answer && q4Answer.value === "dive") {
           score++;
         }
-        lab = document.getElementById('q4-a1');
+        lab = document.getElementById("q4-a1");
         showAnswerDetail("q4-tail-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q4-a2');
+        lab = document.getElementById("q4-a2");
         showAnswerDetail("q4-dive-detail");
         lab.style.color = "lightgreen";
-        lab = document.getElementById('q4-a3');
+        lab = document.getElementById("q4-a3");
         showAnswerDetail("q4-phishing-detail");
         lab.style.color = "red";
-        lab = document.getElementById('q4-a4');
+        lab = document.getElementById("q4-a4");
         showAnswerDetail("q4-none-detail");
         lab.style.color = "red";
 
@@ -419,5 +431,6 @@
         });
       });
     </script>
+    <script src="../../../Javascript/popUp_Pages.js"></script>
   </body>
 </html>
