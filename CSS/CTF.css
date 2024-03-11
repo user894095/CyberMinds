@@ -129,8 +129,9 @@ header {
   display: inline-block;
 }
 
-.text {
-  margin-top: 10%;
+.content {
+  margin-top: 15%;
+  font-size: 1.5em;
 }
 
 .question {
