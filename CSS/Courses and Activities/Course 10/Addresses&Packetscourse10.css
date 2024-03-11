@@ -57,8 +57,8 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 15%;
-  margin-bottom: 2%;
+  margin-left: 8.75%;
+  margin-bottom: 1%;
   margin-top: 2%;
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
@@ -112,7 +112,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .leftRectangle-section1 {
@@ -172,7 +172,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .leftRectangle-section2 a {
@@ -239,7 +239,7 @@ section {
   margin-bottom: 3%;
   font-weight: 700px;
   color: white;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .Empty-section3 {
@@ -297,8 +297,10 @@ h3 {
 }
 
 h2 {
-  font-family: "MuseoModerno", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  /* font-size: 1.5em; */
   font-weight: 400;
+  font-weight: bold;
 }
 
 p {
@@ -321,3 +323,4 @@ a {
 .act-img {
   rotate: -1deg;
 }
+

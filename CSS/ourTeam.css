@@ -26,13 +26,29 @@
 }
 
 body {
-  background-color: #1a2738;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   color: #ffffff;
   text-align: center;
   overflow-x: hidden;
+  background-color: black;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 15em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 20em #213f67;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 20em #132b49;
+  }
+  100% {
+    box-shadow: inset 0em 0em 15em #143852;
+  }
 }
 
 header {
@@ -73,7 +89,7 @@ header {
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #174867;
   text-decoration: none;
   margin-right: 0.9em;
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
@@ -102,7 +118,23 @@ header {
 }
 
 .img {
-  box-shadow: 0 0 0.4em rgb(0, 251, 255);
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #38557d;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }
 
 @media (max-width: 62.5em) {
@@ -124,8 +156,9 @@ h3 {
 }
 
 a,
-h3 {
+h2 {
   font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 footer {

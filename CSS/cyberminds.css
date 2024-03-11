@@ -53,7 +53,7 @@ header {
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #16425d;
   text-decoration: none;
   margin-right: 0.9em;
   padding: 0.4em 0.8em;
@@ -81,7 +81,7 @@ header {
 }
 
 .section video {
-  opacity: 35%;
+  opacity: 25%;
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
@@ -96,14 +96,17 @@ header {
   clear: both;
   position: absolute;
   transform: translateX(-50%);
-  top: 8.5%;
+  top: 6%;
   left: 50%;
-  font-family: "True Sans" !important;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100;
+
   color: transparent;
   /* Set initial text color to transparent */
-  font-size: 2.5em;
+  font-size: 2.4em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -123,6 +126,11 @@ header {
   }
 }
 
+.MindsforCYBERMINDS {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
 .section-slogan {
   display: inline-block;
   font-stretch: expanded;
@@ -130,9 +138,9 @@ header {
   transform: translateX(-50%);
   top: 40%;
   left: 50%;
-  font-family: "True Sans" !important;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 400;
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 0.9em;
@@ -167,11 +175,12 @@ header {
 }
 
 .section-buttons a {
+  border-radius: 0.1em black;
   text-decoration: none;
   font-size: 17pt;
   color: #ffffff;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #16425d;
   padding: 0.5em 1em;
   border-radius: 0.99em;
   white-space: nowrap;
@@ -181,46 +190,35 @@ header {
   background-color: #286aa7;
 }
 
-/* .section2-container {
-  width: 100%;
-  top: 100%; 
-  transition: top 0.5s ease; 
-  position: fixed;
-} */
-
 /* Your existing styles here */
 .section2 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 1em 1em 1em 1em;
   position: relative;
   display: flex;
   padding-bottom: 1.5em;
   width: 100%;
-  height: calc(70vh);
+  height: fit-content;
   align-items: center;
   justify-content: space-between;
   display: inline-block;
   text-align: center;
-  background-image: radial-gradient(
-    circle at top left,
-    #131e2b 0%,
-    #1d3146 25%,
-    #243c5a 30%,
-    #2d4b6f 45%,
-    #1d6477 60%,
-    #124e5d 79%,
-    #197495 90% /* Adjusted percentage */
-  );
-  background-size: 200%;
-  animation: GradientMove 3s ease infinite;
+  animation: rotateBoxShadow 4s infinite linear; /* Adjust the duration and timing function as needed */
 }
 
-@keyframes GradientMove {
-  0%,
-  100% {
-    background-position: 15% 65%;
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 5em #102d42;
   }
-  50% {
-    background-position: 45% 65%;
+  33% {
+    box-shadow: inset 0px 1em 6em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 6em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 6em #143852;
   }
 }
 
@@ -230,7 +228,8 @@ header {
 }
 
 .section2-title {
-  margin-top: 2em;
+  margin-top: 1em;
+  color: white;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -246,21 +245,6 @@ header {
   letter-spacing: 0.1em;
   padding: 1%;
   margin-bottom: 1em;
-
-  animation: TitleMove 3s ease infinite;
-}
-
-@keyframes TitleMove {
-  0%,
-  100% {
-    transform: translateX(-50%);
-    color: #ffffff; /* Initial color, adjust as needed */
-  }
-  50% {
-    transform: translateX(-50%);
-    color: #69b1f9; /* Opposite color to background, adjust as needed */
-    background-position: 100% 100%; /* Start position of the underline */
-  }
 }
 
 .description {
@@ -286,17 +270,18 @@ header {
 }
 
 .circle-box {
+  z-index: 10001;
   margin-top: 2em;
+  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   text-align: center;
   flex: 9;
   padding-right: 1.5em;
   padding-left: 1.5em;
-  border-radius: 1em 1em 1em 1em;
-  background-color: rgb(12, 18, 27);
-
-  /* Adjust the width of each box */
+  border-radius: 1em;
+  background-color: rgb(17, 25, 35);
+  position: relative; /* Add this line */
 }
 
 .circle {
@@ -311,7 +296,22 @@ header {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 1em rgb(141, 158, 247);
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 1.3em rgba(0, 174, 255, 0.5);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.1em rgba(255, 255, 255, 0.8);
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1em rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 1.2em rgba(0, 174, 255, 0.5);
+  }
 }
 
 a {
@@ -319,13 +319,15 @@ a {
 }
 
 .section3 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 1em 1em 1em 1em;
   background-color: rgb(0, 0, 0);
   margin-top: 3%;
-  position: relative;
-  display: flex;
+  z-index: 999;
+  position: absolute;
   width: 100%;
-  height: calc(90vh);
+  height: fit-content;
   align-items: center;
   justify-content: space-between;
   display: inline-block;
@@ -338,10 +340,10 @@ a {
     box-shadow: inset 0px 0em 5em #102d42;
   }
   33% {
-    box-shadow: inset 0px 1em 6em #206ca2;
+    box-shadow: inset 0px 1em 6em #1a2738;
   }
   66% {
-    box-shadow: inset 0px 0.5em 6em #237dbe;
+    box-shadow: inset 0px 0.5em 6em #1a2738;
   }
   100% {
     box-shadow: inset 0em 0em 6em #143852;
@@ -349,6 +351,7 @@ a {
 }
 
 .section3-title {
+  z-index: 999;
   color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
   font-size: 3em;
@@ -359,6 +362,7 @@ a {
 }
 
 .board-members-container {
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -367,12 +371,16 @@ a {
 }
 
 .board-member-item {
+  position: relative;
+  z-index: 10004;
   margin: 1em;
   flex-basis: 12%; /* Adjust the width as needed */
   color: #ffffff;
 }
 
 .board-member-image {
+  position: relative;
+  z-index: 10004;
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -381,16 +389,16 @@ a {
 
 @keyframes rotateBoxShadow1 {
   0% {
-    box-shadow: 0.05em 0.05em 0.7em rgba(24, 55, 68, 0.974);
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
   }
   33% {
-    box-shadow: 0.05em 0.1em 0.9em rgba(70, 167, 237, 0.8);
+    box-shadow: 0.05em 0.1em 1em #446897;
   }
   66% {
-    box-shadow: 0.05em 0.15em 1em rgb(32, 125, 191);
+    box-shadow: 0.05em 0.15em 1.1em #38557d;
   }
   100% {
-    box-shadow: 0.05em 0.1em 0.7em rgba(20, 56, 82, 0.8);
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
   }
 }
 
@@ -460,6 +468,8 @@ a {
 }
 
 .section4 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: rgb(0, 0, 0);
   border-radius: 1em 1em 1em 1em;
   margin-top: 3%;
@@ -470,60 +480,65 @@ a {
   width: 100%;
   height: calc(100vh);
   margin-bottom: 3%;
+  box-shadow: none; /* Remove the box shadow for section4 */
 }
 
 .verticalbox1,
 .verticalbox2 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 0.5em 0.5em 0.5em 0.5em;
   flex: 1;
-
   margin-top: 2%;
   margin-bottom: 2%;
-
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 -8em 7em #1a2332;
+  box-shadow: inset 0 -8em 7em #1a2332; /* Add the box shadow for verticalbox1 and verticalbox2 */
 }
 
 /* Gradient background */
 .verticalbox1 {
   margin-right: 1.9%;
   margin-left: 4%;
-  background-image: radial-gradient(
-    circle at top left,
-    rgb(24, 151, 140) 0%,
-    rgb(49, 131, 139) 10%,
-    rgb(49, 131, 139) 20%,
-    rgb(46, 96, 120) 30%,
-    rgb(41, 78, 120) 40%,
-    rgb(39, 68, 104) 50%,
-    rgb(42, 88, 142) 60%,
-    rgb(41, 94, 134) 70%,
-    rgb(46, 96, 120) 80%,
-    rgb(24, 151, 140) 90%
-  );
-  background-size: 140%;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 5em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 6em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 6em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 6em #143852;
+  }
 }
 
 .verticalbox2 {
   margin-right: 4%;
   margin-left: 1.9%;
-  background-image: radial-gradient(
-    circle at top left,
-    rgb(24, 151, 140) 0%,
-    rgb(49, 131, 139) 10%,
-    rgb(49, 131, 139) 20%,
-    rgb(46, 96, 120) 30%,
-    rgb(41, 78, 120) 40%,
-    rgb(39, 68, 104) 50%,
-    rgb(42, 88, 142) 60%,
-    rgb(41, 94, 134) 70%,
-    rgb(46, 96, 120) 80%,
-    rgb(24, 151, 140) 90%
-  );
-  background-size: 140%;
+  animation: rotateBoxShadow 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 5em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 6em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 6em #1a2738;
+  }
+  100% {
+    box-shadow: inset 0em 0em 6em #143852;
+  }
 }
 
 .verticalbox1:hover {
@@ -536,9 +551,13 @@ a {
 
 .imageforverticalbox {
   align-self: center;
+  position: relative;
+  z-index: 10001;
 }
 .imgpurple,
 .imggreen {
+  position: relative;
+  z-index: 10001;
   margin-top: 7%;
   align-self: center;
   z-index: 1; /* Set a higher z-index value */
@@ -571,7 +590,7 @@ a {
   letter-spacing: 0.007em;
   font-size: 2.5em;
   font-weight: 600;
-  color: white;
+  color: rgba(233, 232, 232, 0.826);
 }
 
 .Otherextratext {
@@ -599,59 +618,239 @@ a {
 }
 
 .section5 {
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 1em 1em 1em 1em;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  margin-top: 4%;
   margin-bottom: 2%;
-  padding-bottom: 1.5em;
   width: 100%;
-  height: calc(70vh);
+  height: calc(90vh);
   align-items: center;
   justify-content: space-between;
   display: inline-block;
   text-align: center;
-  background-image: radial-gradient(
-    circle at top left,
-    #000000 0%,
-    #0b1118 25%,
-    #101924 30%,
-    #1d2d41 45%,
-    #174167 60%,
-    #195b99 75%,
-    #1a2738 90%
-  );
-  background-size: 600%;
-  animation: GradientMove 7s ease infinite;
+  animation: rotateBoxShadow 4s infinite linear;
 }
 
-@keyframes GradientMove {
-  0%,
+@keyframes rotateBoxShadow {
+  0% {
+    box-shadow: inset 0px 0em 5em #102d42;
+  }
+  33% {
+    box-shadow: inset 0px 1em 6em #1a2738;
+  }
+  66% {
+    box-shadow: inset 0px 0.5em 6em #1a2738;
+  }
   100% {
-    background-position: 15% 65%;
-  }
-  50% {
-    background-position: 45% 65%;
+    box-shadow: inset 0em 0em 6em #143852;
   }
 }
 
-.section5-title {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  transform: translateX(-50%);
+.titleforsection5 {
+  position: relative;
+  top: 7%;
+  margin-bottom: 5em;
   left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 5%;
+}
+.section5-title {
   font-family: "Space Grotesk", sans-serif;
   font-size: 3em;
   font-weight: 700;
   font-style: normal;
   word-spacing: 0.2em;
+  text-align: center;
   letter-spacing: 0.1em;
-  padding: 1%;
-  margin-bottom: 1em;
-  color: #ffffff;
+  color: white;
+}
+
+.animatedbackgroundwithCircles {
+  width: 100%;
+  height: calc(90vh);
+}
+
+.animatedbackgroundwithCircles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circles li {
+  list-style: none;
+  position: absolute;
+  width: 0.3em;
+  height: 0.3em;
+  background: rgb(253, 253, 255);
+  border-radius: 50%;
+  animation: goingUp 20s linear infinite;
+  bottom: -7.4em;
+  box-shadow: inset 0.1em 0em 0.15em rgb(0, 0, 0); /* Adjusted box-shadow values */
+}
+
+@keyframes goingUp {
+  0% {
+    transform: translateY(0), rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(720deg);
+    opacity: 0;
+    background-color: #143852;
+  }
+}
+
+/* THE FEEDBACK BOXES */
+.contentforverticalboxFeedback {
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  position: relative;
+  overflow-y: auto; /* Enable vertical scrollbar */
+  display: flex;
+  flex-direction: row;
+  height: calc(65vh);
+  z-index: 9999;
+}
+
+/* Customize scrollbar appearance */
+.contentforverticalboxFeedback::-webkit-scrollbar {
+  width: 0.5em; /* Adjust as needed */
+}
+
+.contentforverticalboxFeedback::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make scrollbar thumb transparent */
+}
+
+.contentforverticalboxFeedback::-webkit-scrollbar-track {
+  background-color: transparent; /* Make scrollbar track transparent */
+}
+
+.FeedbackColumn1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+.FeedbackColumn2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.FeedbackColumn3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 2%;
+}
+
+.Feedback1 {
+  position: relative;
+  z-index: 10001;
+  flex: 3;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.Feedback2 {
+  z-index: 10001;
+  margin-top: 3%;
+  flex: 5;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.Feedback3 {
+  z-index: 10001;
+  flex: 10;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.Feedback4 {
+  z-index: 10001;
+  margin-top: 3%;
+  flex: 2;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.Feedback5 {
+  z-index: 10001;
+  flex: 7;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.Feedback6 {
+  z-index: 10001;
+  margin-top: 3%;
+  flex: 20;
+  background-color: #111923;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 90%;
+}
+
+.FeedbackTitle {
+  color: white;
+  font-size: 1.1em;
+  font-family: "Space Grotesk", sans-serif;
+  align-self: left;
+  padding-right: 40%;
+  font-weight: 600;
+}
+
+.stars {
+  color: white;
+  font-size: 1.1em;
+  font-family: "Space Grotesk", sans-serif;
+  align-self: left;
+
+  font-weight: 600;
+}
+
+.theFeedback {
+  color: rgba(255, 255, 255, 0.832);
+  font-size: 0.9em;
+  font-family: "Space Grotesk", sans-serif;
+  align-self: center;
+  padding-left: 6%;
+  padding-right: 6%;
+  text-align: left;
+  letter-spacing: 0.02em;
+  word-spacing: 0.05em;
+  line-height: 1.7em;
 }
 
 footer {
@@ -696,8 +895,14 @@ p {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.red-word {
-  color: rgb(230, 86, 46);
+.slogan-wording {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.white-word {
+  color: rgb(255, 255, 255);
 }
 
 .blue-word {
@@ -706,6 +911,7 @@ p {
 }
 a {
   text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 footer {
   background-color: #0a0a0a;
@@ -721,4 +927,26 @@ footer {
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
+}
+
+.cursor {
+  z-index: 9999;
+  background-color: #068edd44;
+  width: 0.01em;
+  height: 0.01em;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10em 10em #0662974f;
+  position: fixed;
+}
+
+.cursor1 {
+  z-index: 10000;
+  background-color: #068edd55;
+  width: 0.01em;
+  height: 0.01em;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 11em 11em #0aa5ff2e;
+  position: fixed;
 }
