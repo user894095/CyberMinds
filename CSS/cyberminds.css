@@ -81,7 +81,7 @@ header {
 }
 
 .section video {
-  opacity: 30%;
+  opacity: 25%;
   width: 100%;
   height: calc(75vh);
   margin: 0.2em;
@@ -96,7 +96,7 @@ header {
   clear: both;
   position: absolute;
   transform: translateX(-50%);
-  top: 5.5%;
+  top: 6%;
   left: 50%;
   letter-spacing: 0.1em;
   font-family: "Space Grotesk", sans-serif;
@@ -106,7 +106,7 @@ header {
 
   color: transparent;
   /* Set initial text color to transparent */
-  font-size: 2.5em;
+  font-size: 2.4em;
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.5),
@@ -140,7 +140,7 @@ header {
   left: 50%;
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
-  font-weight: 700 !important;
+  font-weight: 400;
   color: transparent;
   /* Set initial text color to transparent */
   font-size: 0.9em;
@@ -893,6 +893,12 @@ footer {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.slogan-wording {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 .white-word {
