@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="../../../CSS/Courses and Activities/Course 10/Protocols&Portscourse10.css"
     />
+    <script
+      src="https://kit.fontawesome.com/5964d931e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../../CSS/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +21,7 @@
 
     <title>Course 10 - Protocols & Ports</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="header-content">
         <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
@@ -33,14 +38,14 @@
 
     <div><p class="page-title">Course 10 - Protocols & Ports</p></div>
 
-    <section>
+    <section class="section">
       <div class="right-side_rectangle">
         <h2>Protocols:</h2>
         <p>
-          <span class="blue-word"
-            >A protocol is a set of rules by which data is handled or
+          A <span class="blue-word"
+            >protocol
+          </span> is a set of rules by which data is handled or
             transmitted.
-          </span>
           The protocol that should be used is determined by the situation and
           type of data that needs to be handled. For example, there are
           different protocols used for transferring files than for accessing the
@@ -50,9 +55,9 @@
         <h2>Ports:</h2>
         <p>
           <span class="blue-word"
-            >Ports are points in a network that represent the endpoints of a
+            >Ports
+          </span> are points in a network that represent the endpoints of a
             connection.
-          </span>
           Different ports host different protocols, these are standardized.
           There are a total of 65,535 ports, with the common port numbers being
           around the first 1000. Here are some of the more important port
@@ -86,7 +91,7 @@
 
         <p>
           There are a multitude of other ports that are used in security, but
-          these were just some common ones. Packet capturing software, such as
+          these were just some <span class="blue-word">common</span> ones. Packet capturing software, such as
           Wireshark, is used to capture communication between systems and format
           it in analyzable logs that show the order in which protocols were
           used. Sometimes, it is good for security professionals to be familiar
@@ -102,11 +107,18 @@
             href="../../Courses and Activities/Course 10/Addresses&Packetscourse10.html"
             >Next ></a
           >
-          <a
-            href="../../Courses and Activities/Course 11/Introductioncourse11.html"
-            class="next_course"
-            >Skip to Next Course</a
-          >
+          <a class="next_course">Skip to Next Course</a>
+        </div>
+        <div class="pop-up">
+          <div class="exit-button">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <p class="pop-up-text">
+            Course 11 is currently under progress. Please come back later!
+          </p>
+          <a href="../../course_Contents.html">
+            <span class="mr-2">Back to Course Content<span>&gt;</span></span>
+          </a>
         </div>
       </div>
 
@@ -225,5 +237,6 @@
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
     </section>
+    <script src="../../../Javascript/popUp_Pages.js"></script>
   </body>
 </html>

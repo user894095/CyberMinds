@@ -355,6 +355,10 @@ a {
   align-items: flex-start;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .square {
   width: 300px; /* Adjust the width of the square */
   height: 300px; /* Adjust the height of the square */

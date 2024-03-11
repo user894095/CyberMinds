@@ -83,11 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
     circle.style.opacity = `${Math.random() * 100}%`;
     circle.style.animationDelay = `${Math.random() * 3}s`;
     var randomDuration = Math.random() * 20;
-    if (randomDuration < 2) {
+    if (randomDuration < 1) {
       randomDuration = randomDuration + 4;
     }
     circle.style.animationDuration = `${randomDuration}s`;
-    console.log(randomDuration);
     circlesContainer.appendChild(circle);
   }
 });
@@ -144,4 +143,116 @@ buttonsInWholething.forEach((button) => {
       }, 50);
     }
   });
+});
+
+const sections = document.querySelectorAll(
+  ".section2, .section5, .section4, .section3"
+);
+const cursors = document.querySelectorAll(".cursor");
+
+// Initialize all cursors as inactive
+cursors.forEach((cursor) => (cursor.style.opacity = "0"));
+
+// Add event listeners to each section
+sections.forEach((section, index) => {
+  section.addEventListener("mousemove", (e) => {
+    const sectionRect = section.getBoundingClientRect();
+    const mouseXPercentage =
+      ((e.clientX - sectionRect.left) / sectionRect.width) * 100;
+    const mouseYPercentage =
+      ((e.clientY - sectionRect.top) / sectionRect.height) * 100;
+
+    // Update the cursor for the current section
+    cursors[index].style.opacity = "1";
+    cursors[index].style.left = `${mouseXPercentage}%`;
+    cursors[index].style.top = `${mouseYPercentage}%`;
+
+    // Hide other cursors
+    cursors.forEach((cursor, i) => {
+      if (i !== index) {
+        cursor.style.opacity = "0";
+      }
+    });
+  });
+
+  section.addEventListener("mouseleave", () => {
+    // Hide the cursor when leaving the section
+    cursors[index].style.opacity = "0";
+  });
+});
+
+// Handle overall document mousemove event to hide all cursors when not over any section
+document.addEventListener("mousemove", (e) => {
+  const isOverAnySection = Array.from(sections).some((section) => {
+    const sectionRect = section.getBoundingClientRect();
+    return (
+      e.clientX >= sectionRect.left &&
+      e.clientX <= sectionRect.right &&
+      e.clientY >= sectionRect.top &&
+      e.clientY <= sectionRect.bottom
+    );
+  });
+
+  if (!isOverAnySection) {
+    // Hide all cursors when not over any section
+    cursors.forEach((cursor) => (cursor.style.opacity = "0"));
+  }
+});
+
+document.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+    const sectionRect = section.getBoundingClientRect();
+    const sectionTop = sectionRect.top + window.scrollY;
+    const sectionBottom = sectionRect.bottom + window.scrollY;
+
+    if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+      const offsetY = calculateOffsetY(
+        scrollPosition,
+        sectionTop,
+        sectionBottom
+      );
+      updateCursor(offsetY, index);
+    }
+  });
+}
+
+function calculateOffsetY(scrollPosition, sectionTop, sectionBottom) {
+  const relativeScrollPosition = scrollPosition - sectionTop;
+  const percentage =
+    (relativeScrollPosition / (sectionBottom - sectionTop)) * 100;
+  const offsetY = (percentage / 100) * 30;
+
+  return offsetY;
+}
+
+function updateCursor(offsetY, index) {
+  // Update the cursor's style with the new Y height for the active section
+  cursors[index].style.top = `calc(50% - ${offsetY}px)`;
+
+  // Hide other cursors
+  cursors.forEach((cursor, i) => {
+    if (i !== index) {
+      cursor.style.opacity = "0";
+    }
+  });
+}
+
+const section3 = document.querySelector(".section3");
+
+section3.addEventListener("mouseleave", () => {
+  const cursor1 = document.querySelector(".cursor1");
+  if (cursor1) {
+    cursor1.style.opacity = "0";
+  }
+});
+
+section3.addEventListener("mousemove", (e) => {
+  const cursor1 = document.querySelector(".cursor1");
+  cursor1.style.opacity = "1";
+  cursor1.style.left = e.pageX - section3.offsetLeft + "px";
+  cursor1.style.top = e.pageY - section3.offsetTop + "px";
 });
