@@ -311,6 +311,7 @@ section {
   display:flex;
   flex-direction:column;
   background-color: #111927;
+  margin-bottom: 2em;
 }
 
 .terminaloutputtext {
