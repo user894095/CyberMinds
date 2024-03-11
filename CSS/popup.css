@@ -1,0 +1,64 @@
+.pop-up {
+  width: 20em;
+  height: 15em;
+  padding: auto;
+  border-radius: 0.8em;
+  align-self: center;
+  text-align: center;
+  position: fixed;
+  top: 100vh;
+  opacity: 0;
+  background-color: rgb(17, 25, 39);
+  box-shadow: 0 0em 2em rgb(17, 25, 40); /* Adjust the values for a softer shadow */
+}
+
+.pop-up.active {
+  opacity: 100;
+  top: 30vh;
+}
+
+.exit-button {
+  background-color: rgb(24, 42, 71);
+  margin: 0.5em;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  float: right;
+  width: 1.6em;
+  height: 1.6em;
+  transition: background-color 0.3s;
+}
+
+.exit-button:hover {
+  background-color: #286aa7;
+}
+
+.fa-x {
+  color: white;
+  margin-top: 0.0625em;
+  font-size: 0.8em;
+}
+
+.pop-up-text {
+  padding-top: 1em;
+  margin: 10%;
+  font-size: 1.2em;
+}
+.mr-2 {
+  z-index: 1; /* Set a higher z-index value */
+  margin-left: 5%;
+  text-decoration: underline;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 0.08em;
+  letter-spacing: 0.007em;
+  color: white;
+  transition: font-size 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mr-2:hover {
+  font-size: 1.1em;
+  color: rgb(63, 225, 217);
+}
