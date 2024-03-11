@@ -10,10 +10,10 @@ body {
     box-shadow: inset 0px 0em 15em #102d42;
   }
   33% {
-    box-shadow: inset 0px 1em 17em #1a2738;
+    box-shadow: inset 0px 1em 20em #213f67;
   }
   66% {
-    box-shadow: inset 0px 0.5em 17em #1a2738;
+    box-shadow: inset 0px 0.5em 20em #132b49;
   }
   100% {
     box-shadow: inset 0em 0em 15em #143852;
@@ -58,7 +58,7 @@ header {
   color: #ffffff;
   padding: 0.5em 1em;
   transition: background-color 0.3s;
-  background-color: #174167;
+  background-color: #174867;
   text-decoration: none;
   margin-right: 0.9em;
   padding: 0.4em 0.8em; /* Smaller padding for a more compact button */
@@ -121,16 +121,16 @@ section {
 
 @keyframes rotateBoxShadow1 {
   0% {
-    box-shadow: 0.1em 0.1em 0.5em rgba(24, 55, 68, 0.5);
+    box-shadow: 0.1em 0.1em 1em rgba(24, 55, 68, 0.2); /* Adjust the opacity */
   }
   33% {
-    box-shadow: 0.1em 0.2em 0.6em #39699a;
+    box-shadow: 0.1em 0.2em 0.5em #305982; /* Adjust the spread and color */
   }
   66% {
-    box-shadow: 0.1em 0.3em 0.7em #38557d;
+    box-shadow: 0.1em 0.2em 0.4em #38557d; /* Adjust the spread and color */
   }
   100% {
-    box-shadow: 0.1em 0.2em 0.6em rgba(17, 48, 70, 0.4);
+    box-shadow: 0.1em 0.2em 0.5em rgba(36, 84, 117, 0.5); /* Adjust the spread and opacity */
   }
 }
 
@@ -194,8 +194,8 @@ h2 {
 
 .courseclass {
   font-family: "Space Grotesk", sans-serif;
-  color: rgb(44, 207, 236);
-  font-weight: 200;
+  color: #6fdbf0;
+  font-weight: 400;
 }
 
 p {
