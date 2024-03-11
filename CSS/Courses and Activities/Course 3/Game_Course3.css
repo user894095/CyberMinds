@@ -62,8 +62,8 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 15%;
-  margin-bottom: 2%;
+  margin-left: 8.75%;
+  margin-bottom: 1%;
   margin-top: 2%;
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
@@ -311,9 +311,20 @@ section {
 
 .yellow-word {
   color: rgb(255, 255, 100);
+
 }
 
-.blue-word {
+
+
+.green-word {
+  color: rgb(117, 255, 78);
+}
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.blue-word{
   color: rgb(63, 225, 217);
 }
 
@@ -340,10 +351,7 @@ h2 {
   font-size: 1.8em;
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.4em;
-}
+
 
 p {
   font-weight: 400;

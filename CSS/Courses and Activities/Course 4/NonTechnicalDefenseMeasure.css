@@ -57,8 +57,8 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 15%;
-  margin-bottom: 2%;
+  margin-left: 8.75%;
+  margin-bottom: 1%;
   margin-top: 2%;
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
@@ -282,20 +282,23 @@ section {
   margin-left: auto; /
 }
 
-
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,
 .leftRectangle-section2 a:hover,
 .leftRectangle-section3 a:hover {
   background-color: #1e6bb2;
 }
-
-h2 {
+h3{
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.8em;
+  font-size: 1em;
 }
 
-p {
+h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-size:1.8em; 
+}
+
+p{
   font-weight: 400;
   font-size: 1em;
   line-height: 1.7em;
@@ -303,24 +306,47 @@ p {
   font-style: normal;
 }
 
-li {
+
+
+li{
   font-size: medium;
   font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0.4em;
+}
+.green-word {
+  color: rgb(117, 255, 78);
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1em;
-}
-
-.blue-word {
-  color: rgb(63, 225, 217);
-}
 
 a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-#act-img {
-  rotate: -1deg;
+h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
+
+.blue-word{
+  color: rgb(63, 225, 217);
+}
+
+
+  .green-word {
+    color: rgb(117, 255, 78);
+  }
+
+  .list-without-bullet-points{
+    list-style: None;
+  }
+
+  .congratulations{
+    font-size: medium;
+    background: -webkit-linear-gradient(right, rgb(49, 165, 161), rgb(92, 171, 255), rgb(63, 225, 217), rgb(104, 148, 250));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #act-img {
+    rotate: -1deg;
+  }

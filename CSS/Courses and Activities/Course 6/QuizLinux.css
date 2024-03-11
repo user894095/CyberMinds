@@ -57,8 +57,8 @@ header {
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 5%;
-  margin-bottom: 2%;
+  margin-left: 8.75%;
+  margin-bottom: 1%;
   margin-top: 2%;
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;
@@ -365,6 +365,10 @@ label.selected {
   margin: 0 auto;
   font-family: "Space Grotesk", sans-serif;
   margin-bottom: 2em;
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
 }
 
 .submit {

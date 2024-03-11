@@ -58,12 +58,14 @@ header {
 .header-buttons a:hover {
   background-color: #286aa7;
 }
-
+.green-word {
+  color: rgb(117, 255, 78);
+}
 .page-title {
   display: flex;
   justify-content: left;
-  margin-left: 15%;
-  margin-bottom: 2%;
+  margin-left: 8.75%;
+  margin-bottom: 1%;
   margin-top: 2%;
   padding: 0%;
   font-family: "MuseoModerno", sans-serif !important;

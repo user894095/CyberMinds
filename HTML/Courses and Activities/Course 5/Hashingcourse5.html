@@ -31,20 +31,20 @@
       </div>
     </header>
 
-    <div><p class="page-title">Course 5 - What is Hashing?</p></div>
+    <div><p class="page-title">Course 5 - Hashing?</p></div>
 
     <section>
       <div class="right-side_rectangle">
         <p>
-          Hashing is one-way encryption. Once you have encrypted your plaintext,
+          Hashing is <span class="blue-word">one-way encryption.</span> Once you have encrypted your plaintext,
           it cannot be decrypted. Obviously, unlike encryption, hashing would be
           terrible to use for communication since recipients of messages would
           just be reading a bunch of ciphertext! The real use for hashing is for
           verifying data integrity.
         </p>
         <p>
-          An easy and applicable example of hashing relates to passwords. When
-          passwords are stored, they should always be hashed. When you enter
+          An easy and applicable example of hashing relates to <span class="blue-word">passwords.</span> When
+          passwords are stored, they <span class="blue-word">should always be hashed.</span> When you enter
           your password into a login page, your input will be hashed and
           compared to the hash in the database with all the saved passwords, the
           comparison will verify if you typed in the correct password. By
@@ -58,7 +58,7 @@
           If you recall back in Course 1, the “I” in the CIA triad stood for
           integrity. Integrity in security refers to the accuracy of data and
           reliance on the fact that it cannot be modified. Hashing is used for
-          this. Hashes of data are known as checksums. It is also important to
+          this. Hashes of data are known as <span class="blue-word">checksums.</span> It is also important to
           note that a checksum is completely unique to the data it represents.
           As data is transmitted between different parts of a network, it is
           important to make sure that the data stays unmodified by accident or
@@ -69,7 +69,7 @@
           modified.
         </p>
 
-        <h2>Parts of a Reliable Hashing Algorithm:</h2>
+        <h2 class="blue-word">Parts of a Reliable Hashing Algorithm:</h2>
         <ul>
           <li>
             A hashing algorithm should always result in a hash of the same
@@ -91,14 +91,14 @@
           </li>
         </ul>
 
-        <h2>Collisions:</h2>
+        <h2 class="blue-word">Collisions:</h2>
         <p>
           If two hash outputs are the same for different inputs, this is known
           as a collision. A collision can also refer to different people using
           the same credential so that there are multiple instances of a hash
           value in a database.
         </p>
-        <h2>Common Hashing Algorithms</h2>
+        <h2 class="blue-word">Common Hashing Algorithms</h2>
         <p>
           The Secure Hashing Algorithms (SHA) are the standard hash to use
           today. SHA was developed by the National Institute of Standards and

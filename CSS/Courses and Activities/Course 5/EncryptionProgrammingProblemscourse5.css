@@ -65,8 +65,8 @@ header {
 .page-title {
     display: flex;
     justify-content: left;
-    margin-left: 15%;
-    margin-bottom: 2%;
+    margin-left: 8.75%;
+    margin-bottom: 1%;
     margin-top: 2%;
     padding: 0%;
     font-family: "MuseoModerno",
@@ -303,15 +303,50 @@ section {
 }
 
 .right-side_rectangle-buttons .next_course {
-    margin-left: auto;/
+    margin-left: auto;
 }
 
-.right-side_rectangle-buttons a:hover,
-.leftRectangle-section1 a:hover,
-.leftRectangle-section2 a:hover,
-.leftRectangle-section3 a:hover {
+.terminaloutput a {
+    border-radius: 0.5em;
+    background-color: #182a47;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1%;
+    margin: 10px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .terminaloutput a:hover,
+  .right-side_rectangle-buttons a:hover,
+  .leftRectangle-section1 a:hover,
+  .leftRectangle-section2 a:hover,
+  .leftRectangle-section3 a:hover {
     background-color: #1e6bb2;
-}
+  }
+  
+  .terminaloutput {
+    min-height: 80px;
+    height:10em;
+    display:flex;
+    flex-direction:column;
+    background-color: #111927;
+  }
+  
+  .terminaloutputtext {
+    margin:0.4em;
+    display: flex;
+    height: 8em;
+    background-color: #111111;
+  }
+  
+  .end-text {
+    font-style: italic;
+  }
 
 .end-text {
     font-style: italic;
@@ -350,8 +385,13 @@ a {
 
 .editor {
     background-color: #000000;
-  }
-
+}
+.blue-word{
+    color: rgb(63,225,217)
+}
+.green-word {
+    color: rgb(117, 255, 78);
+}
 .act-img {
 rotate: -1deg;
 }
