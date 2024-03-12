@@ -313,6 +313,11 @@ a {
 
 .act-img {
   rotate: -1deg;
+
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
 }
 .center {
   display: block;
