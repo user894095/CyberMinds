@@ -7,11 +7,12 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
+  height: 240vh;
   width: auto;
 }
 
 body {
+  height: 240vh;
   font-family: "Georgia", sans-serif;
   margin: 0;
   padding: 0;
@@ -92,6 +93,7 @@ main {
 }
 
 .page-title {
+  margin: 0;
   font-family: "Space Grotesk", sans-serif;
   font-size: 4em;
   font-weight: 700;
@@ -118,37 +120,51 @@ main {
 }
 
 p {
-  line-height: 1.6;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 1em;
   color: white;
   text-align: center;
   list-style: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
   color: white;
   scale: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.5em;
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h2 {
-  font-size: 24px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  font-size: 1.2em;
+  margin-top: 1.9em;
+  margin-bottom: 0.95em;
   color: white;
   /*border-bottom: 2px solid #333;*/
   padding-bottom: 5px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: white;
+  /*border-bottom: 2px solid #333;*/
+  padding-bottom: 0.25em;
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
 }
@@ -170,38 +186,95 @@ footer {
   font-family: "Space Grotesk", sans-serif;
 }
 
-a {
-  font-family: "Space Grotesk", sans-serif;
+.flex1 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-li {
-  font-family: "Space Grotesk", sans-serif;
+.flex2 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-p {
-  font-family: "Space Grotesk", sans-serif;
+.flex3 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-.emailForCyberminds {
-  color: #ffffff; /* Light blue color */
-  text-decoration: none; /* No underline */
-  font-size: 1em; /* Smaller font size */
-}
-
-/* Hover effect for the email link */
-.emailForCyberminds:hover {
-  color: #ffffff; /* Dark blue color on hover */
-  text-decoration: underline; /* Underline on hover */
-  font-weight: bold; /* Bold on hover */
-}
-/* comment */
-
-.text-container {
-  background-color: #111923;
-  border-radius: 1em;
-  padding: 1em;
+.theIMAGE img {
+  margin-top: 3em;
+  align-self: center;
+  height: 20em;
+  width: auto;
+  flex: 5;
   margin-left: 4em;
   margin-right: 4em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #38557d;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
+}
+
+.flexwording {
+  background: linear-gradient(to bottom, #0000009f, #17263b);
+  flex: 6;
+  border-width: 0.6em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
+  margin-top: 3em;
+  margin-bottom: 2.5em;
+  margin-left: 3.6em;
+  margin-right: 3.6em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2ac;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #395e93d3;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }
