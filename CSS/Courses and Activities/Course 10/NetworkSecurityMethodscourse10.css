@@ -322,6 +322,10 @@ a {
   color: rgb(63, 225, 217);
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 .act-img {
   rotate: -1deg;
 }
