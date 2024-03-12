@@ -38,7 +38,6 @@
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Permissions</h2>
         <p>
           <span class="blue-word"> drwxr-xr-- </span>
         </p>
@@ -83,27 +82,27 @@
             directories.
           </li>
           <li>
-            <span class="green-word">x (execute)</span>. If executable, users can
-            execute files or change into a directory.
+            <span class="green-word">x (execute)</span>. If executable, users
+            can execute files or change into a directory.
           </li>
         </ul>
-        <h3>Changing Privileges:</h3>
+        <h3 class="blue-word">Changing Privileges:</h3>
         <p>
           Privileges are changed using the
           <span class="blue-word">chmod</span> command (you may need to use
           sudo). We will teach you to ways to use this:
         </p>
-        <h4>
+        <h3>
           1. Format:
           <span class="blue-word">chmod u+rwx,g+rwx,o+rwx myFile</span>
-        </h4>
+        </h3>
         <p>
           This format changes the permissions of myFile to rwx for users, rwx
           for group, and rwx for others. If you want to leave a permission out,
           you can add only the permissions you want (ex. u+rw). You can also
           subtract permissions (ex. u-rwx).
         </p>
-        <h4>2. Format: <span class="blue-word">chmod 254 myFile</span></h4>
+        <h3>2. Format: <span class="blue-word">chmod 254 myFile</span></h3>
         <p>
           This format changes the permissions of myFile to -w- for users, r-x
           for group, and r-- for others. If you are familiar with binary, you

@@ -349,6 +349,9 @@ a {
   padding: 1em;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
 
 .list-without-bullet-points{
   list-style: None;
