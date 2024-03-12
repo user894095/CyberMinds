@@ -931,12 +931,12 @@ footer {
 
 .cursor {
   z-index: 9999;
-  background-color: #068edd44;
+  background-color: #068edd6e;
   width: 0.01em;
   height: 0.01em;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 10em 10em #0662974f;
+  box-shadow: 0 0 12em 12em #0662974f;
   position: fixed;
 }
 
