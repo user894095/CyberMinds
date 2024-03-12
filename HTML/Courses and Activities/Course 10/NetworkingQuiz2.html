@@ -1,197 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../../../CSS/Courses and Activities/Course 10/NetworkingQuiz2.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/5964d931e5.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../../../CSS/popup.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://kit.fontawesome.com/5964d931e5.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Course 10 - Networking Quiz 2</title>
-  </head>
-  <body class="body">
-    <header>
-      <div class="header-content">
-        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
-        <nav class="header-buttons">
-          <a href="../../../index.html">Back to Home Screen</a>
-          <a href="../../moreinfo.html">More Info</a>
-          <a href="../../course_Contents.html">Mission</a>
-          <a href="../../LiveHelp.html">Live Help</a>
-          <a href="../../ourTeam.html">Our Team</a>
-          <a href="../../CTF.html">CTF</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../CSS/Courses and Activities/Course 10/NetworkingQuiz2.css" />
+  <script src="https://kit.fontawesome.com/5964d931e5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../../CSS/popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/5964d931e5.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+
+  <title>Course 10 - Networking Quiz 2</title>
+</head>
+
+<body class="body">
+  <header>
+    <div class="header-content">
+      <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+      <nav class="header-buttons">
+        <a href="../../../index.html">Back to Home Screen</a>
+        <a href="../../moreinfo.html">More Info</a>
+        <a href="../../course_Contents.html">Mission</a>
+        <a href="../../LiveHelp.html">Live Help</a>
+        <a href="../../ourTeam.html">Our Team</a>
+        <a href="../../CTF.html">CTF</a>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <p class="page-title">Course 10 - Networking Quiz 2</p>
+  </div>
+
+  <section class="section">
+    <div class="right-side_rectangle">
+      <div class="question">1. What is the main function of the Transport layer in the OSI model?</div>
+      <ul class="options">
+        <li class="option">
+          <input type="radio" name="q1" value="SW" id="q1-SW" />
+          <label for="q1-SW" id="q1-a1">
+            Formatting data into packets
+            <div id="q1-SW-detail" class="answer-detail">
+              Layer 2 formats data into packets.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q1" value="ES" id="q1-ES" />
+          <label for="q1-ES" id="q1-a2">
+            Regulating communication with respect to protocols and ports
+            <div id="q1-ES-detail" class="answer-detail">Correct!</div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q1" value="VW" id="q1-VW" />
+          <label for="q1-VW" id="q1-a3">
+            Routing data to different destinations
+            <div id="q1-VW-detail" class="answer-detail">
+              Layer 3 routes data.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q1" value="VS" id="q1-VS" />
+          <label for="q1-VS" id="q1-a4">
+            Initiating and terminating active connections between devices (sessions)
+            <div id="q1-VS-detail" class="answer-detail">
+              Layer 5 handles sessions.
+            </div>
+          </label>
+        </li>
+      </ul>
+
+      <div class="question">2. Which layers of the OSI model are equivalent to Layer 1 of the TCP/IP model?</div>
+      <ul class="options">
+        <li class="option">
+          <input type="radio" name="q2" value="open" id="q2-open" />
+          <label for="q2-open" name="q2" id="q2-a1">
+            Physical and Data Link
+            <div id="q2-open-detail" class="answer-detail">Correct!</div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q2" value="grammar" id="q2-grammar" />
+          <label for="q2-grammar" name="q2" id="q2-a2">
+            Network and Transport
+            <div id="q2-grammar-detail" class="answer-detail">
+              Layer 3 is responsible for routing data to different destinations, while Layer 4 regulates communication
+              with respect to protocols and ports.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q2" value="verify" id="q2-verify" />
+          <label for="q2-verify" name="q2" id="q2-a3">
+            Presentation and Application
+            <div id="q2-verify-detail" class="answer-detail">
+              Layers 6 and 7 are responsible for data formatting and the final presentation of data in user
+              applications, respectively.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q2" value="ignore" id="q2-ignore" />
+          <label for="q2-ignore" name="q2" id="q2-a4">
+            Session and Application
+            <div id="q2-ignore-detail" class="answer-detail">
+              Layer 5 manages sessions and Layer 7 deals with the final presentation of data in user applications.
+            </div>
+          </label>
+        </li>
+      </ul>
+
+      <div class="question">3. A stateful firewall has the capability to make detailed analyses of packets, keeping
+        track
+        of additional information beyond safety, allowing for more advanced filtering compared to a stateless firewall.
       </div>
-    </header>
+      <ul class="options">
+        <li class="option">
+          <input type="radio" name="q3" value="true" id="q3-true" />
+          <label for="q3-true" name="q3" id="q3-a1">
+            True
+            <div id="q3-true-detail" class="answer-detail">
+              Correct! A stateful firewall is more advanced than a stateless firewall. It can make detailed analyses of
+              packets.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q3" value="false" id="q3-false" />
+          <label for="q3-false" name="q3" id="q3-a2">
+            False
+            <div id="q3-false-detail" class="answer-detail">
+              See true for explanation.
+            </div>
+          </label>
+        </li>
+      </ul>
 
-    <div><p class="page-title">Course 10 - Networking Quiz 2</p></div>
+      <div class="question">4. What is the main role of a proxy server in a network?</div>
+      <ul class="options">
+        <li class="option">
+          <input type="radio" name="q4" value="tail" id="q4-tail" />
+          <label for="q4-tail" name="q4" id="q4-a1">
+            Formatting data into packets
+            <div id="q4-tail-detail" class="answer-detail">
+              The formatting of data into packets is a function performed by the Data Link layer (Layer 2) of the OSI
+              model, not by a proxy server.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q4" value="dive" id="q4-dive" />
+          <label for="q4-dive" name="q4" id="q4-a2">
+            Routing data to different destinations
+            <div id="q4-dive-detail" class="answer-detail">
+              Routing data to different destinations is a responsibility of the Network layer (Layer 3) in the OSI
+              model.
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q4" value="phishing" id="q4-phishing" />
+          <label for="q4-phishing" name="q4" id="q4-a3">
+            Analyzing packets during transit
+            <div id="q4-phishing-detail" class="answer-detail">
+              Correct!
+            </div>
+          </label>
+        </li>
+        <li class="option">
+          <input type="radio" name="q4" value="none" id="q4-none" />
+          <label for="q4-none" name="q4" id="q4-a4">
+            Initiating and terminating active connections between devices
+            <div id="q4-none-detail" class="answer-detail">
+              The initiation and termination of active connections between
+              devices (sessions) fall under the Session layer (Layer 5) in the OSI model.
+            </div>
+          </label>
+        </li>
+      </ul>
 
-    <section class="section">
-      <div class="right-side_rectangle">
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
-        <!-- ADD TEXT FROM ARTICLE HERE -->
+      <button onclick="submitQuiz()" class="submit">Submit Quiz</button>
 
-        <div class="right-side_rectangle-buttons">
-          <a
-            href="../../Courses and Activities/Course 10/NetworkSecurityMethodscourse10.html"
-            >&lt; Previous</a
-          >
-          <a class="next-button">Next ></a>
-          <a class="next_course">Skip to Next Course</a>
+      <p id="result"></p>
+      <div class="right-side_rectangle-buttons">
+        <a href="../../Courses and Activities/Course 10/NetworkSecurityMethodscourse10.html">&lt; Previous</a>
+        <a class="next-button">Next ></a>
+        <a class="next_course">Skip to Next Course</a>
+      </div>
+      <div class="pop-up">
+        <div class="exit-button">
+          <i class="fa-solid fa-x"></i>
         </div>
-        <div class="pop-up">
-          <div class="exit-button">
-            <i class="fa-solid fa-x"></i>
-          </div>
-          <p class="pop-up-text">
-            Course 11 is currently under progress. Please come back later!
-          </p>
-          <a href="../../course_Contents.html">
-            <span class="mr-2">Back to Course Content<span>&gt;</span></span>
-          </a>
-        </div>
+        <p class="pop-up-text">
+          Course 11 is currently under progress. Please come back later!
+        </p>
+        <a href="../../course_Contents.html">
+          <span class="mr-2">Back to Course Content<span>&gt;</span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="left-side_rectangle">
+      <div class="leftRectangle-section1">
+        <p class="leftRectangle-section1-button-title">Go back?</p>
+        <a href="../../course_Contents.html">Back to all Courses</a>
+      </div>
+      <div class="Empty-section1">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <div class="left-side_rectangle">
-        <div class="leftRectangle-section1">
-          <p class="leftRectangle-section1-button-title">Go back?</p>
-          <a href="../../course_Contents.html">Back to all Courses</a>
-        </div>
-        <div class="Empty-section1">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="leftRectangle-section2">
-          <p class="leftRectangle-section2-button-title">Table of Contents</p>
-          <a href="Introductioncourse10.html">
-            <img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />Course 10 - Introduction
-          </a>
-          <a
-            href="../../Courses and Activities/Course 10/NetworkingBasicscourse10.html"
-          >
-            <img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />
-            Networking Basics
-          </a>
-          <a
-            href="../../Courses and Activities/Course 10/Protocols&Portscourse10.html"
-            ><img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />
-            Protocols & Ports
-          </a>
-          <a
-            href="../../Courses and Activities/Course 10/Addresses&Packetscourse10.html"
-            ><img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />
-            Addresses & Packets
-          </a>
-          <a
-            href="../../../HTML/Courses and Activities/Course 10/NetworkingQuiz1course10.html"
-            ><img
-              src="../../../Images/ICON_QUIZ.png"
-              width="40"
-              height="40"
-            />Networking Quiz 1
-          </a>
-          <a
-            href="../../../HTML/Courses and Activities/Course 10/OSI&TCPcourse10.html"
-            ><img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />
-            The OSI & TCP/IP Models
-          </a>
-          <a
-            href="../../../HTML/Courses and Activities/Course 10/NetworkTopologiescourse10.html"
-          >
-            <img
-              src="../../../Images/ICON_ACTIVITY.png"
-              width="40"
-              height="40"
-              class="act-img"
-            />
-            <img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />
-            Network Topologies
-          </a>
-          <a
-            href="../../../HTML/Courses and Activities/Course 10/NetworkSecurityMethodscourse10.html"
-            ><img
-              src="../../../Images/ICON_ARTICLE.png"
-              width="40"
-              height="40"
-            />Network Security Methods
-          </a>
-          <a
-            href="../../../HTML/Courses and Activities/Course 10/NetworkingQuiz2.html"
-            ><img src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
-            Networking Quiz 2
-          </a>
-          <!-- <a href="add here">  >add more here </a>
+      <div class="leftRectangle-section2">
+        <p class="leftRectangle-section2-button-title">Table of Contents</p>
+        <a href="Introductioncourse10.html">
+          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />Course 10 - Introduction
+        </a>
+        <a href="../../Courses and Activities/Course 10/NetworkingBasicscourse10.html">
+          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />
+          Networking Basics
+        </a>
+        <a href="../../Courses and Activities/Course 10/Protocols&Portscourse10.html"><img
+            src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />
+          Protocols & Ports
+        </a>
+        <a href="../../Courses and Activities/Course 10/Addresses&Packetscourse10.html"><img
+            src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />
+          Addresses & Packets
+        </a>
+        <a href="../../../HTML/Courses and Activities/Course 10/NetworkingQuiz1course10.html"><img
+            src="../../../Images/ICON_QUIZ.png" width="40" height="40" />Networking Quiz 1
+        </a>
+        <a href="../../../HTML/Courses and Activities/Course 10/OSI&TCPcourse10.html"><img
+            src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />
+          The OSI & TCP/IP Models
+        </a>
+        <a href="../../../HTML/Courses and Activities/Course 10/NetworkTopologiescourse10.html">
+          <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img" />
+          <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />
+          Network Topologies
+        </a>
+        <a href="../../../HTML/Courses and Activities/Course 10/NetworkSecurityMethodscourse10.html"><img
+            src="../../../Images/ICON_ARTICLE.png" width="40" height="40" />Network Security Methods
+        </a>
+        <a href="../../../HTML/Courses and Activities/Course 10/NetworkingQuiz2.html"><img
+            src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
+          Networking Quiz 2
+        </a>
+        <!-- <a href="add here">  >add more here </a>
           <a href="add here"> >add more here </a>
           <a href="add activity here"> >add more here </a>
           <a href="add game here">  >add more here </a> -->
-        </div>
-        <div class="Empty-section2">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
-
-        <div class="leftRectangle-section3">
-          <p class="leftRectangle-section3-button-title">Need Help?</p>
-          <a href="../../LiveHelp.html">Chat Box</a>
-        </div>
-
-        <div class="Empty-section3">
-          <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
-        </div>
+      </div>
+      <div class="Empty-section2">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
       </div>
 
-      <!-- <footer class="page-footer">
+      <div class="leftRectangle-section3">
+        <p class="leftRectangle-section3-button-title">Need Help?</p>
+        <a href="../../LiveHelp.html">Chat Box</a>
+      </div>
+
+      <div class="Empty-section3">
+        <!-- Nothing should be in this section- it acts as a flex empty box to support the layout -->
+      </div>
+    </div>
+
+    <!-- <footer class="page-footer">
         <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
       </footer> -->
-    </section>
-    <script src="../../../Javascript/popUp.js"></script>
-  </body>
+  </section>
+  <script>
+    function submitQuiz() {
+      var score = 0;
+
+      // Check answer for question 1
+      var q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === "VW") {
+        score++;
+      }
+      var lab = document.getElementById("q1-a1");
+      showAnswerDetail("q1-SW-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q1-a2");
+      showAnswerDetail("q1-ES-detail");
+      lab.style.color = "lightgreen";
+      lab = document.getElementById("q1-a3");
+      showAnswerDetail("q1-VW-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q1-a4");
+      showAnswerDetail("q1-VS-detail");
+      lab.style.color = "red";
+
+      // Check answer for question 2
+      var q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === "open") {
+        score++;
+      }
+      lab = document.getElementById("q2-a1");
+      showAnswerDetail("q2-open-detail");
+      lab.style.color = "lightgreen";
+      lab = document.getElementById("q2-a2");
+      showAnswerDetail("q2-grammar-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q2-a3");
+      showAnswerDetail("q2-verify-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q2-a4");
+      showAnswerDetail("q2-ignore-detail");
+      lab.style.color = "red";
+
+      var q3Answer = document.querySelector('input[name="q3"]:checked');
+      if (q3Answer && q3Answer.value === "true") {
+        score++;
+      }
+      lab = document.getElementById("q3-a1");
+      showAnswerDetail("q3-true-detail");
+      lab.style.color = "lightgreen";
+      lab = document.getElementById("q3-a2");
+      showAnswerDetail("q3-false-detail");
+      lab.style.color = "red";
+
+      var q4Answer = document.querySelector('input[name="q4"]:checked');
+      if (q4Answer && q4Answer.value === "dive") {
+        score++;
+      }
+      lab = document.getElementById("q4-a1");
+      showAnswerDetail("q4-tail-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q4-a2");
+      showAnswerDetail("q4-dive-detail");
+      lab.style.color = "red";
+      lab = document.getElementById("q4-a3");
+      showAnswerDetail("q4-phishing-detail");
+      lab.style.color = "lightgreen";
+      lab = document.getElementById("q4-a4");
+      showAnswerDetail("q4-none-detail");
+      lab.style.color = "red";
+
+      // Display the result
+      var resultElement = document.getElementById("result");
+      resultElement.innerHTML = "Your score is: " + score + "/4";
+    }
+
+    function showAnswerDetail(detailId) {
+      var detailElement = document.getElementById(detailId);
+      if (detailElement) {
+        detailElement.style.display = "block";
+      }
+    }
+
+    var labels = document.querySelectorAll("label");
+    labels.forEach(function (label) {
+      label.addEventListener("click", function () {
+        // Remove 'selected' class from all labels
+        labels.forEach(function (otherLabel) {
+          var radioLabel = label.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+          var radioName = radioLabel
+            .querySelector('input[type="radio"]')
+            .getAttribute("name");
+          var otherRadioLabel = otherLabel.closest("li.option"); // Assuming the radio is wrapped in an <li> with class "option"
+          var otherRadioName = otherRadioLabel
+            .querySelector('input[type="radio"]')
+            .getAttribute("name");
+          if (otherRadioName === radioName) {
+            otherLabel.classList.remove("selected");
+          }
+        });
+
+        // Add 'selected' class to the clicked label
+        label.classList.add("selected");
+      });
+    });
+  </script>
+  <script src="../../../Javascript/popUp.js"></script>
+</body>
+
 </html>
