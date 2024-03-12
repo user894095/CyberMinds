@@ -315,9 +315,12 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-
 .blue-word{
   color: rgb(63, 225, 217);
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
 }
 
 .act-img {
