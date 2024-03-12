@@ -331,9 +331,8 @@ a {
 }
 
 
-.security{
-  width: 25em;
-  margin: 1em;
+.locksecurity{
+  width: 15em;
   height: auto;
   align-self: center;
 }
