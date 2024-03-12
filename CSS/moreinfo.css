@@ -196,11 +196,26 @@ p {
 }
 
 .text-container {
-  background-color: #111923;
+  background: linear-gradient(to bottom, #0b121e6d, #1b2e489c);
   border-radius: 1em;
   padding: 1em;
   margin-left: 4em;
   margin-right: 4em;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0%,
+  100% {
+    box-shadow: 0.05em 0.05em 0.9em #4f7ab25c;
+  }
+  25% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2a2, 0 0 0 transparent; /* Add the second shadow to cancel out the bottom shadow */
+  }
+  50%,
+  75% {
+    box-shadow: 0 0 0 transparent; /* Completely remove the shadow for the middle of the animation */
+  }
 }
