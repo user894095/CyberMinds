@@ -300,9 +300,14 @@ section {
 
 .cia-triad-image{
   display: block;
-  width: 70%;
-  margin: 3em;
+  margin-left: 5.5em;
+  width: 60%;
   align-self: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-width: 0.9em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
   
 }
 
