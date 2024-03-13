@@ -304,19 +304,24 @@ section {
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
-h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
-}
-
-p {
+.right-side_rectangle h2 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.right-side_rectangle p {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
+  font-size: 1em;
 }
 
 li {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 a {
@@ -325,6 +330,10 @@ a {
 
 .green-word {
   color: rgb(117, 255, 78);
+}
+
+.blue-word{
+  color: rgb(63, 225, 217);
 }
 
 .act-img {
