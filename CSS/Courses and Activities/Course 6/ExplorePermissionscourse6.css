@@ -341,7 +341,7 @@ a {
 
 
 .flip-container {
-  background: transparent;
+  background:  #111927;
   display: inline-block;
 }
 
@@ -355,5 +355,5 @@ a {
 
 .flip-container:hover .flip-this {
   transition: 0.9s;
-  transform: rotateY(180deg);
+  transform: rotateY(3500deg);
 }
