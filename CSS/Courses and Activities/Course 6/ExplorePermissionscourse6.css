@@ -342,22 +342,42 @@ a {
 
 
 
-.image-container {
-  position: relative;
-  display: inline-block;
+.hover-title {
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+.hover-image {
+  visibility: hidden;
 }
 
-.image-container:hover .overlay {
-  opacity: 0; 
+body:not(.mobile) .hover-title:hover + .hover-image {
+  visibility: visible;
+  pointer-events: none;
+}
+
+.hover-image {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 90vw;
+  height: 90vh;
+}
+
+.hover-image img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 0;
 }
