@@ -292,6 +292,7 @@ section {
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
 h2 {
@@ -306,6 +307,7 @@ p {
 
 li {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 a {

@@ -391,6 +391,7 @@ label.selected {
 }
 
 .submit {
+
   display: block;
   padding: 0.5em;
   margin-bottom: 0.6em;
@@ -409,5 +410,4 @@ label.selected {
   text-align: center;
   color: #ffffff;
   align-self: center;
-  margin-left: 30em;
 }

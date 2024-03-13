@@ -294,8 +294,10 @@ h3 {
 }
 
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  margin-bottom: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-size: 1.1em;
 }
 
 p {
@@ -310,30 +312,18 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.blue-word{
-  color: rgb(63,225,217)
-}
-
-.green-word {
-  color: rgb(117, 255, 78);
-}
-
-.act-img {
-  rotate: -1deg;
-}
-
 .box {
   background-color: #182a47; /* Light gray background */
   border: 0.5em solid #182a47;
   width: 22em;
   height: 6em;
   perspective: 1000px;
-  align-self: left;
+  align-self: center;
 }
 .box-inner {
   position: relative;
   width: 100%;
-  height: 120%;
+  height: 80%;
   align-self: center;
   text-align: center;
   transition: transform 0.5s;
@@ -375,4 +365,11 @@ a {
 .box-images {
   vertical-align: middle;
   margin-bottom: 1rem;
+}
+
+.question {
+  margin-bottom: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-size: 1.1em;
 }
