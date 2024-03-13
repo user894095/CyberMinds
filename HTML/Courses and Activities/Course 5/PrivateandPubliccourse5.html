@@ -186,20 +186,20 @@
 
         <dl>
           <dt>
-            <span class="green-word">1)</span> Choose two large prime numbers, p
+            1)Choose two large prime numbers, p
             and q:
           </dt>
           <dd>We are going to use two small ones, 5 and 7.</dd>
           <br />
           <dt>
-            <span class="green-word">2)</span> The public key consists of two
+            2)The public key consists of two
             parts: integer n and integer e. The n value equals p times q.
           </dt>
           <dd>n = p*q</dd>
           <dd>n = 5*7 = 35</dd>
           <br />
           <dt>
-            <span class="green-word">3)</span> The e value must also be an
+            3) The e value must also be an
             integer, but not a factor of phi of n (Φ(n) = (p-1)(q-1)).
           </dt>
           <dd>Φ(n) = (p-1)(q-1)</dd>
@@ -207,7 +207,7 @@
           <dd>e = 5</dd>
           <br />
           <dt>
-            <span class="green-word">4)</span> Now we must create our private
+            4)Now we must create our private
             key, d. The d value uses the previously generated values, (d*e)%Φ
             must be equal to 1.
           </dt>
@@ -216,7 +216,7 @@
           <dd>d = 5</dd>
           <br />
           <dt>
-            <span class="green-word">5)</span> We will now use our generated
+            5) We will now use our generated
             values to encrypt our plaintext (a). Ciphertext (c) = (a^e)%n
           </dt>
           <dd>c = (a^e)%n</dd>
@@ -236,7 +236,7 @@
           <dd>The cipher text for the word “HI” using our keys is 8 4</dd>
           <br />
           <dt>
-            <span class="green-word">6)</span> We will decrypt the message. The
+            6) We will decrypt the message. The
             equation for this is: (a) = (c^d)%n
           </dt>
           <dd>a = (c^e)%n</dd>
