@@ -345,6 +345,11 @@ a {
 .image-container {
   position: relative;
   display: inline-block;
+  overflow: hidden; /* Hide overflow */
+}
+
+.image {
+  transition: transform 0.3s ease; /* Smooth transition effect */
 }
 
 .overlay {
@@ -353,11 +358,15 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+.image-container:hover .image {
+  transform: scale(1.1); /* Scale up the image on hover */
 }
 
 .image-container:hover .overlay {
-  opacity: 1; 
+  opacity: 1; /* Revealing the overlay on hover */
 }
