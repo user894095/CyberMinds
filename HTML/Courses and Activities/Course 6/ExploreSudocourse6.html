@@ -1,101 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="../../../CSS/Courses and Activities/Course 1/CIAtriadcourse1.css"
-  />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+      rel="stylesheet"
+      href="../../../CSS/Courses and Activities/Course 6/ExploreFileSystemcourse6.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Course 6 - Explore Sudo</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <img src="../../../Images/circle.jpg" alt="CyberMinds Logo">
-            <nav class="header-buttons">
-                <a href="../../../index.html">Back to Home Screen</a>
-                <a href="../../moreinfo.html">More Info</a>
-                <a href="../../course_Contents.html">Mission</a>
-                <a href="../../LiveHelp.html">Live Help</a>
-                <a href="../../ourTeam.html">Our Team</a>
-                <a href="../../CTF.html">CTF</a>
-            </nav>
-        </div>
+      <div class="header-content">
+        <img src="../../../Images/circle.jpg" alt="CyberMinds Logo" />
+        <nav class="header-buttons">
+          <a href="../../../index.html">Back to Home Screen</a>
+          <a href="../../moreinfo.html">More Info</a>
+          <a href="../../course_Contents.html">Mission</a>
+          <a href="../../LiveHelp.html">Live Help</a>
+          <a href="../../ourTeam.html">Our Team</a>
+          <a href="../../CTF.html">CTF</a>
+        </nav>
+      </div>
     </header>
 
     <div><p class="page-title">Course 6 - Explore Sudo</p></div>
 
     <section>
-        <div class="right-side_rectangle">
-                <p>In this activity, we will look at an <span class="blue-word"> example of using sudo in a command</span> and we will also look at the sudoers file.</p>
+      <div class="right-side_rectangle">
+        <p>
+          In this activity, we will look at an
+          <span class="blue-word"> example of using sudo in a command</span> and
+          we will also look at the sudoers file.
+        </p>
 
-                <h2>Sudo Command</h2>
-                <p>We will run the apt update command in order to <span class="blue-word">update outdated packages </span> Linux. For now, just think of it as <span class="blue-word">updating Linux</span>. From the terminal in Linux, type in <span class="blue-word">“apt update”</span>.</p>
+        <h2>Sudo Command</h2>
+        <p>
+          We will run the apt update command in order to
+          <span class="blue-word">update outdated packages </span> Linux. For
+          now, just think of it as
+          <span class="blue-word">updating Linux</span>. From the terminal in
+          Linux, type in <span class="blue-word">“apt update”</span>.
+        </p>
 
-                <p>Unfortunately, this <span class="blue-word">does not work</span> and we get this message:</p>
-                <img
-                class="image"
-                src="../../../Images/sudo.png"
-                style="
-                  width: 30em;
-                  margin-left: 6em;
-                  margin-top: 2em;
-                  margin-bottom: 2em;
-                  border-width: 0.9em;
-                  border-style: solid;
-                  border-color: #111a23;
-                "
-              />
+        <p>
+          Unfortunately, this <span class="blue-word">does not work</span> and
+          we get this message:
+        </p>
+        <img
+          class="image"
+          src="../../../Images/sudo.png"
+          style="
+            width: 30em;
+            margin-left: 6em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-width: 0.9em;
+            border-style: solid;
+            border-color: #111a23;
+          "
+        />
 
-                <p>We see that we do not have permission to run this command. We need to <span class="blue-word">escalate our privileges</span>! Type the same command with <span class="blue-word">“sudo”</span> in front of it.</p>
+        <p>
+          We see that we do not have permission to run this command. We need to
+          <span class="blue-word">escalate our privileges</span>! Type the same
+          command with <span class="blue-word">“sudo”</span> in front of it.
+        </p>
 
-                <p>Great! It works. Using sudo gave you <span class="blue-word">temporary permissions</span> to run the apt update command. You should see this message:</p>
-                <img
-                class="image"
-                src="../../../Images/sudo2.png"
-                style="
-                  width: 30em;
-                  margin-left: 6em;
-                  margin-top: 2em;
-                  margin-bottom: 2em;
-                  border-width: 0.9em;
-                  border-style: solid;
-                  border-color: #111a23;
-                "
-              />
+        <p>
+          Great! It works. Using sudo gave you
+          <span class="blue-word">temporary permissions</span> to run the apt
+          update command. You should see this message:
+        </p>
+        <img
+          class="image"
+          src="../../../Images/sudo2.png"
+          style="
+            width: 30em;
+            margin-left: 6em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-width: 0.9em;
+            border-style: solid;
+            border-color: #111a23;
+          "
+        />
 
-                <h2>The Sudoers File (Optional)</h2>
-                <p>Just for fun, let’s navigate to the sudoer’s file! Since we have not learned about navigating the filesystem yet, we will provide all the commands you need to input (the commands will be in parentheses). If you want, you can look at the next article first and come back to this activity later.</p>
+        <h2>The Sudoers File (Optional)</h2>
+        <p>
+          Just for fun, let’s navigate to the sudoer’s file! Since we have not
+          learned about navigating the filesystem yet, we will provide all the
+          commands you need to input (the commands will be in parentheses). If
+          you want, you can look at the next article first and come back to this
+          activity later.
+        </p>
 
-                <ol>
-                    <li>Navigate to the <span class="green-word" style="color: rgb(117, 255, 78); line-height: 1.7em;"
-                      >/etc directory (cd /etc).</span
-                    ></li>
-                    <li>If you scroll around, you will see that <span class="green-word" style="color: rgb(117, 255, 78); line-height: 1.7em;"
-                      >“sudoers”</span> is in this directory. This is the sudoer’s file. View its file contents (cat sudoers).</li>
-                    <li>Our permission is denied. What should we do to get around this? That’s right, sudo! View the file contents using <span class="green-word" style="color: rgb(117, 255, 78); line-height: 1.7em;"
-                      >sudo (sudo cat sudoers).</span></li>
-                </ol>
-                <p>Congrats, you are looking at the sudoers file!</p>
-                <img
-                class="image"
-                src="../../../Images/sudo3.png"
-                style="
-                  width: 30em;
-                  margin-left: 6em;
-                  margin-top: 2em;
-                  margin-bottom: 2em;
-                  border-width: 0.9em;
-                  border-style: solid;
-                  border-color: #111a23;
-                "
-              />
-          <br></br>
-                <div class="right-side_rectangle-buttons">
+        <ol>
+          <li>
+            Navigate to the
+            <span
+              class="green-word"
+              style="color: rgb(117, 255, 78); line-height: 1.7em"
+              >/etc directory (cd /etc).</span
+            >
+          </li>
+          <li>
+            If you scroll around, you will see that
+            <span
+              class="green-word"
+              style="color: rgb(117, 255, 78); line-height: 1.7em"
+              >“sudoers”</span
+            >
+            is in this directory. This is the sudoer’s file. View its file
+            contents (cat sudoers).
+          </li>
+          <li>
+            Our permission is denied. What should we do to get around this?
+            That’s right, sudo! View the file contents using
+            <span
+              class="green-word"
+              style="color: rgb(117, 255, 78); line-height: 1.7em"
+              >sudo (sudo cat sudoers).</span
+            >
+          </li>
+        </ol>
+        <p>Congrats, you are looking at the sudoers file!</p>
+        <img
+          class="image"
+          src="../../../Images/sudo3.png"
+          style="
+            width: 30em;
+            margin-left: 6em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-width: 0.9em;
+            border-style: solid;
+            border-color: #111a23;
+          "
+        />
+        <div class="right-side_rectangle-buttons">
           <a
             href="../../Courses and Activities/Course 6/Sudo+PrivilegeEscalationcourse6.html"
             >&lt; Previous</a
@@ -125,41 +174,84 @@
         <div class="leftRectangle-section2">
           <p class="leftRectangle-section2-button-title">Table of Contents</p>
           <a href="../Course 6/Introductioncourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Course 6 - Introduction
           </a>
           <a href="../Course 6/SettingUpLinuxcourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Setting Up Linux
           </a>
           <a href="../Course 6/BasicCommandscourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Basics/Getting Help
           </a>
           <a href="../Course 6/Sudo+PrivilegeEscalationcourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
             Sudo & Privilege Escalation
           </a>
           <a href="../Course 6/ExploreSudocourse6.html">
-            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
-            Explore Sudo </a>
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              class="act-img"
+            />
+            Explore Sudo
+          </a>
           <a href="../Course 6/TheFileSystemcourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-            The Filesystem </a>
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            The Filesystem
+          </a>
           <a href="../Course 6/ExploreFileSystemcourse6.html">
-            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              class="act-img"
+            />
             Explore the Filesystem
           </a>
           <a href="../Course 6/Permissionscourse6.html">
-            <img src="../../../Images/ICON_ARTICLE.png" width="40" height="40">
-            Permissions </a>
+            <img
+              src="../../../Images/ICON_ARTICLE.png"
+              width="40"
+              height="40"
+            />
+            Permissions
+          </a>
           <a href="../Course 6/ExplorePermissionscourse6.html">
-            <img src="../../../Images/ICON_ACTIVITY.png" width="40" height="40" class="act-img">
+            <img
+              src="../../../Images/ICON_ACTIVITY.png"
+              width="40"
+              height="40"
+              class="act-img"
+            />
             Explore Permissions
           </a>
-          <a href="../Course 6/QuizLinuxcourse6.html"> 
-            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40">
-            Linux Quiz </a>
+          <a href="../Course 6/QuizLinuxcourse6.html">
+            <img src="../../../Images/ICON_QUIZ.png" width="40" height="40" />
+            Linux Quiz
+          </a>
           <!-- <a href="add game here">  >add more here </a> -->
         </div>
         <div class="Empty-section2">
