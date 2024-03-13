@@ -25,15 +25,6 @@ header {
   margin-right: 3em;
 }
 
-
-.security{
-  width: 25em;
-  margin: 1em;
-  height: auto;
-  align-self: center;
-}
-
-
 .header-buttons {
   display: flex;
   justify-content: space-between;
