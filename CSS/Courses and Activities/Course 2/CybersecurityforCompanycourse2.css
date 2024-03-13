@@ -306,9 +306,10 @@ p {
   font-style: normal;
 }
 
-li {
+.right-side_rectangle li {
   font-size: medium;
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 h3 {
