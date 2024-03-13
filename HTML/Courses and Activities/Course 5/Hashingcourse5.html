@@ -36,16 +36,17 @@
     <section>
       <div class="right-side_rectangle">
         <p>
-          Hashing is <span class="blue-word">one-way encryption.</span> Once you have encrypted your plaintext,
-          it cannot be decrypted. Obviously, unlike encryption, hashing would be
-          terrible to use for communication since recipients of messages would
-          just be reading a bunch of ciphertext! The real use for hashing is for
-          verifying data integrity.
+          Hashing is <span class="blue-word">one-way encryption.</span> Once you
+          have encrypted your plaintext, it cannot be decrypted. Obviously,
+          unlike encryption, hashing would be terrible to use for communication
+          since recipients of messages would just be reading a bunch of
+          ciphertext! The real use for hashing is for verifying data integrity.
         </p>
         <p>
-          An easy and applicable example of hashing relates to <span class="blue-word">passwords.</span> When
-          passwords are stored, they <span class="blue-word">should always be hashed.</span> When you enter
-          your password into a login page, your input will be hashed and
+          An easy and applicable example of hashing relates to
+          <span class="blue-word">passwords.</span> When passwords are stored,
+          they <span class="blue-word">should always be hashed.</span> When you
+          enter your password into a login page, your input will be hashed and
           compared to the hash in the database with all the saved passwords, the
           comparison will verify if you typed in the correct password. By
           hashing such an important credential, attackers cannot access your
@@ -54,13 +55,29 @@
           Attacks article). This is a much safer option than just leaving all
           stored passwords in plaintext.
         </p>
+
+        <img
+          src="../../../Images/hashingforCybersecurity.jpg"
+          style="
+            width: 20em;
+            height: auto;
+            border-width: 1em;
+            border-style: solid; /* Specify the border style */
+            border-color: #111a23;
+            margin-left: 10em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+          "
+        />
+
         <p>
           If you recall back in Course 1, the “I” in the CIA triad stood for
           integrity. Integrity in security refers to the accuracy of data and
           reliance on the fact that it cannot be modified. Hashing is used for
-          this. Hashes of data are known as <span class="blue-word">checksums.</span> It is also important to
-          note that a checksum is completely unique to the data it represents.
-          As data is transmitted between different parts of a network, it is
+          this. Hashes of data are known as
+          <span class="blue-word">checksums.</span> It is also important to note
+          that a checksum is completely unique to the data it represents. As
+          data is transmitted between different parts of a network, it is
           important to make sure that the data stays unmodified by accident or
           by attackers. At different stages during its transit, the checksum of
           the original data can be compared to the checksum of the data after
