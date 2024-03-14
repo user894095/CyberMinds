@@ -9,8 +9,24 @@
   position: fixed;
   top: 100vh;
   opacity: 0;
-  background-color: rgb(17, 25, 39);
+  background-color: rgb(14, 20, 30);
   box-shadow: 0 0em 2em rgb(17, 25, 40); /* Adjust the values for a softer shadow */
+  animation: rotateBoxShadow1 4s infinite linear;
+}
+
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #38557d;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }
 
 .pop-up.active {

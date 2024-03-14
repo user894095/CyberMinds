@@ -913,6 +913,29 @@ a {
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
 }
+
+#gradient-line {
+  width: 0.3em;
+  height: 20vh; /* Adjust the height as needed */
+  position: fixed;
+  top: 0;
+  left: 10%;
+  opacity: 0; /* Initially hide the element */
+  transition: opacity 0.5s ease; /* Add transition effect for opacity */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 229, 255, 0) 0%,
+    #fdcb56 10%,
+    #c02a08bc 90%,
+    rgba(8, 125, 192, 0) 100%
+  );
+  border-radius: 50%; /* Make the border-radius 50% to make it fully round */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 footer {
   background-color: #0a0a0a;
   color: #fff;
