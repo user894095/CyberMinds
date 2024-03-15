@@ -322,10 +322,13 @@ section {
 }
 
 .terminaloutputtext {
-  margin: 0.4em;
+  margin:0.4em;
   display: flex;
   height: 8em;
   background-color: #111111;
+  color:#ffffff;
+  resize: none;
+  overflow-x:hidden;
 }
 
 .end-text {
