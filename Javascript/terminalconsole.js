@@ -12,4 +12,7 @@ let test = `
 print("test successful")
 `;
 
-document.getElementById("terminaloutputbutton1").addEventListener("click", function(){runCode(editor1.state.doc.toString(),document.getElementById("terminaloutputtext1"))})
+document.getElementById("terminaloutputbutton1").addEventListener("click", function(){runCode(editor.editor1.state.doc.toString(),document.getElementById("terminaloutputtext1"))})
+if (document.getElementById("terminaloutputbutton2") != null) {
+    document.getElementById("terminaloutputbutton2").addEventListener("click", function(){runCode(editor.editor2.state.doc.toString(),document.getElementById("terminaloutputtext2"))})
+}

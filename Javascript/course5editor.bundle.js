@@ -1,4 +1,4 @@
-(function (exports) {
+editor = (function (exports) {
    'use strict';
 
    /**
