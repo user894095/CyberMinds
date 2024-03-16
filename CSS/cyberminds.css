@@ -190,6 +190,17 @@ header {
   background-color: #286aa7;
 }
 
+@keyframes drawLine {
+  0% {
+    height: 0; /* Start with zero height */
+    opacity: 0; /* Start with zero opacity */
+  }
+  100% {
+    height: 50vh; /* End height at 50vh */
+    opacity: 1; /* Fully opaque */
+  }
+}
+
 /* Your existing styles here */
 .section2 {
   overflow-y: hidden;
@@ -912,24 +923,6 @@ p {
 a {
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
-}
-
-#gradient-line {
-  width: 0.3em;
-  height: 20vh; /* Adjust the height as needed */
-  position: fixed;
-  top: 0;
-  left: 10%;
-  opacity: 0; /* Initially hide the element */
-  transition: opacity 0.5s ease; /* Add transition effect for opacity */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 229, 255, 0) 0%,
-    #fdcb56 10%,
-    #c02a08bc 90%,
-    rgba(8, 125, 192, 0) 100%
-  );
-  border-radius: 50%; /* Make the border-radius 50% to make it fully round */
 }
 
 .fade-in {
