@@ -118,13 +118,16 @@ header {
 }
 
 .img {
+  border-width: 0.9em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
   border-radius: 0.3em 0.3em 0.3em 0.3em;
   animation: rotateBoxShadow1 4s infinite linear;
 }
 
 @keyframes rotateBoxShadow1 {
   0% {
-    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+    box-shadow: 0.05em 0.05em 0.9em rgba(30, 81, 103, 0.974);
   }
   33% {
     box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
@@ -133,7 +136,7 @@ header {
     box-shadow: 0.05em 0.15em 1.5em #38557d;
   }
   100% {
-    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+    box-shadow: 0.05em 0.1em 0.95em rgba(29, 85, 126, 0.71);
   }
 }
 

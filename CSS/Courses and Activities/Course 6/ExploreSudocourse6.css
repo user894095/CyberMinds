@@ -294,7 +294,7 @@ section {
 .right-side_rectangle h2,
 .right-side_rectangle p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:2.3em;
+  font-size:1.5em;
 }
 
 .right-side_rectangle p {
@@ -313,10 +313,13 @@ h2 {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
 
 li {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 a {

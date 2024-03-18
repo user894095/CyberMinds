@@ -166,9 +166,15 @@ section {
   justify-content: center;
 }
 .AvsAimage{
-  width: 38em;
+  width: 30em;
   height: auto;
   align-self: center;
+  margin-right: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-width: 0.9em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
 }
 
 .leftRectangle-section2-button-title {

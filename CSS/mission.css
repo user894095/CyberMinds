@@ -5,10 +5,19 @@ body {
 
 .Parent-container {
   display: flex;
+  position: relative;
   flex-direction: column;
-
-  height: 165vh;
+  height: 240vh;
   width: auto;
+}
+
+body {
+  height: 240vh;
+  font-family: "Georgia", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
   background-color: black;
   animation: rotateBoxShadow 4s infinite linear;
 }
@@ -28,15 +37,6 @@ body {
   }
 }
 
-body {
-  font-family: "Georgia", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  color: #ffffff;
-  text-align: center;
-}
-
 header {
   background-color: #000000;
   color: #ffffff;
@@ -45,12 +45,13 @@ header {
   padding-bottom: 0.2em;
   padding-right: 1em;
   padding-top: 1em;
+  margin-bottom: 20px;
 }
 
 .header-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space between the logo and nav */
 }
 
 .header-content img {
@@ -62,7 +63,9 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
-  padding: 0.5em 6em;
+  padding: 0.5em;
+  padding-left: 6em;
+  padding-right: 6em;
   align-items: center;
   flex-grow: 1;
 }
@@ -85,6 +88,30 @@ header {
   background-color: #286aa7;
 }
 
+main {
+  padding-bottom: 3.5rem;
+}
+
+.page-title {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  color: transparent; /* Set initial text color to transparent */
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  ); /* Adjust the colors and stops as needed */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeIn 3s forwards; /* Set the duration of the animation */
+}
+
 @keyframes fadeIn {
   to {
     color: rgb(255, 255, 255);
@@ -92,31 +119,54 @@ header {
   }
 }
 
-main {
-  flex-grow: 1;
-  padding: 2em;
+p {
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
-.content {
-  position: absolute;
-  max-width: 30em;
-  margin: 0 auto;
+ul {
+  padding-left: 1em;
+  color: white;
+  text-align: center;
+  list-style: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-.mission-statement,
-.values {
-  text-align: left;
-  margin-top: 1em;
+li {
+  margin-bottom: 0.3em;
+  color: white;
+  scale: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.5em;
 }
 
-.mission-statement {
-  background-color: #0a0a0a5a;
-  border-radius: 1em;
-  padding: 2em;
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
 }
-.values ul {
-  list-style-type: disc;
-  padding-left: 20px;
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 1.9em;
+  margin-bottom: 0.95em;
+  color: white;
+  /*border-bottom: 2px solid #333;*/
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: white;
+  /*border-bottom: 2px solid #333;*/
+  padding-bottom: 0.25em;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 footer {
@@ -136,64 +186,95 @@ footer {
   font-family: "Space Grotesk", sans-serif;
 }
 
-h3 {
-  font-family: "Space Grotesk", sans-serif;
+.flex1 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-h2 {
-  font-family: "MuseoModerno", sans-serif;
+.flex2 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-a {
-  font-family: "Space Grotesk", sans-serif;
+.flex3 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
 }
 
-p {
-  font-family: "Space Grotesk", sans-serif;
+.theIMAGE img {
+  margin-top: 3em;
+  align-self: center;
+  height: 20em;
+  width: auto;
+  flex: 5;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
 }
 
-li {
-  font-family: "Space Grotesk", sans-serif;
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #38557d;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }
 
-.title-img {
-  position: relative;
-  width: 100%;
-  opacity: 30%;
-  border-radius: 2em;
-  display: inline-block;
-  height: 35em;
+.flexwording {
+  background: linear-gradient(to bottom, #0000009f, #17263b);
+  flex: 6;
+  border-width: 0.6em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
+  margin-top: 3em;
+  margin-bottom: 2.5em;
+  margin-left: 3.6em;
+  margin-right: 3.6em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
 }
 
-.page-title {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -650%);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 4em;
-  font-weight: 700;
-  font-style: normal;
-  word-spacing: 0.2em;
-  letter-spacing: 0.1em;
-  color: transparent;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: fadeIn 3s forwards;
-}
-
-.image-container {
-  position: relative;
-  text-align: center;
-}
-
-.image-item {
-  position: absolute;
-  transform: translateY(-150%);
+@keyframes rotateBoxShadow1 {
+  0% {
+    box-shadow: 0.05em 0.05em 0.9em rgba(24, 55, 68, 0.974);
+  }
+  33% {
+    box-shadow: 0.05em 0.1em 1.3em #4f7ab2ac;
+  }
+  66% {
+    box-shadow: 0.05em 0.15em 1.5em #395e93d3;
+  }
+  100% {
+    box-shadow: 0.05em 0.1em 0.95em rgba(17, 48, 70, 0.8);
+  }
 }

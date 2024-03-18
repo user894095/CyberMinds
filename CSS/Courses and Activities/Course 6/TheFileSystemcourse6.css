@@ -304,30 +304,34 @@ section {
 
 .right-side_rectangle h2,
 .right-side_rectangle p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2.3em;
 }
 
 .right-side_rectangle p {
   font-size: medium;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
 h2 {
-  font-family: "MuseoModerno", sans-serif;
-  font-weight: 400;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 p {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.5em;
 }
 
 li {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 a {

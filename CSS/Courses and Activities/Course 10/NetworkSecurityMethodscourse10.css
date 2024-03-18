@@ -294,6 +294,7 @@ section {
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 
 h2 {
@@ -305,10 +306,12 @@ h2 {
 
 p {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 li {
   font-family: "Space Grotesk", sans-serif;
+  line-height: 1.7em;
 }
 
 a {
@@ -317,6 +320,10 @@ a {
 
 .blue-word{
   color: rgb(63, 225, 217);
+}
+
+.green-word {
+  color: rgb(117, 255, 78);
 }
 
 .act-img {

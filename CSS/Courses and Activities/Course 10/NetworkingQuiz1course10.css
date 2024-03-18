@@ -282,6 +282,10 @@ section {
   margin-left: auto; /
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
+
 
 .right-side_rectangle-buttons a:hover ,
 .leftRectangle-section1 a:hover,

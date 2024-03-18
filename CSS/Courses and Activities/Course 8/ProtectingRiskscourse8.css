@@ -341,8 +341,17 @@ a {
   width: 50%;
   margin: 3em;
   align-self: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-width: 0.9em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
+  padding: 1em;
 }
 
+.green-word {
+  color: rgb(117, 255, 78);
+}
 
 .list-without-bullet-points{
   list-style: None;

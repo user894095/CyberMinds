@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
 
     <title>Course 5 - Encryption with Python</title>
   </head>
@@ -35,70 +36,92 @@
 
     <section>
       <div class="right-side_rectangle">
-        <h2>Programming Problem 1: Substitution Cipher Encryption</h2>
+        <h2>Programming Problem 1: Substitution Cipher</h2>
 
-        <h3>Objective</h3>
+        <h3 class="blue-word">Objective</h3>
         <p>
           Implement a Python program to perform Substitution Cipher encryption.
         </p>
 
-        <h3>Hints</h3>
+        <h3 class="blue-word">Hints</h3>
         <ol>
           <li>
-            Create a function <span class="blue-word">substitution_cipher_encrypt(plaintext, key)</span> with
-            parameters for the plaintext and a substitution key.
+            Create a function
+            <span class="blue-word"
+              >substitution_cipher_encrypt(plaintext, key)</span
+            >
+            with parameters for the
+            <span class="green-word">plaintext</span> and a
+            <span class="green-word">substitution</span> key.
           </li>
           <li>
-            The substitution key should be a dictionary mapping each letter to
+            The substitution key should be a
+            <span class="green-word">dictionary</span> mapping each letter to
             its replacement.
           </li>
           <li>
-            Handle both uppercase and lowercase letters while preserving spaces
-            and non-alphabetic characters.
+            <span class="green-word">Handle</span> both uppercase and lowercase
+            letters while preserving spaces and non-alphabetic characters.
           </li>
           <li>
-            Iterate through each letter in the plaintext and replace it
-            according to the substitution key.
+            <span class="green-word">Iterate</span> through each letter in the
+            plaintext and replace it according to the substitution key.
           </li>
         </ol>
 
-        <h3>Terminal</h3>
+        <h3 class="blue-word">Terminal</h3>
 
         <div class="editor1"></div>
 
-        <h2>Programming Problem 2: Caeser Cipher Encryption</h2>
+        <div class="terminaloutput">
+          <a id="terminaloutputbutton2">Run</a>
+          <textarea class="terminaloutputtext" id="terminaloutputtext1" readonly></textarea>
+        </div>
 
-        <h3>Background</h3>
+        <h2>Programming Problem 2: Caesar Cipher Encryption</h2>
+
+        <h3 class="blue-word">Background</h3>
         <p>
           You are given a plaintext message containing only uppercase English
-          letters. Your task is to encrypt the message using a <span class="blue-word">Caesar Cipher</span>.
-          The Caesar Cipher is a substitution cipher where each letter in the
-          plaintext is shifted a certain number of places down or up the
-          alphabet.
+          letters. Your task is to encrypt the message using a
+          <span class="blue-word">Caesar Cipher</span>. The Caesar Cipher is a
+          substitution cipher where each letter in the plaintext is shifted a
+          certain number of places down or up the alphabet.
         </p>
 
-        <h3>Objective</h3>
+        <h3 class="blue-word">Objective</h3>
         <p>
-          Write a Python function called <span class="blue-word">caesar_cipher_encrypt</span> that takes two
+          Write a Python function called
+          <span class="blue-word">caesar_cipher_encrypt</span> that takes two
           parameters: the plaintext message and the shift value. The function
           should return the encrypted message.
         </p>
 
-        <h3>Hints</h3>
+        <h3 class="blue-word">Hints</h3>
         <ol>
           <li>
-            Ensure that the function handles only uppercase letters. Ignore
-            spaces and other characters.
+            Ensure that the function handles only
+            <span class="green-word">uppercase</span> letters. Ignore spaces and
+            other characters.
           </li>
-          <li>Use the ASCII values of characters to perform the shift.</li>
           <li>
-            Use the modulo operator to handle wrapping around the alphabet.
+            Use the <span class="green-word">ASCII</span> values of characters
+            to perform the shift.
+          </li>
+          <li>
+            Use the <span class="green-word">modulo</span> operator to handle
+            wrapping around the alphabet.
           </li>
         </ol>
 
-        <h3>Terminal</h3>
+        <h3 class="blue-word">Terminal</h3>
 
         <div class="editor2"></div>
+
+        <div class="terminaloutput">
+          <a id="terminaloutputbutton2">Run</a>
+          <textarea class="terminaloutputtext" id="terminaloutputtext2" readonly></textarea>
+        </div>
 
         <p class="end-text">
           Feel free to test this solution with different plaintext and shift
@@ -202,4 +225,5 @@
     </section>
   </body>
   <script src="../../../Javascript/course5editor.bundle.js"></script>
+  <script src="../../../Javascript/terminalconsole.js"></script>
 </html>
