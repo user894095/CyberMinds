@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
 
     <title>Course 5 - Encryption with Python</title>
   </head>
@@ -73,8 +74,8 @@
         <div class="editor1"></div>
 
         <div class="terminaloutput">
-          <a>Run</a>
-          <p class="terminaloutputtext 1"></p>
+          <a id="terminaloutputbutton2">Run</a>
+          <textarea class="terminaloutputtext" id="terminaloutputtext1" readonly></textarea>
         </div>
 
         <h2>Programming Problem 2: Caesar Cipher Encryption</h2>
@@ -118,8 +119,8 @@
         <div class="editor2"></div>
 
         <div class="terminaloutput">
-          <a>Run</a>
-          <p class="terminaloutputtext 2"></p>
+          <a id="terminaloutputbutton2">Run</a>
+          <textarea class="terminaloutputtext" id="terminaloutputtext2" readonly></textarea>
         </div>
 
         <p class="end-text">
@@ -224,4 +225,5 @@
     </section>
   </body>
   <script src="../../../Javascript/course5editor.bundle.js"></script>
+  <script src="../../../Javascript/terminalconsole.js"></script>
 </html>
