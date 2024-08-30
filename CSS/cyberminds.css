@@ -185,21 +185,9 @@ header {
   border-radius: 0.99em;
   white-space: nowrap;
 }
-/* changes */
 
 .section-buttons a:hover {
   background-color: #286aa7;
-}
-
-@keyframes drawLine {
-  0% {
-    height: 0; /* Start with zero height */
-    opacity: 0; /* Start with zero opacity */
-  }
-  100% {
-    height: 50vh; /* End height at 50vh */
-    opacity: 1; /* Fully opaque */
-  }
 }
 
 /* Your existing styles here */
@@ -925,11 +913,6 @@ a {
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
 }
-
-.fade-in {
-  opacity: 1;
-}
-
 footer {
   background-color: #0a0a0a;
   color: #fff;

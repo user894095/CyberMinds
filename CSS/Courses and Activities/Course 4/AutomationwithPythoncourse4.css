@@ -311,6 +311,7 @@ section {
   display:flex;
   flex-direction:column;
   background-color: #111927;
+  margin-bottom: 2em;
 }
 
 .terminaloutputtext {
@@ -318,9 +319,6 @@ section {
   display: flex;
   height: 8em;
   background-color: #111111;
-  color:#ffffff;
-  resize: none;
-  overflow-x:hidden;
 }
 
 .end-text {
