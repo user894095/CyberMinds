@@ -304,14 +304,11 @@ section {
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1em;
-
 }
 
 h2 {
   font-family: "MuseoModerno", sans-serif;
-  font-weight: bold;
-  font-size: 1.8em;
+  font-weight: 400;
 }
 
 .right-side_rectangle p {

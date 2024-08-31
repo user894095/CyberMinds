@@ -148,8 +148,6 @@ buttonsInWholething.forEach((button) => {
 const sections = document.querySelectorAll(
   ".section2, .section5, .section4, .section3"
 );
-
-// changes
 const cursors = document.querySelectorAll(".cursor");
 
 // Initialize all cursors as inactive
