@@ -1,48 +1,189 @@
+<!-- this screen should have all the courses in it and a small description of each course! 
+If you are working on this please ask for the cybersecurity word doc content (This is the base code with no course names or descriptions or top bar)-Harshith Gande -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="../CSS/CTF.css" />
     <meta charset="UTF-8" />
-    <title>Support</title>
-    <link rel="icon" type="jpg" href="../Images/circle.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/3051dbead5.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <link rel="stylesheet" href="../CSS/course_Contents.css" />
+    <link rel="stylesheet" href="../CSS/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/5964d931e5.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+
+    <title>Course Catalog</title>
   </head>
+  <body class="body">
+    <header>
+      <div class="header-content">
+        <img src="../Images/circle.jpg" alt="CyberMinds Logo" />
+        <nav class="header-buttons">
+          <a href="../index.html">Back to Home Screen</a>
+          <a href="./moreinfo.html">More Info</a>
+          <a href="./mission.html">Mission</a>
+          <a href="./LiveHelp.html">Live Help</a>
+          <a href="./ourTeam.html">Our Team</a>
+          <a href="./CTF.html">CTF</a>
+        </nav>
+      </div>
+    </header>
+    <p class="page-title">Capture the Flag</p>
 
-  <body>
-    <div class="Parent-container">
-      <header>
-        <div class="header-content">
-          <img src="../Images/circle.jpg" alt="CyberMinds Logo" />
-          <nav class="header-buttons">
-            <a href="../index.html">Back to Home Screen</a>
-            <a href="./course_Contents.html">Courses</a>
-            <a href="./moreinfo.html">More Info</a>
-            <a href="./mission.html">Mission</a>
-            <a href="./LiveHelp.html">Live Help</a>
-            <a href="./ourTeam.html">Our Team</a>
-          </nav>
+    <section>
+      <!-- Course 1 -->
+      <a
+        href="../HTML/Courses and Activities/Course 1/Introductioncourse1.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/WorldCTF.png"
+          alt="Course Image 1"
+        />
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">World CTF Challenge</p></div>
+          <h2 class="course-title">PRACTICE</h2>
+          <p class="course-description">
+            Uncover the diverse locations, cybersecurity practices, and hacking techniques unique in each region.
+          </p>
+          <p class="course-description">
+            [Individual]
+          </p>
         </div>
-      </header>
+      </a>
 
-      <p class="page-title">CTF Challenge</p>
-      <p class="content">Coming Soon!</p>
-    </div>
+      <!-- Course 2 -->
+      <a
+        href="../HTML/Courses and Activities/Course 2/Introductioncourse2.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/PirateCTF.png"
+          alt="Course Image 2"
+        />
 
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">Pirate Treasure Hunt CTF Challenge</p></div>
+          <h2 class="course-title">PRACTICE</h2>
+          <p class="course-description">
+            Navigate treacherous seas and solve cryptic puzzles inspired by pirate lore, using your hacking skills to uncover hidden treasure.
+          </p>
+          <p class="course-description">
+            [Individual]
+          </p>
+        </div>
+      </a>
+      <!-- Course 3 -->
+      <a
+        href="../HTML/Courses and Activities/Course 3/Introductioncourse3.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/WizardCTF.jpg"
+          alt="Course Image 2"
+        />
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">Wizarding World CTF Challenge</p></div>
+          <h2 class="course-title">LIVE CTF</h2>
+          <p class="course-description">
+            Explore a magical realm where you'll decode enchanted spells, solve mystical puzzles, and 
+            use your cybersecurity skills to unlock the secrets of the wizarding world.
+          </p>
+          <p class="course-description">
+            [Individual]
+          </p>
+        </div>
+      </a>
+    </section>
+    <section>
+      <!-- Course 4 -->
+      <a
+        href="../HTML/Courses and Activities/Course 4/Introductioncourse4.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/SpyCTF.webp"
+          alt="Course Image 2"
+        />
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">Spy vs Spy CTF Challenge</p></div>
+          <h2 class="course-title">LIVE CTF</h2>
+          <p class="course-description">
+            Compete in a high-stakes battle of skills as you infiltrate 
+            enemy systems, decode secret communications, and outsmart rival spies to uncover top secret information.
+          </p>
+          <p class="course-description">
+            [TEAM]
+          </p>
+        </div>
+      </a>
+      <!-- Course 5 -->
+      <a
+        href="../HTML/Courses and Activities/Course 5/Introductioncourse5.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/SuperheroVsVillainCTF.jpg"
+          alt="Course Image 2"
+        />
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">Superheroes vs Villains CTF Challenge</p></div>
+          <h2 class="course-title">LIVE CTF</h2>
+          <p class="course-description">
+            Join the ultimate showdown between heroes and villains, where you'll unravel 
+            encrypted plans, exploit vulnerabilities, and use your cybersecurity skills to save the day!
+          </p>
+          <p class="course-description">
+            [TEAM]
+          </p>
+        </div>
+      </a>
+      <!-- Course 6 -->
+      <a
+        href="../HTML/Courses and Activities/Course 6/Introductioncourse6.html"
+        class="course-card"
+      >
+        <img
+          class="course-image"
+          src="../Images/EscapeRoomCTF.jpg"
+          alt="Course Image 2"
+        />
+        <div class="course-info">
+          <div class="course-number"><p class="courseclass">Escape Room CTF Challenge</p></div>
+          <h2 class="course-title">LIVE CTF</h2>
+          <p class="course-description">
+            Solve a series of intricate puzzles, decoding, and hacking challenges to escape from a high-tech room before time runs out!
+          </p>
+          <p class="course-description">
+            [Individual]
+          </p>
+        </div>
+      </a>
+    </section>
+
+      <div class="pop-up">
+        <div class="exit-button">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <p class="pop-up-text">
+          Courses 11 and 12 are currently under progress. Please come back later!
+        </p>
+      </div>
+    </section>
     <footer class="page-footer">
       <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
     </footer>
-
-    <script src=" ../Javascript/CTF.js"></script>
+    <script src="../Javascript/popUp_Courses.js"></script>
   </body>
 </html>
