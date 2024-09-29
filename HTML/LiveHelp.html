@@ -13,6 +13,57 @@
       href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      #chatbot-container {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      #chat-messages {
+        height: 400px;
+        overflow-y: auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      #user-input {
+        display: flex;
+        padding: 10px;
+        background-color: #fff;
+      }
+      #user-input input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #user-input button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .message {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .user-message {
+        background-color: #007bff;
+        color: #fff;
+        align-self: flex-end;
+      }
+      .bot-message {
+        background-color: #e9e9e9;
+        color: #333;
+        align-self: flex-start;
+      }
+    </style>
   </head>
 
   <body>
@@ -32,16 +83,14 @@
       </header>
 
       <p class="page-title">Chat Box</p>
-      <div class = "theCHATBOX">
-        </br>  </br></br></br> </br> </br>  </br>  </br>
-        <h2 class="chat"><iframe
-          src="https://www.chatbase.co/chatbot-iframe/j9k3jAOFsyr51HHb1MeXm"
-          width="80%"
-          style="height: 100%; min-height: 700px"
-          frameborder="0"
-          ></iframe>
-          
-        </h2>
+      <div class="theCHATBOX">
+        <div id="chatbot-container">
+          <div id="chat-messages"></div>
+          <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+          </div>
+        </div>
       </div>
 
       <footer id="footer">
@@ -49,9 +98,52 @@
       </footer>
     </div>
 
-    <body>
-      <div class="white-rectangle"></div>
-    </body>
-    <script src=" ../Javascript/LiveHelp.js"></script>
+    <div class="white-rectangle"></div>
+
+    <script src="../Javascript/LiveHelp.js"></script>
+    <script>
+      const responses = {
+        "malware": ["Malware is malicious software designed to harm your device.", "Keep your system updated to protect against malware."],
+        "phishing": ["Phishing is a method used to trick you into giving personal information.", "Always verify the source of unexpected emails."],
+        "ransomware": ["Ransomware locks your files and demands payment for access.", "Backup your data regularly to avoid losses from ransomware."],
+        "firewall": ["A firewall protects your network from unauthorized access.", "Ensure your firewall is always enabled on your devices."],
+        "vpn": ["A VPN helps you maintain privacy by masking your IP address.", "Use a reputable VPN provider when accessing public Wi-Fi."],
+      };
+
+      function getResponse(query) {
+        query = query.toLowerCase();
+        for (const keyword in responses) {
+          if (query.includes(keyword)) {
+            return responses[keyword][Math.floor(Math.random() * responses[keyword].length)];
+          }
+        }
+        return "I'm sorry, I didn't understand that. Can you please ask something else regarding cybersecurity?";
+      }
+
+      function sendMessage() {
+        const userMessage = document.getElementById("user-message").value;
+        const chatMessages = document.getElementById("chat-messages");
+
+        // Add user message
+        chatMessages.innerHTML += `<div class="message user-message">${userMessage}</div>`;
+
+        // Get and add bot response
+        const botResponse = getResponse(userMessage);
+        chatMessages.innerHTML += `<div class="message bot-message">${botResponse}</div>`;
+
+        // Clear input field
+        document.getElementById("user-message").value = "";
+
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // Allow sending message with Enter key
+      document.getElementById("user-message").addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+          sendMessage();
+        }
+      });
+    </script>
   </body>
 </html>
