@@ -180,3 +180,43 @@ footer {
   font-size: 0.9em;
   font-family: "Space Grotesk", sans-serif;
 }
+
+.flex1 {
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 25em;
+}
+.flex2 {
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 25, 35);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  height: 100vh; 
+  width: 16.6vw; 
+  position: flex; 
+  left: 0;
+  top: 0;
+  padding: 10em;
+}
+
+.flexwording {
+  background: linear-gradient(to bottom, #0000009f, #17263b);
+  flex: 6;
+  border-width: 0.6em;
+  border-style: solid; /* Add this line */
+  border-color: #111a23;
+  margin-top: 3em;
+  margin-bottom: 2.5em;
+  margin-left: 3.6em;
+  margin-right: 3.6em;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  animation: rotateBoxShadow1 4s infinite linear;
+}
