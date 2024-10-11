@@ -1,149 +1,166 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../CSS/LiveHelp.css" />
-    <meta charset="UTF-8" />
-    <title>Chat Box</title>
-    <link rel="icon" type="jpg" href="../Images/circle.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberMinds AI Assistant</title>
+    <link rel="icon" type="image/jpg" href="../Images/circle.jpg">
+    <link rel="stylesheet" href="../CSS/LiveHelp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <style>
-      #chatbot-container {
-        width: 80%;
-        max-width: 600px;
-        margin: 0 auto;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      #chat-messages {
-        height: 400px;
-        overflow-y: auto;
-        padding: 20px;
-        background-color: #f9f9f9;
-      }
-      #user-input {
-        display: flex;
-        padding: 10px;
-        background-color: #fff;
-      }
-      #user-input input {
-        flex-grow: 1;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      #user-input button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-      .message {
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .user-message {
-        background-color: #007bff;
-        color: #fff;
-        align-self: flex-end;
-      }
-      .bot-message {
-        background-color: #e9e9e9;
-        color: #333;
-        align-self: flex-start;
-      }
+        .chatbot-info {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #102d42;
+            border-radius: 10px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        #chatbot-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #chat-messages {
+            height: 250px;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #user-input {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+        }
+        #user-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        #user-input button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .user-message {
+            background-color: #007bff;
+            color: #fff;
+            align-self: flex-end;
+        }
+        .bot-message {
+            background-color: #e9e9e9;
+            color: #333;
+            align-self: flex-start;
+        }
     </style>
-  </head>
-
-  <body>
+</head>
+<body>
     <div class="Parent-container">
-      <header>
-        <div class="header-content">
-          <img src="../Images/circle.jpg" alt="CyberMinds Logo" />
-          <nav class="header-buttons">
-            <a href="../index.html">Back to Home Screen</a>
-            <a href="./course_Contents.html">Courses</a>
-            <a href="./mission.html">Mission</a>
-            <a href="./moreinfo.html">More Info</a>
-            <a href="./ourTeam.html">Our Team</a>
-            <a href="./CTF.html">CTF</a>
-          </nav>
-        </div>
-      </header>
+        <header>
+            <div class="header-content">
+                <img src="../Images/circle.jpg" alt="CyberMinds Logo">
+                <nav class="header-buttons">
+                    <a href="../index.html">Back to Home Screen</a>
+                    <a href="./course_Contents.html">Courses</a>
+                    <a href="./mission.html">Mission</a>
+                    <a href="./moreinfo.html">More Info</a>
+                    <a href="./ourTeam.html">Our Team</a>
+                    <a href="./CTF.html">CTF</a>
+                </nav>
+            </div>
+        </header>
 
-      <p class="page-title">Chat Box</p>
-      <div class="theCHATBOX">
-        <div id="chatbot-container">
-          <div id="chat-messages"></div>
-          <div id="user-input">
-            <input type="text" id="user-message" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
-          </div>
+        <div class="chatbot-info">
+            <h2>Welcome to the CyberMinds AI Assistant</h2>
+            <p>This AI-powered chatbot is designed to supplement your learning experience in our cybersecurity courses. It can answer questions, provide explanations, and offer guidance on various cybersecurity topics covered in the CyberMinds curriculum.</p>
+            <p>To use the chatbot, simply type your question or topic of interest in the input field below and press 'Send' or hit Enter. The AI will respond with relevant information to help you better understand cybersecurity concepts.</p>
         </div>
-      </div>
 
-      <footer id="footer">
-        <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
-      </footer>
+        <div class="theCHATBOX">
+            <div id="chatbot-container">
+                <div id="chat-messages"></div>
+                <div id="user-input">
+                    <input type="text" id="user-message" placeholder="Type your cybersecurity question here...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; 2024 CyberMinds, Inc. All rights reserved.</p>
+        </footer>
     </div>
 
     <div class="white-rectangle"></div>
 
     <script src="../Javascript/LiveHelp.js"></script>
     <script>
-      const responses = {
-        "malware": ["Malware is malicious software designed to harm your device.", "Keep your system updated to protect against malware."],
-        "phishing": ["Phishing is a method used to trick you into giving personal information.", "Always verify the source of unexpected emails."],
-        "ransomware": ["Ransomware locks your files and demands payment for access.", "Backup your data regularly to avoid losses from ransomware."],
-        "firewall": ["A firewall protects your network from unauthorized access.", "Ensure your firewall is always enabled on your devices."],
-        "vpn": ["A VPN helps you maintain privacy by masking your IP address.", "Use a reputable VPN provider when accessing public Wi-Fi."],
-      };
+        const courseContent = {
+            "introduction to cybersecurity": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. It involves various techniques and technologies to safeguard information and assets from unauthorized access, theft, and damage.",
+            "network security": "Network security focuses on protecting the usability and integrity of your network and data. It includes both hardware and software technologies, and involves access control, virus and antivirus software, application security, network analytics, and other security measures.",
+            "cryptography": "Cryptography is the practice and study of techniques for secure communication in the presence of adversaries. It involves creating and analyzing protocols that prevent third parties or the public from reading private messages.",
+            "ethical hacking": "Ethical hacking involves an authorized attempt to gain unauthorized access to a computer system, application, or data. It identifies security vulnerabilities that can be resolved before malicious hackers have a chance to exploit them.",
+            "malware analysis": "Malware analysis is the study or process of determining the functionality, origin and potential impact of a given malware sample such as a virus, worm, trojan horse, rootkit, or backdoor.",
+            "incident response": "Incident response is an organized approach to addressing and managing the aftermath of a security breach or cyberattack. The goal is to handle the situation in a way that limits damage and reduces recovery time and costs.",
+            "cloud security": "Cloud security refers to a broad set of policies, technologies, and controls deployed to protect data, applications, and the associated infrastructure of cloud computing. It addresses both physical and logical security across all organizational assets.",
+            "iot security": "IoT security focuses on protecting internet-connected devices and the networks they're connected to from threats and breaches. This includes ensuring data privacy, encrypting communications, and securing devices from physical tampering.",
+            "artificial intelligence in cybersecurity": "AI in cybersecurity involves using machine learning algorithms to identify and respond to cyber threats more efficiently than traditional software-driven approaches. It can help in detecting new types of malware, identifying suspicious user behavior, and automating incident response."
+        };
 
-      function getResponse(query) {
-        query = query.toLowerCase();
-        for (const keyword in responses) {
-          if (query.includes(keyword)) {
-            return responses[keyword][Math.floor(Math.random() * responses[keyword].length)];
-          }
+        function getResponse(query) {
+            query = query.toLowerCase();
+            for (const topic in courseContent) {
+                if (query.includes(topic)) {
+                    return courseContent[topic];
+                }
+            }
+            return "I'm sorry, I don't have specific information on that topic. Could you try asking about one of our course subjects, such as network security, cryptography, or ethical hacking?";
         }
-        return "I'm sorry, I didn't understand that. Can you please ask something else regarding cybersecurity?";
-      }
 
-      function sendMessage() {
-        const userMessage = document.getElementById("user-message").value;
-        const chatMessages = document.getElementById("chat-messages");
+        function sendMessage() {
+            const userMessage = document.getElementById("user-message").value;
+            const chatMessages = document.getElementById("chat-messages");
 
-        // Add user message
-        chatMessages.innerHTML += `<div class="message user-message">${userMessage}</div>`;
+            // Add user message
+            chatMessages.innerHTML += `<div class="message user-message">${userMessage}</div>`;
 
-        // Get and add bot response
-        const botResponse = getResponse(userMessage);
-        chatMessages.innerHTML += `<div class="message bot-message">${botResponse}</div>`;
+            // Get and add bot response
+            const botResponse = getResponse(userMessage);
+            chatMessages.innerHTML += `<div class="message bot-message">${botResponse}</div>`;
 
-        // Clear input field
-        document.getElementById("user-message").value = "";
+            // Clear input field
+            document.getElementById("user-message").value = "";
 
-        // Scroll to bottom
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }
-
-      // Allow sending message with Enter key
-      document.getElementById("user-message").addEventListener("keyup", function(event) {
-        if (event.key === "Enter") {
-          sendMessage();
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
         }
-      });
+
+        // Allow sending message with Enter key
+        document.getElementById("user-message").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
