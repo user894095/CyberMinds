@@ -188,23 +188,21 @@ footer {
   background-color: rgb(17, 25, 35);
   margin-bottom: 2.5em;
   margin-top: 2.5em;
-  margin-left: 5em;
+  margin-left: 35em;
   margin-right: 5em;
   height: 25em;
+  
 }
 .flex2 {
-  border-radius: 0.6em;
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
   display: flex;
   flex-direction: row;
   background-color: rgb(17, 25, 35);
-  margin-top: 2.5em;
   margin-bottom: 2.5em;
-  height: 100vh; 
-  width: 16.6vw; 
-  position: flex; 
-  left: 0;
-  top: 0;
-  padding: 10em;
+  margin-top: 2.5em;
+  margin-left: 5em;
+  margin-right: 60em;
+  height: 50em;
 }
 
 .flexwording {
