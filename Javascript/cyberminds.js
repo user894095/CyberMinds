@@ -256,3 +256,5 @@ section3.addEventListener("mousemove", (e) => {
   cursor1.style.left = e.pageX - section3.offsetLeft + "px";
   cursor1.style.top = e.pageY - section3.offsetTop + "px";
 });
+
+
